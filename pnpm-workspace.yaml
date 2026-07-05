@@ -13,3 +13,6 @@ peerDependencyRules:
   allowedVersions:
     vite: "*"
     vitest: "*"
+allowBuilds:
+  esbuild: true
+  unrs-resolver: true
