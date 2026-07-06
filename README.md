@@ -14,6 +14,7 @@ vp install
 ```
 
 - Verify lint and formatting rules
+
 ```
 vp check --fix
 ```
