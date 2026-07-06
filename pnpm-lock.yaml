@@ -223,9 +223,6 @@ importers:
       bumpp:
         specifier: 11.1.0
         version: 11.1.0
-      oxfmt:
-        specifier: 0.57.0
-        version: 0.57.0(vite-plus@0.2.2(@types/node@25.6.2)(esbuild@0.28.1)(jiti@2.7.0)(typescript@6.0.3)(vite@8.1.2(@types/node@25.6.2)(esbuild@0.28.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0))
       oxlint:
         specifier: 1.72.0
         version: 1.72.0(oxlint-tsgolint@0.24.0)(vite-plus@0.2.2(@types/node@25.6.2)(esbuild@0.28.1)(jiti@2.7.0)(typescript@6.0.3)(vite@8.1.2(@types/node@25.6.2)(esbuild@0.28.1)(jiti@2.7.0)(yaml@2.9.0))(yaml@2.9.0))

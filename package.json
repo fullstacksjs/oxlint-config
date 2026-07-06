@@ -29,15 +29,15 @@
     "test": "vp test",
     "check": "vp check",
     "prepublishOnly": "vp run build",
-    "fmt": "oxfmt",
-    "fmt:check": "oxfmt --check",
-    "lint": "oxlint",
-    "lint:fix": "oxlint --fix"
+    "fmt": "vp fmt",
+    "fmt:check": "vp fmt --check",
+    "lint": "vp lint",
+    "lint:fix": "vp lint --fix"
   },
+  "dependencies": {},
   "devDependencies": {
     "@types/node": "25.6.2",
     "bumpp": "11.1.0",
-    "oxfmt": "0.57.0",
     "oxlint": "1.72.0",
     "typescript": "6.0.3",
     "vite-plus": "catalog:"

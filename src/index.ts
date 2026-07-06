@@ -1,7 +1,7 @@
-import { defineConfig } from "oxlint"
+import { defineConfig } from "oxlint";
 
-import base from "./modules/base.ts"
+import base from "./modules/base.ts";
 
 export default defineConfig({
   extends: [base],
-})
+});
