@@ -1,7 +1,9 @@
-import { defineConfig } from "oxlint"
+import { defineConfig } from "vite-plus";
 
-import config from "./src/index.ts"
+import config from "./src/index.ts";
 
 export default defineConfig({
-  extends: [config],
-})
+  lint: {
+    extends: [config],
+  },
+});

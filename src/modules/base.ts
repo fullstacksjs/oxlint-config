@@ -1,4 +1,4 @@
-import { defineConfig } from "oxlint"
+import { defineConfig } from "oxlint";
 
 /**
  * reference: https://github.com/fullstacksjs/eslint-config/blob/main/src/modules/base.mjs
@@ -8,12 +8,12 @@ export default defineConfig({
     "accessor-pairs": "error",
     "array-callback-return": "error",
     "block-scoped-var": "error",
-    "complexity": ["error", 14],
+    complexity: ["error", 14],
     "constructor-super": "error",
     "default-case-last": "error",
     "default-case": "error",
     "default-param-last": "warn",
-    "eqeqeq": ["error", "smart"],
+    eqeqeq: ["error", "smart"],
     "for-direction": "error",
     "func-name-matching": "error",
     "func-names": "error",
@@ -178,14 +178,14 @@ export default defineConfig({
     "prefer-spread": "error",
     "prefer-template": "error",
     "prefer-promise-reject-errors": "warn",
-    "radix": "error",
+    radix: "error",
     "require-await": "error",
     "require-yield": "error",
     "symbol-description": "error",
     "use-isnan": "error",
     "valid-typeof": "error",
     "vars-on-top": "error",
-    "yoda": "error",
+    yoda: "error",
     "no-async-promise-executor": "warn",
     "grouped-accessor-pairs": "warn",
     "no-extra-boolean-cast": "warn",
@@ -233,4 +233,4 @@ export default defineConfig({
     // "strict": "error",
     // "require-atomic-updates": "warn",
   },
-})
+});
