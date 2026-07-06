@@ -1,4 +1,5 @@
 import { defineConfig } from "vite-plus";
+import config from "./src/index.ts";
 
 export default defineConfig({
   pack: {
@@ -8,10 +9,22 @@ export default defineConfig({
     "*": "vp check --fix",
   },
   lint: {
-    options: {
-      typeAware: true,
-      typeCheck: true,
-    },
+    extends: [config],
   },
-  fmt: {},
+  fmt: {
+    arrowParens: "always",
+    bracketSpacing: true,
+    endOfLine: "lf",
+    htmlWhitespaceSensitivity: "css",
+    bracketSameLine: false,
+    jsxSingleQuote: false,
+    printWidth: 140,
+    proseWrap: "always",
+    quoteProps: "consistent",
+    semi: true,
+    singleQuote: true,
+    tabWidth: 2,
+    trailingComma: "all",
+    useTabs: false,
+  },
 });
