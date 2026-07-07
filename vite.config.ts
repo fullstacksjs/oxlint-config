@@ -10,6 +10,9 @@ export default defineConfig({
   },
   lint: {
     extends: [defineOxlintConfig()],
+    rules: {
+      'max-lines-per-function': ['warn', 200],
+    },
   },
   fmt: {
     arrowParens: 'always',
