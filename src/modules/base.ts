@@ -19,7 +19,7 @@ export function base(ctx: Context): OxlintConfig {
       'guard-for-in': 'error',
       'max-depth': ['error', 4],
       'max-lines-per-function': ['warn', ctx.strictOr(100, 150)],
-      'max-lines': ['error', { max: ctx.strictOr(999, 2500), skipBlankLines: false, skipComments: false }],
+      'max-lines': ['error', { max: ctx.strictOr(500, 999), skipBlankLines: false, skipComments: false }],
       'max-nested-callbacks': ['error', 3],
       'max-params': ['error', ctx.strictOr(3, 4)],
       'max-statements': 'off', // readability is controlled by `max-lines-per-function`.
