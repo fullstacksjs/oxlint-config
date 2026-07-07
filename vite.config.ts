@@ -2,6 +2,10 @@ import { defineConfig } from 'vite-plus';
 import { defineOxlintConfig } from './src/index.ts';
 
 export default defineConfig({
+  test: {
+    include: ['tests/**/*.test.ts'],
+    exclude: ['**/node_modules/**', '.tmp/**'],
+  },
   pack: {
     exports: true,
   },
@@ -9,12 +13,14 @@ export default defineConfig({
     '*': 'vp check --fix',
   },
   lint: {
+    ignorePatterns: ['.tmp/**', 'tests/fixtures/**'],
     extends: [defineOxlintConfig()],
     rules: {
       'max-lines-per-function': ['warn', 200],
     },
   },
   fmt: {
+    ignorePatterns: ['.tmp/**', 'tests/fixtures/**'],
     arrowParens: 'always',
     bracketSpacing: true,
     endOfLine: 'lf',
