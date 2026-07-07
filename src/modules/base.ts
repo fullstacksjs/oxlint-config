@@ -1,9 +1,6 @@
 import { type OxlintConfig } from 'oxlint';
 import type { Context } from '../lib/Context.ts';
 
-/**
- * reference: https://github.com/fullstacksjs/eslint-config/blob/main/src/modules/base.mjs
- */
 export function base(ctx: Context): OxlintConfig {
   return {
     rules: {
