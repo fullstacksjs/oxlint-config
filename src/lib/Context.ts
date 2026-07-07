@@ -2,7 +2,10 @@ import type { Options } from '../index.ts';
 import { type AllowWarnDeny } from 'oxlint';
 
 export class Context {
-  constructor(public options: Options = {}) {}
+  options: Options;
+  constructor(options: Options) {
+    this.options = options ?? {};
+  }
 
   get isStrict() {
     return this.options.strict ?? false;
