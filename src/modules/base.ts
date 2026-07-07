@@ -92,15 +92,7 @@ export function base(ctx: Context): OxlintConfig {
       'no-unsafe-negation': 'error',
       'no-unsafe-optional-chaining': ctx.ts(),
       'no-unused-private-class-members': ctx.ts(),
-      'no-unused-vars': [
-        'error',
-        {
-          argsIgnorePattern: '^_',
-          varsIgnorePattern: '^ignore(d)?',
-          args: 'after-used',
-          ignoreRestSiblings: true,
-        },
-      ],
+      'no-unused-vars': ctx.ts(),
       'no-use-before-define': ctx.ts(),
       'no-useless-call': 'warn',
       'no-useless-catch': 'error',
