@@ -64,7 +64,7 @@ interface RawDiagnostic {
   severity: string;
   message: string;
   filename: string;
-  labels?: Array<{ span?: { line: number; column: number } }>;
+  labels?: { span?: { line: number; column: number } }[];
 }
 
 function isolateConfig(config: OxlintConfig): OxlintConfig {
