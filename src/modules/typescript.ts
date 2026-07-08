@@ -38,7 +38,7 @@ export function typescript(ctx: Context): OxlintConfig {
       'typescript/no-duplicate-enum-values': 'error',
       'typescript/no-dynamic-delete': 'error',
       'typescript/no-empty-object-type': ['warn', { allowInterfaces: 'with-single-extends' }],
-      'typescript/no-explicit-any': ctx.strict('warn'),
+      'typescript/no-explicit-any': ctx.typeAware(ctx.strict('warn')),
       'typescript/no-extra-non-null-assertion': 'error',
       'typescript/no-extraneous-class': ['warn', { allowWithDecorator: true }],
       'typescript/no-import-type-side-effects': 'warn',
@@ -52,12 +52,12 @@ export function typescript(ctx: Context): OxlintConfig {
       'typescript/no-require-imports': 'error',
       'typescript/no-this-alias': 'error',
       'typescript/no-unnecessary-type-constraint': 'warn',
-      'typescript/no-unsafe-argument': ctx.strict('warn'),
-      'typescript/no-unsafe-assignment': ctx.strict('warn'),
-      'typescript/no-unsafe-call': ctx.strict('warn'),
+      'typescript/no-unsafe-argument': ctx.typeAware(ctx.strict('warn')),
+      'typescript/no-unsafe-assignment': ctx.typeAware(ctx.strict('warn')),
+      'typescript/no-unsafe-call': ctx.typeAware(ctx.strict('warn')),
       'typescript/no-unsafe-declaration-merging': 'warn',
-      'typescript/no-unsafe-member-access': ctx.strict(['warn', { allowOptionalChaining: true }]),
-      'typescript/no-unsafe-return': ctx.strict('warn'),
+      'typescript/no-unsafe-member-access': ctx.typeAware(ctx.strict(['warn', { allowOptionalChaining: true }])),
+      'typescript/no-unsafe-return': ctx.typeAware(ctx.strict('warn')),
       'typescript/no-useless-default-assignment': 'warn',
       'typescript/no-useless-empty-export': 'warn',
       'typescript/parameter-properties': 'off',
@@ -82,7 +82,7 @@ export function typescript(ctx: Context): OxlintConfig {
 
       'typescript/triple-slash-reference': 'error',
       'typescript/unified-signatures': 'error',
-      ...(ctx.isProjectService && {
+      ...(ctx.isTypeAware && {
         'typescript/await-thenable': 'error',
         'typescript/consistent-return': 'off',
         'typescript/consistent-type-exports': 'warn',
@@ -157,10 +157,6 @@ export function typescript(ctx: Context): OxlintConfig {
         'typescript/switch-exhaustiveness-check': 'error',
         'typescript/unbound-method': ['error', { ignoreStatic: true }],
       }),
-
-      // Conflicts with typescript
-      'typescript/dot-notation': 'off',
-      'typescript/require-await': 'off',
 
       /* Unsupported */
       // 'typescript/camelcase': 'off',
