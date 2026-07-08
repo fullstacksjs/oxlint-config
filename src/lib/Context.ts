@@ -11,8 +11,8 @@ export class Context {
     return this.options.strict ?? false;
   }
 
-  get isProjectService() {
-    return this.options.typescript?.projectService ?? false;
+  get isTypeAware() {
+    return this.options.typeAware ?? false;
   }
 
   strictOr<CS, CL>(strict: CS, lax: CL): CS | CL {
@@ -21,8 +21,8 @@ export class Context {
   strict<C>(config: C) {
     return this.strictOr(config, 'off');
   }
-  projectService<C>(config: C) {
-    return this.isProjectService ? config : 'off';
+  typeAware<C>(config: C) {
+    return this.isTypeAware ? config : 'off';
   }
   ts(): AllowWarnDeny {
     return 'off';

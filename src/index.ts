@@ -6,9 +6,7 @@ import { typescript } from './modules/typescript.ts';
 
 export interface Options extends OxlintConfig {
   strict?: boolean;
-  typescript?: {
-    projectService?: boolean;
-  };
+  typeAware?: boolean;
 }
 
 export function defineConfig(options?: Options): OxlintConfig {
