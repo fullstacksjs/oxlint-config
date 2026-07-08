@@ -1,4 +1,4 @@
-import { type OxlintConfig } from 'oxlint';
+import type { OxlintConfig } from 'oxlint';
 import type { Context } from '../lib/Context.ts';
 
 export function base(ctx: Context): OxlintConfig {
