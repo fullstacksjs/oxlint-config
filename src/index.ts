@@ -3,6 +3,7 @@ import type { OxlintConfig } from 'oxlint';
 import { base } from './modules/base.ts';
 import { Context } from './lib/Context.ts';
 import { typescript } from './modules/typescript.ts';
+import { node } from './modules/node.ts';
 
 export interface Options extends OxlintConfig {
   strict?: boolean;
@@ -10,11 +11,11 @@ export interface Options extends OxlintConfig {
 }
 
 export function defineConfig(options?: Options): OxlintConfig {
-  const { strict, extends: extendsConfig = [], ...rest } = options || {};
+  const { extends: extendsConfig = [], ...rest } = options || {};
   const context = new Context(options);
 
   return {
-    extends: [base(context), typescript(context), ...extendsConfig],
+    extends: [base(context), typescript(context), node(context), ...extendsConfig],
     ...rest,
   };
 }
