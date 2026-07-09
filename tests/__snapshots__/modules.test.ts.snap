@@ -4322,6 +4322,228 @@ exports[`base > yoda 1`] = `
 ]
 `;
 
+exports[`imports > import/consistent-type-specifier-style 1`] = `
+[
+  {
+    "column": 13,
+    "line": 7,
+    "message": "A type-only import can specify a default import or named bindings, but not both.",
+    "rule": "TS(1363)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`imports > import/default 1`] = `
+[
+  {
+    "column": 1,
+    "line": 7,
+    "message": "Import statements must come first",
+    "rule": "import(first)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`imports > import/export 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Exporting mutable 'let' binding, use 'const' instead.",
+    "rule": "import(no-mutable-exports)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`imports > import/first 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Expected 1 empty line after import statement not followed by another import.",
+    "rule": "import(newline-after-import)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Import statements must come first",
+    "rule": "import(first)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`imports > import/named 1`] = `
+[
+  {
+    "column": 1,
+    "line": 10,
+    "message": "Import statements must come first",
+    "rule": "import(first)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`imports > import/namespace 1`] = `
+[
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Expected 1 empty line after import statement not followed by another import.",
+    "rule": "import(newline-after-import)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`imports > import/newline-after-import 1`] = `[]`;
+
+exports[`imports > import/no-absolute-path 1`] = `[]`;
+
+exports[`imports > import/no-amd 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Do not use AMD \`require\` and \`define\` calls.",
+    "rule": "import(no-amd)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`imports > import/no-cycle 1`] = `
+[
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Expected 1 empty line after import statement not followed by another import.",
+    "rule": "import(newline-after-import)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 8,
+    "message": "Import statements must come first",
+    "rule": "import(first)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 8,
+    "message": "Expected 1 empty line after import statement not followed by another import.",
+    "rule": "import(newline-after-import)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`imports > import/no-duplicates 1`] = `
+[
+  {
+    "column": 21,
+    "line": 3,
+    "message": "Module './module' is imported more than once in this file",
+    "rule": "import(no-duplicates)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`imports > import/no-empty-named-blocks 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Unexpected empty named \`import\` block.",
+    "rule": "import(no-empty-named-blocks)",
+    "severity": "error",
+  },
+  {
+    "column": 16,
+    "line": 3,
+    "message": "Module 'mod' is imported more than once in this file",
+    "rule": "import(no-duplicates)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Unexpected empty named \`import\` block.",
+    "rule": "import(no-empty-named-blocks)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`imports > import/no-mutable-exports 1`] = `[]`;
+
+exports[`imports > import/no-named-as-default 1`] = `[]`;
+
+exports[`imports > import/no-named-as-default-member 1`] = `
+[
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Expected 1 empty line after import statement not followed by another import.",
+    "rule": "import(newline-after-import)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`imports > import/no-named-default 1`] = `[]`;
+
+exports[`imports > import/no-self-import 1`] = `
+[
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Expected 1 empty line after import statement not followed by another import.",
+    "rule": "import(newline-after-import)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`imports > import/no-webpack-loader-syntax 1`] = `
+[
+  {
+    "column": 22,
+    "line": 3,
+    "message": "Unexpected \`!\` in \`my-loader!my-module\`.",
+    "rule": "import(no-webpack-loader-syntax)",
+    "severity": "error",
+  },
+  {
+    "column": 19,
+    "line": 4,
+    "message": "Unexpected \`!\` in \`style!css!./theme.css\`.",
+    "rule": "import(no-webpack-loader-syntax)",
+    "severity": "error",
+  },
+  {
+    "column": 24,
+    "line": 6,
+    "message": "Unexpected \`!\` in \`my-loader!./my-module\`.",
+    "rule": "import(no-webpack-loader-syntax)",
+    "severity": "error",
+  },
+  {
+    "column": 21,
+    "line": 7,
+    "message": "Unexpected \`!\` in \`style!css!./theme.css\`.",
+    "rule": "import(no-webpack-loader-syntax)",
+    "severity": "error",
+  },
+]
+`;
+
 exports[`node > node/global-require 1`] = `[]`;
 
 exports[`node > node/handle-callback-err 1`] = `

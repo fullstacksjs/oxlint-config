@@ -1,0 +1,73 @@
+import type { OxlintConfig } from 'oxlint';
+import type { Context } from '../lib/Context.ts';
+
+export function imports(ctx: Context): OxlintConfig {
+  return {
+    plugins: ['import'],
+    rules: {
+      'import/consistent-type-specifier-style': ['warn', 'prefer-top-level'],
+      'import/extensions': [
+        ctx.strict('error'),
+        'never',
+        {
+          ignorePackages: true,
+          pattern: {
+            js: 'never',
+            jsx: 'never',
+            mjs: 'never',
+            cjs: 'never',
+            ts: 'never',
+            tsx: 'never',
+            mts: 'never',
+            cts: 'never',
+          },
+        },
+      ],
+      'import/first': 'error',
+      'import/newline-after-import': 'warn',
+      'import/no-absolute-path': 'error',
+      'import/no-amd': 'error',
+      'import/no-duplicates': 'error',
+      'import/no-empty-named-blocks': 'error',
+      'import/no-mutable-exports': 'error',
+      'import/no-named-as-default': 'error',
+      'import/no-named-default': 'error',
+      'import/no-self-import': 'error',
+      'import/no-webpack-loader-syntax': 'error',
+      'import/default': 'error',
+      'import/export': 'error',
+      'import/named': 'error',
+      'import/namespace': 'error',
+      'import/no-cycle': 'error',
+      'import/no-named-as-default-member': 'error',
+      'import/exports-last': 'off',
+      'import/group-exports': 'off',
+      'import/max-dependencies': 'off',
+      'import/no-anonymous-default-export': 'off',
+      'import/no-commonjs': 'off',
+      'import/no-default-export': 'off',
+      'import/no-dynamic-require': 'off',
+      'import/no-named-export': 'off',
+      'import/no-namespace': 'off',
+      'import/no-nodejs-modules': 'off',
+      'import/no-relative-parent-imports': 'off',
+      'import/no-unassigned-import': 'off',
+      'import/prefer-default-export': 'off',
+      'import/unambiguous': 'off',
+
+      /* Unsupported */
+      // 'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+      // 'import/no-relative-packages': 'error',
+      // 'import/no-unresolved': ['error', { caseSensitiveStrict: true }],
+      // 'import/no-useless-path-segments': 'warn',
+      // 'import/order': 'off',
+      // 'import/no-deprecated': 'warn',
+      // 'import/dynamic-import-chunkname': 'off',
+      // 'import/no-import-module-exports': 'off',
+      // 'import/no-internal-modules': 'off',
+      // 'import/no-restricted-paths': 'off',
+      // 'import/no-unused-modules': 'off',
+      // 'import/no-unresolved': 'off',
+    },
+  };
+}
