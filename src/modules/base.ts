@@ -19,7 +19,14 @@ export function base(ctx: Context): OxlintConfig {
       'guard-for-in': 'error',
       'max-depth': ['error', 4],
       'max-lines-per-function': ['warn', ctx.strictOr(100, 150)],
-      'max-lines': ['error', { max: ctx.strictOr(500, 999), skipBlankLines: false, skipComments: false }],
+      'max-lines': [
+        'error',
+        {
+          max: ctx.strictOr(500, 999),
+          skipBlankLines: false,
+          skipComments: false,
+        },
+      ],
       'max-nested-callbacks': ['error', 3],
       'max-params': ['error', ctx.strictOr(3, 4)],
       'max-statements': 'off', // readability is controlled by `max-lines-per-function`.
@@ -132,7 +139,6 @@ export function base(ctx: Context): OxlintConfig {
       'no-unused-expressions': 'error',
       'no-unexpected-multiline': 'error',
       'no-useless-assignment': 'error',
-      'no-useless-backreference': 'error',
 
       /* Variables */
       'block-scoped-var': 'off', // we enforces block scoping with `no-var` and `prefer-const`.
@@ -152,11 +158,12 @@ export function base(ctx: Context): OxlintConfig {
       /* Regular Expressions */
       'no-control-regex': 'warn',
       'no-div-regex': 'error',
-      'no-invalid-regexp': 'error',
+      'no-invalid-regexp': ctx.regex(),
+      'no-useless-backreference': ctx.regex(),
       'no-misleading-character-class': ['error', { allowEscape: true }],
       'no-regex-spaces': 'error',
       'prefer-regex-literals': ['warn', { disallowRedundantWrapping: true }],
-      'no-empty-character-class': 'error',
+      'no-empty-character-class': ctx.regex(),
 
       /* Unsupported */
       // 'no-restricted-syntax': ['error', 'WithStatement'],

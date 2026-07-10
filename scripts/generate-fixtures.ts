@@ -91,8 +91,8 @@ function extractIncorrect(doc: string[]): Example[] {
       buf = [];
       continue;
     }
-    if (/incorrect[^`]*\bcode\b/i.test(line)) mode = 'incorrect';
-    else if (/\bcorrect[^`]*\bcode\b/i.test(line)) mode = 'correct';
+    if (/incorrect[^`]+\bcode\b/i.test(line)) mode = 'incorrect';
+    else if (/\bcorrect[^`]+\bcode\b/i.test(line)) mode = 'correct';
   }
   return out;
 }
