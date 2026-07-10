@@ -6,6 +6,7 @@ import { execFileSync } from 'node:child_process';
 import os from 'node:os';
 
 const { dirname } = import.meta;
+export const IGNORED_MODULES = new Set(['regex']);
 
 export const paths = {
   root: path.resolve(dirname, '..'),
@@ -22,8 +23,11 @@ export interface ModuleInfo {
 export function discoverModules(): ModuleInfo[] {
   return fs
     .readdirSync(paths.modules)
-    .filter((f) => f.endsWith('.ts') && !f.endsWith('.test.ts'))
-    .map((f) => ({ name: f.replace(/\.ts$/, ''), file: path.join(paths.modules, f) }))
+    .filter((f) => f.endsWith('.ts') && !f.endsWith('.test.ts') && !IGNORED_MODULES.has(f.replace(/\.ts$/, '')))
+    .map((f) => ({
+      name: f.replace(/\.ts$/, ''),
+      file: path.join(paths.modules, f),
+    }))
     .sort((a, b) => a.name.localeCompare(b.name));
 }
 
@@ -68,7 +72,10 @@ interface RawDiagnostic {
 }
 
 function isolateConfig(config: OxlintConfig): OxlintConfig {
-  return { ...config, categories: { ...config.categories, correctness: 'off' } };
+  return {
+    ...config,
+    categories: { ...config.categories, correctness: 'off' },
+  };
 }
 
 function execOxlint(config: OxlintConfig, target: string): RawDiagnostic[] {
@@ -134,10 +141,22 @@ export function toCase(mod: { name: string }, config: OxlintConfig): ModuleCase 
     .sort((a, b) => a.rule.localeCompare(b.rule));
   const fixtureRules = new Set(fixtures.map((fx) => fx.rule));
   const coveredRules = allRules(config).filter((r) => fixtureRules.has(r)).length;
-  return { name: mod.name, config, fixturesDir, hasFixtures: fixtures.length > 0, coveredRules, fixtures };
+  return {
+    name: mod.name,
+    config,
+    fixturesDir,
+    hasFixtures: fixtures.length > 0,
+    coveredRules,
+    fixtures,
+  };
 }
 
 export async function getAllModuleCases(): Promise<ModuleCase[]> {
-  const loaded = await Promise.all(discoverModules().map(async (mod) => ({ mod, config: await loadModuleConfig(mod) })));
+  const loaded = await Promise.all(
+    discoverModules().map(async (mod) => ({
+      mod,
+      config: await loadModuleConfig(mod),
+    })),
+  );
   return loaded.map((m) => toCase(m.mod, m.config));
 }

@@ -31,7 +31,9 @@
     "prepublishOnly": "vp run build",
     "generate:fixtures": "node --experimental-transform-types scripts/generate-fixtures.ts"
   },
-  "dependencies": {},
+  "dependencies": {
+    "eslint-plugin-regexp": "3.1.1"
+  },
   "devDependencies": {
     "@types/node": "25.6.2",
     "bumpp": "11.1.0",

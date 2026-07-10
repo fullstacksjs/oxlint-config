@@ -3,6 +3,7 @@ import type { OxlintConfig } from 'oxlint';
 import { base } from './modules/base.ts';
 import { Context } from './lib/Context.ts';
 import { typescript } from './modules/typescript.ts';
+import { regex } from './modules/regex.ts';
 import { node } from './modules/node.ts';
 import { imports } from './modules/imports.ts';
 
@@ -16,7 +17,7 @@ export function defineConfig(options?: Options): OxlintConfig {
   const context = new Context(options);
 
   return {
-    extends: [base(context), typescript(context), node(context), imports(context), ...extendsConfig],
+extends: [base(context), typescript(context), imports(context), regex(context), node(context), ...extendsConfig],
     ...rest,
   };
 }
