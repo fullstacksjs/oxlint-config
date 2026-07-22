@@ -1049,25 +1049,6 @@ exports[`base > no-empty 1`] = `
 ]
 `;
 
-exports[`base > no-empty-character-class 1`] = `
-[
-  {
-    "column": 1,
-    "line": 3,
-    "message": "Unexpected var, use let or const instead.",
-    "rule": "eslint(no-var)",
-    "severity": "error",
-  },
-  {
-    "column": 16,
-    "line": 3,
-    "message": "Empty character class will not match anything",
-    "rule": "eslint(no-empty-character-class)",
-    "severity": "error",
-  },
-]
-`;
-
 exports[`base > no-empty-pattern 1`] = `
 [
   {
@@ -1353,60 +1334,6 @@ exports[`base > no-inner-declarations 1`] = `
     "line": 4,
     "message": "Variable or \`function\` declarations are not allowed in nested blocks",
     "rule": "eslint(no-inner-declarations)",
-    "severity": "error",
-  },
-]
-`;
-
-exports[`base > no-invalid-regexp 1`] = `
-[
-  {
-    "column": 1,
-    "line": 3,
-    "message": "Use a regular expression literal instead of the \`RegExp\` constructor.",
-    "rule": "eslint(prefer-regex-literals)",
-    "severity": "warning",
-  },
-  {
-    "column": 9,
-    "line": 3,
-    "message": "Invalid regular expression: Unterminated character class",
-    "rule": "eslint(no-invalid-regexp)",
-    "severity": "error",
-  },
-  {
-    "column": 1,
-    "line": 4,
-    "message": "Use a regular expression literal instead of the \`RegExp\` constructor.",
-    "rule": "eslint(prefer-regex-literals)",
-    "severity": "warning",
-  },
-  {
-    "column": 14,
-    "line": 4,
-    "message": "Invalid regular expression: Unknown flag",
-    "rule": "eslint(no-invalid-regexp)",
-    "severity": "error",
-  },
-  {
-    "column": 1,
-    "line": 5,
-    "message": "Do not use 'new' for side effects.",
-    "rule": "eslint(no-new)",
-    "severity": "error",
-  },
-  {
-    "column": 1,
-    "line": 5,
-    "message": "Use a regular expression literal instead of the \`RegExp\` constructor.",
-    "rule": "eslint(prefer-regex-literals)",
-    "severity": "warning",
-  },
-  {
-    "column": 13,
-    "line": 5,
-    "message": "Invalid regular expression: Invalid extended atom escape",
-    "rule": "eslint(no-invalid-regexp)",
     "severity": "error",
   },
 ]
@@ -3017,74 +2944,6 @@ exports[`base > no-useless-assignment 1`] = `
 ]
 `;
 
-exports[`base > no-useless-backreference 1`] = `
-[
-  {
-    "column": 1,
-    "line": 3,
-    "message": "Expected expression to be used",
-    "rule": "eslint(no-unused-expressions)",
-    "severity": "error",
-  },
-  {
-    "column": 2,
-    "line": 3,
-    "message": "Backreference '\\1' will be ignored. It references group '(a)' which appears before in the same lookbehind.",
-    "rule": "eslint(no-useless-backreference)",
-    "severity": "error",
-  },
-  {
-    "column": 1,
-    "line": 4,
-    "message": "Expected expression to be used",
-    "rule": "eslint(no-unused-expressions)",
-    "severity": "error",
-  },
-  {
-    "column": 5,
-    "line": 4,
-    "message": "Backreference '\\1' will be ignored. It references group '(a|\\1b)' from within that group.",
-    "rule": "eslint(no-useless-backreference)",
-    "severity": "error",
-  },
-  {
-    "column": 1,
-    "line": 5,
-    "message": "Expected expression to be used",
-    "rule": "eslint(no-unused-expressions)",
-    "severity": "error",
-  },
-  {
-    "column": 1,
-    "line": 6,
-    "message": "Expected expression to be used",
-    "rule": "eslint(no-unused-expressions)",
-    "severity": "error",
-  },
-  {
-    "column": 2,
-    "line": 6,
-    "message": "Backreference '\\1' will be ignored. It references group '(a)' which appears before in the same lookbehind.",
-    "rule": "eslint(no-useless-backreference)",
-    "severity": "error",
-  },
-  {
-    "column": 1,
-    "line": 7,
-    "message": "Expected expression to be used",
-    "rule": "eslint(no-unused-expressions)",
-    "severity": "error",
-  },
-  {
-    "column": 4,
-    "line": 7,
-    "message": "Backreference '\\1' will be ignored. It references group '(a\\1)' from within that group.",
-    "rule": "eslint(no-useless-backreference)",
-    "severity": "error",
-  },
-]
-`;
-
 exports[`base > no-useless-call 1`] = `
 [
   {
@@ -4645,6 +4504,422 @@ exports[`node > node/no-process-env 1`] = `
   },
 ]
 `;
+
+exports[`react > react/display-name 1`] = `
+[
+  {
+    "column": 7,
+    "line": 3,
+    "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
+    "rule": "react(only-export-components)",
+    "severity": "warning",
+  },
+  {
+    "column": 28,
+    "line": 3,
+    "message": "\`React\` must be in scope when using JSX.",
+    "rule": "react(react-in-jsx-scope)",
+    "severity": "error",
+  },
+  {
+    "column": 32,
+    "line": 3,
+    "message": "Disallow literal text as JSX children",
+    "rule": "react(jsx-no-literals)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`react > react/exhaustive-deps 1`] = `[]`;
+
+exports[`react > react/jsx-key 1`] = `
+[
+  {
+    "column": 11,
+    "line": 3,
+    "message": "Missing "key" prop for element in iterator.",
+    "rule": "react(jsx-key)",
+    "severity": "error",
+  },
+  {
+    "column": 21,
+    "line": 3,
+    "message": "'App' is not defined.",
+    "rule": "react(jsx-no-undef)",
+    "severity": "error",
+  },
+  {
+    "column": 21,
+    "line": 3,
+    "message": "\`React\` must be in scope when using JSX.",
+    "rule": "react(react-in-jsx-scope)",
+    "severity": "error",
+  },
+  {
+    "column": 12,
+    "line": 4,
+    "message": "Missing "key" prop for element in iterator.",
+    "rule": "react(jsx-key)",
+    "severity": "error",
+  },
+  {
+    "column": 22,
+    "line": 4,
+    "message": "'ListItem' is not defined.",
+    "rule": "react(jsx-no-undef)",
+    "severity": "error",
+  },
+  {
+    "column": 22,
+    "line": 4,
+    "message": "\`React\` must be in scope when using JSX.",
+    "rule": "react(react-in-jsx-scope)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`react > react/jsx-no-comment-textnodes 1`] = `[]`;
+
+exports[`react > react/jsx-no-duplicate-props 1`] = `
+[
+  {
+    "column": 2,
+    "line": 3,
+    "message": "'App' is not defined.",
+    "rule": "react(jsx-no-undef)",
+    "severity": "error",
+  },
+  {
+    "column": 2,
+    "line": 3,
+    "message": "\`React\` must be in scope when using JSX.",
+    "rule": "react(react-in-jsx-scope)",
+    "severity": "error",
+  },
+  {
+    "column": 6,
+    "line": 3,
+    "message": "No duplicate props allowed. The prop "a" is duplicated.",
+    "rule": "react(jsx-no-duplicate-props)",
+    "severity": "error",
+  },
+  {
+    "column": 2,
+    "line": 4,
+    "message": "'App' is not defined.",
+    "rule": "react(jsx-no-undef)",
+    "severity": "error",
+  },
+  {
+    "column": 2,
+    "line": 4,
+    "message": "\`React\` must be in scope when using JSX.",
+    "rule": "react(react-in-jsx-scope)",
+    "severity": "error",
+  },
+  {
+    "column": 6,
+    "line": 4,
+    "message": "No duplicate props allowed. The prop "foo" is duplicated.",
+    "rule": "react(jsx-no-duplicate-props)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`react > react/jsx-no-target-blank 1`] = `
+[
+  {
+    "column": 14,
+    "line": 3,
+    "message": "\`React\` must be in scope when using JSX.",
+    "rule": "react(react-in-jsx-scope)",
+    "severity": "error",
+  },
+  {
+    "column": 23,
+    "line": 3,
+    "message": "Using target=\`_blank\` without rel=\`noreferrer\` (which implies rel=\`noopener\`) is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations",
+    "rule": "react(jsx-no-target-blank)",
+    "severity": "warning",
+  },
+  {
+    "column": 60,
+    "line": 3,
+    "message": "Unnecessary closing tag",
+    "rule": "react(self-closing-comp)",
+    "severity": "warning",
+  },
+  {
+    "column": 14,
+    "line": 4,
+    "message": "\`React\` must be in scope when using JSX.",
+    "rule": "react(react-in-jsx-scope)",
+    "severity": "error",
+  },
+  {
+    "column": 23,
+    "line": 4,
+    "message": "Using target=\`_blank\` without rel=\`noreferrer\` (which implies rel=\`noopener\`) is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations",
+    "rule": "react(jsx-no-target-blank)",
+    "severity": "warning",
+  },
+  {
+    "column": 51,
+    "line": 4,
+    "message": "Unnecessary closing tag",
+    "rule": "react(self-closing-comp)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`react > react/jsx-no-undef 1`] = `
+[
+  {
+    "column": 7,
+    "line": 3,
+    "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
+    "rule": "react(only-export-components)",
+    "severity": "warning",
+  },
+  {
+    "column": 18,
+    "line": 3,
+    "message": "'App' is not defined.",
+    "rule": "react(jsx-no-undef)",
+    "severity": "error",
+  },
+  {
+    "column": 18,
+    "line": 3,
+    "message": "\`React\` must be in scope when using JSX.",
+    "rule": "react(react-in-jsx-scope)",
+    "severity": "error",
+  },
+  {
+    "column": 12,
+    "line": 4,
+    "message": "'B' is not defined.",
+    "rule": "react(jsx-no-undef)",
+    "severity": "error",
+  },
+  {
+    "column": 12,
+    "line": 4,
+    "message": "\`React\` must be in scope when using JSX.",
+    "rule": "react(react-in-jsx-scope)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`react > react/no-children-prop 1`] = `[]`;
+
+exports[`react > react/no-danger-with-children 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Only set one of \`children\` or \`props.dangerouslySetInnerHTML\`",
+    "rule": "react(no-danger-with-children)",
+    "severity": "error",
+  },
+  {
+    "column": 2,
+    "line": 3,
+    "message": "\`React\` must be in scope when using JSX.",
+    "rule": "react(react-in-jsx-scope)",
+    "severity": "error",
+  },
+  {
+    "column": 6,
+    "line": 3,
+    "message": "Do not use \`dangerouslySetInnerHTML\` prop",
+    "rule": "react(no-danger)",
+    "severity": "warning",
+  },
+  {
+    "column": 51,
+    "line": 3,
+    "message": "Disallow literal text as JSX children",
+    "rule": "react(jsx-no-literals)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Only set one of \`children\` or \`props.dangerouslySetInnerHTML\`",
+    "rule": "react(no-danger-with-children)",
+    "severity": "error",
+  },
+  {
+    "column": 7,
+    "line": 6,
+    "message": "Do not use \`dangerouslySetInnerHTML\` prop",
+    "rule": "react(no-danger)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`react > react/no-unknown-property 1`] = `
+[
+  {
+    "column": 16,
+    "line": 4,
+    "message": "\`React\` must be in scope when using JSX.",
+    "rule": "react(react-in-jsx-scope)",
+    "severity": "error",
+  },
+  {
+    "column": 20,
+    "line": 4,
+    "message": "Unknown property found",
+    "rule": "react(no-unknown-property)",
+    "severity": "warning",
+  },
+  {
+    "column": 34,
+    "line": 4,
+    "message": "Disallow literal text as JSX children",
+    "rule": "react(jsx-no-literals)",
+    "severity": "warning",
+  },
+  {
+    "column": 19,
+    "line": 5,
+    "message": "\`React\` must be in scope when using JSX.",
+    "rule": "react(react-in-jsx-scope)",
+    "severity": "error",
+  },
+  {
+    "column": 23,
+    "line": 5,
+    "message": "Unknown property found",
+    "rule": "react(no-unknown-property)",
+    "severity": "warning",
+  },
+  {
+    "column": 39,
+    "line": 5,
+    "message": "Disallow literal text as JSX children",
+    "rule": "react(jsx-no-literals)",
+    "severity": "warning",
+  },
+  {
+    "column": 21,
+    "line": 8,
+    "message": "\`React\` must be in scope when using JSX.",
+    "rule": "react(react-in-jsx-scope)",
+    "severity": "error",
+  },
+  {
+    "column": 25,
+    "line": 8,
+    "message": "Unknown property found",
+    "rule": "react(no-unknown-property)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`react > react/no-unsafe 1`] = `
+[
+  {
+    "column": 7,
+    "line": 4,
+    "message": "Class component should be written as a function component.",
+    "rule": "react(prefer-function-component)",
+    "severity": "warning",
+  },
+  {
+    "column": 3,
+    "line": 5,
+    "message": "Unsafe lifecycle method \`UNSAFE_componentWillMount\` is not allowed",
+    "rule": "react(no-unsafe)",
+    "severity": "error",
+  },
+  {
+    "column": 3,
+    "line": 6,
+    "message": "Unsafe lifecycle method \`UNSAFE_componentWillReceiveProps\` is not allowed",
+    "rule": "react(no-unsafe)",
+    "severity": "error",
+  },
+  {
+    "column": 3,
+    "line": 7,
+    "message": "Unsafe lifecycle method \`UNSAFE_componentWillUpdate\` is not allowed",
+    "rule": "react(no-unsafe)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 11,
+    "message": "Declare only one React component per file. Found: Bar",
+    "rule": "react(no-multi-comp)",
+    "severity": "warning",
+  },
+  {
+    "column": 7,
+    "line": 11,
+    "message": "Class component should be written as a function component.",
+    "rule": "react(prefer-function-component)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`react > react/react-in-jsx-scope 1`] = `
+[
+  {
+    "column": 12,
+    "line": 3,
+    "message": "\`React\` must be in scope when using JSX.",
+    "rule": "react(react-in-jsx-scope)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`react > react/require-render-return 1`] = `[]`;
+
+exports[`react > react/rules-of-hooks 1`] = `
+[
+  {
+    "column": 31,
+    "line": 6,
+    "message": "React Hook "useState" is called conditionally. React Hooks must be called in the exact same order in every component render.",
+    "rule": "react-hooks(rules-of-hooks)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 10,
+    "message": "React Hook "useEffect" may be executed more than once. Possibly because it is called in a loop. React Hooks must be called in the exact same order in every component render.",
+    "rule": "react-hooks(rules-of-hooks)",
+    "severity": "error",
+  },
+  {
+    "column": 29,
+    "line": 16,
+    "message": "React Hook "useState" is called in function "regularFunction" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".",
+    "rule": "react-hooks(rules-of-hooks)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`react > react-perf/jsx-no-jsx-as-prop 1`] = `[]`;
+
+exports[`react > react-perf/jsx-no-new-array-as-prop 1`] = `[]`;
+
+exports[`react > react-perf/jsx-no-new-function-as-prop 1`] = `[]`;
+
+exports[`react > react-perf/jsx-no-new-object-as-prop 1`] = `[]`;
 
 exports[`typescript > typescript/adjacent-overload-signatures 1`] = `
 [

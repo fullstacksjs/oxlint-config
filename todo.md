@@ -7,5 +7,5 @@ done: ✅ in progress: 🚧 Not Started: ❌
 3. typescript ✅
 4. import ✅
 5. regex ✅
-6. node ❌
-7. react ❌
+6. node ✅
+7. react ✅
