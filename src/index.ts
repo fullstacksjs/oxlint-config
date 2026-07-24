@@ -10,6 +10,7 @@ import { react } from './modules/react.ts';
 import { promise } from './modules/promise.ts';
 import { vitest } from './modules/vitest.ts';
 import { jest } from './modules/jest.ts';
+import { next } from './modules/next.ts';
 
 export interface Options extends OxlintConfig {
   strict?: boolean;
@@ -31,6 +32,7 @@ export function defineConfig(options?: Options): OxlintConfig {
       promise(context),
       vitest(context),
       jest(context),
+      next(context),
       ...extendsConfig,
     ],
     ...rest,
