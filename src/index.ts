@@ -8,6 +8,7 @@ import { node } from './modules/node.ts';
 import { imports } from './modules/imports.ts';
 import { react } from './modules/react.ts';
 import { promise } from './modules/promise.ts';
+import { vitest } from './modules/vitest.ts';
 
 export interface Options extends OxlintConfig {
   strict?: boolean;
@@ -27,6 +28,7 @@ export function defineConfig(options?: Options): OxlintConfig {
       node(context),
       react(context),
       promise(context),
+      vitest(context),
       ...extendsConfig,
     ],
     ...rest,
