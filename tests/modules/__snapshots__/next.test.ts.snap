@@ -14,7 +14,7 @@ exports[`next > should lint 'nextjs/google-font-display' 1`] = `
     "line": 8,
     "message": "A font-display parameter is missing (adding \`&display=optional\` is recommended).",
     "rule": "next(google-font-display)",
-    "severity": "warning",
+    "severity": "error",
   },
 ]
 `;
@@ -36,7 +36,7 @@ exports[`next > should lint 'nextjs/no-before-interactive-script-o…' 1`] = `
     "line": 11,
     "message": "next/script's \`beforeInteractive\` strategy should not be used outside of \`pages/_document.js\`",
     "rule": "next(no-before-interactive-script-outside-document)",
-    "severity": "warning",
+    "severity": "error",
   },
 ]
 `;
@@ -50,7 +50,7 @@ exports[`next > should lint 'nextjs/no-document-import-in-page' 1`] = `
     "line": 4,
     "message": "\`<Document />\` from \`next/document\` should not be imported outside of \`pages/_document.js\`. See: https://nextjs.org/docs/messages/no-document-import-in-page",
     "rule": "next(no-document-import-in-page)",
-    "severity": "warning",
+    "severity": "error",
   },
 ]
 `;
@@ -62,14 +62,14 @@ exports[`next > should lint 'nextjs/no-duplicate-head' 1`] = `
     "line": 3,
     "message": "\`<Document />\` from \`next/document\` should not be imported outside of \`pages/_document.js\`. See: https://nextjs.org/docs/messages/no-document-import-in-page",
     "rule": "next(no-document-import-in-page)",
-    "severity": "warning",
+    "severity": "error",
   },
   {
     "column": 10,
     "line": 10,
     "message": "Do not include multiple instances of \`<Head/>\`",
     "rule": "next(no-duplicate-head)",
-    "severity": "warning",
+    "severity": "error",
   },
 ]
 `;
@@ -81,7 +81,7 @@ exports[`next > should lint 'nextjs/no-head-element' 1`] = `
     "line": 6,
     "message": "Do not use \`<head>\` element. Use \`<Head />\` from \`next/head\` instead.",
     "rule": "next(no-head-element)",
-    "severity": "warning",
+    "severity": "error",
   },
 ]
 `;
@@ -93,7 +93,7 @@ exports[`next > should lint 'nextjs/no-head-import-in-document' 1`] = `
     "line": 3,
     "message": "\`<Document />\` from \`next/document\` should not be imported outside of \`pages/_document.js\`. See: https://nextjs.org/docs/messages/no-document-import-in-page",
     "rule": "next(no-document-import-in-page)",
-    "severity": "warning",
+    "severity": "error",
   },
 ]
 `;
@@ -138,7 +138,7 @@ exports[`next > should lint 'nextjs/no-script-component-in-head' 1`] = `
     "line": 8,
     "message": "Prevent usage of \`next/script\` in \`next/head\` component.",
     "rule": "next(no-script-component-in-head)",
-    "severity": "warning",
+    "severity": "error",
   },
 ]
 `;
