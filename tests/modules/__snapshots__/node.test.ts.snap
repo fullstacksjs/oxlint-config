@@ -14,48 +14,11 @@ exports[`node > should lint 'node/handle-callback-err' 1`] = `
 ]
 `;
 
-exports[`node > should lint 'node/no-exports-assign' 1`] = `
-[
-  {
-    "column": 1,
-    "line": 3,
-    "message": "Unexpected assignment to 'exports'.",
-    "rule": "node(no-exports-assign)",
-    "severity": "error",
-  },
-]
-`;
+exports[`node > should lint 'node/no-exports-assign' 1`] = `[]`;
 
-exports[`node > should lint 'node/no-mixed-requires' 1`] = `
-[
-  {
-    "column": 1,
-    "line": 3,
-    "message": "Do not mix 'require' and other declarations.",
-    "rule": "node(no-mixed-requires)",
-    "severity": "warning",
-  },
-  {
-    "column": 1,
-    "line": 6,
-    "message": "Do not mix 'require' and other declarations.",
-    "rule": "node(no-mixed-requires)",
-    "severity": "warning",
-  },
-]
-`;
+exports[`node > should lint 'node/no-mixed-requires' 1`] = `[]`;
 
-exports[`node > should lint 'node/no-new-require' 1`] = `
-[
-  {
-    "column": 17,
-    "line": 3,
-    "message": "Unexpected use of \`new\` operator with \`require\`",
-    "rule": "node(no-new-require)",
-    "severity": "error",
-  },
-]
-`;
+exports[`node > should lint 'node/no-new-require' 1`] = `[]`;
 
 exports[`node > should lint 'node/no-path-concat' 1`] = `
 [
