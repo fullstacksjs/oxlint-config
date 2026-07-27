@@ -1,0 +1,103 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`node > node/global-require 1`] = `[]`;
+
+exports[`node > node/handle-callback-err 1`] = `
+[
+  {
+    "column": 20,
+    "line": 3,
+    "message": "Expected error to be handled.",
+    "rule": "node(handle-callback-err)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`node > node/no-exports-assign 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Unexpected assignment to 'exports'.",
+    "rule": "node(no-exports-assign)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`node > node/no-mixed-requires 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Do not mix 'require' and other declarations.",
+    "rule": "node(no-mixed-requires)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 6,
+    "message": "Do not mix 'require' and other declarations.",
+    "rule": "node(no-mixed-requires)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`node > node/no-new-require 1`] = `
+[
+  {
+    "column": 17,
+    "line": 3,
+    "message": "Unexpected use of \`new\` operator with \`require\`",
+    "rule": "node(no-new-require)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`node > node/no-path-concat 1`] = `
+[
+  {
+    "column": 19,
+    "line": 3,
+    "message": "Use \`path.join()\` or \`path.resolve()\` instead of string concatenation",
+    "rule": "node(no-path-concat)",
+    "severity": "error",
+  },
+  {
+    "column": 19,
+    "line": 4,
+    "message": "Use \`path.join()\` or \`path.resolve()\` instead of string concatenation",
+    "rule": "node(no-path-concat)",
+    "severity": "error",
+  },
+  {
+    "column": 19,
+    "line": 5,
+    "message": "Use \`path.join()\` or \`path.resolve()\` instead of string concatenation",
+    "rule": "node(no-path-concat)",
+    "severity": "error",
+  },
+  {
+    "column": 19,
+    "line": 6,
+    "message": "Use \`path.join()\` or \`path.resolve()\` instead of string concatenation",
+    "rule": "node(no-path-concat)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`node > node/no-process-env 1`] = `
+[
+  {
+    "column": 4,
+    "line": 3,
+    "message": "Disallowed usage of \`process.env\`.",
+    "rule": "node(no-process-env)",
+    "severity": "error",
+  },
+]
+`;
