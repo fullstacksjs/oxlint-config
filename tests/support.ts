@@ -151,6 +151,12 @@ export function toCase(mod: { name: string }, config: OxlintConfig): ModuleCase 
   };
 }
 
+export async function getModuleCase(name: string): Promise<ModuleCase> {
+  const mod = discoverModules().find((m) => m.name === name);
+  if (!mod) throw new Error(`Unknown module "${name}". Is it missing from src/modules or listed in IGNORED_MODULES?`);
+  return toCase(mod, await loadModuleConfig(mod));
+}
+
 export async function getAllModuleCases(): Promise<ModuleCase[]> {
   const loaded = await Promise.all(
     discoverModules().map(async (mod) => ({

@@ -1,0 +1,24 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`jest > jest/no-alias-methods 1`] = `[]`;
+
+exports[`jest > jest/no-done-callback 1`] = `
+[
+  {
+    "column": 1,
+    "line": 7,
+    "message": "Enforce \`test\` and \`it\` usage conventions",
+    "rule": "jest(consistent-test-it)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 11,
+    "message": "Enforce \`test\` and \`it\` usage conventions",
+    "rule": "jest(consistent-test-it)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`jest > jest/no-export 1`] = `[]`;
