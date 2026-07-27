@@ -8,6 +8,10 @@ export class Context {
     this.options = options ?? {};
   }
 
+  get isEsm() {
+    return this.options.esm ?? true;
+  }
+
   get isStrict() {
     return this.options.strict ?? false;
   }
@@ -22,6 +26,10 @@ export class Context {
 
   strict<C>(config: C) {
     return this.strictOr(config, 'off');
+  }
+
+  esm(config: AllowWarnDeny): AllowWarnDeny {
+    return this.isEsm ? config : 'off';
   }
 
   typeAware<C>(config: C) {

@@ -14,6 +14,7 @@ import { next } from './modules/next.ts';
 
 export interface Options extends OxlintConfig {
   strict?: boolean;
+  esm?: boolean;
   typeAware?: boolean;
 }
 
