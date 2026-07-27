@@ -1,8 +1,8 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`node > should lint { rule: 'node/global-require', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/node/node__global-require.ts' } 1`] = `[]`;
+exports[`node > should lint 'node/global-require' 1`] = `[]`;
 
-exports[`node > should lint { rule: 'node/handle-callback-err', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/node/node__handle-callback-err.ts' } 1`] = `
+exports[`node > should lint 'node/handle-callback-err' 1`] = `
 [
   {
     "column": 20,
@@ -14,7 +14,7 @@ exports[`node > should lint { rule: 'node/handle-callback-err', file: '/home/ski
 ]
 `;
 
-exports[`node > should lint { rule: 'node/no-exports-assign', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/node/node__no-exports-assign.ts' } 1`] = `
+exports[`node > should lint 'node/no-exports-assign' 1`] = `
 [
   {
     "column": 1,
@@ -26,7 +26,7 @@ exports[`node > should lint { rule: 'node/no-exports-assign', file: '/home/skill
 ]
 `;
 
-exports[`node > should lint { rule: 'node/no-mixed-requires', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/node/node__no-mixed-requires.ts' } 1`] = `
+exports[`node > should lint 'node/no-mixed-requires' 1`] = `
 [
   {
     "column": 1,
@@ -45,7 +45,7 @@ exports[`node > should lint { rule: 'node/no-mixed-requires', file: '/home/skill
 ]
 `;
 
-exports[`node > should lint { rule: 'node/no-new-require', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/node/node__no-new-require.ts' } 1`] = `
+exports[`node > should lint 'node/no-new-require' 1`] = `
 [
   {
     "column": 17,
@@ -57,7 +57,7 @@ exports[`node > should lint { rule: 'node/no-new-require', file: '/home/skill/de
 ]
 `;
 
-exports[`node > should lint { rule: 'node/no-path-concat', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/node/node__no-path-concat.ts' } 1`] = `
+exports[`node > should lint 'node/no-path-concat' 1`] = `
 [
   {
     "column": 19,
@@ -90,7 +90,7 @@ exports[`node > should lint { rule: 'node/no-path-concat', file: '/home/skill/de
 ]
 `;
 
-exports[`node > should lint { rule: 'node/no-process-env', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/node/node__no-process-env.ts' } 1`] = `
+exports[`node > should lint 'node/no-process-env' 1`] = `
 [
   {
     "column": 4,
