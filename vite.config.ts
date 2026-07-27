@@ -20,7 +20,7 @@ export default defineConfig({
     },
   },
   fmt: {
-    ignorePatterns: ['.tmp/**', 'tests/fixtures/**'],
+    ignorePatterns: ['.tmp/**', 'tests/fixtures/**', 'AGENTS.md'],
     arrowParens: 'always',
     bracketSpacing: true,
     endOfLine: 'lf',
