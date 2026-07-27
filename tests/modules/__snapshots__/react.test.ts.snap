@@ -14,13 +14,6 @@ exports[`react > should lint 'react/display-name' 1`] = `
     "severity": "warning",
   },
   {
-    "column": 28,
-    "line": 3,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
     "column": 32,
     "line": 3,
     "message": "Disallow literal text as JSX children",
@@ -63,32 +56,11 @@ exports[`react > should lint 'react/iframe-missing-sandbox' 1`] = `
     "severity": "warning",
   },
   {
-    "column": 2,
-    "line": 3,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
-    "column": 2,
-    "line": 4,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
     "column": 17,
     "line": 4,
     "message": "An iframe element defines a sandbox attribute with invalid value: invalid-value",
     "rule": "react(iframe-missing-sandbox)",
     "severity": "warning",
-  },
-  {
-    "column": 2,
-    "line": 5,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
   },
   {
     "column": 17,
@@ -105,39 +77,11 @@ exports[`react > should lint 'react/jsx-boolean-value' 1`] = `[]`;
 exports[`react > should lint 'react/jsx-curly-brace-presence' 1`] = `
 [
   {
-    "column": 2,
-    "line": 3,
-    "message": "'App' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 2,
-    "line": 3,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
     "column": 6,
     "line": 3,
     "message": "Disallow literal text as JSX children",
     "rule": "react(jsx-no-literals)",
     "severity": "warning",
-  },
-  {
-    "column": 2,
-    "line": 4,
-    "message": "'App' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 2,
-    "line": 4,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
   },
   {
     "column": 26,
@@ -147,39 +91,11 @@ exports[`react > should lint 'react/jsx-curly-brace-presence' 1`] = `
     "severity": "warning",
   },
   {
-    "column": 2,
-    "line": 6,
-    "message": "'App' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 2,
-    "line": 6,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
     "column": 7,
     "line": 6,
     "message": "Curly braces are unnecessary here.",
     "rule": "react(jsx-curly-brace-presence)",
     "severity": "warning",
-  },
-  {
-    "column": 2,
-    "line": 7,
-    "message": "'App' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 2,
-    "line": 7,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
   },
   {
     "column": 12,
@@ -196,39 +112,11 @@ exports[`react > should lint 'react/jsx-curly-brace-presence' 1`] = `
     "severity": "warning",
   },
   {
-    "column": 2,
-    "line": 9,
-    "message": "'App' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 2,
-    "line": 9,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
     "column": 7,
     "line": 9,
     "message": "Curly braces are unnecessary here.",
     "rule": "react(jsx-curly-brace-presence)",
     "severity": "warning",
-  },
-  {
-    "column": 2,
-    "line": 10,
-    "message": "'App' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 2,
-    "line": 10,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
   },
   {
     "column": 12,
@@ -245,20 +133,6 @@ exports[`react > should lint 'react/jsx-curly-brace-presence' 1`] = `
     "severity": "warning",
   },
   {
-    "column": 2,
-    "line": 12,
-    "message": "'App' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 2,
-    "line": 12,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
     "column": 6,
     "line": 12,
     "message": "Disallow literal text as JSX children",
@@ -266,137 +140,11 @@ exports[`react > should lint 'react/jsx-curly-brace-presence' 1`] = `
     "severity": "warning",
   },
   {
-    "column": 2,
-    "line": 13,
-    "message": "'App' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 2,
-    "line": 13,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
-    "column": 2,
-    "line": 15,
-    "message": "'App' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 2,
-    "line": 15,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
-    "column": 12,
-    "line": 15,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
-    "column": 2,
-    "line": 17,
-    "message": "'App' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 2,
-    "line": 17,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
-    "column": 13,
-    "line": 17,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
-    "column": 2,
-    "line": 19,
-    "message": "'App' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 2,
-    "line": 19,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
-    "column": 13,
-    "line": 19,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
-    "column": 2,
-    "line": 21,
-    "message": "'App' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 2,
-    "line": 21,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
-    "column": 12,
-    "line": 21,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
-    "column": 2,
-    "line": 23,
-    "message": "'App' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 2,
-    "line": 23,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
     "column": 6,
     "line": 23,
     "message": "Disallow literal text as JSX children",
     "rule": "react(jsx-no-literals)",
     "severity": "warning",
-  },
-  {
-    "column": 2,
-    "line": 24,
-    "message": "'App' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 2,
-    "line": 24,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
   },
   {
     "column": 36,
@@ -406,39 +154,11 @@ exports[`react > should lint 'react/jsx-curly-brace-presence' 1`] = `
     "severity": "warning",
   },
   {
-    "column": 2,
-    "line": 26,
-    "message": "'App' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 2,
-    "line": 26,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
     "column": 7,
     "line": 26,
     "message": "Curly braces are unnecessary here.",
     "rule": "react(jsx-curly-brace-presence)",
     "severity": "warning",
-  },
-  {
-    "column": 2,
-    "line": 27,
-    "message": "'App' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 2,
-    "line": 27,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
   },
   {
     "column": 12,
@@ -462,20 +182,6 @@ exports[`react > should lint 'react/jsx-curly-brace-presence' 1`] = `
     "severity": "warning",
   },
   {
-    "column": 2,
-    "line": 29,
-    "message": "'App' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 2,
-    "line": 29,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
     "column": 12,
     "line": 29,
     "message": "Curly braces are unnecessary here.",
@@ -497,39 +203,11 @@ exports[`react > should lint 'react/jsx-curly-brace-presence' 1`] = `
     "severity": "warning",
   },
   {
-    "column": 2,
-    "line": 31,
-    "message": "'App' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 2,
-    "line": 31,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
     "column": 28,
     "line": 31,
     "message": "Disallow literal text as JSX children",
     "rule": "react(jsx-no-literals)",
     "severity": "warning",
-  },
-  {
-    "column": 2,
-    "line": 33,
-    "message": "'App' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 2,
-    "line": 33,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
   },
   {
     "column": 12,
@@ -546,39 +224,11 @@ exports[`react > should lint 'react/jsx-curly-brace-presence' 1`] = `
     "severity": "warning",
   },
   {
-    "column": 2,
-    "line": 35,
-    "message": "'App' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 2,
-    "line": 35,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
     "column": 25,
     "line": 35,
     "message": "Disallow literal text as JSX children",
     "rule": "react(jsx-no-literals)",
     "severity": "warning",
-  },
-  {
-    "column": 2,
-    "line": 37,
-    "message": "'App' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 2,
-    "line": 37,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
   },
   {
     "column": 31,
@@ -616,20 +266,6 @@ exports[`react > should lint 'react/jsx-curly-brace-presence' 1`] = `
     "severity": "warning",
   },
   {
-    "column": 2,
-    "line": 39,
-    "message": "'App' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 2,
-    "line": 39,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
     "column": 12,
     "line": 39,
     "message": "Curly braces are unnecessary here.",
@@ -651,38 +287,10 @@ exports[`react > should lint 'react/jsx-key' 1`] = `
     "severity": "error",
   },
   {
-    "column": 21,
-    "line": 3,
-    "message": "'App' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 21,
-    "line": 3,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
     "column": 12,
     "line": 4,
     "message": "Missing "key" prop for element in iterator.",
     "rule": "react(jsx-key)",
-    "severity": "error",
-  },
-  {
-    "column": 22,
-    "line": 4,
-    "message": "'ListItem' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 22,
-    "line": 4,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
     "severity": "error",
   },
 ]
@@ -698,39 +306,11 @@ exports[`react > should lint 'react/jsx-max-depth' 1`] = `
     "severity": "warning",
   },
   {
-    "column": 4,
-    "line": 4,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
-    "column": 6,
-    "line": 5,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
-    "column": 8,
-    "line": 6,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
     "column": 9,
     "line": 7,
     "message": "JSX nesting depth of 3 exceeds the configured maximum of 2",
     "rule": "react(jsx-max-depth)",
     "severity": "warning",
-  },
-  {
-    "column": 10,
-    "line": 7,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
   },
 ]
 `;
@@ -739,20 +319,6 @@ exports[`react > should lint 'react/jsx-no-comment-textnodes' 1`] = `[]`;
 
 exports[`react > should lint 'react/jsx-no-constructed-context-valu…' 1`] = `
 [
-  {
-    "column": 4,
-    "line": 4,
-    "message": "'SomeContext' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 4,
-    "line": 4,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
   {
     "column": 46,
     "line": 4,
@@ -775,20 +341,6 @@ exports[`react > should lint 'react/jsx-no-constructed-context-valu…' 1`] = `
     "severity": "error",
   },
   {
-    "column": 11,
-    "line": 11,
-    "message": "'MyContext' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 11,
-    "line": 11,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
     "column": 30,
     "line": 11,
     "message": "The Context \`value\` prop should not be constructed.",
@@ -801,38 +353,10 @@ exports[`react > should lint 'react/jsx-no-constructed-context-valu…' 1`] = `
 exports[`react > should lint 'react/jsx-no-duplicate-props' 1`] = `
 [
   {
-    "column": 2,
-    "line": 3,
-    "message": "'App' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 2,
-    "line": 3,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
     "column": 6,
     "line": 3,
     "message": "No duplicate props allowed. The prop "a" is duplicated.",
     "rule": "react(jsx-no-duplicate-props)",
-    "severity": "error",
-  },
-  {
-    "column": 2,
-    "line": 4,
-    "message": "'App' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 2,
-    "line": 4,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
     "severity": "error",
   },
   {
@@ -848,13 +372,6 @@ exports[`react > should lint 'react/jsx-no-duplicate-props' 1`] = `
 exports[`react > should lint 'react/jsx-no-literals' 1`] = `
 [
   {
-    "column": 2,
-    "line": 3,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
     "column": 6,
     "line": 3,
     "message": "Disallow literal text as JSX children",
@@ -866,13 +383,6 @@ exports[`react > should lint 'react/jsx-no-literals' 1`] = `
 
 exports[`react > should lint 'react/jsx-no-script-url' 1`] = `
 [
-  {
-    "column": 2,
-    "line": 3,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
   {
     "column": 4,
     "line": 3,
@@ -893,13 +403,6 @@ exports[`react > should lint 'react/jsx-no-script-url' 1`] = `
 exports[`react > should lint 'react/jsx-no-target-blank' 1`] = `
 [
   {
-    "column": 14,
-    "line": 3,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
     "column": 23,
     "line": 3,
     "message": "Using target=\`_blank\` without rel=\`noreferrer\` (which implies rel=\`noopener\`) is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations",
@@ -912,13 +415,6 @@ exports[`react > should lint 'react/jsx-no-target-blank' 1`] = `
     "message": "Unnecessary closing tag",
     "rule": "react(self-closing-comp)",
     "severity": "warning",
-  },
-  {
-    "column": 14,
-    "line": 4,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
   },
   {
     "column": 23,
@@ -946,34 +442,6 @@ exports[`react > should lint 'react/jsx-no-undef' 1`] = `
     "rule": "react(only-export-components)",
     "severity": "warning",
   },
-  {
-    "column": 18,
-    "line": 3,
-    "message": "'App' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 18,
-    "line": 3,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
-    "column": 12,
-    "line": 4,
-    "message": "'B' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 12,
-    "line": 4,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
 ]
 `;
 
@@ -984,45 +452,17 @@ exports[`react > should lint 'react/jsx-pascal-case' 1`] = `[]`;
 exports[`react > should lint 'react/jsx-props-no-spread-multi' 1`] = `
 [
   {
-    "column": 2,
-    "line": 3,
-    "message": "'App' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 2,
-    "line": 3,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
     "column": 6,
     "line": 3,
     "message": "Prop 'props' is spread multiple times.",
     "rule": "react(jsx-props-no-spread-multi)",
-    "severity": "warning",
+    "severity": "error",
   },
 ]
 `;
 
 exports[`react > should lint 'react/no-array-index-key' 1`] = `
 [
-  {
-    "column": 6,
-    "line": 4,
-    "message": "'Hello' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 6,
-    "line": 4,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
   {
     "column": 12,
     "line": 4,
@@ -1045,13 +485,6 @@ exports[`react > should lint 'react/no-clone-element' 1`] = `
     "severity": "warning",
   },
   {
-    "column": 6,
-    "line": 8,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
     "column": 9,
     "line": 10,
     "message": "\`React.cloneElement\` should not be used.",
@@ -1063,13 +496,6 @@ exports[`react > should lint 'react/no-clone-element' 1`] = `
 
 exports[`react > should lint 'react/no-danger' 1`] = `
 [
-  {
-    "column": 20,
-    "line": 5,
-    "message": "Do not use \`dangerouslySetInnerHTML\` prop",
-    "rule": "react(no-danger)",
-    "severity": "warning",
-  },
   {
     "column": 72,
     "line": 5,
@@ -1090,20 +516,6 @@ exports[`react > should lint 'react/no-danger-with-children' 1`] = `
     "severity": "error",
   },
   {
-    "column": 2,
-    "line": 3,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
-    "column": 6,
-    "line": 3,
-    "message": "Do not use \`dangerouslySetInnerHTML\` prop",
-    "rule": "react(no-danger)",
-    "severity": "warning",
-  },
-  {
     "column": 51,
     "line": 3,
     "message": "Disallow literal text as JSX children",
@@ -1117,46 +529,11 @@ exports[`react > should lint 'react/no-danger-with-children' 1`] = `
     "rule": "react(no-danger-with-children)",
     "severity": "error",
   },
-  {
-    "column": 7,
-    "line": 6,
-    "message": "Do not use \`dangerouslySetInnerHTML\` prop",
-    "rule": "react(no-danger)",
-    "severity": "warning",
-  },
 ]
 `;
 
 exports[`react > should lint 'react/no-did-mount-set-state' 1`] = `
 [
-  {
-    "column": 13,
-    "line": 3,
-    "message": "Components should use an ES2015 class instead of \`createReactClass\`.",
-    "rule": "react(prefer-es6-class)",
-    "severity": "warning",
-  },
-  {
-    "column": 5,
-    "line": 5,
-    "message": "Do not use \`setState\` in \`componentDidMount\`.",
-    "rule": "react(no-did-mount-set-state)",
-    "severity": "warning",
-  },
-  {
-    "column": 5,
-    "line": 5,
-    "message": "Do not use \`setState\`.",
-    "rule": "react(no-set-state)",
-    "severity": "warning",
-  },
-  {
-    "column": 13,
-    "line": 10,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
   {
     "column": 17,
     "line": 10,
@@ -1169,34 +546,6 @@ exports[`react > should lint 'react/no-did-mount-set-state' 1`] = `
 
 exports[`react > should lint 'react/no-did-update-set-state' 1`] = `
 [
-  {
-    "column": 13,
-    "line": 3,
-    "message": "Components should use an ES2015 class instead of \`createReactClass\`.",
-    "rule": "react(prefer-es6-class)",
-    "severity": "warning",
-  },
-  {
-    "column": 5,
-    "line": 5,
-    "message": "Do not use \`setState\` in \`componentDidUpdate\`.",
-    "rule": "react(no-did-update-set-state)",
-    "severity": "warning",
-  },
-  {
-    "column": 5,
-    "line": 5,
-    "message": "Do not use \`setState\`.",
-    "rule": "react(no-set-state)",
-    "severity": "warning",
-  },
-  {
-    "column": 13,
-    "line": 10,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
   {
     "column": 17,
     "line": 10,
@@ -1216,20 +565,6 @@ exports[`react > should lint 'react/no-find-dom-node' 1`] = `
     "line": 3,
     "message": "Class component should be written as a function component.",
     "rule": "react(prefer-function-component)",
-    "severity": "warning",
-  },
-  {
-    "column": 5,
-    "line": 5,
-    "message": "Unexpected call to \`findDOMNode\`.",
-    "rule": "react(no-find-dom-node)",
-    "severity": "warning",
-  },
-  {
-    "column": 13,
-    "line": 8,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
     "severity": "error",
   },
 ]
@@ -1242,20 +577,6 @@ exports[`react > should lint 'react/no-is-mounted' 1`] = `
     "line": 3,
     "message": "Class component should be written as a function component.",
     "rule": "react(prefer-function-component)",
-    "severity": "warning",
-  },
-  {
-    "column": 10,
-    "line": 5,
-    "message": "Do not use \`isMounted\`.",
-    "rule": "react(no-is-mounted)",
-    "severity": "warning",
-  },
-  {
-    "column": 13,
-    "line": 10,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
     "severity": "error",
   },
   {
@@ -1285,24 +606,10 @@ exports[`react > should lint 'react/no-multi-comp' 1`] = `
     "severity": "warning",
   },
   {
-    "column": 11,
-    "line": 4,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
     "column": 15,
     "line": 4,
     "message": "Disallow literal text as JSX children",
     "rule": "react(jsx-no-literals)",
-    "severity": "warning",
-  },
-  {
-    "column": 1,
-    "line": 7,
-    "message": "Declare only one React component per file. Found: Bar",
-    "rule": "react(no-multi-comp)",
     "severity": "warning",
   },
   {
@@ -1311,13 +618,6 @@ exports[`react > should lint 'react/no-multi-comp' 1`] = `
     "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
     "rule": "react(only-export-components)",
     "severity": "warning",
-  },
-  {
-    "column": 11,
-    "line": 8,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
   },
   {
     "column": 15,
@@ -1355,27 +655,6 @@ exports[`react > should lint 'react/no-object-type-as-default-prop' 1`] = `
     "severity": "warning",
   },
   {
-    "column": 11,
-    "line": 4,
-    "message": "'List' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 11,
-    "line": 4,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
-    "column": 7,
-    "line": 7,
-    "message": "Declare only one React component per file. Found: Bar",
-    "rule": "react(no-multi-comp)",
-    "severity": "warning",
-  },
-  {
     "column": 7,
     "line": 7,
     "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
@@ -1394,20 +673,6 @@ exports[`react > should lint 'react/no-object-type-as-default-prop' 1`] = `
     "line": 7,
     "message": "Do not use an object literal as default prop value. Use a stable reference instead.",
     "rule": "react(no-object-type-as-default-prop)",
-    "severity": "warning",
-  },
-  {
-    "column": 35,
-    "line": 7,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
-    "column": 1,
-    "line": 9,
-    "message": "Declare only one React component per file. Found: Baz",
-    "rule": "react(no-multi-comp)",
     "severity": "warning",
   },
   {
@@ -1431,13 +696,6 @@ exports[`react > should lint 'react/no-object-type-as-default-prop' 1`] = `
     "rule": "react(button-has-type)",
     "severity": "warning",
   },
-  {
-    "column": 11,
-    "line": 10,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
 ]
 `;
 
@@ -1450,20 +708,6 @@ exports[`react > should lint 'react/no-redundant-should-component-u…' 1`] = `
     "line": 3,
     "message": "Class component should be written as a function component.",
     "rule": "react(prefer-function-component)",
-    "severity": "warning",
-  },
-  {
-    "column": 3,
-    "line": 4,
-    "message": "Foo does not need \`shouldComponentUpdate\` when extending \`React.PureComponent\`.",
-    "rule": "react(no-redundant-should-component-update)",
-    "severity": "warning",
-  },
-  {
-    "column": 13,
-    "line": 9,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
     "severity": "error",
   },
   {
@@ -1481,31 +725,10 @@ exports[`react > should lint 'react/no-redundant-should-component-u…' 1`] = `
     "severity": "warning",
   },
   {
-    "column": 10,
-    "line": 14,
-    "message": "Declare only one React component per file. Found: Baz",
-    "rule": "react(no-multi-comp)",
-    "severity": "warning",
-  },
-  {
     "column": 16,
     "line": 14,
     "message": "Class component should be written as a function component.",
     "rule": "react(prefer-function-component)",
-    "severity": "warning",
-  },
-  {
-    "column": 5,
-    "line": 15,
-    "message": "Baz does not need \`shouldComponentUpdate\` when extending \`React.PureComponent\`.",
-    "rule": "react(no-redundant-should-component-update)",
-    "severity": "warning",
-  },
-  {
-    "column": 15,
-    "line": 20,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
     "severity": "error",
   },
   {
@@ -1528,38 +751,10 @@ exports[`react > should lint 'react/no-render-return-value' 1`] = `
     "severity": "error",
   },
   {
-    "column": 29,
-    "line": 3,
-    "message": "'App' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 29,
-    "line": 3,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
     "column": 10,
     "line": 5,
     "message": "Do not depend on the return value from \`ReactDOM.render\`.",
     "rule": "react(no-render-return-value)",
-    "severity": "error",
-  },
-  {
-    "column": 27,
-    "line": 5,
-    "message": "'App' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 27,
-    "line": 5,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
     "severity": "error",
   },
 ]
@@ -1567,27 +762,6 @@ exports[`react > should lint 'react/no-render-return-value' 1`] = `
 
 exports[`react > should lint 'react/no-set-state' 1`] = `
 [
-  {
-    "column": 13,
-    "line": 3,
-    "message": "Components should use an ES2015 class instead of \`createReactClass\`.",
-    "rule": "react(prefer-es6-class)",
-    "severity": "warning",
-  },
-  {
-    "column": 5,
-    "line": 10,
-    "message": "Do not use \`setState\`.",
-    "rule": "react(no-set-state)",
-    "severity": "warning",
-  },
-  {
-    "column": 13,
-    "line": 15,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
   {
     "column": 26,
     "line": 15,
@@ -1608,66 +782,10 @@ exports[`react > should lint 'react/no-set-state' 1`] = `
 exports[`react > should lint 'react/no-string-refs' 1`] = `
 [
   {
-    "column": 13,
-    "line": 3,
-    "message": "Components should use an ES2015 class instead of \`createReactClass\`.",
-    "rule": "react(prefer-es6-class)",
-    "severity": "warning",
-  },
-  {
-    "column": 13,
-    "line": 5,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
-    "column": 17,
-    "line": 5,
-    "message": "Using string literals in ref attributes is deprecated.",
-    "rule": "react(no-string-refs)",
-    "severity": "warning",
-  },
-  {
     "column": 29,
     "line": 5,
     "message": "Disallow literal text as JSX children",
     "rule": "react(jsx-no-literals)",
-    "severity": "warning",
-  },
-  {
-    "column": 13,
-    "line": 9,
-    "message": "Declare only one React component per file. Found: Hello",
-    "rule": "react(no-multi-comp)",
-    "severity": "warning",
-  },
-  {
-    "column": 13,
-    "line": 9,
-    "message": "Components should use an ES2015 class instead of \`createReactClass\`.",
-    "rule": "react(prefer-es6-class)",
-    "severity": "warning",
-  },
-  {
-    "column": 21,
-    "line": 11,
-    "message": "Using this.refs is deprecated.",
-    "rule": "react(no-string-refs)",
-    "severity": "warning",
-  },
-  {
-    "column": 13,
-    "line": 15,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
-    "column": 17,
-    "line": 15,
-    "message": "Using string literals in ref attributes is deprecated.",
-    "rule": "react(no-string-refs)",
     "severity": "warning",
   },
   {
@@ -1685,13 +803,6 @@ exports[`react > should lint 'react/no-this-in-sfc' 1`] = `[]`;
 exports[`react > should lint 'react/no-unknown-property' 1`] = `
 [
   {
-    "column": 16,
-    "line": 4,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
     "column": 20,
     "line": 4,
     "message": "Unknown property found",
@@ -1706,13 +817,6 @@ exports[`react > should lint 'react/no-unknown-property' 1`] = `
     "severity": "warning",
   },
   {
-    "column": 19,
-    "line": 5,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
     "column": 23,
     "line": 5,
     "message": "Unknown property found",
@@ -1725,13 +829,6 @@ exports[`react > should lint 'react/no-unknown-property' 1`] = `
     "message": "Disallow literal text as JSX children",
     "rule": "react(jsx-no-literals)",
     "severity": "warning",
-  },
-  {
-    "column": 21,
-    "line": 8,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
   },
   {
     "column": 25,
@@ -1750,42 +847,14 @@ exports[`react > should lint 'react/no-unsafe' 1`] = `
     "line": 4,
     "message": "Class component should be written as a function component.",
     "rule": "react(prefer-function-component)",
-    "severity": "warning",
-  },
-  {
-    "column": 3,
-    "line": 5,
-    "message": "Unsafe lifecycle method \`UNSAFE_componentWillMount\` is not allowed",
-    "rule": "react(no-unsafe)",
     "severity": "error",
-  },
-  {
-    "column": 3,
-    "line": 6,
-    "message": "Unsafe lifecycle method \`UNSAFE_componentWillReceiveProps\` is not allowed",
-    "rule": "react(no-unsafe)",
-    "severity": "error",
-  },
-  {
-    "column": 3,
-    "line": 7,
-    "message": "Unsafe lifecycle method \`UNSAFE_componentWillUpdate\` is not allowed",
-    "rule": "react(no-unsafe)",
-    "severity": "error",
-  },
-  {
-    "column": 1,
-    "line": 11,
-    "message": "Declare only one React component per file. Found: Bar",
-    "rule": "react(no-multi-comp)",
-    "severity": "warning",
   },
   {
     "column": 7,
     "line": 11,
     "message": "Class component should be written as a function component.",
     "rule": "react(prefer-function-component)",
-    "severity": "warning",
+    "severity": "error",
   },
 ]
 `;
@@ -1804,7 +873,7 @@ exports[`react > should lint 'react/no-unstable-nested-components' 1`] = `
     "line": 4,
     "message": "Do not define components during render.",
     "rule": "react(no-unstable-nested-components)",
-    "severity": "warning",
+    "severity": "error",
   },
   {
     "column": 12,
@@ -1813,53 +882,11 @@ exports[`react > should lint 'react/no-unstable-nested-components' 1`] = `
     "rule": "react(only-export-components)",
     "severity": "warning",
   },
-  {
-    "column": 13,
-    "line": 5,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
-    "column": 11,
-    "line": 8,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
 ]
 `;
 
 exports[`react > should lint 'react/no-will-update-set-state' 1`] = `
 [
-  {
-    "column": 13,
-    "line": 3,
-    "message": "Components should use an ES2015 class instead of \`createReactClass\`.",
-    "rule": "react(prefer-es6-class)",
-    "severity": "warning",
-  },
-  {
-    "column": 5,
-    "line": 5,
-    "message": "Do not use \`setState\`.",
-    "rule": "react(no-set-state)",
-    "severity": "warning",
-  },
-  {
-    "column": 5,
-    "line": 5,
-    "message": "Do not use \`setState\` in \`componentWillUpdate\`.",
-    "rule": "react(no-will-update-set-state)",
-    "severity": "error",
-  },
-  {
-    "column": 13,
-    "line": 10,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
   {
     "column": 17,
     "line": 10,
@@ -1887,13 +914,6 @@ exports[`react > should lint 'react/only-export-components' 1`] = `
     "severity": "warning",
   },
   {
-    "column": 26,
-    "line": 5,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
     "column": 16,
     "line": 8,
     "message": "Fast refresh can't handle anonymous components. Add a name to your export.",
@@ -1905,13 +925,6 @@ exports[`react > should lint 'react/only-export-components' 1`] = `
     "line": 11,
     "message": "This rule can't verify that \`export *\` only exports components.",
     "rule": "react(only-export-components)",
-    "severity": "warning",
-  },
-  {
-    "column": 7,
-    "line": 14,
-    "message": "Declare only one React component per file. Found: Tab",
-    "rule": "react(no-multi-comp)",
     "severity": "warning",
   },
   {
@@ -1929,38 +942,10 @@ exports[`react > should lint 'react/only-export-components' 1`] = `
     "severity": "error",
   },
   {
-    "column": 23,
-    "line": 15,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
     "column": 32,
     "line": 15,
     "message": "Missing "key" prop for element in array.",
     "rule": "react(jsx-key)",
-    "severity": "error",
-  },
-  {
-    "column": 32,
-    "line": 15,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
-    "column": 7,
-    "line": 18,
-    "message": "Declare only one React component per file. Found: App",
-    "rule": "react(no-multi-comp)",
-    "severity": "warning",
-  },
-  {
-    "column": 53,
-    "line": 19,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
     "severity": "error",
   },
 ]
@@ -1968,20 +953,6 @@ exports[`react > should lint 'react/only-export-components' 1`] = `
 
 exports[`react > should lint 'react/prefer-es6-class' 1`] = `
 [
-  {
-    "column": 13,
-    "line": 3,
-    "message": "Components should use an ES2015 class instead of \`createReactClass\`.",
-    "rule": "react(prefer-es6-class)",
-    "severity": "warning",
-  },
-  {
-    "column": 13,
-    "line": 5,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
   {
     "column": 17,
     "line": 5,
@@ -1999,50 +970,19 @@ exports[`react > should lint 'react/prefer-function-component' 1`] = `
     "line": 3,
     "message": "Class component should be written as a function component.",
     "rule": "react(prefer-function-component)",
-    "severity": "warning",
-  },
-  {
-    "column": 13,
-    "line": 5,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
     "severity": "error",
-  },
-  {
-    "column": 1,
-    "line": 9,
-    "message": "Declare only one React component per file. Found: Bar",
-    "rule": "react(no-multi-comp)",
-    "severity": "warning",
   },
   {
     "column": 7,
     "line": 9,
     "message": "Class component should be written as a function component.",
     "rule": "react(prefer-function-component)",
-    "severity": "warning",
-  },
-  {
-    "column": 13,
-    "line": 11,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
     "severity": "error",
   },
 ]
 `;
 
-exports[`react > should lint 'react/react-in-jsx-scope' 1`] = `
-[
-  {
-    "column": 12,
-    "line": 3,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-]
-`;
+exports[`react > should lint 'react/react-in-jsx-scope' 1`] = `[]`;
 
 exports[`react > should lint 'react/require-render-return' 1`] = `[]`;
 
@@ -2075,20 +1015,6 @@ exports[`react > should lint 'react/rules-of-hooks' 1`] = `
 exports[`react > should lint 'react/self-closing-comp' 1`] = `
 [
   {
-    "column": 15,
-    "line": 3,
-    "message": "'Component' is not defined.",
-    "rule": "react(jsx-no-undef)",
-    "severity": "error",
-  },
-  {
-    "column": 15,
-    "line": 3,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
     "column": 41,
     "line": 3,
     "message": "Unnecessary closing tag",
@@ -2096,25 +1022,11 @@ exports[`react > should lint 'react/self-closing-comp' 1`] = `
     "severity": "warning",
   },
   {
-    "column": 19,
-    "line": 4,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
-  },
-  {
     "column": 35,
     "line": 4,
     "message": "Unnecessary closing tag",
     "rule": "react(self-closing-comp)",
     "severity": "warning",
-  },
-  {
-    "column": 16,
-    "line": 5,
-    "message": "\`React\` must be in scope when using JSX.",
-    "rule": "react(react-in-jsx-scope)",
-    "severity": "error",
   },
   {
     "column": 1,
