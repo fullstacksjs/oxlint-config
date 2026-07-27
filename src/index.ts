@@ -18,10 +18,11 @@ export interface Options extends OxlintConfig {
   typeAware?: boolean;
   jest?: boolean;
   nextjs?: boolean;
+  nodejs?: boolean;
 }
 
 export function defineConfig(options?: Options): OxlintConfig {
-  const { jest: jestEnabled, nextjs: nextjsEnabled, extends: extendsConfig = [], ...rest } = options || {};
+  const { jest: jestEnabled, nextjs: nextjsEnabled, nodejs: nodejsEnabled, extends: extendsConfig = [], ...rest } = options || {};
   const context = new Context(options);
 
   return {
@@ -30,7 +31,7 @@ export function defineConfig(options?: Options): OxlintConfig {
       typescript(context),
       imports(context),
       regex(context),
-      node(context),
+      nodejsEnabled ? node(context) : undefined,
       react(context),
       promise(context),
       vitest(context),
