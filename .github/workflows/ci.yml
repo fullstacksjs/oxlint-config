@@ -20,3 +20,4 @@ jobs:
           cache: true
       - run: vp check
       - run: vp test
+      - run: vp pack
