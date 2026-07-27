@@ -4198,9 +4198,16 @@ exports[`imports > import/default 1`] = `
   {
     "column": 1,
     "line": 7,
+    "message": "Missing file extension in import declaration.",
+    "rule": "import(extensions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 7,
     "message": "Import statements must come first",
     "rule": "import(first)",
-    "severity": "error",
+    "severity": "warning",
   },
 ]
 `;
@@ -4214,11 +4221,25 @@ exports[`imports > import/export 1`] = `
     "rule": "import(no-mutable-exports)",
     "severity": "error",
   },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Missing file extension in export declaration.",
+    "rule": "import(extensions)",
+    "severity": "error",
+  },
 ]
 `;
 
 exports[`imports > import/first 1`] = `
 [
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Missing file extension in import declaration.",
+    "rule": "import(extensions)",
+    "severity": "error",
+  },
   {
     "column": 1,
     "line": 3,
@@ -4229,9 +4250,16 @@ exports[`imports > import/first 1`] = `
   {
     "column": 1,
     "line": 5,
+    "message": "Missing file extension in import declaration.",
+    "rule": "import(extensions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 5,
     "message": "Import statements must come first",
     "rule": "import(first)",
-    "severity": "error",
+    "severity": "warning",
   },
 ]
 `;
@@ -4240,16 +4268,37 @@ exports[`imports > import/named 1`] = `
 [
   {
     "column": 1,
+    "line": 4,
+    "message": "Missing file extension in import declaration.",
+    "rule": "import(extensions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 7,
+    "message": "Missing file extension in export declaration.",
+    "rule": "import(extensions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
     "line": 10,
     "message": "Import statements must come first",
     "rule": "import(first)",
-    "severity": "error",
+    "severity": "warning",
   },
 ]
 `;
 
 exports[`imports > import/namespace 1`] = `
 [
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Missing file extension in import declaration.",
+    "rule": "import(extensions)",
+    "severity": "error",
+  },
   {
     "column": 1,
     "line": 4,
@@ -4290,7 +4339,7 @@ exports[`imports > import/no-cycle 1`] = `
     "line": 8,
     "message": "Import statements must come first",
     "rule": "import(first)",
-    "severity": "error",
+    "severity": "warning",
   },
   {
     "column": 1,
@@ -4305,10 +4354,38 @@ exports[`imports > import/no-cycle 1`] = `
 exports[`imports > import/no-duplicates 1`] = `
 [
   {
+    "column": 1,
+    "line": 3,
+    "message": "Missing file extension in import declaration.",
+    "rule": "import(extensions)",
+    "severity": "error",
+  },
+  {
     "column": 21,
     "line": 3,
     "message": "Module './module' is imported more than once in this file",
     "rule": "import(no-duplicates)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Missing file extension in import declaration.",
+    "rule": "import(extensions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 6,
+    "message": "Missing file extension in import declaration.",
+    "rule": "import(extensions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 7,
+    "message": "Missing file extension in import declaration.",
+    "rule": "import(extensions)",
     "severity": "error",
   },
 ]
@@ -4349,6 +4426,13 @@ exports[`imports > import/no-named-as-default-member 1`] = `
   {
     "column": 1,
     "line": 4,
+    "message": "Missing file extension in import declaration.",
+    "rule": "import(extensions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
     "message": "Expected 1 empty line after import statement not followed by another import.",
     "rule": "import(newline-after-import)",
     "severity": "warning",
@@ -4367,37 +4451,37 @@ exports[`imports > import/no-self-import 1`] = `
     "rule": "import(newline-after-import)",
     "severity": "warning",
   },
+  {
+    "column": 13,
+    "line": 5,
+    "message": "Missing file extension in import declaration.",
+    "rule": "import(extensions)",
+    "severity": "error",
+  },
+  {
+    "column": 13,
+    "line": 5,
+    "message": "Expected import instead of require",
+    "rule": "import(no-commonjs)",
+    "severity": "error",
+  },
 ]
 `;
 
 exports[`imports > import/no-webpack-loader-syntax 1`] = `
 [
   {
-    "column": 22,
-    "line": 3,
-    "message": "Unexpected \`!\` in \`my-loader!my-module\`.",
-    "rule": "import(no-webpack-loader-syntax)",
-    "severity": "error",
-  },
-  {
-    "column": 19,
-    "line": 4,
-    "message": "Unexpected \`!\` in \`style!css!./theme.css\`.",
-    "rule": "import(no-webpack-loader-syntax)",
-    "severity": "error",
-  },
-  {
-    "column": 24,
+    "column": 16,
     "line": 6,
-    "message": "Unexpected \`!\` in \`my-loader!./my-module\`.",
-    "rule": "import(no-webpack-loader-syntax)",
+    "message": "Expected import instead of require",
+    "rule": "import(no-commonjs)",
     "severity": "error",
   },
   {
-    "column": 21,
+    "column": 13,
     "line": 7,
-    "message": "Unexpected \`!\` in \`style!css!./theme.css\`.",
-    "rule": "import(no-webpack-loader-syntax)",
+    "message": "Expected import instead of require",
+    "rule": "import(no-commonjs)",
     "severity": "error",
   },
 ]
