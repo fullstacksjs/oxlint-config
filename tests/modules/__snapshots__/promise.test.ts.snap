@@ -165,3 +165,169 @@ exports[`promise > promise/valid-params 1`] = `
   },
 ]
 `;
+
+exports[`promise > should lint { rule: 'promise/no-multiple-resolved', file: '/home/skill/devs/oxlint/tests/fixtures/promise/promise__no-multiple-resolved.ts' } 1`] = `
+[
+  {
+    "column": 5,
+    "line": 9,
+    "message": "Promise should not be resolved multiple times. Promise is potentially resolved on line 6.",
+    "rule": "promise(no-multiple-resolved)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`promise > should lint { rule: 'promise/no-new-statics', file: '/home/skill/devs/oxlint/tests/fixtures/promise/promise__no-new-statics.ts' } 1`] = `
+[
+  {
+    "column": 11,
+    "line": 3,
+    "message": "Do not use \`new\` on \`Promise.resolve\`",
+    "rule": "promise(no-new-statics)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`promise > should lint { rule: 'promise/no-promise-in-callback', file: '/home/skill/devs/oxlint/tests/fixtures/promise/promise__no-promise-in-callback.ts' } 1`] = `
+[
+  {
+    "column": 8,
+    "line": 5,
+    "message": "Avoid using promises inside of callbacks.",
+    "rule": "promise(no-promise-in-callback)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`promise > should lint { rule: 'promise/no-return-in-finally', file: '/home/skill/devs/oxlint/tests/fixtures/promise/promise__no-return-in-finally.ts' } 1`] = `
+[
+  {
+    "column": 3,
+    "line": 4,
+    "message": "Don't return in a finally callback",
+    "rule": "promise(no-return-in-finally)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`promise > should lint { rule: 'promise/no-return-wrap', file: '/home/skill/devs/oxlint/tests/fixtures/promise/promise__no-return-wrap.ts' } 1`] = `
+[
+  {
+    "column": 24,
+    "line": 3,
+    "message": "Avoid wrapping return values in Promise.resolve",
+    "rule": "promise(no-return-wrap)",
+    "severity": "error",
+  },
+  {
+    "column": 38,
+    "line": 4,
+    "message": "Avoid wrapping return values in Promise.resolve",
+    "rule": "promise(no-return-wrap)",
+    "severity": "error",
+  },
+  {
+    "column": 24,
+    "line": 6,
+    "message": "Expected throw instead of Promise.reject",
+    "rule": "promise(no-return-wrap)",
+    "severity": "error",
+  },
+  {
+    "column": 38,
+    "line": 7,
+    "message": "Expected throw instead of Promise.reject",
+    "rule": "promise(no-return-wrap)",
+    "severity": "error",
+  },
+  {
+    "column": 12,
+    "line": 11,
+    "message": "Expected throw instead of Promise.reject",
+    "rule": "promise(no-return-wrap)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 16,
+    "message": "Don't return in a finally callback",
+    "rule": "promise(no-return-in-finally)",
+    "severity": "warning",
+  },
+  {
+    "column": 12,
+    "line": 16,
+    "message": "Expected throw instead of Promise.reject",
+    "rule": "promise(no-return-wrap)",
+    "severity": "error",
+  },
+  {
+    "column": 27,
+    "line": 19,
+    "message": "Avoid wrapping return values in Promise.resolve",
+    "rule": "promise(no-return-wrap)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`promise > should lint { rule: 'promise/param-names', file: '/home/skill/devs/oxlint/tests/fixtures/promise/promise__param-names.ts' } 1`] = `
+[
+  {
+    "column": 23,
+    "line": 3,
+    "message": "Promise constructor parameters must be named to match \`^_?resolve$\`",
+    "rule": "promise(param-names)",
+    "severity": "warning",
+  },
+  {
+    "column": 31,
+    "line": 3,
+    "message": "Promise constructor parameters must be named to match \`^_?reject$\`",
+    "rule": "promise(param-names)",
+    "severity": "warning",
+  },
+  {
+    "column": 23,
+    "line": 4,
+    "message": "Promise constructor parameters must be named to match \`^_?resolve$\`",
+    "rule": "promise(param-names)",
+    "severity": "warning",
+  },
+  {
+    "column": 27,
+    "line": 4,
+    "message": "Promise constructor parameters must be named to match \`^_?reject$\`",
+    "rule": "promise(param-names)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`promise > should lint { rule: 'promise/spec-only', file: '/home/skill/devs/oxlint/tests/fixtures/promise/promise__spec-only.ts' } 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Avoid using non-standard \`Promise.done\` method.",
+    "rule": "promise(spec-only)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`promise > should lint { rule: 'promise/valid-params', file: '/home/skill/devs/oxlint/tests/fixtures/promise/promise__valid-params.ts' } 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "\`Promise.resolve()\` requires 0 or 1 arguments, but received 2.",
+    "rule": "promise(valid-params)",
+    "severity": "warning",
+  },
+]
+`;
