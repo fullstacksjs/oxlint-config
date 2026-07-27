@@ -32,6 +32,10 @@ export class Context {
     return this.isEsm ? config : 'off';
   }
 
+  cjs(config: AllowWarnDeny): AllowWarnDeny {
+    return this.isEsm ? 'off' : config;
+  }
+
   typeAware<C>(config: C) {
     return this.isTypeAware ? config : 'off';
   }
