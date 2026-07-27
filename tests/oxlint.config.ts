@@ -5,6 +5,7 @@ export default defineConfig({
   nextjs: true,
   react: true,
   esm: true,
+  vitest: true,
   rules: {
     'no-unused-vars': 'off',
   },

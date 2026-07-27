@@ -20,6 +20,7 @@ export interface Options extends OxlintConfig {
   nextjs?: boolean;
   nodejs?: boolean;
   react?: boolean;
+  vitest?: boolean;
 }
 
 export function defineConfig(options?: Options): OxlintConfig {
@@ -29,6 +30,7 @@ export function defineConfig(options?: Options): OxlintConfig {
     nodejs: nodejsEnabled,
     react: reactEnabled,
     extends: extendsConfig = [],
+    vitest: vitestEnabled,
     ...rest
   } = options || {};
   const context = new Context(options);
@@ -42,7 +44,7 @@ export function defineConfig(options?: Options): OxlintConfig {
       nodejsEnabled ? node(context) : undefined,
       reactEnabled ? react(context) : undefined,
       promise(context),
-      vitest(context),
+      vitestEnabled ? vitest(context) : undefined,
       jestEnabled ? jest(context) : undefined,
       nextjsEnabled ? next(context) : undefined,
       ...extendsConfig,
