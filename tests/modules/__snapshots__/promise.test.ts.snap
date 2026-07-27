@@ -7,7 +7,7 @@ exports[`promise > should lint 'promise/no-multiple-resolved' 1`] = `
     "line": 9,
     "message": "Promise should not be resolved multiple times. Promise is potentially resolved on line 6.",
     "rule": "promise(no-multiple-resolved)",
-    "severity": "warning",
+    "severity": "error",
   },
 ]
 `;
@@ -149,7 +149,7 @@ exports[`promise > should lint 'promise/spec-only' 1`] = `
     "line": 3,
     "message": "Avoid using non-standard \`Promise.done\` method.",
     "rule": "promise(spec-only)",
-    "severity": "warning",
+    "severity": "error",
   },
 ]
 `;
@@ -161,7 +161,7 @@ exports[`promise > should lint 'promise/valid-params' 1`] = `
     "line": 3,
     "message": "\`Promise.resolve()\` requires 0 or 1 arguments, but received 2.",
     "rule": "promise(valid-params)",
-    "severity": "warning",
+    "severity": "error",
   },
 ]
 `;

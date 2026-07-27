@@ -17,10 +17,10 @@ export function promise(ctx: Context): OxlintConfig {
       'promise/param-names': 'warn',
       'promise/prefer-await-to-callbacks': 'off',
       'promise/prefer-await-to-then': 'off',
-      'promise/prefer-catch': ctx.strict('warn'),
-      'promise/valid-params': 'warn',
-      'promise/no-multiple-resolved': 'warn',
-      'promise/spec-only': 'warn',
+      'promise/prefer-catch': 'warn',
+      'promise/valid-params': 'error',
+      'promise/no-multiple-resolved': 'error',
+      'promise/spec-only': 'error',
 
       // Unsupported
       // 'promise/no-native': 'off',
