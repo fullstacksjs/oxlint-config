@@ -305,3 +305,268 @@ exports[`imports > import/no-webpack-loader-syntax 1`] = `
   },
 ]
 `;
+
+exports[`imports > should lint { rule: 'import/consistent-type-specifier-style', file: '/home/skill/devs/oxlint/tests/fixtures/imports/import__consistent-type-specifier-style.ts' } 1`] = `
+[
+  {
+    "column": 13,
+    "line": 10,
+    "message": "A type-only import can specify a default import or named bindings, but not both.",
+    "rule": "TS(1363)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`imports > should lint { rule: 'import/export', file: '/home/skill/devs/oxlint/tests/fixtures/imports/import__export.ts' } 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Exporting mutable 'let' binding, use 'const' instead.",
+    "rule": "import(no-mutable-exports)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Missing file extension in export declaration.",
+    "rule": "import(extensions)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`imports > should lint { rule: 'import/extensions', file: '/home/skill/devs/oxlint/tests/fixtures/imports/import__extensions.ts' } 1`] = `[]`;
+
+exports[`imports > should lint { rule: 'import/first', file: '/home/skill/devs/oxlint/tests/fixtures/imports/import__first.ts' } 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Missing file extension in import declaration.",
+    "rule": "import(extensions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Expected 1 empty line after import statement not followed by another import.",
+    "rule": "import(newline-after-import)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Missing file extension in import declaration.",
+    "rule": "import(extensions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Import statements must come first",
+    "rule": "import(first)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`imports > should lint { rule: 'import/newline-after-import', file: '/home/skill/devs/oxlint/tests/fixtures/imports/import__newline-after-import.ts' } 1`] = `[]`;
+
+exports[`imports > should lint { rule: 'import/no-absolute-path', file: '/home/skill/devs/oxlint/tests/fixtures/imports/import__no-absolute-path.ts' } 1`] = `[]`;
+
+exports[`imports > should lint { rule: 'import/no-amd', file: '/home/skill/devs/oxlint/tests/fixtures/imports/import__no-amd.ts' } 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Do not use AMD \`require\` and \`define\` calls.",
+    "rule": "import(no-amd)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`imports > should lint { rule: 'import/no-commonjs', file: '/home/skill/devs/oxlint/tests/fixtures/imports/import__no-commonjs.ts' } 1`] = `
+[
+  {
+    "column": 11,
+    "line": 3,
+    "message": "Expected import instead of require",
+    "rule": "import(no-commonjs)",
+    "severity": "error",
+  },
+  {
+    "column": 16,
+    "line": 5,
+    "message": "Expected export instead of exports",
+    "rule": "import(no-commonjs)",
+    "severity": "error",
+  },
+  {
+    "column": 16,
+    "line": 5,
+    "message": "Expected export instead of exports",
+    "rule": "import(no-commonjs)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 7,
+    "message": "Expected export instead of sayHello",
+    "rule": "import(no-commonjs)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 11,
+    "message": "Expected export instead of exports",
+    "rule": "import(no-commonjs)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`imports > should lint { rule: 'import/no-cycle', file: '/home/skill/devs/oxlint/tests/fixtures/imports/import__no-cycle.ts' } 1`] = `
+[
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Expected 1 empty line after import statement not followed by another import.",
+    "rule": "import(newline-after-import)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 8,
+    "message": "Import statements must come first",
+    "rule": "import(first)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 8,
+    "message": "Expected 1 empty line after import statement not followed by another import.",
+    "rule": "import(newline-after-import)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`imports > should lint { rule: 'import/no-duplicates', file: '/home/skill/devs/oxlint/tests/fixtures/imports/import__no-duplicates.ts' } 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Missing file extension in import declaration.",
+    "rule": "import(extensions)",
+    "severity": "error",
+  },
+  {
+    "column": 21,
+    "line": 3,
+    "message": "Module './module' is imported more than once in this file",
+    "rule": "import(no-duplicates)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Missing file extension in import declaration.",
+    "rule": "import(extensions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 6,
+    "message": "Missing file extension in import declaration.",
+    "rule": "import(extensions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 7,
+    "message": "Missing file extension in import declaration.",
+    "rule": "import(extensions)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`imports > should lint { rule: 'import/no-empty-named-blocks', file: '/home/skill/devs/oxlint/tests/fixtures/imports/import__no-empty-named-blocks.ts' } 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Unexpected empty named \`import\` block.",
+    "rule": "import(no-empty-named-blocks)",
+    "severity": "error",
+  },
+  {
+    "column": 16,
+    "line": 3,
+    "message": "Module 'mod' is imported more than once in this file",
+    "rule": "import(no-duplicates)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Unexpected empty named \`import\` block.",
+    "rule": "import(no-empty-named-blocks)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`imports > should lint { rule: 'import/no-mutable-exports', file: '/home/skill/devs/oxlint/tests/fixtures/imports/import__no-mutable-exports.ts' } 1`] = `[]`;
+
+exports[`imports > should lint { rule: 'import/no-named-as-default', file: '/home/skill/devs/oxlint/tests/fixtures/imports/import__no-named-as-default.ts' } 1`] = `[]`;
+
+exports[`imports > should lint { rule: 'import/no-named-as-default-member', file: '/home/skill/devs/oxlint/tests/fixtures/imports/import__no-named-as-default-member.ts' } 1`] = `
+[
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Missing file extension in import declaration.",
+    "rule": "import(extensions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Expected 1 empty line after import statement not followed by another import.",
+    "rule": "import(newline-after-import)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`imports > should lint { rule: 'import/no-named-default', file: '/home/skill/devs/oxlint/tests/fixtures/imports/import__no-named-default.ts' } 1`] = `[]`;
+
+exports[`imports > should lint { rule: 'import/no-self-import', file: '/home/skill/devs/oxlint/tests/fixtures/imports/import__no-self-import.ts' } 1`] = `
+[
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Expected 1 empty line after import statement not followed by another import.",
+    "rule": "import(newline-after-import)",
+    "severity": "warning",
+  },
+  {
+    "column": 13,
+    "line": 5,
+    "message": "Missing file extension in import declaration.",
+    "rule": "import(extensions)",
+    "severity": "error",
+  },
+  {
+    "column": 13,
+    "line": 5,
+    "message": "Expected import instead of require",
+    "rule": "import(no-commonjs)",
+    "severity": "error",
+  },
+]
+`;

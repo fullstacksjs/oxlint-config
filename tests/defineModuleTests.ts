@@ -14,10 +14,8 @@ export async function defineModuleTests(name: string): Promise<void> {
       expect(m.hasFixtures, `No fixtures for "${m.name}". Run \`pnpm generate:fixtures\`.`).toBe(true);
     });
 
-    for (const fx of m.fixtures) {
-      it(fx.rule, () => {
-        expect(lintFixtureFile(m.config, fx.file)).toMatchSnapshot();
-      });
-    }
+    it.each(m.fixtures)('should lint %s', (fx) => {
+      expect(lintFixtureFile(m.config, fx.file)).toMatchSnapshot();
+    });
   });
 }

@@ -152,3 +152,156 @@ exports[`next > nextjs/no-title-in-document-head 1`] = `[]`;
 exports[`next > nextjs/no-typos 1`] = `[]`;
 
 exports[`next > nextjs/no-unwanted-polyfillio 1`] = `[]`;
+
+exports[`next > should lint { rule: 'nextjs/google-font-display', file: '/home/skill/devs/oxlint/tests/fixtures/next/nextjs__google-font-display.tsx' } 1`] = `
+[
+  {
+    "column": 13,
+    "line": 8,
+    "message": "Custom fonts not added in \`pages/_document.js\` will only load for a single page. This is discouraged.",
+    "rule": "next(no-page-custom-font)",
+    "severity": "warning",
+  },
+  {
+    "column": 14,
+    "line": 8,
+    "message": "A font-display parameter is missing (adding \`&display=optional\` is recommended).",
+    "rule": "next(google-font-display)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`next > should lint { rule: 'nextjs/google-font-preconnect', file: '/home/skill/devs/oxlint/tests/fixtures/next/nextjs__google-font-preconnect.ts' } 1`] = `[]`;
+
+exports[`next > should lint { rule: 'nextjs/inline-script-id', file: '/home/skill/devs/oxlint/tests/fixtures/next/nextjs__inline-script-id.ts' } 1`] = `[]`;
+
+exports[`next > should lint { rule: 'nextjs/next-script-for-ga', file: '/home/skill/devs/oxlint/tests/fixtures/next/nextjs__next-script-for-ga.tsx' } 1`] = `[]`;
+
+exports[`next > should lint { rule: 'nextjs/no-assign-module-variable', file: '/home/skill/devs/oxlint/tests/fixtures/next/nextjs__no-assign-module-variable.ts' } 1`] = `[]`;
+
+exports[`next > should lint { rule: 'nextjs/no-async-client-component', file: '/home/skill/devs/oxlint/tests/fixtures/next/nextjs__no-async-client-component.ts' } 1`] = `[]`;
+
+exports[`next > should lint { rule: 'nextjs/no-before-interactive-script-outside-document', file: '/home/skill/devs/oxlint/tests/fixtures/next/nextjs__no-before-interactive-script-outside-document.tsx' } 1`] = `
+[
+  {
+    "column": 9,
+    "line": 11,
+    "message": "next/script's \`beforeInteractive\` strategy should not be used outside of \`pages/_document.js\`",
+    "rule": "next(no-before-interactive-script-outside-document)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`next > should lint { rule: 'nextjs/no-css-tags', file: '/home/skill/devs/oxlint/tests/fixtures/next/nextjs__no-css-tags.tsx' } 1`] = `[]`;
+
+exports[`next > should lint { rule: 'nextjs/no-document-import-in-page', file: '/home/skill/devs/oxlint/tests/fixtures/next/nextjs__no-document-import-in-page.tsx' } 1`] = `
+[
+  {
+    "column": 1,
+    "line": 4,
+    "message": "\`<Document />\` from \`next/document\` should not be imported outside of \`pages/_document.js\`. See: https://nextjs.org/docs/messages/no-document-import-in-page",
+    "rule": "next(no-document-import-in-page)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`next > should lint { rule: 'nextjs/no-duplicate-head', file: '/home/skill/devs/oxlint/tests/fixtures/next/nextjs__no-duplicate-head.tsx' } 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "\`<Document />\` from \`next/document\` should not be imported outside of \`pages/_document.js\`. See: https://nextjs.org/docs/messages/no-document-import-in-page",
+    "rule": "next(no-document-import-in-page)",
+    "severity": "warning",
+  },
+  {
+    "column": 10,
+    "line": 10,
+    "message": "Do not include multiple instances of \`<Head/>\`",
+    "rule": "next(no-duplicate-head)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`next > should lint { rule: 'nextjs/no-head-element', file: '/home/skill/devs/oxlint/tests/fixtures/next/nextjs__no-head-element.tsx' } 1`] = `
+[
+  {
+    "column": 7,
+    "line": 6,
+    "message": "Do not use \`<head>\` element. Use \`<Head />\` from \`next/head\` instead.",
+    "rule": "next(no-head-element)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`next > should lint { rule: 'nextjs/no-head-import-in-document', file: '/home/skill/devs/oxlint/tests/fixtures/next/nextjs__no-head-import-in-document.tsx' } 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "\`<Document />\` from \`next/document\` should not be imported outside of \`pages/_document.js\`. See: https://nextjs.org/docs/messages/no-document-import-in-page",
+    "rule": "next(no-document-import-in-page)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`next > should lint { rule: 'nextjs/no-html-link-for-pages', file: '/home/skill/devs/oxlint/tests/fixtures/next/nextjs__no-html-link-for-pages.tsx' } 1`] = `
+[
+  {
+    "column": 7,
+    "line": 6,
+    "message": "Do not use \`<a>\` elements to navigate between Next.js pages.",
+    "rule": "next(no-html-link-for-pages)",
+    "severity": "warning",
+  },
+  {
+    "column": 7,
+    "line": 7,
+    "message": "Do not use \`<a>\` elements to navigate between Next.js pages.",
+    "rule": "next(no-html-link-for-pages)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`next > should lint { rule: 'nextjs/no-img-element', file: '/home/skill/devs/oxlint/tests/fixtures/next/nextjs__no-img-element.ts' } 1`] = `[]`;
+
+exports[`next > should lint { rule: 'nextjs/no-page-custom-font', file: '/home/skill/devs/oxlint/tests/fixtures/next/nextjs__no-page-custom-font.tsx' } 1`] = `
+[
+  {
+    "column": 7,
+    "line": 8,
+    "message": "Custom fonts not added in \`pages/_document.js\` will only load for a single page. This is discouraged.",
+    "rule": "next(no-page-custom-font)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`next > should lint { rule: 'nextjs/no-script-component-in-head', file: '/home/skill/devs/oxlint/tests/fixtures/next/nextjs__no-script-component-in-head.tsx' } 1`] = `
+[
+  {
+    "column": 6,
+    "line": 8,
+    "message": "Prevent usage of \`next/script\` in \`next/head\` component.",
+    "rule": "next(no-script-component-in-head)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`next > should lint { rule: 'nextjs/no-styled-jsx-in-document', file: '/home/skill/devs/oxlint/tests/fixtures/next/nextjs__no-styled-jsx-in-document.ts' } 1`] = `[]`;
+
+exports[`next > should lint { rule: 'nextjs/no-sync-scripts', file: '/home/skill/devs/oxlint/tests/fixtures/next/nextjs__no-sync-scripts.ts' } 1`] = `[]`;
+
+exports[`next > should lint { rule: 'nextjs/no-title-in-document-head', file: '/home/skill/devs/oxlint/tests/fixtures/next/nextjs__no-title-in-document-head.ts' } 1`] = `[]`;
+
+exports[`next > should lint { rule: 'nextjs/no-typos', file: '/home/skill/devs/oxlint/tests/fixtures/next/nextjs__no-typos.ts' } 1`] = `[]`;
+
+exports[`next > should lint { rule: 'nextjs/no-unwanted-polyfillio', file: '/home/skill/devs/oxlint/tests/fixtures/next/nextjs__no-unwanted-polyfillio.ts' } 1`] = `[]`;

@@ -22,3 +22,26 @@ exports[`jest > jest/no-done-callback 1`] = `
 `;
 
 exports[`jest > jest/no-export 1`] = `[]`;
+
+exports[`jest > should lint { rule: 'jest/no-alias-methods', file: '/home/skill/devs/oxlint/tests/fixtures/jest/jest__no-alias-methods.ts' } 1`] = `[]`;
+
+exports[`jest > should lint { rule: 'jest/no-done-callback', file: '/home/skill/devs/oxlint/tests/fixtures/jest/jest__no-done-callback.ts' } 1`] = `
+[
+  {
+    "column": 1,
+    "line": 7,
+    "message": "Enforce \`test\` and \`it\` usage conventions",
+    "rule": "jest(consistent-test-it)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 11,
+    "message": "Enforce \`test\` and \`it\` usage conventions",
+    "rule": "jest(consistent-test-it)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`jest > should lint { rule: 'jest/no-export', file: '/home/skill/devs/oxlint/tests/fixtures/jest/jest__no-export.ts' } 1`] = `[]`;

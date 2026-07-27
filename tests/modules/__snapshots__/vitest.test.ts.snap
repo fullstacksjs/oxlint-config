@@ -1,5 +1,75 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
+exports[`vitest > should lint { rule: 'vitest/consistent-vitest-vi', file: '/home/skill/devs/oxlint/tests/fixtures/vitest/vitest__consistent-vitest-vi.ts' } 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "The vitest function accessor used is not allowed",
+    "rule": "vitest(consistent-vitest-vi)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`vitest > should lint { rule: 'vitest/no-conditional-tests', file: '/home/skill/devs/oxlint/tests/fixtures/vitest/vitest__no-conditional-tests.ts' } 1`] = `[]`;
+
+exports[`vitest > should lint { rule: 'vitest/no-import-node-test', file: '/home/skill/devs/oxlint/tests/fixtures/vitest/vitest__no-import-node-test.ts' } 1`] = `
+[
+  {
+    "column": 22,
+    "line": 3,
+    "message": "Do not import from \`node:test\`",
+    "rule": "vitest(no-import-node-test)",
+    "severity": "error",
+  },
+  {
+    "column": 3,
+    "line": 7,
+    "message": "\`expect\` must be inside of a test block.",
+    "rule": "vitest(no-standalone-expect)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`vitest > should lint { rule: 'vitest/prefer-called-once', file: '/home/skill/devs/oxlint/tests/fixtures/vitest/vitest__prefer-called-once.ts' } 1`] = `[]`;
+
+exports[`vitest > should lint { rule: 'vitest/prefer-to-be-object', file: '/home/skill/devs/oxlint/tests/fixtures/vitest/vitest__prefer-to-be-object.ts' } 1`] = `[]`;
+
+exports[`vitest > should lint { rule: 'vitest/require-local-test-context-for-concurrent-snapshots', file: '/home/skill/devs/oxlint/tests/fixtures/vitest/vitest__require-local-test-context-for-concurrent-snapshots.ts' } 1`] = `
+[
+  {
+    "column": 5,
+    "line": 8,
+    "message": "Enforce \`test\` and \`it\` usage conventions",
+    "rule": "vitest(consistent-test-it)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`vitest > should lint { rule: 'vitest/valid-describe-callback', file: '/home/skill/devs/oxlint/tests/fixtures/vitest/vitest__valid-describe-callback.ts' } 1`] = `[]`;
+
+exports[`vitest > should lint { rule: 'vitest/warn-todo', file: '/home/skill/devs/oxlint/tests/fixtures/vitest/vitest__warn-todo.ts' } 1`] = `
+[
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Enforce \`test\` and \`it\` usage conventions",
+    "rule": "vitest(consistent-test-it)",
+    "severity": "warning",
+  },
+  {
+    "column": 11,
+    "line": 5,
+    "message": "Test title is used multiple times in the same describe block.",
+    "rule": "vitest(no-identical-title)",
+    "severity": "error",
+  },
+]
+`;
+
 exports[`vitest > vitest/consistent-vitest-vi 1`] = `
 [
   {
