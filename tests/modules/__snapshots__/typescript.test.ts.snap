@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`typescript > should lint { rule: 'typescript/adjacent-overload-signatures', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__adjacent-overload-signatures.ts' } 1`] = `
+exports[`typescript > should lint { rule: 'typescript/adjacent-overload-signatures', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__adjacent-overload-signatures.ts' } 1`] = `
 [
   {
     "column": 3,
@@ -12,7 +12,7 @@ exports[`typescript > should lint { rule: 'typescript/adjacent-overload-signatur
 ]
 `;
 
-exports[`typescript > should lint { rule: 'typescript/array-type', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__array-type.ts' } 1`] = `
+exports[`typescript > should lint { rule: 'typescript/array-type', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__array-type.ts' } 1`] = `
 [
   {
     "column": 12,
@@ -31,15 +31,15 @@ exports[`typescript > should lint { rule: 'typescript/array-type', file: '/home/
 ]
 `;
 
-exports[`typescript > should lint { rule: 'typescript/ban-ts-comment', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__ban-ts-comment.ts' } 1`] = `[]`;
+exports[`typescript > should lint { rule: 'typescript/ban-ts-comment', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__ban-ts-comment.ts' } 1`] = `[]`;
 
-exports[`typescript > should lint { rule: 'typescript/class-literal-property-style', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__class-literal-property-style.ts' } 1`] = `[]`;
+exports[`typescript > should lint { rule: 'typescript/class-literal-property-style', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__class-literal-property-style.ts' } 1`] = `[]`;
 
-exports[`typescript > should lint { rule: 'typescript/consistent-generic-constructors', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__consistent-generic-constructors.ts' } 1`] = `[]`;
+exports[`typescript > should lint { rule: 'typescript/consistent-generic-constructors', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__consistent-generic-constructors.ts' } 1`] = `[]`;
 
-exports[`typescript > should lint { rule: 'typescript/consistent-indexed-object-style', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__consistent-indexed-object-style.ts' } 1`] = `[]`;
+exports[`typescript > should lint { rule: 'typescript/consistent-indexed-object-style', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__consistent-indexed-object-style.ts' } 1`] = `[]`;
 
-exports[`typescript > should lint { rule: 'typescript/consistent-type-assertions', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__consistent-type-assertions.ts' } 1`] = `
+exports[`typescript > should lint { rule: 'typescript/consistent-type-assertions', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__consistent-type-assertions.ts' } 1`] = `
 [
   {
     "column": 15,
@@ -51,7 +51,7 @@ exports[`typescript > should lint { rule: 'typescript/consistent-type-assertions
 ]
 `;
 
-exports[`typescript > should lint { rule: 'typescript/consistent-type-definitions', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__consistent-type-definitions.ts' } 1`] = `
+exports[`typescript > should lint { rule: 'typescript/consistent-type-definitions', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__consistent-type-definitions.ts' } 1`] = `
 [
   {
     "column": 1,
@@ -63,9 +63,9 @@ exports[`typescript > should lint { rule: 'typescript/consistent-type-definition
 ]
 `;
 
-exports[`typescript > should lint { rule: 'typescript/consistent-type-imports', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__consistent-type-imports.ts' } 1`] = `[]`;
+exports[`typescript > should lint { rule: 'typescript/consistent-type-imports', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__consistent-type-imports.ts' } 1`] = `[]`;
 
-exports[`typescript > should lint { rule: 'typescript/no-confusing-non-null-assertion', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__no-confusing-non-null-assertion.ts' } 1`] = `
+exports[`typescript > should lint { rule: 'typescript/no-confusing-non-null-assertion', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__no-confusing-non-null-assertion.ts' } 1`] = `
 [
   {
     "column": 1,
@@ -84,7 +84,7 @@ exports[`typescript > should lint { rule: 'typescript/no-confusing-non-null-asse
 ]
 `;
 
-exports[`typescript > should lint { rule: 'typescript/no-duplicate-enum-values', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__no-duplicate-enum-values.ts' } 1`] = `
+exports[`typescript > should lint { rule: 'typescript/no-duplicate-enum-values', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__no-duplicate-enum-values.ts' } 1`] = `
 [
   {
     "column": 9,
@@ -103,7 +103,7 @@ exports[`typescript > should lint { rule: 'typescript/no-duplicate-enum-values',
 ]
 `;
 
-exports[`typescript > should lint { rule: 'typescript/no-dynamic-delete', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__no-dynamic-delete.ts' } 1`] = `
+exports[`typescript > should lint { rule: 'typescript/no-dynamic-delete', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__no-dynamic-delete.ts' } 1`] = `
 [
   {
     "column": 20,
@@ -122,7 +122,7 @@ exports[`typescript > should lint { rule: 'typescript/no-dynamic-delete', file: 
 ]
 `;
 
-exports[`typescript > should lint { rule: 'typescript/no-empty-object-type', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__no-empty-object-type.ts' } 1`] = `
+exports[`typescript > should lint { rule: 'typescript/no-empty-object-type', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__no-empty-object-type.ts' } 1`] = `
 [
   {
     "column": 16,
@@ -183,9 +183,9 @@ exports[`typescript > should lint { rule: 'typescript/no-empty-object-type', fil
 ]
 `;
 
-exports[`typescript > should lint { rule: 'typescript/no-extra-non-null-assertion', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__no-extra-non-null-assertion.ts' } 1`] = `[]`;
+exports[`typescript > should lint { rule: 'typescript/no-extra-non-null-assertion', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__no-extra-non-null-assertion.ts' } 1`] = `[]`;
 
-exports[`typescript > should lint { rule: 'typescript/no-extraneous-class', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__no-extraneous-class.ts' } 1`] = `
+exports[`typescript > should lint { rule: 'typescript/no-extraneous-class', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__no-extraneous-class.ts' } 1`] = `
 [
   {
     "column": 7,
@@ -218,9 +218,9 @@ exports[`typescript > should lint { rule: 'typescript/no-extraneous-class', file
 ]
 `;
 
-exports[`typescript > should lint { rule: 'typescript/no-import-type-side-effects', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__no-import-type-side-effects.ts' } 1`] = `[]`;
+exports[`typescript > should lint { rule: 'typescript/no-import-type-side-effects', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__no-import-type-side-effects.ts' } 1`] = `[]`;
 
-exports[`typescript > should lint { rule: 'typescript/no-invalid-void-type', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__no-invalid-void-type.ts' } 1`] = `
+exports[`typescript > should lint { rule: 'typescript/no-invalid-void-type', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__no-invalid-void-type.ts' } 1`] = `
 [
   {
     "column": 24,
@@ -246,7 +246,7 @@ exports[`typescript > should lint { rule: 'typescript/no-invalid-void-type', fil
 ]
 `;
 
-exports[`typescript > should lint { rule: 'typescript/no-misused-new', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__no-misused-new.ts' } 1`] = `
+exports[`typescript > should lint { rule: 'typescript/no-misused-new', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__no-misused-new.ts' } 1`] = `
 [
   {
     "column": 3,
@@ -279,7 +279,7 @@ exports[`typescript > should lint { rule: 'typescript/no-misused-new', file: '/h
 ]
 `;
 
-exports[`typescript > should lint { rule: 'typescript/no-namespace', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__no-namespace.ts' } 1`] = `
+exports[`typescript > should lint { rule: 'typescript/no-namespace', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__no-namespace.ts' } 1`] = `
 [
   {
     "column": 1,
@@ -326,9 +326,9 @@ exports[`typescript > should lint { rule: 'typescript/no-namespace', file: '/hom
 ]
 `;
 
-exports[`typescript > should lint { rule: 'typescript/no-non-null-asserted-nullish-coalescing', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__no-non-null-asserted-nullish-coalescing.ts' } 1`] = `[]`;
+exports[`typescript > should lint { rule: 'typescript/no-non-null-asserted-nullish-coalescing', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__no-non-null-asserted-nullish-coalescing.ts' } 1`] = `[]`;
 
-exports[`typescript > should lint { rule: 'typescript/no-non-null-asserted-optional-chain', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__no-non-null-asserted-optional-chain.ts' } 1`] = `
+exports[`typescript > should lint { rule: 'typescript/no-non-null-asserted-optional-chain', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__no-non-null-asserted-optional-chain.ts' } 1`] = `
 [
   {
     "column": 9,
@@ -347,7 +347,7 @@ exports[`typescript > should lint { rule: 'typescript/no-non-null-asserted-optio
 ]
 `;
 
-exports[`typescript > should lint { rule: 'typescript/no-require-imports', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__no-require-imports.ts' } 1`] = `
+exports[`typescript > should lint { rule: 'typescript/no-require-imports', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__no-require-imports.ts' } 1`] = `
 [
   {
     "column": 14,
@@ -373,7 +373,7 @@ exports[`typescript > should lint { rule: 'typescript/no-require-imports', file:
 ]
 `;
 
-exports[`typescript > should lint { rule: 'typescript/no-this-alias', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__no-this-alias.ts' } 1`] = `
+exports[`typescript > should lint { rule: 'typescript/no-this-alias', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__no-this-alias.ts' } 1`] = `
 [
   {
     "column": 7,
@@ -385,7 +385,7 @@ exports[`typescript > should lint { rule: 'typescript/no-this-alias', file: '/ho
 ]
 `;
 
-exports[`typescript > should lint { rule: 'typescript/no-unnecessary-type-constraint', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__no-unnecessary-type-constraint.ts' } 1`] = `
+exports[`typescript > should lint { rule: 'typescript/no-unnecessary-type-constraint', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__no-unnecessary-type-constraint.ts' } 1`] = `
 [
   {
     "column": 18,
@@ -488,7 +488,7 @@ exports[`typescript > should lint { rule: 'typescript/no-unnecessary-type-constr
 ]
 `;
 
-exports[`typescript > should lint { rule: 'typescript/no-unsafe-declaration-merging', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__no-unsafe-declaration-merging.ts' } 1`] = `
+exports[`typescript > should lint { rule: 'typescript/no-unsafe-declaration-merging', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__no-unsafe-declaration-merging.ts' } 1`] = `
 [
   {
     "column": 11,
@@ -514,9 +514,9 @@ exports[`typescript > should lint { rule: 'typescript/no-unsafe-declaration-merg
 ]
 `;
 
-exports[`typescript > should lint { rule: 'typescript/no-useless-default-assignment', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__no-useless-default-assignment.ts' } 1`] = `[]`;
+exports[`typescript > should lint { rule: 'typescript/no-useless-default-assignment', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__no-useless-default-assignment.ts' } 1`] = `[]`;
 
-exports[`typescript > should lint { rule: 'typescript/no-useless-empty-export', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__no-useless-empty-export.ts' } 1`] = `
+exports[`typescript > should lint { rule: 'typescript/no-useless-empty-export', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__no-useless-empty-export.ts' } 1`] = `
 [
   {
     "column": 1,
@@ -528,7 +528,7 @@ exports[`typescript > should lint { rule: 'typescript/no-useless-empty-export', 
 ]
 `;
 
-exports[`typescript > should lint { rule: 'typescript/prefer-as-const', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__prefer-as-const.ts' } 1`] = `
+exports[`typescript > should lint { rule: 'typescript/prefer-as-const', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__prefer-as-const.ts' } 1`] = `
 [
   {
     "column": 10,
@@ -547,7 +547,7 @@ exports[`typescript > should lint { rule: 'typescript/prefer-as-const', file: '/
 ]
 `;
 
-exports[`typescript > should lint { rule: 'typescript/prefer-for-of', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__prefer-for-of.ts' } 1`] = `
+exports[`typescript > should lint { rule: 'typescript/prefer-for-of', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__prefer-for-of.ts' } 1`] = `
 [
   {
     "column": 6,
@@ -559,7 +559,7 @@ exports[`typescript > should lint { rule: 'typescript/prefer-for-of', file: '/ho
 ]
 `;
 
-exports[`typescript > should lint { rule: 'typescript/prefer-function-type', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__prefer-function-type.ts' } 1`] = `
+exports[`typescript > should lint { rule: 'typescript/prefer-function-type', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__prefer-function-type.ts' } 1`] = `
 [
   {
     "column": 3,
@@ -585,7 +585,7 @@ exports[`typescript > should lint { rule: 'typescript/prefer-function-type', fil
 ]
 `;
 
-exports[`typescript > should lint { rule: 'typescript/prefer-literal-enum-member', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__prefer-literal-enum-member.ts' } 1`] = `
+exports[`typescript > should lint { rule: 'typescript/prefer-literal-enum-member', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__prefer-literal-enum-member.ts' } 1`] = `
 [
   {
     "column": 3,
@@ -611,7 +611,7 @@ exports[`typescript > should lint { rule: 'typescript/prefer-literal-enum-member
 ]
 `;
 
-exports[`typescript > should lint { rule: 'typescript/prefer-namespace-keyword', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__prefer-namespace-keyword.ts' } 1`] = `
+exports[`typescript > should lint { rule: 'typescript/prefer-namespace-keyword', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__prefer-namespace-keyword.ts' } 1`] = `
 [
   {
     "column": 1,
@@ -630,657 +630,11 @@ exports[`typescript > should lint { rule: 'typescript/prefer-namespace-keyword',
 ]
 `;
 
-exports[`typescript > should lint { rule: 'typescript/restrict-plus-operands', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__restrict-plus-operands.ts' } 1`] = `[]`;
+exports[`typescript > should lint { rule: 'typescript/restrict-plus-operands', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__restrict-plus-operands.ts' } 1`] = `[]`;
 
-exports[`typescript > should lint { rule: 'typescript/triple-slash-reference', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__triple-slash-reference.ts' } 1`] = `[]`;
+exports[`typescript > should lint { rule: 'typescript/triple-slash-reference', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__triple-slash-reference.ts' } 1`] = `[]`;
 
-exports[`typescript > should lint { rule: 'typescript/unified-signatures', file: '/home/skill/devs/oxlint/tests/fixtures/typescript/typescript__unified-signatures.ts' } 1`] = `
-[
-  {
-    "column": 12,
-    "line": 4,
-    "message": "These overloads can be combined into one signature taking \`number | string\`.",
-    "rule": "typescript(unified-signatures)",
-    "severity": "error",
-  },
-]
-`;
-
-exports[`typescript > typescript/adjacent-overload-signatures 1`] = `
-[
-  {
-    "column": 3,
-    "line": 26,
-    "message": "Function implementation is missing or not immediately following the declaration.",
-    "rule": "TS(2391)",
-    "severity": "error",
-  },
-]
-`;
-
-exports[`typescript > typescript/array-type 1`] = `
-[
-  {
-    "column": 12,
-    "line": 3,
-    "message": "Array type using 'Array<number>' is forbidden. Use 'number[]' instead.",
-    "rule": "typescript(array-type)",
-    "severity": "error",
-  },
-  {
-    "column": 20,
-    "line": 4,
-    "message": "Array type using 'ReadonlyArray<number>' is forbidden. Use 'readonly number[]' instead.",
-    "rule": "typescript(array-type)",
-    "severity": "error",
-  },
-]
-`;
-
-exports[`typescript > typescript/ban-ts-comment 1`] = `[]`;
-
-exports[`typescript > typescript/class-literal-property-style 1`] = `[]`;
-
-exports[`typescript > typescript/consistent-generic-constructors 1`] = `[]`;
-
-exports[`typescript > typescript/consistent-indexed-object-style 1`] = `[]`;
-
-exports[`typescript > typescript/consistent-type-assertions 1`] = `
-[
-  {
-    "column": 15,
-    "line": 3,
-    "message": "Use \`as Foo\` instead of \`<Foo>\`.",
-    "rule": "typescript(consistent-type-assertions)",
-    "severity": "error",
-  },
-]
-`;
-
-exports[`typescript > typescript/consistent-type-definitions 1`] = `
-[
-  {
-    "column": 1,
-    "line": 3,
-    "message": "Use \`interface\` instead of \`type\`.",
-    "rule": "typescript(consistent-type-definitions)",
-    "severity": "error",
-  },
-]
-`;
-
-exports[`typescript > typescript/consistent-type-imports 1`] = `[]`;
-
-exports[`typescript > typescript/no-confusing-non-null-assertion 1`] = `
-[
-  {
-    "column": 1,
-    "line": 3,
-    "message": "Confusing combinations of non-null assertion and equal test like \`a! == b\`, which looks very similar to not equal \`a !== b\`.",
-    "rule": "typescript(no-confusing-non-null-assertion)",
-    "severity": "error",
-  },
-  {
-    "column": 4,
-    "line": 5,
-    "message": "Confusing combinations of non-null assertion and equal test like \`a! === b\`, which looks very similar to not equal \`a !=== b\`.",
-    "rule": "typescript(no-confusing-non-null-assertion)",
-    "severity": "error",
-  },
-]
-`;
-
-exports[`typescript > typescript/no-duplicate-enum-values 1`] = `
-[
-  {
-    "column": 9,
-    "line": 4,
-    "message": "Duplicate enum value \`0\`",
-    "rule": "typescript(no-duplicate-enum-values)",
-    "severity": "error",
-  },
-  {
-    "column": 9,
-    "line": 9,
-    "message": "Duplicate enum value \`'A'\`",
-    "rule": "typescript(no-duplicate-enum-values)",
-    "severity": "error",
-  },
-]
-`;
-
-exports[`typescript > typescript/no-dynamic-delete 1`] = `
-[
-  {
-    "column": 20,
-    "line": 3,
-    "message": "A record is preferred over an index signature.",
-    "rule": "typescript(consistent-indexed-object-style)",
-    "severity": "warning",
-  },
-  {
-    "column": 1,
-    "line": 4,
-    "message": "Do not delete dynamically computed property keys.",
-    "rule": "typescript(no-dynamic-delete)",
-    "severity": "error",
-  },
-]
-`;
-
-exports[`typescript > typescript/no-empty-object-type 1`] = `
-[
-  {
-    "column": 16,
-    "line": 3,
-    "message": "Do not use the empty object type literal.",
-    "rule": "typescript(no-empty-object-type)",
-    "severity": "warning",
-  },
-  {
-    "column": 15,
-    "line": 4,
-    "message": "Do not use the empty object type literal.",
-    "rule": "typescript(no-empty-object-type)",
-    "severity": "warning",
-  },
-  {
-    "column": 22,
-    "line": 5,
-    "message": "Do not use an empty interface declaration.",
-    "rule": "typescript(no-empty-object-type)",
-    "severity": "warning",
-  },
-  {
-    "column": 21,
-    "line": 6,
-    "message": "Do not use an empty interface declaration.",
-    "rule": "typescript(no-empty-object-type)",
-    "severity": "warning",
-  },
-  {
-    "column": 1,
-    "line": 7,
-    "message": "Use \`interface\` instead of \`type\`.",
-    "rule": "typescript(consistent-type-definitions)",
-    "severity": "error",
-  },
-  {
-    "column": 19,
-    "line": 7,
-    "message": "Do not use the empty object type literal.",
-    "rule": "typescript(no-empty-object-type)",
-    "severity": "warning",
-  },
-  {
-    "column": 1,
-    "line": 8,
-    "message": "Use \`interface\` instead of \`type\`.",
-    "rule": "typescript(consistent-type-definitions)",
-    "severity": "error",
-  },
-  {
-    "column": 18,
-    "line": 8,
-    "message": "Do not use the empty object type literal.",
-    "rule": "typescript(no-empty-object-type)",
-    "severity": "warning",
-  },
-]
-`;
-
-exports[`typescript > typescript/no-extra-non-null-assertion 1`] = `[]`;
-
-exports[`typescript > typescript/no-extraneous-class 1`] = `
-[
-  {
-    "column": 7,
-    "line": 3,
-    "message": "Unexpected class with only static properties.",
-    "rule": "typescript(no-extraneous-class)",
-    "severity": "warning",
-  },
-  {
-    "column": 18,
-    "line": 4,
-    "message": "Literals should be exposed using getters.",
-    "rule": "typescript(class-literal-property-style)",
-    "severity": "error",
-  },
-  {
-    "column": 9,
-    "line": 11,
-    "message": "Unexpected class with only a constructor.",
-    "rule": "typescript(no-extraneous-class)",
-    "severity": "warning",
-  },
-  {
-    "column": 3,
-    "line": 17,
-    "message": "Unexpected empty class.",
-    "rule": "typescript(no-extraneous-class)",
-    "severity": "warning",
-  },
-]
-`;
-
-exports[`typescript > typescript/no-import-type-side-effects 1`] = `[]`;
-
-exports[`typescript > typescript/no-invalid-void-type 1`] = `
-[
-  {
-    "column": 24,
-    "line": 3,
-    "message": "Use \`void\` only as a return type or generic type argument.",
-    "rule": "typescript(no-invalid-void-type)",
-    "severity": "error",
-  },
-  {
-    "column": 14,
-    "line": 4,
-    "message": "Use \`void\` only as a return type or generic type argument.",
-    "rule": "typescript(no-invalid-void-type)",
-    "severity": "error",
-  },
-  {
-    "column": 23,
-    "line": 5,
-    "message": "Remove \`void\` from this union type constituent.",
-    "rule": "typescript(no-invalid-void-type)",
-    "severity": "error",
-  },
-]
-`;
-
-exports[`typescript > typescript/no-misused-new 1`] = `
-[
-  {
-    "column": 3,
-    "line": 4,
-    "message": "Class cannot have method named \`new\`.",
-    "rule": "typescript(no-misused-new)",
-    "severity": "error",
-  },
-  {
-    "column": 3,
-    "line": 8,
-    "message": "Interfaces cannot be constructed, only classes.",
-    "rule": "typescript(no-misused-new)",
-    "severity": "error",
-  },
-  {
-    "column": 3,
-    "line": 8,
-    "message": "Enforce using function types instead of interfaces with call signatures.",
-    "rule": "typescript(prefer-function-type)",
-    "severity": "warning",
-  },
-  {
-    "column": 3,
-    "line": 12,
-    "message": "Interfaces cannot be constructed, only classes.",
-    "rule": "typescript(no-misused-new)",
-    "severity": "error",
-  },
-]
-`;
-
-exports[`typescript > typescript/no-namespace 1`] = `
-[
-  {
-    "column": 1,
-    "line": 3,
-    "message": "ES2015 module syntax is preferred over namespaces.",
-    "rule": "typescript(no-namespace)",
-    "severity": "error",
-  },
-  {
-    "column": 1,
-    "line": 3,
-    "message": "Use \`namespace\` instead of \`module\` to declare custom TypeScript modules.",
-    "rule": "typescript(prefer-namespace-keyword)",
-    "severity": "error",
-  },
-  {
-    "column": 1,
-    "line": 4,
-    "message": "ES2015 module syntax is preferred over namespaces.",
-    "rule": "typescript(no-namespace)",
-    "severity": "error",
-  },
-  {
-    "column": 1,
-    "line": 5,
-    "message": "Use \`namespace\` instead of \`module\` to declare custom TypeScript modules.",
-    "rule": "typescript(prefer-namespace-keyword)",
-    "severity": "error",
-  },
-  {
-    "column": 9,
-    "line": 5,
-    "message": "ES2015 module syntax is preferred over namespaces.",
-    "rule": "typescript(no-namespace)",
-    "severity": "error",
-  },
-  {
-    "column": 9,
-    "line": 6,
-    "message": "ES2015 module syntax is preferred over namespaces.",
-    "rule": "typescript(no-namespace)",
-    "severity": "error",
-  },
-]
-`;
-
-exports[`typescript > typescript/no-non-null-asserted-nullish-coalescing 1`] = `[]`;
-
-exports[`typescript > typescript/no-non-null-asserted-optional-chain 1`] = `
-[
-  {
-    "column": 9,
-    "line": 3,
-    "message": "Optional chain expressions can return undefined by design: using a non-null assertion is unsafe and wrong.",
-    "rule": "typescript(no-non-null-asserted-optional-chain)",
-    "severity": "error",
-  },
-  {
-    "column": 11,
-    "line": 4,
-    "message": "Optional chain expressions can return undefined by design: using a non-null assertion is unsafe and wrong.",
-    "rule": "typescript(no-non-null-asserted-optional-chain)",
-    "severity": "error",
-  },
-]
-`;
-
-exports[`typescript > typescript/no-require-imports 1`] = `
-[
-  {
-    "column": 14,
-    "line": 3,
-    "message": "Expected "import" statement instead of "require" call",
-    "rule": "typescript(no-require-imports)",
-    "severity": "error",
-  },
-  {
-    "column": 18,
-    "line": 4,
-    "message": "Expected "import" statement instead of "require" call",
-    "rule": "typescript(no-require-imports)",
-    "severity": "error",
-  },
-  {
-    "column": 1,
-    "line": 5,
-    "message": "Expected "import" statement instead of "require" call",
-    "rule": "typescript(no-require-imports)",
-    "severity": "error",
-  },
-]
-`;
-
-exports[`typescript > typescript/no-this-alias 1`] = `
-[
-  {
-    "column": 7,
-    "line": 3,
-    "message": "Unexpected aliasing of 'this' to local variable.",
-    "rule": "typescript(no-this-alias)",
-    "severity": "error",
-  },
-]
-`;
-
-exports[`typescript > typescript/no-unnecessary-type-constraint 1`] = `
-[
-  {
-    "column": 18,
-    "line": 3,
-    "message": "constraining the generic type "T" to "any" does nothing and is unnecessary",
-    "rule": "typescript(no-unnecessary-type-constraint)",
-    "severity": "warning",
-  },
-  {
-    "column": 33,
-    "line": 3,
-    "message": "Do not use an empty interface declaration.",
-    "rule": "typescript(no-empty-object-type)",
-    "severity": "warning",
-  },
-  {
-    "column": 22,
-    "line": 4,
-    "message": "constraining the generic type "T" to "unknown" does nothing and is unnecessary",
-    "rule": "typescript(no-unnecessary-type-constraint)",
-    "severity": "warning",
-  },
-  {
-    "column": 41,
-    "line": 4,
-    "message": "Do not use an empty interface declaration.",
-    "rule": "typescript(no-empty-object-type)",
-    "severity": "warning",
-  },
-  {
-    "column": 1,
-    "line": 6,
-    "message": "Use \`interface\` instead of \`type\`.",
-    "rule": "typescript(consistent-type-definitions)",
-    "severity": "error",
-  },
-  {
-    "column": 13,
-    "line": 6,
-    "message": "constraining the generic type "T" to "any" does nothing and is unnecessary",
-    "rule": "typescript(no-unnecessary-type-constraint)",
-    "severity": "warning",
-  },
-  {
-    "column": 30,
-    "line": 6,
-    "message": "Do not use the empty object type literal.",
-    "rule": "typescript(no-empty-object-type)",
-    "severity": "warning",
-  },
-  {
-    "column": 1,
-    "line": 7,
-    "message": "Use \`interface\` instead of \`type\`.",
-    "rule": "typescript(consistent-type-definitions)",
-    "severity": "error",
-  },
-  {
-    "column": 17,
-    "line": 7,
-    "message": "constraining the generic type "T" to "unknown" does nothing and is unnecessary",
-    "rule": "typescript(no-unnecessary-type-constraint)",
-    "severity": "warning",
-  },
-  {
-    "column": 38,
-    "line": 7,
-    "message": "Do not use the empty object type literal.",
-    "rule": "typescript(no-empty-object-type)",
-    "severity": "warning",
-  },
-  {
-    "column": 18,
-    "line": 9,
-    "message": "constraining the generic type "T" to "any" does nothing and is unnecessary",
-    "rule": "typescript(no-unnecessary-type-constraint)",
-    "severity": "warning",
-  },
-  {
-    "column": 18,
-    "line": 11,
-    "message": "constraining the generic type "T" to "any" does nothing and is unnecessary",
-    "rule": "typescript(no-unnecessary-type-constraint)",
-    "severity": "warning",
-  },
-  {
-    "column": 14,
-    "line": 13,
-    "message": "constraining the generic type "T" to "any" does nothing and is unnecessary",
-    "rule": "typescript(no-unnecessary-type-constraint)",
-    "severity": "warning",
-  },
-  {
-    "column": 10,
-    "line": 14,
-    "message": "constraining the generic type "U" to "any" does nothing and is unnecessary",
-    "rule": "typescript(no-unnecessary-type-constraint)",
-    "severity": "warning",
-  },
-]
-`;
-
-exports[`typescript > typescript/no-unsafe-declaration-merging 1`] = `
-[
-  {
-    "column": 11,
-    "line": 3,
-    "message": "Unsafe declaration merging between classes and interfaces.",
-    "rule": "typescript(no-unsafe-declaration-merging)",
-    "severity": "warning",
-  },
-  {
-    "column": 15,
-    "line": 3,
-    "message": "Do not use an empty interface declaration.",
-    "rule": "typescript(no-empty-object-type)",
-    "severity": "warning",
-  },
-  {
-    "column": 1,
-    "line": 4,
-    "message": "Unexpected empty class.",
-    "rule": "typescript(no-extraneous-class)",
-    "severity": "warning",
-  },
-]
-`;
-
-exports[`typescript > typescript/no-useless-default-assignment 1`] = `[]`;
-
-exports[`typescript > typescript/no-useless-empty-export 1`] = `
-[
-  {
-    "column": 1,
-    "line": 4,
-    "message": "Empty exports do nothing in module files",
-    "rule": "typescript(no-useless-empty-export)",
-    "severity": "warning",
-  },
-]
-`;
-
-exports[`typescript > typescript/prefer-as-const 1`] = `
-[
-  {
-    "column": 10,
-    "line": 3,
-    "message": "Expected a \`const\` assertion instead of a literal type annotation.",
-    "rule": "typescript(prefer-as-const)",
-    "severity": "warning",
-  },
-  {
-    "column": 27,
-    "line": 4,
-    "message": "Expected a \`const\` assertion instead of a literal type annotation.",
-    "rule": "typescript(prefer-as-const)",
-    "severity": "warning",
-  },
-]
-`;
-
-exports[`typescript > typescript/prefer-for-of 1`] = `
-[
-  {
-    "column": 6,
-    "line": 3,
-    "message": "Expected a \`for...of\` loop instead of a \`for\` loop with this simple iteration.",
-    "rule": "typescript(prefer-for-of)",
-    "severity": "warning",
-  },
-]
-`;
-
-exports[`typescript > typescript/prefer-function-type 1`] = `
-[
-  {
-    "column": 3,
-    "line": 4,
-    "message": "Enforce using function types instead of interfaces with call signatures.",
-    "rule": "typescript(prefer-function-type)",
-    "severity": "warning",
-  },
-  {
-    "column": 25,
-    "line": 7,
-    "message": "Enforce using function types instead of interfaces with call signatures.",
-    "rule": "typescript(prefer-function-type)",
-    "severity": "warning",
-  },
-  {
-    "column": 3,
-    "line": 12,
-    "message": "Enforce using function types instead of interfaces with call signatures.",
-    "rule": "typescript(prefer-function-type)",
-    "severity": "warning",
-  },
-]
-`;
-
-exports[`typescript > typescript/prefer-literal-enum-member 1`] = `
-[
-  {
-    "column": 3,
-    "line": 6,
-    "message": "Explicit enum values must only be literal values (string, number, boolean, etc.).",
-    "rule": "typescript(prefer-literal-enum-member)",
-    "severity": "error",
-  },
-  {
-    "column": 3,
-    "line": 8,
-    "message": "Explicit enum values must only be literal values (string, number, boolean, etc.).",
-    "rule": "typescript(prefer-literal-enum-member)",
-    "severity": "error",
-  },
-  {
-    "column": 3,
-    "line": 9,
-    "message": "Explicit enum values must only be literal values (string, number, boolean, etc.).",
-    "rule": "typescript(prefer-literal-enum-member)",
-    "severity": "error",
-  },
-]
-`;
-
-exports[`typescript > typescript/prefer-namespace-keyword 1`] = `
-[
-  {
-    "column": 1,
-    "line": 3,
-    "message": "ES2015 module syntax is preferred over namespaces.",
-    "rule": "typescript(no-namespace)",
-    "severity": "error",
-  },
-  {
-    "column": 1,
-    "line": 3,
-    "message": "Use \`namespace\` instead of \`module\` to declare custom TypeScript modules.",
-    "rule": "typescript(prefer-namespace-keyword)",
-    "severity": "error",
-  },
-]
-`;
-
-exports[`typescript > typescript/restrict-plus-operands 1`] = `[]`;
-
-exports[`typescript > typescript/triple-slash-reference 1`] = `[]`;
-
-exports[`typescript > typescript/unified-signatures 1`] = `
+exports[`typescript > should lint { rule: 'typescript/unified-signatures', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/typescript/typescript__unified-signatures.ts' } 1`] = `
 [
   {
     "column": 12,
