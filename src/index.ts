@@ -16,10 +16,11 @@ export interface Options extends OxlintConfig {
   strict?: boolean;
   esm?: boolean;
   typeAware?: boolean;
+  jest?: boolean;
 }
 
 export function defineConfig(options?: Options): OxlintConfig {
-  const { extends: extendsConfig = [], ...rest } = options || {};
+  const { jest: jestEnabled, extends: extendsConfig = [], ...rest } = options || {};
   const context = new Context(options);
 
   return {
@@ -32,10 +33,10 @@ export function defineConfig(options?: Options): OxlintConfig {
       react(context),
       promise(context),
       vitest(context),
-      jest(context),
+      jestEnabled ? jest(context) : undefined,
       next(context),
       ...extendsConfig,
-    ],
+    ].filter(Boolean) as OxlintConfig['extends'],
     ...rest,
   };
 }
