@@ -33,12 +33,29 @@ exports[`vitest > should lint 'vitest/no-import-node-test' 1`] = `
 ]
 `;
 
-exports[`vitest > should lint 'vitest/prefer-called-once' 1`] = `[]`;
+exports[`vitest > should lint 'vitest/prefer-called-once' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Enforce \`test\` and \`it\` usage conventions",
+    "rule": "vitest(consistent-test-it)",
+    "severity": "warning",
+  },
+]
+`;
 
 exports[`vitest > should lint 'vitest/prefer-to-be-object' 1`] = `[]`;
 
 exports[`vitest > should lint 'vitest/require-local-test-context-for…' 1`] = `
 [
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Enforce \`test\` and \`it\` usage conventions",
+    "rule": "vitest(consistent-test-it)",
+    "severity": "warning",
+  },
   {
     "column": 5,
     "line": 8,
@@ -55,7 +72,7 @@ exports[`vitest > should lint 'vitest/warn-todo' 1`] = `
 [
   {
     "column": 1,
-    "line": 4,
+    "line": 5,
     "message": "Enforce \`test\` and \`it\` usage conventions",
     "rule": "vitest(consistent-test-it)",
     "severity": "warning",
