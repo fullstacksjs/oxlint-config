@@ -23,7 +23,14 @@ export interface Options extends OxlintConfig {
 }
 
 export function defineConfig(options?: Options): OxlintConfig {
-  const { jest: jestEnabled, nextjs: nextjsEnabled, nodejs: nodejsEnabled, react: reactEnabled, extends: extendsConfig = [], ...rest } = options || {};
+  const {
+    jest: jestEnabled,
+    nextjs: nextjsEnabled,
+    nodejs: nodejsEnabled,
+    react: reactEnabled,
+    extends: extendsConfig = [],
+    ...rest
+  } = options || {};
   const context = new Context(options);
 
   return {
