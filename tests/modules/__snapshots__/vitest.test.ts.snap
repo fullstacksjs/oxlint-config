@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`vitest > should lint { rule: 'vitest/consistent-vitest-vi', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/vitest/vitest__consistent-vitest-vi.ts' } 1`] = `
+exports[`vitest > should lint 'vitest/consistent-vitest-vi' 1`] = `
 [
   {
     "column": 1,
@@ -12,9 +12,9 @@ exports[`vitest > should lint { rule: 'vitest/consistent-vitest-vi', file: '/hom
 ]
 `;
 
-exports[`vitest > should lint { rule: 'vitest/no-conditional-tests', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/vitest/vitest__no-conditional-tests.ts' } 1`] = `[]`;
+exports[`vitest > should lint 'vitest/no-conditional-tests' 1`] = `[]`;
 
-exports[`vitest > should lint { rule: 'vitest/no-import-node-test', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/vitest/vitest__no-import-node-test.ts' } 1`] = `
+exports[`vitest > should lint 'vitest/no-import-node-test' 1`] = `
 [
   {
     "column": 22,
@@ -33,11 +33,11 @@ exports[`vitest > should lint { rule: 'vitest/no-import-node-test', file: '/home
 ]
 `;
 
-exports[`vitest > should lint { rule: 'vitest/prefer-called-once', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/vitest/vitest__prefer-called-once.ts' } 1`] = `[]`;
+exports[`vitest > should lint 'vitest/prefer-called-once' 1`] = `[]`;
 
-exports[`vitest > should lint { rule: 'vitest/prefer-to-be-object', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/vitest/vitest__prefer-to-be-object.ts' } 1`] = `[]`;
+exports[`vitest > should lint 'vitest/prefer-to-be-object' 1`] = `[]`;
 
-exports[`vitest > should lint { rule: 'vitest/require-local-test-context-for-concurrent-snapshots', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/vitest/vitest__require-local-test-context-for-concurrent-snapshots.ts' } 1`] = `
+exports[`vitest > should lint 'vitest/require-local-test-context-for…' 1`] = `
 [
   {
     "column": 5,
@@ -49,9 +49,9 @@ exports[`vitest > should lint { rule: 'vitest/require-local-test-context-for-con
 ]
 `;
 
-exports[`vitest > should lint { rule: 'vitest/valid-describe-callback', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/vitest/vitest__valid-describe-callback.ts' } 1`] = `[]`;
+exports[`vitest > should lint 'vitest/valid-describe-callback' 1`] = `[]`;
 
-exports[`vitest > should lint { rule: 'vitest/warn-todo', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/vitest/vitest__warn-todo.ts' } 1`] = `
+exports[`vitest > should lint 'vitest/warn-todo' 1`] = `
 [
   {
     "column": 1,

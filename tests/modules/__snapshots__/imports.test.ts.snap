@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`imports > should lint { rule: 'import/consistent-type-specifier-style', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/imports/import__consistent-type-specifier-style.ts' } 1`] = `
+exports[`imports > should lint 'import/consistent-type-specifier-style' 1`] = `
 [
   {
     "column": 13,
@@ -12,7 +12,7 @@ exports[`imports > should lint { rule: 'import/consistent-type-specifier-style',
 ]
 `;
 
-exports[`imports > should lint { rule: 'import/export', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/imports/import__export.ts' } 1`] = `
+exports[`imports > should lint 'import/export' 1`] = `
 [
   {
     "column": 1,
@@ -31,9 +31,9 @@ exports[`imports > should lint { rule: 'import/export', file: '/home/skill/devs/
 ]
 `;
 
-exports[`imports > should lint { rule: 'import/extensions', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/imports/import__extensions.ts' } 1`] = `[]`;
+exports[`imports > should lint 'import/extensions' 1`] = `[]`;
 
-exports[`imports > should lint { rule: 'import/first', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/imports/import__first.ts' } 1`] = `
+exports[`imports > should lint 'import/first' 1`] = `
 [
   {
     "column": 1,
@@ -66,11 +66,11 @@ exports[`imports > should lint { rule: 'import/first', file: '/home/skill/devs/o
 ]
 `;
 
-exports[`imports > should lint { rule: 'import/newline-after-import', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/imports/import__newline-after-import.ts' } 1`] = `[]`;
+exports[`imports > should lint 'import/newline-after-import' 1`] = `[]`;
 
-exports[`imports > should lint { rule: 'import/no-absolute-path', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/imports/import__no-absolute-path.ts' } 1`] = `[]`;
+exports[`imports > should lint 'import/no-absolute-path' 1`] = `[]`;
 
-exports[`imports > should lint { rule: 'import/no-amd', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/imports/import__no-amd.ts' } 1`] = `
+exports[`imports > should lint 'import/no-amd' 1`] = `
 [
   {
     "column": 1,
@@ -82,7 +82,7 @@ exports[`imports > should lint { rule: 'import/no-amd', file: '/home/skill/devs/
 ]
 `;
 
-exports[`imports > should lint { rule: 'import/no-commonjs', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/imports/import__no-commonjs.ts' } 1`] = `
+exports[`imports > should lint 'import/no-commonjs' 1`] = `
 [
   {
     "column": 11,
@@ -122,7 +122,7 @@ exports[`imports > should lint { rule: 'import/no-commonjs', file: '/home/skill/
 ]
 `;
 
-exports[`imports > should lint { rule: 'import/no-cycle', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/imports/import__no-cycle.ts' } 1`] = `
+exports[`imports > should lint 'import/no-cycle' 1`] = `
 [
   {
     "column": 1,
@@ -148,7 +148,7 @@ exports[`imports > should lint { rule: 'import/no-cycle', file: '/home/skill/dev
 ]
 `;
 
-exports[`imports > should lint { rule: 'import/no-duplicates', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/imports/import__no-duplicates.ts' } 1`] = `
+exports[`imports > should lint 'import/no-duplicates' 1`] = `
 [
   {
     "column": 1,
@@ -188,7 +188,7 @@ exports[`imports > should lint { rule: 'import/no-duplicates', file: '/home/skil
 ]
 `;
 
-exports[`imports > should lint { rule: 'import/no-empty-named-blocks', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/imports/import__no-empty-named-blocks.ts' } 1`] = `
+exports[`imports > should lint 'import/no-empty-named-blocks' 1`] = `
 [
   {
     "column": 1,
@@ -214,11 +214,11 @@ exports[`imports > should lint { rule: 'import/no-empty-named-blocks', file: '/h
 ]
 `;
 
-exports[`imports > should lint { rule: 'import/no-mutable-exports', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/imports/import__no-mutable-exports.ts' } 1`] = `[]`;
+exports[`imports > should lint 'import/no-mutable-exports' 1`] = `[]`;
 
-exports[`imports > should lint { rule: 'import/no-named-as-default', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/imports/import__no-named-as-default.ts' } 1`] = `[]`;
+exports[`imports > should lint 'import/no-named-as-default' 1`] = `[]`;
 
-exports[`imports > should lint { rule: 'import/no-named-as-default-member', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/imports/import__no-named-as-default-member.ts' } 1`] = `
+exports[`imports > should lint 'import/no-named-as-default-member' 1`] = `
 [
   {
     "column": 1,
@@ -237,9 +237,9 @@ exports[`imports > should lint { rule: 'import/no-named-as-default-member', file
 ]
 `;
 
-exports[`imports > should lint { rule: 'import/no-named-default', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/imports/import__no-named-default.ts' } 1`] = `[]`;
+exports[`imports > should lint 'import/no-named-default' 1`] = `[]`;
 
-exports[`imports > should lint { rule: 'import/no-self-import', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/imports/import__no-self-import.ts' } 1`] = `
+exports[`imports > should lint 'import/no-self-import' 1`] = `
 [
   {
     "column": 1,

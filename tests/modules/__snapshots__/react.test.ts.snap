@@ -1,10 +1,10 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`react > should lint { rule: 'react/button-has-type', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__button-has-type.tsx' } 1`] = `[]`;
+exports[`react > should lint 'react/button-has-type' 1`] = `[]`;
 
-exports[`react > should lint { rule: 'react/checked-requires-onchange-or-readonly', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__checked-requires-onchange-or-readonly.tsx' } 1`] = `[]`;
+exports[`react > should lint 'react/checked-requires-onchange-or-re…' 1`] = `[]`;
 
-exports[`react > should lint { rule: 'react/display-name', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__display-name.tsx' } 1`] = `
+exports[`react > should lint 'react/display-name' 1`] = `
 [
   {
     "column": 7,
@@ -30,9 +30,9 @@ exports[`react > should lint { rule: 'react/display-name', file: '/home/skill/de
 ]
 `;
 
-exports[`react > should lint { rule: 'react/exhaustive-deps', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__exhaustive-deps.ts' } 1`] = `[]`;
+exports[`react > should lint 'react/exhaustive-deps' 1`] = `[]`;
 
-exports[`react > should lint { rule: 'react/forward-ref-uses-ref', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__forward-ref-uses-ref.tsx' } 1`] = `
+exports[`react > should lint 'react/forward-ref-uses-ref' 1`] = `
 [
   {
     "column": 5,
@@ -51,9 +51,9 @@ exports[`react > should lint { rule: 'react/forward-ref-uses-ref', file: '/home/
 ]
 `;
 
-exports[`react > should lint { rule: 'react/hook-use-state', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__hook-use-state.tsx' } 1`] = `[]`;
+exports[`react > should lint 'react/hook-use-state' 1`] = `[]`;
 
-exports[`react > should lint { rule: 'react/iframe-missing-sandbox', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__iframe-missing-sandbox.tsx' } 1`] = `
+exports[`react > should lint 'react/iframe-missing-sandbox' 1`] = `
 [
   {
     "column": 2,
@@ -100,9 +100,9 @@ exports[`react > should lint { rule: 'react/iframe-missing-sandbox', file: '/hom
 ]
 `;
 
-exports[`react > should lint { rule: 'react/jsx-boolean-value', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__jsx-boolean-value.tsx' } 1`] = `[]`;
+exports[`react > should lint 'react/jsx-boolean-value' 1`] = `[]`;
 
-exports[`react > should lint { rule: 'react/jsx-curly-brace-presence', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__jsx-curly-brace-presence.tsx' } 1`] = `
+exports[`react > should lint 'react/jsx-curly-brace-presence' 1`] = `
 [
   {
     "column": 2,
@@ -639,9 +639,9 @@ exports[`react > should lint { rule: 'react/jsx-curly-brace-presence', file: '/h
 ]
 `;
 
-exports[`react > should lint { rule: 'react/jsx-handler-names', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__jsx-handler-names.tsx' } 1`] = `[]`;
+exports[`react > should lint 'react/jsx-handler-names' 1`] = `[]`;
 
-exports[`react > should lint { rule: 'react/jsx-key', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__jsx-key.tsx' } 1`] = `
+exports[`react > should lint 'react/jsx-key' 1`] = `
 [
   {
     "column": 11,
@@ -688,7 +688,7 @@ exports[`react > should lint { rule: 'react/jsx-key', file: '/home/skill/devs/ox
 ]
 `;
 
-exports[`react > should lint { rule: 'react/jsx-max-depth', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__jsx-max-depth.tsx' } 1`] = `
+exports[`react > should lint 'react/jsx-max-depth' 1`] = `
 [
   {
     "column": 7,
@@ -735,9 +735,9 @@ exports[`react > should lint { rule: 'react/jsx-max-depth', file: '/home/skill/d
 ]
 `;
 
-exports[`react > should lint { rule: 'react/jsx-no-comment-textnodes', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__jsx-no-comment-textnodes.tsx' } 1`] = `[]`;
+exports[`react > should lint 'react/jsx-no-comment-textnodes' 1`] = `[]`;
 
-exports[`react > should lint { rule: 'react/jsx-no-constructed-context-values', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__jsx-no-constructed-context-values.tsx' } 1`] = `
+exports[`react > should lint 'react/jsx-no-constructed-context-valu…' 1`] = `
 [
   {
     "column": 4,
@@ -798,7 +798,7 @@ exports[`react > should lint { rule: 'react/jsx-no-constructed-context-values', 
 ]
 `;
 
-exports[`react > should lint { rule: 'react/jsx-no-duplicate-props', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__jsx-no-duplicate-props.tsx' } 1`] = `
+exports[`react > should lint 'react/jsx-no-duplicate-props' 1`] = `
 [
   {
     "column": 2,
@@ -845,7 +845,7 @@ exports[`react > should lint { rule: 'react/jsx-no-duplicate-props', file: '/hom
 ]
 `;
 
-exports[`react > should lint { rule: 'react/jsx-no-literals', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__jsx-no-literals.tsx' } 1`] = `
+exports[`react > should lint 'react/jsx-no-literals' 1`] = `
 [
   {
     "column": 2,
@@ -864,7 +864,7 @@ exports[`react > should lint { rule: 'react/jsx-no-literals', file: '/home/skill
 ]
 `;
 
-exports[`react > should lint { rule: 'react/jsx-no-script-url', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__jsx-no-script-url.tsx' } 1`] = `
+exports[`react > should lint 'react/jsx-no-script-url' 1`] = `
 [
   {
     "column": 2,
@@ -890,7 +890,7 @@ exports[`react > should lint { rule: 'react/jsx-no-script-url', file: '/home/ski
 ]
 `;
 
-exports[`react > should lint { rule: 'react/jsx-no-target-blank', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__jsx-no-target-blank.tsx' } 1`] = `
+exports[`react > should lint 'react/jsx-no-target-blank' 1`] = `
 [
   {
     "column": 14,
@@ -937,7 +937,7 @@ exports[`react > should lint { rule: 'react/jsx-no-target-blank', file: '/home/s
 ]
 `;
 
-exports[`react > should lint { rule: 'react/jsx-no-undef', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__jsx-no-undef.tsx' } 1`] = `
+exports[`react > should lint 'react/jsx-no-undef' 1`] = `
 [
   {
     "column": 7,
@@ -977,11 +977,11 @@ exports[`react > should lint { rule: 'react/jsx-no-undef', file: '/home/skill/de
 ]
 `;
 
-exports[`react > should lint { rule: 'react/jsx-no-useless-fragment', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__jsx-no-useless-fragment.tsx' } 1`] = `[]`;
+exports[`react > should lint 'react/jsx-no-useless-fragment' 1`] = `[]`;
 
-exports[`react > should lint { rule: 'react/jsx-pascal-case', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__jsx-pascal-case.tsx' } 1`] = `[]`;
+exports[`react > should lint 'react/jsx-pascal-case' 1`] = `[]`;
 
-exports[`react > should lint { rule: 'react/jsx-props-no-spread-multi', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__jsx-props-no-spread-multi.tsx' } 1`] = `
+exports[`react > should lint 'react/jsx-props-no-spread-multi' 1`] = `
 [
   {
     "column": 2,
@@ -1007,7 +1007,7 @@ exports[`react > should lint { rule: 'react/jsx-props-no-spread-multi', file: '/
 ]
 `;
 
-exports[`react > should lint { rule: 'react/no-array-index-key', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__no-array-index-key.tsx' } 1`] = `
+exports[`react > should lint 'react/no-array-index-key' 1`] = `
 [
   {
     "column": 6,
@@ -1033,9 +1033,9 @@ exports[`react > should lint { rule: 'react/no-array-index-key', file: '/home/sk
 ]
 `;
 
-exports[`react > should lint { rule: 'react/no-children-prop', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__no-children-prop.tsx' } 1`] = `[]`;
+exports[`react > should lint 'react/no-children-prop' 1`] = `[]`;
 
-exports[`react > should lint { rule: 'react/no-clone-element', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__no-clone-element.tsx' } 1`] = `
+exports[`react > should lint 'react/no-clone-element' 1`] = `
 [
   {
     "column": 10,
@@ -1061,7 +1061,7 @@ exports[`react > should lint { rule: 'react/no-clone-element', file: '/home/skil
 ]
 `;
 
-exports[`react > should lint { rule: 'react/no-danger', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__no-danger.tsx' } 1`] = `
+exports[`react > should lint 'react/no-danger' 1`] = `
 [
   {
     "column": 20,
@@ -1080,7 +1080,7 @@ exports[`react > should lint { rule: 'react/no-danger', file: '/home/skill/devs/
 ]
 `;
 
-exports[`react > should lint { rule: 'react/no-danger-with-children', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__no-danger-with-children.tsx' } 1`] = `
+exports[`react > should lint 'react/no-danger-with-children' 1`] = `
 [
   {
     "column": 1,
@@ -1127,7 +1127,7 @@ exports[`react > should lint { rule: 'react/no-danger-with-children', file: '/ho
 ]
 `;
 
-exports[`react > should lint { rule: 'react/no-did-mount-set-state', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__no-did-mount-set-state.tsx' } 1`] = `
+exports[`react > should lint 'react/no-did-mount-set-state' 1`] = `
 [
   {
     "column": 13,
@@ -1167,7 +1167,7 @@ exports[`react > should lint { rule: 'react/no-did-mount-set-state', file: '/hom
 ]
 `;
 
-exports[`react > should lint { rule: 'react/no-did-update-set-state', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__no-did-update-set-state.tsx' } 1`] = `
+exports[`react > should lint 'react/no-did-update-set-state' 1`] = `
 [
   {
     "column": 13,
@@ -1207,9 +1207,9 @@ exports[`react > should lint { rule: 'react/no-did-update-set-state', file: '/ho
 ]
 `;
 
-exports[`react > should lint { rule: 'react/no-direct-mutation-state', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__no-direct-mutation-state.tsx' } 1`] = `[]`;
+exports[`react > should lint 'react/no-direct-mutation-state' 1`] = `[]`;
 
-exports[`react > should lint { rule: 'react/no-find-dom-node', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__no-find-dom-node.tsx' } 1`] = `
+exports[`react > should lint 'react/no-find-dom-node' 1`] = `
 [
   {
     "column": 7,
@@ -1235,7 +1235,7 @@ exports[`react > should lint { rule: 'react/no-find-dom-node', file: '/home/skil
 ]
 `;
 
-exports[`react > should lint { rule: 'react/no-is-mounted', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__no-is-mounted.tsx' } 1`] = `
+exports[`react > should lint 'react/no-is-mounted' 1`] = `
 [
   {
     "column": 7,
@@ -1275,7 +1275,7 @@ exports[`react > should lint { rule: 'react/no-is-mounted', file: '/home/skill/d
 ]
 `;
 
-exports[`react > should lint { rule: 'react/no-multi-comp', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__no-multi-comp.tsx' } 1`] = `
+exports[`react > should lint 'react/no-multi-comp' 1`] = `
 [
   {
     "column": 10,
@@ -1329,9 +1329,9 @@ exports[`react > should lint { rule: 'react/no-multi-comp', file: '/home/skill/d
 ]
 `;
 
-exports[`react > should lint { rule: 'react/no-namespace', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__no-namespace.tsx' } 1`] = `[]`;
+exports[`react > should lint 'react/no-namespace' 1`] = `[]`;
 
-exports[`react > should lint { rule: 'react/no-object-type-as-default-prop', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__no-object-type-as-default-prop.tsx' } 1`] = `
+exports[`react > should lint 'react/no-object-type-as-default-prop' 1`] = `
 [
   {
     "column": 10,
@@ -1441,9 +1441,9 @@ exports[`react > should lint { rule: 'react/no-object-type-as-default-prop', fil
 ]
 `;
 
-exports[`react > should lint { rule: 'react/no-react-children', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__no-react-children.tsx' } 1`] = `[]`;
+exports[`react > should lint 'react/no-react-children' 1`] = `[]`;
 
-exports[`react > should lint { rule: 'react/no-redundant-should-component-update', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__no-redundant-should-component-update.tsx' } 1`] = `
+exports[`react > should lint 'react/no-redundant-should-component-u…' 1`] = `
 [
   {
     "column": 7,
@@ -1518,7 +1518,7 @@ exports[`react > should lint { rule: 'react/no-redundant-should-component-update
 ]
 `;
 
-exports[`react > should lint { rule: 'react/no-render-return-value', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__no-render-return-value.tsx' } 1`] = `
+exports[`react > should lint 'react/no-render-return-value' 1`] = `
 [
   {
     "column": 12,
@@ -1565,7 +1565,7 @@ exports[`react > should lint { rule: 'react/no-render-return-value', file: '/hom
 ]
 `;
 
-exports[`react > should lint { rule: 'react/no-set-state', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__no-set-state.tsx' } 1`] = `
+exports[`react > should lint 'react/no-set-state' 1`] = `
 [
   {
     "column": 13,
@@ -1605,7 +1605,7 @@ exports[`react > should lint { rule: 'react/no-set-state', file: '/home/skill/de
 ]
 `;
 
-exports[`react > should lint { rule: 'react/no-string-refs', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__no-string-refs.tsx' } 1`] = `
+exports[`react > should lint 'react/no-string-refs' 1`] = `
 [
   {
     "column": 13,
@@ -1680,9 +1680,9 @@ exports[`react > should lint { rule: 'react/no-string-refs', file: '/home/skill/
 ]
 `;
 
-exports[`react > should lint { rule: 'react/no-this-in-sfc', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__no-this-in-sfc.tsx' } 1`] = `[]`;
+exports[`react > should lint 'react/no-this-in-sfc' 1`] = `[]`;
 
-exports[`react > should lint { rule: 'react/no-unknown-property', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__no-unknown-property.tsx' } 1`] = `
+exports[`react > should lint 'react/no-unknown-property' 1`] = `
 [
   {
     "column": 16,
@@ -1743,7 +1743,7 @@ exports[`react > should lint { rule: 'react/no-unknown-property', file: '/home/s
 ]
 `;
 
-exports[`react > should lint { rule: 'react/no-unsafe', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__no-unsafe.tsx' } 1`] = `
+exports[`react > should lint 'react/no-unsafe' 1`] = `
 [
   {
     "column": 7,
@@ -1790,7 +1790,7 @@ exports[`react > should lint { rule: 'react/no-unsafe', file: '/home/skill/devs/
 ]
 `;
 
-exports[`react > should lint { rule: 'react/no-unstable-nested-components', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__no-unstable-nested-components.tsx' } 1`] = `
+exports[`react > should lint 'react/no-unstable-nested-components' 1`] = `
 [
   {
     "column": 10,
@@ -1830,7 +1830,7 @@ exports[`react > should lint { rule: 'react/no-unstable-nested-components', file
 ]
 `;
 
-exports[`react > should lint { rule: 'react/no-will-update-set-state', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__no-will-update-set-state.tsx' } 1`] = `
+exports[`react > should lint 'react/no-will-update-set-state' 1`] = `
 [
   {
     "column": 13,
@@ -1870,7 +1870,7 @@ exports[`react > should lint { rule: 'react/no-will-update-set-state', file: '/h
 ]
 `;
 
-exports[`react > should lint { rule: 'react/only-export-components', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__only-export-components.tsx' } 1`] = `
+exports[`react > should lint 'react/only-export-components' 1`] = `
 [
   {
     "column": 14,
@@ -1966,7 +1966,7 @@ exports[`react > should lint { rule: 'react/only-export-components', file: '/hom
 ]
 `;
 
-exports[`react > should lint { rule: 'react/prefer-es6-class', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__prefer-es6-class.tsx' } 1`] = `
+exports[`react > should lint 'react/prefer-es6-class' 1`] = `
 [
   {
     "column": 13,
@@ -1992,7 +1992,7 @@ exports[`react > should lint { rule: 'react/prefer-es6-class', file: '/home/skil
 ]
 `;
 
-exports[`react > should lint { rule: 'react/prefer-function-component', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__prefer-function-component.tsx' } 1`] = `
+exports[`react > should lint 'react/prefer-function-component' 1`] = `
 [
   {
     "column": 7,
@@ -2032,7 +2032,7 @@ exports[`react > should lint { rule: 'react/prefer-function-component', file: '/
 ]
 `;
 
-exports[`react > should lint { rule: 'react/react-in-jsx-scope', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__react-in-jsx-scope.tsx' } 1`] = `
+exports[`react > should lint 'react/react-in-jsx-scope' 1`] = `
 [
   {
     "column": 12,
@@ -2044,9 +2044,9 @@ exports[`react > should lint { rule: 'react/react-in-jsx-scope', file: '/home/sk
 ]
 `;
 
-exports[`react > should lint { rule: 'react/require-render-return', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__require-render-return.tsx' } 1`] = `[]`;
+exports[`react > should lint 'react/require-render-return' 1`] = `[]`;
 
-exports[`react > should lint { rule: 'react/rules-of-hooks', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__rules-of-hooks.ts' } 1`] = `
+exports[`react > should lint 'react/rules-of-hooks' 1`] = `
 [
   {
     "column": 31,
@@ -2072,7 +2072,7 @@ exports[`react > should lint { rule: 'react/rules-of-hooks', file: '/home/skill/
 ]
 `;
 
-exports[`react > should lint { rule: 'react/self-closing-comp', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__self-closing-comp.tsx' } 1`] = `
+exports[`react > should lint 'react/self-closing-comp' 1`] = `
 [
   {
     "column": 15,
@@ -2126,16 +2126,16 @@ exports[`react > should lint { rule: 'react/self-closing-comp', file: '/home/ski
 ]
 `;
 
-exports[`react > should lint { rule: 'react/state-in-constructor', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__state-in-constructor.tsx' } 1`] = `[]`;
+exports[`react > should lint 'react/state-in-constructor' 1`] = `[]`;
 
-exports[`react > should lint { rule: 'react/style-prop-object', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__style-prop-object.tsx' } 1`] = `[]`;
+exports[`react > should lint 'react/style-prop-object' 1`] = `[]`;
 
-exports[`react > should lint { rule: 'react/void-dom-elements-no-children', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react__void-dom-elements-no-children.tsx' } 1`] = `[]`;
+exports[`react > should lint 'react/void-dom-elements-no-children' 1`] = `[]`;
 
-exports[`react > should lint { rule: 'react-perf/jsx-no-jsx-as-prop', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react-perf__jsx-no-jsx-as-prop.tsx' } 1`] = `[]`;
+exports[`react > should lint 'react-perf/jsx-no-jsx-as-prop' 1`] = `[]`;
 
-exports[`react > should lint { rule: 'react-perf/jsx-no-new-array-as-prop', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react-perf__jsx-no-new-array-as-prop.tsx' } 1`] = `[]`;
+exports[`react > should lint 'react-perf/jsx-no-new-array-as-prop' 1`] = `[]`;
 
-exports[`react > should lint { rule: 'react-perf/jsx-no-new-function-as-prop', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react-perf__jsx-no-new-function-as-prop.tsx' } 1`] = `[]`;
+exports[`react > should lint 'react-perf/jsx-no-new-function-as-prop' 1`] = `[]`;
 
-exports[`react > should lint { rule: 'react-perf/jsx-no-new-object-as-prop', file: '/home/skill/devs/oxlint-config.git/ci-workflow/tests/fixtures/react/react-perf__jsx-no-new-object-as-prop.tsx' } 1`] = `[]`;
+exports[`react > should lint 'react-perf/jsx-no-new-object-as-prop' 1`] = `[]`;
