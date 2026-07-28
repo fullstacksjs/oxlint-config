@@ -47,8 +47,6 @@ exports[`base > should lint 'array-callback-return' 1`] = `
 
 exports[`base > should lint 'complexity' 1`] = `[]`;
 
-exports[`base > should lint 'default-case' 1`] = `[]`;
-
 exports[`base > should lint 'default-case-last' 1`] = `
 [
   {
