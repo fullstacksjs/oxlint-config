@@ -10,7 +10,7 @@ export function base(ctx: Context): OxlintConfig {
       'complexity': ['error', 14],
       'constructor-super': ctx.ts(),
       'default-case-last': 'error',
-      'default-case': 'error',
+      'default-case': 'off',
       'default-param-last': 'warn',
       'eqeqeq': ['error', 'smart'],
       'for-direction': 'error',

@@ -1,7 +1,7 @@
 import type { OxlintConfig } from 'oxlint';
 import type { Context } from '../lib/Context.ts';
 
-export function promise(ctx: Context): OxlintConfig {
+export function promise(_ctx: Context): OxlintConfig {
   return {
     plugins: ['promise'],
     rules: {

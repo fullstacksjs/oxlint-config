@@ -26,7 +26,7 @@ export function react(ctx: Context): OxlintConfig {
       'react/no-find-dom-node': classComponent,
       'react/no-is-mounted': classComponent,
       'react/no-string-refs': classComponent,
-      'react/no-unstable-nested-components': 'error',
+      'react/no-unstable-nested-components': 'off',
       'react/no-object-type-as-default-prop': 'warn',
       'react/jsx-no-comment-textnodes': 'warn',
       'react/jsx-no-constructed-context-values': 'warn',
@@ -49,30 +49,61 @@ export function react(ctx: Context): OxlintConfig {
       'react/jsx-curly-brace-presence': 'warn',
       'react/jsx-fragments': 'warn',
       'react/jsx-handler-names': 'warn',
-      'react/jsx-max-depth': 'warn',
+      'react/jsx-max-depth': 'off',
       'react/jsx-pascal-case': 'error',
       'react/jsx-props-no-spread-multi': 'error',
-      'react/jsx-no-literals': 'warn',
+      'react/jsx-no-literals': 'off',
       'react/no-clone-element': 'warn',
       'react/no-react-children': 'warn',
       'react/no-redundant-should-component-update': classComponent,
-      'react/only-export-components': 'warn',
+      'react/only-export-components': [
+        'warn',
+        ctx.matchModule(
+          'nextjs',
+          {
+            allowExportNames: [
+              // https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config
+              'experimental_ppr',
+              'dynamic',
+              'dynamicParams',
+              'revalidate',
+              'fetchCache',
+              'runtime',
+              'preferredRegion',
+              'maxDuration',
+              // https://nextjs.org/docs/app/api-reference/functions/generate-metadata
+              'metadata',
+              'generateMetadata',
+              // https://nextjs.org/docs/app/api-reference/functions/generate-viewport
+              'viewport',
+              'generateViewport',
+              // https://nextjs.org/docs/app/api-reference/functions/generate-image-metadata
+              'generateImageMetadata',
+              // https://nextjs.org/docs/app/api-reference/functions/generate-sitemaps
+              'generateSitemaps',
+              // https://nextjs.org/docs/app/api-reference/functions/generate-static-params
+              'generateStaticParams',
+            ],
+          },
+          { allowConstantExport: true },
+        ),
+      ],
       'react/prefer-es6-class': classComponent,
       'react/prefer-function-component': 'error',
       'react/self-closing-comp': 'warn',
       'react/state-in-constructor': 'warn',
       'react/style-prop-object': 'warn',
-      'react/button-has-type': 'warn',
+      'react/button-has-type': 'off', // buggy
       'react/forbid-component-props': 'off',
       'react/forbid-dom-props': 'off',
       'react/forbid-elements': 'off',
       'react/jsx-filename-extension': 'off',
       'react/jsx-props-no-spreading': 'off',
       'react/react-compiler': 'off',
-      'react-perf/jsx-no-jsx-as-prop': 'error',
-      'react-perf/jsx-no-new-array-as-prop': 'error',
-      'react-perf/jsx-no-new-function-as-prop': 'error',
-      'react-perf/jsx-no-new-object-as-prop': 'error',
+      'react-perf/jsx-no-jsx-as-prop': 'off',
+      'react-perf/jsx-no-new-array-as-prop': 'off',
+      'react-perf/jsx-no-new-function-as-prop': 'off',
+      'react-perf/jsx-no-new-object-as-prop': 'off',
 
       // Unsupported in oxlint (not in schema for v1.72.0)
       // "react/async-server-action": "warn",
