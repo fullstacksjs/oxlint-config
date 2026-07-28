@@ -433,18 +433,6 @@ exports[`react > should lint 'react/jsx-no-target-blank' 1`] = `
 ]
 `;
 
-exports[`react > should lint 'react/jsx-no-undef' 1`] = `
-[
-  {
-    "column": 7,
-    "line": 3,
-    "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
-    "rule": "react(only-export-components)",
-    "severity": "warning",
-  },
-]
-`;
-
 exports[`react > should lint 'react/jsx-no-useless-fragment' 1`] = `[]`;
 
 exports[`react > should lint 'react/jsx-pascal-case' 1`] = `[]`;
@@ -494,18 +482,6 @@ exports[`react > should lint 'react/no-clone-element' 1`] = `
 ]
 `;
 
-exports[`react > should lint 'react/no-danger' 1`] = `
-[
-  {
-    "column": 72,
-    "line": 5,
-    "message": "Unnecessary closing tag",
-    "rule": "react(self-closing-comp)",
-    "severity": "warning",
-  },
-]
-`;
-
 exports[`react > should lint 'react/no-danger-with-children' 1`] = `
 [
   {
@@ -528,103 +504,6 @@ exports[`react > should lint 'react/no-danger-with-children' 1`] = `
     "message": "Only set one of \`children\` or \`props.dangerouslySetInnerHTML\`",
     "rule": "react(no-danger-with-children)",
     "severity": "error",
-  },
-]
-`;
-
-exports[`react > should lint 'react/no-did-mount-set-state' 1`] = `
-[
-  {
-    "column": 17,
-    "line": 10,
-    "message": "Disallow literal text as JSX children",
-    "rule": "react(jsx-no-literals)",
-    "severity": "warning",
-  },
-]
-`;
-
-exports[`react > should lint 'react/no-did-update-set-state' 1`] = `
-[
-  {
-    "column": 17,
-    "line": 10,
-    "message": "Disallow literal text as JSX children",
-    "rule": "react(jsx-no-literals)",
-    "severity": "warning",
-  },
-]
-`;
-
-exports[`react > should lint 'react/no-direct-mutation-state' 1`] = `[]`;
-
-exports[`react > should lint 'react/no-find-dom-node' 1`] = `
-[
-  {
-    "column": 7,
-    "line": 3,
-    "message": "Class component should be written as a function component.",
-    "rule": "react(prefer-function-component)",
-    "severity": "error",
-  },
-]
-`;
-
-exports[`react > should lint 'react/no-is-mounted' 1`] = `
-[
-  {
-    "column": 7,
-    "line": 3,
-    "message": "Class component should be written as a function component.",
-    "rule": "react(prefer-function-component)",
-    "severity": "error",
-  },
-  {
-    "column": 26,
-    "line": 10,
-    "message": "JSX attribute values should not contain functions created in the same scope.",
-    "rule": "react-perf(jsx-no-new-function-as-prop)",
-    "severity": "error",
-  },
-  {
-    "column": 54,
-    "line": 10,
-    "message": "Disallow literal text as JSX children",
-    "rule": "react(jsx-no-literals)",
-    "severity": "warning",
-  },
-]
-`;
-
-exports[`react > should lint 'react/no-multi-comp' 1`] = `
-[
-  {
-    "column": 10,
-    "line": 3,
-    "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
-    "rule": "react(only-export-components)",
-    "severity": "warning",
-  },
-  {
-    "column": 15,
-    "line": 4,
-    "message": "Disallow literal text as JSX children",
-    "rule": "react(jsx-no-literals)",
-    "severity": "warning",
-  },
-  {
-    "column": 10,
-    "line": 7,
-    "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
-    "rule": "react(only-export-components)",
-    "severity": "warning",
-  },
-  {
-    "column": 15,
-    "line": 8,
-    "message": "Disallow literal text as JSX children",
-    "rule": "react(jsx-no-literals)",
-    "severity": "warning",
   },
 ]
 `;
@@ -701,46 +580,6 @@ exports[`react > should lint 'react/no-object-type-as-default-prop' 1`] = `
 
 exports[`react > should lint 'react/no-react-children' 1`] = `[]`;
 
-exports[`react > should lint 'react/no-redundant-should-component-u…' 1`] = `
-[
-  {
-    "column": 7,
-    "line": 3,
-    "message": "Class component should be written as a function component.",
-    "rule": "react(prefer-function-component)",
-    "severity": "error",
-  },
-  {
-    "column": 17,
-    "line": 9,
-    "message": "Disallow literal text as JSX children",
-    "rule": "react(jsx-no-literals)",
-    "severity": "warning",
-  },
-  {
-    "column": 10,
-    "line": 13,
-    "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
-    "rule": "react(only-export-components)",
-    "severity": "warning",
-  },
-  {
-    "column": 16,
-    "line": 14,
-    "message": "Class component should be written as a function component.",
-    "rule": "react(prefer-function-component)",
-    "severity": "error",
-  },
-  {
-    "column": 19,
-    "line": 20,
-    "message": "Disallow literal text as JSX children",
-    "rule": "react(jsx-no-literals)",
-    "severity": "warning",
-  },
-]
-`;
-
 exports[`react > should lint 'react/no-render-return-value' 1`] = `
 [
   {
@@ -756,44 +595,6 @@ exports[`react > should lint 'react/no-render-return-value' 1`] = `
     "message": "Do not depend on the return value from \`ReactDOM.render\`.",
     "rule": "react(no-render-return-value)",
     "severity": "error",
-  },
-]
-`;
-
-exports[`react > should lint 'react/no-set-state' 1`] = `
-[
-  {
-    "column": 26,
-    "line": 15,
-    "message": "JSX attribute values should not contain functions created in the same scope.",
-    "rule": "react-perf(jsx-no-new-function-as-prop)",
-    "severity": "error",
-  },
-  {
-    "column": 55,
-    "line": 15,
-    "message": "Disallow literal text as JSX children",
-    "rule": "react(jsx-no-literals)",
-    "severity": "warning",
-  },
-]
-`;
-
-exports[`react > should lint 'react/no-string-refs' 1`] = `
-[
-  {
-    "column": 29,
-    "line": 5,
-    "message": "Disallow literal text as JSX children",
-    "rule": "react(jsx-no-literals)",
-    "severity": "warning",
-  },
-  {
-    "column": 29,
-    "line": 15,
-    "message": "Disallow literal text as JSX children",
-    "rule": "react(jsx-no-literals)",
-    "severity": "warning",
   },
 ]
 `;
@@ -840,25 +641,6 @@ exports[`react > should lint 'react/no-unknown-property' 1`] = `
 ]
 `;
 
-exports[`react > should lint 'react/no-unsafe' 1`] = `
-[
-  {
-    "column": 7,
-    "line": 4,
-    "message": "Class component should be written as a function component.",
-    "rule": "react(prefer-function-component)",
-    "severity": "error",
-  },
-  {
-    "column": 7,
-    "line": 11,
-    "message": "Class component should be written as a function component.",
-    "rule": "react(prefer-function-component)",
-    "severity": "error",
-  },
-]
-`;
-
 exports[`react > should lint 'react/no-unstable-nested-components' 1`] = `
 [
   {
@@ -880,18 +662,6 @@ exports[`react > should lint 'react/no-unstable-nested-components' 1`] = `
     "line": 4,
     "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
     "rule": "react(only-export-components)",
-    "severity": "warning",
-  },
-]
-`;
-
-exports[`react > should lint 'react/no-will-update-set-state' 1`] = `
-[
-  {
-    "column": 17,
-    "line": 10,
-    "message": "Disallow literal text as JSX children",
-    "rule": "react(jsx-no-literals)",
     "severity": "warning",
   },
 ]
@@ -951,18 +721,6 @@ exports[`react > should lint 'react/only-export-components' 1`] = `
 ]
 `;
 
-exports[`react > should lint 'react/prefer-es6-class' 1`] = `
-[
-  {
-    "column": 17,
-    "line": 5,
-    "message": "Disallow literal text as JSX children",
-    "rule": "react(jsx-no-literals)",
-    "severity": "warning",
-  },
-]
-`;
-
 exports[`react > should lint 'react/prefer-function-component' 1`] = `
 [
   {
@@ -981,10 +739,6 @@ exports[`react > should lint 'react/prefer-function-component' 1`] = `
   },
 ]
 `;
-
-exports[`react > should lint 'react/react-in-jsx-scope' 1`] = `[]`;
-
-exports[`react > should lint 'react/require-render-return' 1`] = `[]`;
 
 exports[`react > should lint 'react/rules-of-hooks' 1`] = `
 [

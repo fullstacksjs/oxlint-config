@@ -3,5 +3,3 @@
 a! == b; // a non-null assertions(`!`) and an equals test(`==`)
    a !== b; // not equals test(`!==`)
    a! === b; // a non-null assertions(`!`) and an triple equals test(`===`)
-   a! in b;
-   a! instanceof b;

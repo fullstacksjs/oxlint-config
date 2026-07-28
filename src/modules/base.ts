@@ -3,6 +3,7 @@ import type { Context } from '../lib/Context.ts';
 
 export function base(ctx: Context): OxlintConfig {
   return {
+    plugins: ['oxc', 'eslint'],
     rules: {
       'accessor-pairs': 'warn',
       'array-callback-return': 'error',
@@ -164,6 +165,33 @@ export function base(ctx: Context): OxlintConfig {
       'no-regex-spaces': 'error',
       'prefer-regex-literals': ['warn', { disallowRedundantWrapping: true }],
       'no-empty-character-class': ctx.regex(),
+
+      'oxc/approx-constant': 'warn',
+      'oxc/bad-array-method-on-arguments': 'error',
+      'oxc/bad-bitwise-operator': 'warn',
+      'oxc/bad-char-at-comparison': 'error',
+      'oxc/bad-comparison-sequence': 'error',
+      'oxc/bad-min-max-func': 'error',
+      'oxc/bad-object-literal-comparison': 'error',
+      'oxc/bad-replace-all-arg': 'error',
+      'oxc/branches-sharing-code': 'warn',
+      'oxc/const-comparisons': 'error',
+      'oxc/double-comparisons': 'error',
+      'oxc/erasing-op': 'error',
+      'oxc/misrefactored-assign-op': 'warn',
+      'oxc/missing-throw': 'error',
+      'oxc/no-accumulating-spread': 'warn',
+      'oxc/no-async-await': 'warn',
+      'oxc/no-async-endpoint-handlers': 'warn',
+      'oxc/no-barrel-file': 'warn',
+      'oxc/no-const-enum': 'warn',
+      'oxc/no-map-spread': 'warn',
+      'oxc/no-optional-chaining': 'warn',
+      'oxc/no-rest-spread-properties': 'warn',
+      'oxc/no-this-in-exported-function': 'warn',
+      'oxc/number-arg-out-of-range': 'error',
+      'oxc/only-used-in-recursion': 'error',
+      'oxc/uninvoked-array-callback': 'error',
 
       /* Unsupported */
       // 'no-restricted-syntax': ['error', 'WithStatement'],

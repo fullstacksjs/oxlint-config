@@ -142,6 +142,25 @@ exports[`promise > should lint 'promise/param-names' 1`] = `
 ]
 `;
 
+exports[`promise > should lint 'promise/prefer-catch' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Prefer \`catch\` to \`then(a, b)\` or \`then(null, b)\`",
+    "rule": "promise(prefer-catch)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Prefer \`catch\` to \`then(a, b)\` or \`then(null, b)\`",
+    "rule": "promise(prefer-catch)",
+    "severity": "warning",
+  },
+]
+`;
+
 exports[`promise > should lint 'promise/spec-only' 1`] = `
 [
   {
