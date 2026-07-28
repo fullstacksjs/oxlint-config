@@ -183,7 +183,7 @@ export function base(ctx: Context): OxlintConfig {
       'oxc/no-accumulating-spread': 'warn',
       'oxc/no-async-await': 'off',
       'oxc/no-async-endpoint-handlers': 'warn',
-      'oxc/no-barrel-file': 'warn',
+      'oxc/no-barrel-file': 'off',
       'oxc/no-const-enum': 'off',
       'oxc/no-map-spread': ctx.strict('warn'),
       'oxc/no-optional-chaining': 'off',
