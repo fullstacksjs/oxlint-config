@@ -12,38 +12,43 @@ import { vitest } from './modules/vitest.ts';
 import { jest } from './modules/jest.ts';
 import { next } from './modules/next.ts';
 
-export interface Options extends OxlintConfig {
+type OxlintOptions = NonNullable<OxlintConfig['options']>;
+
+export interface Options extends OxlintOptions {
   strict?: boolean;
   esm?: boolean;
-  typeAware?: boolean;
-  jest?: boolean;
-  nextjs?: boolean;
-  nodejs?: boolean;
-  react?: boolean;
-  vitest?: boolean;
 }
 
-export function defineConfig(options?: Options): OxlintConfig {
-  const {
-    jest: jestEnabled,
-    nextjs: nextjsEnabled,
-    nodejs: nodejsEnabled,
-    react: reactEnabled,
-    extends: extendsConfig = [],
-    vitest: vitestEnabled,
-    ...rest
-  } = options || {};
+export interface Config extends OxlintConfig {
+  modules?: {
+    jest?: boolean;
+    nextjs?: boolean;
+    nodejs?: boolean;
+    react?: boolean;
+    vitest?: boolean;
+  };
+  options?: {
+    strict?: boolean;
+    esm?: boolean;
+    typeAware?: boolean;
+  };
+}
+
+export function defineConfig(config?: Config): OxlintConfig {
+  const { extends: extendsConfig = [], modules, options, ...rest } = config ?? {};
+  const { jest: jestEnabled, nextjs: nextjsEnabled, nodejs: nodejsEnabled, react: reactEnabled, vitest: vitestEnabled } = modules ?? {};
+
   const context = new Context(options);
 
   return {
     extends: [
       base(context),
-      typescript(context),
       imports(context),
       regex(context),
+      promise(context),
+      typescript(context),
       nodejsEnabled ? node(context) : undefined,
       reactEnabled ? react(context) : undefined,
-      promise(context),
       vitestEnabled ? vitest(context) : undefined,
       jestEnabled ? jest(context) : undefined,
       nextjsEnabled ? next(context) : undefined,
