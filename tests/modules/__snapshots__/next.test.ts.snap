@@ -117,8 +117,6 @@ exports[`next > should lint 'nextjs/no-html-link-for-pages' 1`] = `
 ]
 `;
 
-exports[`next > should lint 'nextjs/no-img-element' 1`] = `[]`;
-
 exports[`next > should lint 'nextjs/no-page-custom-font' 1`] = `
 [
   {

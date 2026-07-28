@@ -45,7 +45,17 @@ exports[`base > should lint 'array-callback-return' 1`] = `
 ]
 `;
 
-exports[`base > should lint 'complexity' 1`] = `[]`;
+exports[`base > should lint 'complexity' 1`] = `
+[
+  {
+    "column": 8,
+    "line": 26,
+    "message": "Optional chaining is not allowed.",
+    "rule": "oxc(no-optional-chaining)",
+    "severity": "warning",
+  },
+]
+`;
 
 exports[`base > should lint 'default-case' 1`] = `
 [
@@ -571,6 +581,13 @@ exports[`base > should lint 'no-async-promise-executor' 1`] = `
     "severity": "error",
   },
   {
+    "column": 25,
+    "line": 3,
+    "message": "async is not allowed",
+    "rule": "oxc(no-async-await)",
+    "severity": "warning",
+  },
+  {
     "column": 23,
     "line": 4,
     "message": "Unexpected unnamed function.",
@@ -591,11 +608,25 @@ exports[`base > should lint 'no-async-promise-executor' 1`] = `
     "rule": "eslint(no-async-promise-executor)",
     "severity": "error",
   },
+  {
+    "column": 28,
+    "line": 13,
+    "message": "async is not allowed",
+    "rule": "oxc(no-async-await)",
+    "severity": "warning",
+  },
 ]
 `;
 
 exports[`base > should lint 'no-await-in-loop' 1`] = `
 [
+  {
+    "column": 1,
+    "line": 3,
+    "message": "async is not allowed",
+    "rule": "oxc(no-async-await)",
+    "severity": "warning",
+  },
   {
     "column": 26,
     "line": 5,
@@ -741,6 +772,13 @@ exports[`base > should lint 'no-constant-binary-expression' 1`] = `
     "message": "Unexpected comparison to newly constructed object",
     "rule": "eslint(no-constant-binary-expression)",
     "severity": "warning",
+  },
+  {
+    "column": 17,
+    "line": 10,
+    "message": "Unexpected array literal comparison.",
+    "rule": "oxc(bad-object-literal-comparison)",
+    "severity": "error",
   },
 ]
 `;
@@ -930,6 +968,13 @@ exports[`base > should lint 'no-control-regex' 1`] = `
 
 exports[`base > should lint 'no-debugger' 1`] = `
 [
+  {
+    "column": 1,
+    "line": 3,
+    "message": "async is not allowed",
+    "rule": "oxc(no-async-await)",
+    "severity": "warning",
+  },
   {
     "column": 3,
     "line": 6,
@@ -3365,6 +3410,667 @@ exports[`base > should lint 'no-warning-comments' 1`] = `
 ]
 `;
 
+exports[`base > should lint 'oxc/approx-constant' 1`] = `
+[
+  {
+    "column": 5,
+    "line": 3,
+    "message": "\`log10e\` is never reassigned.",
+    "rule": "eslint(prefer-const)",
+    "severity": "warning",
+  },
+  {
+    "column": 14,
+    "line": 3,
+    "message": "Approximate value of \`LOG10E\` found.",
+    "rule": "oxc(approx-constant)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/bad-array-method-on-arguments' 1`] = `
+[
+  {
+    "column": 10,
+    "line": 7,
+    "message": "Bad array method on \`arguments\`.",
+    "rule": "oxc(bad-array-method-on-arguments)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/bad-bitwise-operator' 1`] = `
+[
+  {
+    "column": 5,
+    "line": 3,
+    "message": "Bad bitwise operator",
+    "rule": "oxc(bad-bitwise-operator)",
+    "severity": "warning",
+  },
+  {
+    "column": 11,
+    "line": 6,
+    "message": "Bad bitwise operator",
+    "rule": "oxc(bad-bitwise-operator)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 7,
+    "message": "Bad bitwise operator",
+    "rule": "oxc(bad-bitwise-operator)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/bad-char-at-comparison' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Invalid comparison with \`charAt\` method",
+    "rule": "oxc(bad-char-at-comparison)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Invalid comparison with \`charAt\` method",
+    "rule": "oxc(bad-char-at-comparison)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/bad-comparison-sequence' 1`] = `
+[
+  {
+    "column": 5,
+    "line": 3,
+    "message": "Bad comparison sequence",
+    "rule": "oxc(bad-comparison-sequence)",
+    "severity": "error",
+  },
+  {
+    "column": 7,
+    "line": 3,
+    "message": "Expected === and instead saw ==",
+    "rule": "eslint(eqeqeq)",
+    "severity": "error",
+  },
+  {
+    "column": 12,
+    "line": 3,
+    "message": "Expected === and instead saw ==",
+    "rule": "eslint(eqeqeq)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/bad-min-max-func' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Math.min and Math.max combination leads to constant result",
+    "rule": "oxc(bad-min-max-func)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Math.min and Math.max combination leads to constant result",
+    "rule": "oxc(bad-min-max-func)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/bad-object-literal-comparison' 1`] = `
+[
+  {
+    "column": 5,
+    "line": 3,
+    "message": "Unexpected comparison to newly constructed object",
+    "rule": "eslint(no-constant-binary-expression)",
+    "severity": "warning",
+  },
+  {
+    "column": 5,
+    "line": 3,
+    "message": "Unexpected object literal comparison.",
+    "rule": "oxc(bad-object-literal-comparison)",
+    "severity": "error",
+  },
+  {
+    "column": 15,
+    "line": 3,
+    "message": "Unexpected empty block statements",
+    "rule": "eslint(no-empty)",
+    "severity": "warning",
+  },
+  {
+    "column": 5,
+    "line": 4,
+    "message": "Unexpected comparison to newly constructed object",
+    "rule": "eslint(no-constant-binary-expression)",
+    "severity": "warning",
+  },
+  {
+    "column": 5,
+    "line": 4,
+    "message": "Unexpected array literal comparison.",
+    "rule": "oxc(bad-object-literal-comparison)",
+    "severity": "error",
+  },
+  {
+    "column": 17,
+    "line": 4,
+    "message": "Unexpected empty block statements",
+    "rule": "eslint(no-empty)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/bad-replace-all-arg' 1`] = `
+[
+  {
+    "column": 12,
+    "line": 3,
+    "message": "Global flag (g) is missing in the regular expression supplied to the \`replaceAll\` method.",
+    "rule": "oxc(bad-replace-all-arg)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/branches-sharing-code' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "All \`if\` blocks contain the same code at the start",
+    "rule": "oxc(branches-sharing-code)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 11,
+    "message": "All \`if\` blocks contain the same code at the end",
+    "rule": "oxc(branches-sharing-code)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/const-comparisons' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Unexpected constant comparison",
+    "rule": "oxc(const-comparisons)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Right-hand side of \`&&\` operator has no effect.",
+    "rule": "oxc(const-comparisons)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Right-hand side of \`&&\` operator has no effect.",
+    "rule": "oxc(const-comparisons)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 6,
+    "message": "Both sides of this comparison are exactly the same",
+    "rule": "eslint(no-self-compare)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 6,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 6,
+    "message": "This comparison will always evaluate to false",
+    "rule": "oxc(const-comparisons)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 7,
+    "message": "Both sides of this comparison are exactly the same",
+    "rule": "eslint(no-self-compare)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 7,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 7,
+    "message": "This comparison will always evaluate to true",
+    "rule": "oxc(const-comparisons)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/double-comparisons' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Unexpected double comparisons.",
+    "rule": "oxc(double-comparisons)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Unexpected double comparisons.",
+    "rule": "oxc(double-comparisons)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/erasing-op' 1`] = `
+[
+  {
+    "column": 5,
+    "line": 3,
+    "message": "\`x\` is never reassigned.",
+    "rule": "eslint(prefer-const)",
+    "severity": "warning",
+  },
+  {
+    "column": 5,
+    "line": 4,
+    "message": "\`y\` is never reassigned.",
+    "rule": "eslint(prefer-const)",
+    "severity": "warning",
+  },
+  {
+    "column": 9,
+    "line": 4,
+    "message": "Unexpected erasing operation. This expression will always evaluate to zero.",
+    "rule": "oxc(erasing-op)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/misrefactored-assign-op' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Misrefactored assign op. Variable appears on both sides of an assignment operation",
+    "rule": "oxc(misrefactored-assign-op)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Misrefactored assign op. Variable appears on both sides of an assignment operation",
+    "rule": "oxc(misrefactored-assign-op)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/missing-throw' 1`] = `[]`;
+
+exports[`base > should lint 'oxc/no-accumulating-spread' 1`] = `
+[
+  {
+    "column": 27,
+    "line": 3,
+    "message": "Do not spread accumulators in Array.prototype.reduce()",
+    "rule": "oxc(no-accumulating-spread)",
+    "severity": "warning",
+  },
+  {
+    "column": 27,
+    "line": 3,
+    "message": "object spread property are not allowed. ",
+    "rule": "oxc(no-rest-spread-properties)",
+    "severity": "warning",
+  },
+  {
+    "column": 41,
+    "line": 4,
+    "message": "Do not spread accumulators in Array.prototype.reduce()",
+    "rule": "oxc(no-accumulating-spread)",
+    "severity": "warning",
+  },
+  {
+    "column": 41,
+    "line": 4,
+    "message": "object spread property are not allowed. ",
+    "rule": "oxc(no-rest-spread-properties)",
+    "severity": "warning",
+  },
+  {
+    "column": 5,
+    "line": 6,
+    "message": "Do not spread accumulators in loops",
+    "rule": "oxc(no-accumulating-spread)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/no-async-await' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "async is not allowed",
+    "rule": "oxc(no-async-await)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/no-async-endpoint-handlers' 1`] = `
+[
+  {
+    "column": 14,
+    "line": 4,
+    "message": "async is not allowed",
+    "rule": "oxc(no-async-await)",
+    "severity": "warning",
+  },
+  {
+    "column": 14,
+    "line": 4,
+    "message": "Express endpoint handler for \`/\` should not be \`async\`.",
+    "rule": "oxc(no-async-endpoint-handlers)",
+    "severity": "warning",
+  },
+  {
+    "column": 12,
+    "line": 10,
+    "message": "async is not allowed",
+    "rule": "oxc(no-async-await)",
+    "severity": "warning",
+  },
+  {
+    "column": 12,
+    "line": 10,
+    "message": "Express endpoint handler should not be \`async\`.",
+    "rule": "oxc(no-async-endpoint-handlers)",
+    "severity": "warning",
+  },
+  {
+    "column": 20,
+    "line": 16,
+    "message": "async is not allowed",
+    "rule": "oxc(no-async-await)",
+    "severity": "warning",
+  },
+  {
+    "column": 20,
+    "line": 16,
+    "message": "Express endpoint handler for \`/user\` should not be \`async\`.",
+    "rule": "oxc(no-async-endpoint-handlers)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/no-const-enum' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Unexpected const enum",
+    "rule": "oxc(no-const-enum)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/no-map-spread' 1`] = `
+[
+  {
+    "column": 18,
+    "line": 4,
+    "message": "Spreading to modify object properties in \`map\` calls is inefficient",
+    "rule": "oxc(no-map-spread)",
+    "severity": "warning",
+  },
+  {
+    "column": 32,
+    "line": 4,
+    "message": "object spread property are not allowed. ",
+    "rule": "oxc(no-rest-spread-properties)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/no-optional-chaining' 1`] = `
+[
+  {
+    "column": 13,
+    "line": 3,
+    "message": "Optional chaining is not allowed.",
+    "rule": "oxc(no-optional-chaining)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Optional chaining is not allowed.",
+    "rule": "oxc(no-optional-chaining)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/no-rest-spread-properties' 1`] = `
+[
+  {
+    "column": 7,
+    "line": 3,
+    "message": "\`x\` is never reassigned.",
+    "rule": "eslint(prefer-const)",
+    "severity": "warning",
+  },
+  {
+    "column": 10,
+    "line": 3,
+    "message": "object rest property are not allowed. ",
+    "rule": "oxc(no-rest-spread-properties)",
+    "severity": "warning",
+  },
+  {
+    "column": 13,
+    "line": 3,
+    "message": "\`y\` is never reassigned.",
+    "rule": "eslint(prefer-const)",
+    "severity": "warning",
+  },
+  {
+    "column": 5,
+    "line": 4,
+    "message": "\`z\` is never reassigned.",
+    "rule": "eslint(prefer-const)",
+    "severity": "warning",
+  },
+  {
+    "column": 14,
+    "line": 4,
+    "message": "object spread property are not allowed. ",
+    "rule": "oxc(no-rest-spread-properties)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/no-this-in-exported-function' 1`] = `
+[
+  {
+    "column": 15,
+    "line": 4,
+    "message": "\`this\` should not be used in exported functions",
+    "rule": "oxc(no-this-in-exported-function)",
+    "severity": "warning",
+  },
+  {
+    "column": 3,
+    "line": 8,
+    "message": "\`this\` should not be used in exported functions",
+    "rule": "oxc(no-this-in-exported-function)",
+    "severity": "warning",
+  },
+  {
+    "column": 16,
+    "line": 12,
+    "message": "\`this\` should not be used in exported functions",
+    "rule": "oxc(no-this-in-exported-function)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/number-arg-out-of-range' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 18,
+    "line": 4,
+    "message": "Radix or precision arguments of number-related functions should not exceed the limit",
+    "rule": "oxc(number-arg-out-of-range)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 9,
+    "line": 5,
+    "message": "Radix or precision arguments of number-related functions should not exceed the limit",
+    "rule": "oxc(number-arg-out-of-range)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/only-used-in-recursion' 1`] = `
+[
+  {
+    "column": 15,
+    "line": 3,
+    "message": "Parameter \`onlyUsedInRecursion\` is only used in recursive calls",
+    "rule": "oxc(only-used-in-recursion)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/uninvoked-array-callback' 1`] = `
+[
+  {
+    "column": 27,
+    "line": 3,
+    "message": "Uninvoked array callback",
+    "rule": "oxc(uninvoked-array-callback)",
+    "severity": "error",
+  },
+]
+`;
+
 exports[`base > should lint 'prefer-arrow-callback' 1`] = `
 [
   {
@@ -3894,6 +4600,13 @@ exports[`base > should lint 'radix' 1`] = `
 
 exports[`base > should lint 'require-await' 1`] = `
 [
+  {
+    "column": 1,
+    "line": 3,
+    "message": "async is not allowed",
+    "rule": "oxc(no-async-await)",
+    "severity": "warning",
+  },
   {
     "column": 16,
     "line": 3,
