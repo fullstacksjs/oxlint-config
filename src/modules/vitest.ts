@@ -66,7 +66,7 @@ export function vitest(_ctx: Context): OxlintConfig {
       'vitest/valid-describe-callback': 'warn',
       'vitest/valid-expect': 'warn',
       'vitest/valid-expect-in-promise': 'warn',
-      'vitest/valid-title': 'warn',
+      'vitest/valid-title': 'off',
       'vitest/warn-todo': 'warn',
 
       // Unsupported

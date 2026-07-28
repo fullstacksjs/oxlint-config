@@ -33,7 +33,7 @@ export interface Config extends OxlintConfig {
 }
 
 export function defineConfig(config?: Config): OxlintConfig {
-  const { extends: extendsConfig = [], modules, options, ...rest } = config ?? {};
+  const { extends: extendsConfig = [], modules, overrides = [], options, ...rest } = config ?? {};
   const { jest: jestEnabled, nextjs: nextjsEnabled, nodejs: nodejsEnabled, react: reactEnabled, vitest: vitestEnabled } = modules ?? {};
 
   const context = new Context(options, modules);
@@ -52,6 +52,19 @@ export function defineConfig(config?: Config): OxlintConfig {
       nextjsEnabled ? next(context) : undefined,
       ...extendsConfig,
     ].filter(Boolean) as OxlintConfig['extends'],
+    overrides: [
+      {
+        files: ['**/*.spec.ts'],
+        rules: {
+          'no-sparse-arrays': 'off',
+          'no-plusplus': 'off',
+          'prefer-promise-reject-errors': 'off',
+          'no-throw-literal': 'off',
+        },
+      },
+      ...overrides,
+    ],
+
     ...rest,
   };
 }
