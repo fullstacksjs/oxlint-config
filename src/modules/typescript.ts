@@ -23,11 +23,11 @@ export function typescript(ctx: Context): OxlintConfig {
       'typescript/consistent-type-assertions': ['warn', { assertionStyle: 'as', objectLiteralTypeAssertions: 'allow-as-parameter' }],
       'typescript/consistent-type-definitions': ['warn', 'interface'],
       'typescript/consistent-type-imports': [
-        'off',
+        'warn',
         {
           prefer: 'type-imports',
           disallowTypeAnnotations: false,
-          fixStyle: 'separate-type-imports',
+          fixStyle: 'inline-type-imports',
         },
       ], // import/consistent-type-specifier-style?
       'typescript/explicit-function-return-type': 'off',

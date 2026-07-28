@@ -1,11 +1,13 @@
-import type { Options } from '../index.ts';
 import type { AllowWarnDeny } from 'oxlint';
+import type { Modules, Options } from '../index.ts';
 
 export class Context {
   options: Options;
+  modules: Modules;
 
-  constructor(options?: Options) {
+  constructor(options?: Options, modules?: Modules) {
     this.options = options ?? {};
+    this.modules = modules ?? {};
   }
 
   get isEsm() {
@@ -26,6 +28,10 @@ export class Context {
 
   strict<C>(config: C) {
     return this.strictOr(config, 'off');
+  }
+
+  matchModule<C, O>(module: keyof Modules, config: C, fallback: O): C | O {
+    return this.modules[module] ? config : fallback;
   }
 
   esm(config: AllowWarnDeny): AllowWarnDeny {

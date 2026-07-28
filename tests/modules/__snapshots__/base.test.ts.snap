@@ -57,17 +57,7 @@ exports[`base > should lint 'complexity' 1`] = `
 ]
 `;
 
-exports[`base > should lint 'default-case' 1`] = `
-[
-  {
-    "column": 1,
-    "line": 3,
-    "message": "Require \`default\` cases in \`switch\` statements.",
-    "rule": "eslint(default-case)",
-    "severity": "error",
-  },
-]
-`;
+exports[`base > should lint 'default-case' 1`] = `[]`;
 
 exports[`base > should lint 'default-case-last' 1`] = `
 [
@@ -1342,13 +1332,6 @@ exports[`base > should lint 'no-extra-boolean-cast' 1`] = `
 exports[`base > should lint 'no-fallthrough' 1`] = `
 [
   {
-    "column": 1,
-    "line": 3,
-    "message": "Require \`default\` cases in \`switch\` statements.",
-    "rule": "eslint(default-case)",
-    "severity": "error",
-  },
-  {
     "column": 3,
     "line": 7,
     "message": "Expected a \`break\` statement before \`case\`.",
@@ -1485,13 +1468,6 @@ exports[`base > should lint 'no-labels' 1`] = `
     "line": 18,
     "message": "Labeled statement is not allowed",
     "rule": "eslint(no-labels)",
-    "severity": "error",
-  },
-  {
-    "column": 5,
-    "line": 19,
-    "message": "Require \`default\` cases in \`switch\` statements.",
-    "rule": "eslint(default-case)",
     "severity": "error",
   },
   {

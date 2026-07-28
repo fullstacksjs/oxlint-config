@@ -13,13 +13,6 @@ exports[`react > should lint 'react/display-name' 1`] = `
     "rule": "react(only-export-components)",
     "severity": "warning",
   },
-  {
-    "column": 32,
-    "line": 3,
-    "message": "Disallow literal text as JSX children",
-    "rule": "react(jsx-no-literals)",
-    "severity": "warning",
-  },
 ]
 `;
 
@@ -77,13 +70,6 @@ exports[`react > should lint 'react/jsx-boolean-value' 1`] = `[]`;
 exports[`react > should lint 'react/jsx-curly-brace-presence' 1`] = `
 [
   {
-    "column": 6,
-    "line": 3,
-    "message": "Disallow literal text as JSX children",
-    "rule": "react(jsx-no-literals)",
-    "severity": "warning",
-  },
-  {
     "column": 26,
     "line": 4,
     "message": "Curly braces are unnecessary here.",
@@ -130,27 +116,6 @@ exports[`react > should lint 'react/jsx-curly-brace-presence' 1`] = `
     "line": 10,
     "message": "Curly braces are unnecessary here.",
     "rule": "react(jsx-curly-brace-presence)",
-    "severity": "warning",
-  },
-  {
-    "column": 6,
-    "line": 12,
-    "message": "Disallow literal text as JSX children",
-    "rule": "react(jsx-no-literals)",
-    "severity": "warning",
-  },
-  {
-    "column": 6,
-    "line": 23,
-    "message": "Disallow literal text as JSX children",
-    "rule": "react(jsx-no-literals)",
-    "severity": "warning",
-  },
-  {
-    "column": 36,
-    "line": 24,
-    "message": "Disallow literal text as JSX children",
-    "rule": "react(jsx-no-literals)",
     "severity": "warning",
   },
   {
@@ -203,13 +168,6 @@ exports[`react > should lint 'react/jsx-curly-brace-presence' 1`] = `
     "severity": "warning",
   },
   {
-    "column": 28,
-    "line": 31,
-    "message": "Disallow literal text as JSX children",
-    "rule": "react(jsx-no-literals)",
-    "severity": "warning",
-  },
-  {
     "column": 12,
     "line": 33,
     "message": "Curly braces are unnecessary here.",
@@ -221,20 +179,6 @@ exports[`react > should lint 'react/jsx-curly-brace-presence' 1`] = `
     "line": 33,
     "message": "Curly braces are unnecessary here.",
     "rule": "react(jsx-curly-brace-presence)",
-    "severity": "warning",
-  },
-  {
-    "column": 25,
-    "line": 35,
-    "message": "Disallow literal text as JSX children",
-    "rule": "react(jsx-no-literals)",
-    "severity": "warning",
-  },
-  {
-    "column": 31,
-    "line": 37,
-    "message": "Disallow literal text as JSX children",
-    "rule": "react(jsx-no-literals)",
     "severity": "warning",
   },
   {
@@ -305,13 +249,6 @@ exports[`react > should lint 'react/jsx-max-depth' 1`] = `
     "rule": "react(only-export-components)",
     "severity": "warning",
   },
-  {
-    "column": 9,
-    "line": 7,
-    "message": "JSX nesting depth of 3 exceeds the configured maximum of 2",
-    "rule": "react(jsx-max-depth)",
-    "severity": "warning",
-  },
 ]
 `;
 
@@ -320,25 +257,11 @@ exports[`react > should lint 'react/jsx-no-comment-textnodes' 1`] = `[]`;
 exports[`react > should lint 'react/jsx-no-constructed-context-valu…' 1`] = `
 [
   {
-    "column": 46,
-    "line": 4,
-    "message": "Disallow literal text as JSX children",
-    "rule": "react(jsx-no-literals)",
-    "severity": "warning",
-  },
-  {
     "column": 10,
     "line": 9,
     "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
     "rule": "react(only-export-components)",
     "severity": "warning",
-  },
-  {
-    "column": 12,
-    "line": 10,
-    "message": "JSX attribute values should not contain functions created in the same scope.",
-    "rule": "react-perf(jsx-no-new-function-as-prop)",
-    "severity": "error",
   },
   {
     "column": 30,
@@ -369,17 +292,7 @@ exports[`react > should lint 'react/jsx-no-duplicate-props' 1`] = `
 ]
 `;
 
-exports[`react > should lint 'react/jsx-no-literals' 1`] = `
-[
-  {
-    "column": 6,
-    "line": 3,
-    "message": "Disallow literal text as JSX children",
-    "rule": "react(jsx-no-literals)",
-    "severity": "warning",
-  },
-]
-`;
+exports[`react > should lint 'react/jsx-no-literals' 1`] = `[]`;
 
 exports[`react > should lint 'react/jsx-no-script-url' 1`] = `
 [
@@ -388,13 +301,6 @@ exports[`react > should lint 'react/jsx-no-script-url' 1`] = `
     "line": 3,
     "message": "React 19 disallows \`javascript:\` URLs as a security precaution.",
     "rule": "react(jsx-no-script-url)",
-    "severity": "warning",
-  },
-  {
-    "column": 30,
-    "line": 3,
-    "message": "Disallow literal text as JSX children",
-    "rule": "react(jsx-no-literals)",
     "severity": "warning",
   },
 ]
@@ -492,13 +398,6 @@ exports[`react > should lint 'react/no-danger-with-children' 1`] = `
     "severity": "error",
   },
   {
-    "column": 51,
-    "line": 3,
-    "message": "Disallow literal text as JSX children",
-    "rule": "react(jsx-no-literals)",
-    "severity": "warning",
-  },
-  {
     "column": 1,
     "line": 4,
     "message": "Only set one of \`children\` or \`props.dangerouslySetInnerHTML\`",
@@ -520,13 +419,6 @@ exports[`react > should lint 'react/no-object-type-as-default-prop' 1`] = `
     "severity": "warning",
   },
   {
-    "column": 16,
-    "line": 3,
-    "message": "JSX attribute values should not contain Arrays created in the same scope.",
-    "rule": "react-perf(jsx-no-new-array-as-prop)",
-    "severity": "error",
-  },
-  {
     "column": 24,
     "line": 3,
     "message": "Do not use an array literal as default prop value. Use a stable reference instead.",
@@ -539,13 +431,6 @@ exports[`react > should lint 'react/no-object-type-as-default-prop' 1`] = `
     "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
     "rule": "react(only-export-components)",
     "severity": "warning",
-  },
-  {
-    "column": 16,
-    "line": 7,
-    "message": "JSX attribute values should not contain objects created in the same scope.",
-    "rule": "react-perf(jsx-no-new-object-as-prop)",
-    "severity": "error",
   },
   {
     "column": 25,
@@ -566,13 +451,6 @@ exports[`react > should lint 'react/no-object-type-as-default-prop' 1`] = `
     "line": 9,
     "message": "Do not use a function expression as default prop value. Use a stable reference instead.",
     "rule": "react(no-object-type-as-default-prop)",
-    "severity": "warning",
-  },
-  {
-    "column": 11,
-    "line": 10,
-    "message": "\`button\` elements must have an explicit \`type\` attribute.",
-    "rule": "react(button-has-type)",
     "severity": "warning",
   },
 ]
@@ -611,24 +489,10 @@ exports[`react > should lint 'react/no-unknown-property' 1`] = `
     "severity": "warning",
   },
   {
-    "column": 34,
-    "line": 4,
-    "message": "Disallow literal text as JSX children",
-    "rule": "react(jsx-no-literals)",
-    "severity": "warning",
-  },
-  {
     "column": 23,
     "line": 5,
     "message": "Unknown property found",
     "rule": "react(no-unknown-property)",
-    "severity": "warning",
-  },
-  {
-    "column": 39,
-    "line": 5,
-    "message": "Disallow literal text as JSX children",
-    "rule": "react(jsx-no-literals)",
     "severity": "warning",
   },
   {
@@ -649,13 +513,6 @@ exports[`react > should lint 'react/no-unstable-nested-components' 1`] = `
     "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
     "rule": "react(only-export-components)",
     "severity": "warning",
-  },
-  {
-    "column": 3,
-    "line": 4,
-    "message": "Do not define components during render.",
-    "rule": "react(no-unstable-nested-components)",
-    "severity": "error",
   },
   {
     "column": 12,

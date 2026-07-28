@@ -19,19 +19,17 @@ export interface Options extends OxlintOptions {
   esm?: boolean;
 }
 
+export interface Modules {
+  jest?: boolean;
+  nextjs?: boolean;
+  nodejs?: boolean;
+  react?: boolean;
+  vitest?: boolean;
+}
+
 export interface Config extends OxlintConfig {
-  modules?: {
-    jest?: boolean;
-    nextjs?: boolean;
-    nodejs?: boolean;
-    react?: boolean;
-    vitest?: boolean;
-  };
-  options?: {
-    strict?: boolean;
-    esm?: boolean;
-    typeAware?: boolean;
-  };
+  modules?: Modules;
+  options?: Options;
 }
 
 export function defineConfig(config?: Config): OxlintConfig {
