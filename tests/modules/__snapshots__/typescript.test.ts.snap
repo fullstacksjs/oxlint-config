@@ -66,6 +66,8 @@ exports[`typescript > should lint 'typescript/consistent-type-definitions' 1`] =
 ]
 `;
 
+exports[`typescript > should lint 'typescript/consistent-type-imports' 1`] = `[]`;
+
 exports[`typescript > should lint 'typescript/no-confusing-non-null-asse…' 1`] = `
 [
   {
