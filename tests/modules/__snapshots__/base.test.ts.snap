@@ -45,17 +45,7 @@ exports[`base > should lint 'array-callback-return' 1`] = `
 ]
 `;
 
-exports[`base > should lint 'complexity' 1`] = `
-[
-  {
-    "column": 8,
-    "line": 26,
-    "message": "Optional chaining is not allowed.",
-    "rule": "oxc(no-optional-chaining)",
-    "severity": "warning",
-  },
-]
-`;
+exports[`base > should lint 'complexity' 1`] = `[]`;
 
 exports[`base > should lint 'default-case' 1`] = `[]`;
 
@@ -571,13 +561,6 @@ exports[`base > should lint 'no-async-promise-executor' 1`] = `
     "severity": "error",
   },
   {
-    "column": 25,
-    "line": 3,
-    "message": "async is not allowed",
-    "rule": "oxc(no-async-await)",
-    "severity": "warning",
-  },
-  {
     "column": 23,
     "line": 4,
     "message": "Unexpected unnamed function.",
@@ -598,25 +581,11 @@ exports[`base > should lint 'no-async-promise-executor' 1`] = `
     "rule": "eslint(no-async-promise-executor)",
     "severity": "error",
   },
-  {
-    "column": 28,
-    "line": 13,
-    "message": "async is not allowed",
-    "rule": "oxc(no-async-await)",
-    "severity": "warning",
-  },
 ]
 `;
 
 exports[`base > should lint 'no-await-in-loop' 1`] = `
 [
-  {
-    "column": 1,
-    "line": 3,
-    "message": "async is not allowed",
-    "rule": "oxc(no-async-await)",
-    "severity": "warning",
-  },
   {
     "column": 26,
     "line": 5,
@@ -958,13 +927,6 @@ exports[`base > should lint 'no-control-regex' 1`] = `
 
 exports[`base > should lint 'no-debugger' 1`] = `
 [
-  {
-    "column": 1,
-    "line": 3,
-    "message": "async is not allowed",
-    "rule": "oxc(no-async-await)",
-    "severity": "warning",
-  },
   {
     "column": 3,
     "line": 6,
@@ -3778,24 +3740,10 @@ exports[`base > should lint 'oxc/no-accumulating-spread' 1`] = `
     "severity": "warning",
   },
   {
-    "column": 27,
-    "line": 3,
-    "message": "object spread property are not allowed. ",
-    "rule": "oxc(no-rest-spread-properties)",
-    "severity": "warning",
-  },
-  {
     "column": 41,
     "line": 4,
     "message": "Do not spread accumulators in Array.prototype.reduce()",
     "rule": "oxc(no-accumulating-spread)",
-    "severity": "warning",
-  },
-  {
-    "column": 41,
-    "line": 4,
-    "message": "object spread property are not allowed. ",
-    "rule": "oxc(no-rest-spread-properties)",
     "severity": "warning",
   },
   {
@@ -3808,39 +3756,15 @@ exports[`base > should lint 'oxc/no-accumulating-spread' 1`] = `
 ]
 `;
 
-exports[`base > should lint 'oxc/no-async-await' 1`] = `
-[
-  {
-    "column": 1,
-    "line": 3,
-    "message": "async is not allowed",
-    "rule": "oxc(no-async-await)",
-    "severity": "warning",
-  },
-]
-`;
+exports[`base > should lint 'oxc/no-async-await' 1`] = `[]`;
 
 exports[`base > should lint 'oxc/no-async-endpoint-handlers' 1`] = `
 [
   {
     "column": 14,
     "line": 4,
-    "message": "async is not allowed",
-    "rule": "oxc(no-async-await)",
-    "severity": "warning",
-  },
-  {
-    "column": 14,
-    "line": 4,
     "message": "Express endpoint handler for \`/\` should not be \`async\`.",
     "rule": "oxc(no-async-endpoint-handlers)",
-    "severity": "warning",
-  },
-  {
-    "column": 12,
-    "line": 10,
-    "message": "async is not allowed",
-    "rule": "oxc(no-async-await)",
     "severity": "warning",
   },
   {
@@ -3853,13 +3777,6 @@ exports[`base > should lint 'oxc/no-async-endpoint-handlers' 1`] = `
   {
     "column": 20,
     "line": 16,
-    "message": "async is not allowed",
-    "rule": "oxc(no-async-await)",
-    "severity": "warning",
-  },
-  {
-    "column": 20,
-    "line": 16,
     "message": "Express endpoint handler for \`/user\` should not be \`async\`.",
     "rule": "oxc(no-async-endpoint-handlers)",
     "severity": "warning",
@@ -3867,55 +3784,11 @@ exports[`base > should lint 'oxc/no-async-endpoint-handlers' 1`] = `
 ]
 `;
 
-exports[`base > should lint 'oxc/no-const-enum' 1`] = `
-[
-  {
-    "column": 1,
-    "line": 3,
-    "message": "Unexpected const enum",
-    "rule": "oxc(no-const-enum)",
-    "severity": "warning",
-  },
-]
-`;
+exports[`base > should lint 'oxc/no-const-enum' 1`] = `[]`;
 
-exports[`base > should lint 'oxc/no-map-spread' 1`] = `
-[
-  {
-    "column": 18,
-    "line": 4,
-    "message": "Spreading to modify object properties in \`map\` calls is inefficient",
-    "rule": "oxc(no-map-spread)",
-    "severity": "warning",
-  },
-  {
-    "column": 32,
-    "line": 4,
-    "message": "object spread property are not allowed. ",
-    "rule": "oxc(no-rest-spread-properties)",
-    "severity": "warning",
-  },
-]
-`;
+exports[`base > should lint 'oxc/no-map-spread' 1`] = `[]`;
 
-exports[`base > should lint 'oxc/no-optional-chaining' 1`] = `
-[
-  {
-    "column": 13,
-    "line": 3,
-    "message": "Optional chaining is not allowed.",
-    "rule": "oxc(no-optional-chaining)",
-    "severity": "warning",
-  },
-  {
-    "column": 1,
-    "line": 4,
-    "message": "Optional chaining is not allowed.",
-    "rule": "oxc(no-optional-chaining)",
-    "severity": "warning",
-  },
-]
-`;
+exports[`base > should lint 'oxc/no-optional-chaining' 1`] = `[]`;
 
 exports[`base > should lint 'oxc/no-rest-spread-properties' 1`] = `
 [
@@ -3924,13 +3797,6 @@ exports[`base > should lint 'oxc/no-rest-spread-properties' 1`] = `
     "line": 3,
     "message": "\`x\` is never reassigned.",
     "rule": "eslint(prefer-const)",
-    "severity": "warning",
-  },
-  {
-    "column": 10,
-    "line": 3,
-    "message": "object rest property are not allowed. ",
-    "rule": "oxc(no-rest-spread-properties)",
     "severity": "warning",
   },
   {
@@ -3945,13 +3811,6 @@ exports[`base > should lint 'oxc/no-rest-spread-properties' 1`] = `
     "line": 4,
     "message": "\`z\` is never reassigned.",
     "rule": "eslint(prefer-const)",
-    "severity": "warning",
-  },
-  {
-    "column": 14,
-    "line": 4,
-    "message": "object spread property are not allowed. ",
-    "rule": "oxc(no-rest-spread-properties)",
     "severity": "warning",
   },
 ]
@@ -4576,13 +4435,6 @@ exports[`base > should lint 'radix' 1`] = `
 
 exports[`base > should lint 'require-await' 1`] = `
 [
-  {
-    "column": 1,
-    "line": 3,
-    "message": "async is not allowed",
-    "rule": "oxc(no-async-await)",
-    "severity": "warning",
-  },
   {
     "column": 16,
     "line": 3,
