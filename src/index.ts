@@ -36,7 +36,7 @@ export function defineConfig(config?: Config): OxlintConfig {
   const { extends: extendsConfig = [], modules, options, ...rest } = config ?? {};
   const { jest: jestEnabled, nextjs: nextjsEnabled, nodejs: nodejsEnabled, react: reactEnabled, vitest: vitestEnabled } = modules ?? {};
 
-  const context = new Context(options);
+  const context = new Context(options, modules);
 
   return {
     extends: [
