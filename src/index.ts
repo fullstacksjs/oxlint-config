@@ -60,6 +60,7 @@ export function defineConfig(config?: Config): OxlintConfig {
           'no-plusplus': 'off',
           'prefer-promise-reject-errors': 'off',
           'no-throw-literal': 'off',
+          'no-thenable': 'off',
         },
       },
       ...overrides,
