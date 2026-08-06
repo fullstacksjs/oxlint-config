@@ -2,9 +2,9 @@
   "name": "@fullstacksjs/oxlint-config",
   "version": "0.0.0",
   "description": "FullstacksJS OXLint Config",
-  "homepage": "https://github.com/author/library#readme",
+  "homepage": "https://github.com/fullstacksjs/oxlint-config#readme",
   "bugs": {
-    "url": "https://github.com/author/library/issues"
+    "url": "https://github.com/fullstacksjs/oxlint-config/issues"
   },
   "license": "MIT",
   "author": "FullstacksJS <fullstacksjs@gmail.com>",
@@ -36,10 +36,10 @@
     "eslint-plugin-regexp": "3.1.1"
   },
   "devDependencies": {
-    "@types/node": "25.6.2",
-    "bumpp": "11.1.0",
-    "oxlint": "1.75.0",
-    "typescript": "6.0.3",
+    "@types/node": "26.1.2",
+    "bumpp": "12.1.1",
+    "oxlint": "1.77.0",
+    "typescript": "7.0.2",
     "vite-plus": "catalog:"
   },
   "devEngines": {
