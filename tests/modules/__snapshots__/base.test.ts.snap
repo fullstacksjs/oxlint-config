@@ -3415,7 +3415,7 @@ exports[`base > should lint 'oxc/bad-char-at-comparison' 1`] = `
   {
     "column": 1,
     "line": 3,
-    "message": "Invalid comparison with \`charAt\` method",
+    "message": "Invalid character comparison",
     "rule": "oxc(bad-char-at-comparison)",
     "severity": "error",
   },
@@ -3429,7 +3429,7 @@ exports[`base > should lint 'oxc/bad-char-at-comparison' 1`] = `
   {
     "column": 1,
     "line": 4,
-    "message": "Invalid comparison with \`charAt\` method",
+    "message": "Invalid character comparison",
     "rule": "oxc(bad-char-at-comparison)",
     "severity": "error",
   },
