@@ -82,6 +82,14 @@ vp test
 vp pack
 ```
 
+## Debug
+
+Set `DEBUG_OXLINT_CONFIG` to print the resolved modules, options, and remaining configuration passed to `defineConfig`:
+
+```sh
+DEBUG_OXLINT_CONFIG=1 oxlint
+```
+
 [download-badge]: https://img.shields.io/npm/dm/@fullstacksjs/oxlint-config?color=6464E2&label=DOWNLOADS&style=flat-square
 [version-badge]: https://img.shields.io/npm/v/@fullstacksjs/oxlint-config?color=6464E2&label=VERSION&style=flat-square
 [license-badge]: https://img.shields.io/npm/l/@fullstacksjs/oxlint-config?color=6464E2&label=LICENSE&style=flat-square
