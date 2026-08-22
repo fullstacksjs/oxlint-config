@@ -1,5 +1,5 @@
 import type { OxlintConfig } from 'oxlint';
-
+import { isPackageExists } from 'local-pkg';
 import { base } from './modules/base.ts';
 import { Context } from './lib/Context.ts';
 import { typescript } from './modules/typescript.ts';
@@ -32,9 +32,18 @@ export interface Config extends OxlintConfig {
   options?: Options;
 }
 
+const defaultModules: Modules = {
+  jest: isPackageExists('jest'),
+  vitest: isPackageExists('vitest'),
+  nextjs: isPackageExists('next'),
+  nodejs: isPackageExists('node'),
+  react: isPackageExists('react'),
+};
+
 export function defineConfig(config?: Config): OxlintConfig {
-  const { extends: extendsConfig = [], modules, overrides = [], options, ...rest } = config ?? {};
-  const { jest: jestEnabled, nextjs: nextjsEnabled, nodejs: nodejsEnabled, react: reactEnabled, vitest: vitestEnabled } = modules ?? {};
+  const { extends: extendsConfig = [], modules: configModules, overrides = [], options, ...rest } = config ?? {};
+  const modules = { ...defaultModules, ...configModules };
+  const { jest: jestEnabled, nextjs: nextjsEnabled, nodejs: nodejsEnabled, react: reactEnabled, vitest: vitestEnabled } = modules;
 
   const context = new Context(options, modules);
 
