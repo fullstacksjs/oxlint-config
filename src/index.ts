@@ -36,7 +36,6 @@ const defaultModules: Modules = {
   jest: isPackageExists('jest'),
   vitest: isPackageExists('vitest'),
   nextjs: isPackageExists('next'),
-  nodejs: isPackageExists('node'),
   react: isPackageExists('react'),
 };
 
