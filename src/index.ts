@@ -40,10 +40,16 @@ const defaultModules: Modules = {
   react: isPackageExists('react'),
 };
 
-export function defineConfig(config?: Config): OxlintConfig {
-  const { extends: extendsConfig = [], modules: configModules, overrides = [], options, ...rest } = config ?? {};
+export function defineConfig(config: Config = {}): OxlintConfig {
+  const { extends: extendsConfig = [], modules: configModules, overrides = [], options: configOptions, ...rest } = config;
   const modules = { ...defaultModules, ...configModules };
   const { jest: jestEnabled, nextjs: nextjsEnabled, nodejs: nodejsEnabled, react: reactEnabled, vitest: vitestEnabled } = modules;
+
+  const defaultOptions: Options = {
+    esm: !modules.nextjs,
+  };
+  const options = { ...defaultOptions, ...configOptions };
+
   if (process.env.DEBUG_OXLINT_CONFIG) {
     console.log(`[@fullstacksjs/oxlint-config] Configuration:\n${JSON.stringify({ modules, options, rest }, null, 2)}`);
   }
