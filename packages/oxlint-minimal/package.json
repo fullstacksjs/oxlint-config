@@ -1,7 +1,7 @@
 {
-  "name": "@fullstacksjs/oxlint-config",
+  "name": "@fullstacksjs/oxlint-minimal",
   "version": "0.0.0",
-  "description": "FullstacksJS OXLint Config",
+  "description": "FullstacksJS OXLint Config Minimal",
   "homepage": "https://github.com/fullstacksjs/oxlint-config#readme",
   "bugs": {
     "url": "https://github.com/fullstacksjs/oxlint-config/issues"
@@ -12,21 +12,32 @@
     "type": "git",
     "url": "git+https://github.com/fullstacksjs/oxlint-config.git"
   },
+  "files": [
+    "dist"
+  ],
   "type": "module",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "build": "vp run -r build",
-    "dev": "vp run -r --parallel dev",
-    "test": "vp run -r test",
+    "build": "vp pack",
+    "dev": "vp pack --watch",
+    "test": "vp test",
     "check": "vp check",
-    "prepare": "vp config"
+    "prepare": "vp config",
+    "prepublishOnly": "vp run build",
+    "generate:fixtures": "node --experimental-transform-types scripts/generate-fixtures.ts"
+  },
+  "dependencies": {
+    "eslint-plugin-regexp": "3.1.1",
+    "local-pkg": "1.2.1"
   },
   "devDependencies": {
-    "@fullstacksjs/oxlint-minimal": "workspace:*",
     "@types/node": "catalog:",
-    "bumpp": "12.1.1",
     "oxlint": "catalog:",
     "typescript": "catalog:",
     "vite-plus": "catalog:"
@@ -34,7 +45,7 @@
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
-      "version": "11.22.0",
+      "version": "11.17.0",
       "onFail": "error"
     },
     "runtime": {

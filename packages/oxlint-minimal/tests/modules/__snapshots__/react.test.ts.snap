@@ -281,7 +281,73 @@ exports[`react > should lint 'jsx-a11y/role-has-required-aria-props' 1`] = `
 ]
 `;
 
-exports[`react > should lint 'jsx-a11y/role-supports-aria-props' 1`] = `[]`;
+exports[`react > should lint 'jsx-a11y/role-supports-aria-props' 1`] = `
+[
+  {
+    "column": 9,
+    "line": 4,
+    "message": "The attribute \`aria-required\` is not supported by the role \`radio\`.",
+    "rule": "jsx-a11y(role-supports-aria-props)",
+    "severity": "warning",
+  },
+  {
+    "column": 37,
+    "line": 4,
+    "message": "Non-interactive elements should not be assigned interactive roles.",
+    "rule": "jsx-a11y(no-noninteractive-element-to-interactive-role)",
+    "severity": "warning",
+  },
+  {
+    "column": 37,
+    "line": 4,
+    "message": "Prefer \`input\` over \`role\` attribute \`radio\`.",
+    "rule": "jsx-a11y(prefer-tag-over-role)",
+    "severity": "warning",
+  },
+  {
+    "column": 9,
+    "line": 5,
+    "message": "The attribute \`aria-required\` is not supported by the role \`radio\`.",
+    "rule": "jsx-a11y(role-supports-aria-props)",
+    "severity": "warning",
+  },
+  {
+    "column": 37,
+    "line": 5,
+    "message": "Non-interactive elements should not be assigned interactive roles.",
+    "rule": "jsx-a11y(no-noninteractive-element-to-interactive-role)",
+    "severity": "warning",
+  },
+  {
+    "column": 37,
+    "line": 5,
+    "message": "Prefer \`input\` over \`role\` attribute \`radio\`.",
+    "rule": "jsx-a11y(prefer-tag-over-role)",
+    "severity": "warning",
+  },
+  {
+    "column": 9,
+    "line": 6,
+    "message": "The attribute \`aria-required\` is not supported by the role \`radio\`.",
+    "rule": "jsx-a11y(role-supports-aria-props)",
+    "severity": "warning",
+  },
+  {
+    "column": 36,
+    "line": 6,
+    "message": "Non-interactive elements should not be assigned interactive roles.",
+    "rule": "jsx-a11y(no-noninteractive-element-to-interactive-role)",
+    "severity": "warning",
+  },
+  {
+    "column": 36,
+    "line": 6,
+    "message": "Prefer \`input\` over \`role\` attribute \`radio\`.",
+    "rule": "jsx-a11y(prefer-tag-over-role)",
+    "severity": "warning",
+  },
+]
+`;
 
 exports[`react > should lint 'jsx-a11y/scope' 1`] = `
 [

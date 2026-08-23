@@ -1,26 +1,17 @@
 import { defineConfig } from 'vite-plus';
-import { defineOxlintConfig } from './src/index.ts';
 
 export default defineConfig({
-  test: {
-    include: ['tests/**/*.test.ts'],
-    exclude: ['**/node_modules/**', '.tmp/**'],
-  },
-  pack: {
-    exports: true,
-  },
   staged: {
     '*': 'vp check --fix',
   },
   lint: {
-    ignorePatterns: ['.tmp/**', 'tests/fixtures/**'],
-    extends: [defineOxlintConfig()],
+    ignorePatterns: ['.tmp/**', '**/tests/fixtures/**'],
     rules: {
       'max-lines-per-function': ['warn', 200],
     },
   },
   fmt: {
-    ignorePatterns: ['.tmp/**', 'tests/fixtures/**', 'AGENTS.md'],
+    ignorePatterns: ['.tmp/**', '**/tests/fixtures/**', 'AGENTS.md'],
     arrowParens: 'always',
     bracketSpacing: true,
     endOfLine: 'lf',
