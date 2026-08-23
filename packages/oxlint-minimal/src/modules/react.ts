@@ -99,7 +99,6 @@ export function react(ctx: Context): OxlintConfig {
       'react/forbid-elements': 'off',
       'react/jsx-filename-extension': 'off',
       'react/jsx-props-no-spreading': 'off',
-      'react/react-compiler': 'off',
       'react-perf/jsx-no-jsx-as-prop': 'off',
       'react-perf/jsx-no-new-array-as-prop': 'off',
       'react-perf/jsx-no-new-function-as-prop': 'off',
@@ -143,6 +142,7 @@ export function react(ctx: Context): OxlintConfig {
       'jsx-a11y/tabindex-no-positive': 'warn',
 
       // Unsupported in oxlint (not in schema for v1.72.0)
+      // 'react/react-compiler': 'off',
       // "react/async-server-action": "warn",
       // "react/boolean-prop-naming": "off",
       // "react/default-props-match-prop-types": "off",

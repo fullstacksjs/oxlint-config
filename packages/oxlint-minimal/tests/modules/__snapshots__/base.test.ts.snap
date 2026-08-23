@@ -1161,6 +1161,27 @@ exports[`base > should lint 'no-eval' 1`] = `
     "rule": "eslint(prefer-template)",
     "severity": "error",
   },
+  {
+    "column": 5,
+    "line": 7,
+    "message": "eval can be harmful.",
+    "rule": "eslint(no-eval)",
+    "severity": "error",
+  },
+  {
+    "column": 13,
+    "line": 9,
+    "message": "eval can be harmful.",
+    "rule": "eslint(no-eval)",
+    "severity": "error",
+  },
+  {
+    "column": 6,
+    "line": 12,
+    "message": "eval can be harmful.",
+    "rule": "eslint(no-eval)",
+    "severity": "error",
+  },
 ]
 `;
 
@@ -2358,21 +2379,21 @@ exports[`base > should lint 'no-return-assign' 1`] = `
   {
     "column": 1,
     "line": 3,
+    "message": "Returned expression contains an assignment.",
+    "rule": "eslint(no-return-assign)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 3,
     "message": "Expected expression to be used",
     "rule": "eslint(no-unused-expressions)",
     "severity": "error",
   },
   {
-    "column": 7,
-    "line": 3,
-    "message": "Arrow functions should not return an assignment.",
-    "rule": "eslint(no-return-assign)",
-    "severity": "error",
-  },
-  {
-    "column": 23,
+    "column": 16,
     "line": 4,
-    "message": "Return statements should not contain an assignment.",
+    "message": "Returned expression contains an assignment.",
     "rule": "eslint(no-return-assign)",
     "severity": "error",
   },
@@ -3433,6 +3454,34 @@ exports[`base > should lint 'oxc/bad-char-at-comparison' 1`] = `
     "rule": "oxc(bad-char-at-comparison)",
     "severity": "error",
   },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Invalid character comparison",
+    "rule": "oxc(bad-char-at-comparison)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 6,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 6,
+    "message": "Invalid character comparison",
+    "rule": "oxc(bad-char-at-comparison)",
+    "severity": "error",
+  },
 ]
 `;
 
@@ -3754,8 +3803,6 @@ exports[`base > should lint 'oxc/no-accumulating-spread' 1`] = `
 ]
 `;
 
-exports[`base > should lint 'oxc/no-async-await' 1`] = `[]`;
-
 exports[`base > should lint 'oxc/no-async-endpoint-handlers' 1`] = `
 [
   {
@@ -3777,38 +3824,6 @@ exports[`base > should lint 'oxc/no-async-endpoint-handlers' 1`] = `
     "line": 16,
     "message": "Express endpoint handler for \`/user\` should not be \`async\`.",
     "rule": "oxc(no-async-endpoint-handlers)",
-    "severity": "warning",
-  },
-]
-`;
-
-exports[`base > should lint 'oxc/no-const-enum' 1`] = `[]`;
-
-exports[`base > should lint 'oxc/no-map-spread' 1`] = `[]`;
-
-exports[`base > should lint 'oxc/no-optional-chaining' 1`] = `[]`;
-
-exports[`base > should lint 'oxc/no-rest-spread-properties' 1`] = `
-[
-  {
-    "column": 7,
-    "line": 3,
-    "message": "\`x\` is never reassigned.",
-    "rule": "eslint(prefer-const)",
-    "severity": "warning",
-  },
-  {
-    "column": 13,
-    "line": 3,
-    "message": "\`y\` is never reassigned.",
-    "rule": "eslint(prefer-const)",
-    "severity": "warning",
-  },
-  {
-    "column": 5,
-    "line": 4,
-    "message": "\`z\` is never reassigned.",
-    "rule": "eslint(prefer-const)",
     "severity": "warning",
   },
 ]

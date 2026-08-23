@@ -19,5 +19,5 @@ jobs:
         with:
           cache: true
       - run: vp check
-      - run: vp test
-      - run: vp pack
+      - run: vp run -r test
+      - run: vp run -r build

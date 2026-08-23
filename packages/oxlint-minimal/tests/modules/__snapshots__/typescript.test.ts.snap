@@ -84,6 +84,20 @@ exports[`typescript > should lint 'typescript/no-confusing-non-null-asse…' 1`]
     "rule": "typescript(no-confusing-non-null-assertion)",
     "severity": "error",
   },
+  {
+    "column": 4,
+    "line": 6,
+    "message": "Confusing combination of non-null assertion and \`in\` operator like \`a! in b\`, which might be misinterpreted as \`!(a in b)\`.",
+    "rule": "typescript(no-confusing-non-null-assertion)",
+    "severity": "error",
+  },
+  {
+    "column": 4,
+    "line": 7,
+    "message": "Confusing combination of non-null assertion and \`instanceof\` operator like \`a! instanceof b\`, which might be misinterpreted as \`!(a instanceof b)\`.",
+    "rule": "typescript(no-confusing-non-null-assertion)",
+    "severity": "error",
+  },
 ]
 `;
 

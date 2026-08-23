@@ -28,7 +28,7 @@ jobs:
           registry-url: https://registry.npmjs.org
 
       - run: vp check
-      - run: vp test
+      - run: vp run -r test
 
       - name: Find the current version
         id: current
@@ -56,15 +56,15 @@ jobs:
 
       - name: Build the package
         if: steps.current.outputs.release == 'true'
-        run: vp pack
+        run: vp run -r build
 
       - name: Publish the package
         if: steps.current.outputs.release == 'true'
-        run: vp pm publish --access public --provenance --no-git-checks
+        run: vp pm publish --recursive --access public --provenance --no-git-checks
 
       - name: Test publishing the package
         if: steps.current.outputs.release == 'true'
-        run: vp pm publish --dry-run --no-git-checks
+        run: vp pm publish --recursive --dry-run --no-git-checks
 
       - name: Tag the release
         if: steps.current.outputs.release == 'true'

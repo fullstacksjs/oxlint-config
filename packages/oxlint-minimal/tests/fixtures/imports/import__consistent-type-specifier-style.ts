@@ -3,5 +3,8 @@
 import { type Foo } from 'Foo';
 import Foo, { type Bar } from 'Foo';
 
+import { type Foo } from 'Foo';
+import { type Foo, type Bar } from 'Foo';
+
 import type { Foo } from 'Foo';
 import type Foo, { Bar } from 'Foo';
