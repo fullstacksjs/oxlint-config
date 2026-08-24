@@ -31,9 +31,6 @@
     "typescript": "catalog:",
     "vite-plus": "catalog:"
   },
-  "inlinedDependencies": {
-    "oxlint": "catalog:"
-  },
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
@@ -45,5 +42,8 @@
       "version": "24.18.0",
       "onFail": "error"
     }
+  },
+  "inlinedDependencies": {
+    "oxlint": "catalog:"
   }
 }
