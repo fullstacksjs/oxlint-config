@@ -4,9 +4,8 @@
 
 ![downloads][download-badge] ![version][version-badge] ![license][license-badge]
 
-</div>
-
 Shared [Oxlint](https://oxc.rs/docs/guide/usage/linter.html) config for FullstacksJS projects.
+</div>
 
 ## Packages
 
@@ -25,7 +24,7 @@ surface small and avoids the performance cost of running JavaScript plugins.
 ## Installation
 
 ```sh
-npm install --save-dev @fullstacksjs/oxlint-config oxlint
+pnpm install --save-dev @fullstacksjs/oxlint-config oxlint
 ```
 
 ## Usage
@@ -85,15 +84,6 @@ export default defineConfig({
     },
   ],
 });
-```
-
-## Development
-
-```sh
-vp install
-vp check
-vp test
-vp pack
 ```
 
 ## Debug
