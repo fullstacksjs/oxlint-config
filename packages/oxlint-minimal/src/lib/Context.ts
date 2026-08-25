@@ -1,11 +1,11 @@
 import type { AllowWarnDeny } from 'oxlint';
-import type { Modules, Options } from '../index.ts';
+import type { ModuleConfig, Options } from '../index.ts';
 
 export class Context {
   options: Options;
-  modules: Modules;
+  modules: ModuleConfig;
 
-  constructor(options?: Options, modules?: Modules) {
+  constructor(options?: Options, modules?: ModuleConfig) {
     this.options = options ?? {};
     this.modules = modules ?? {};
   }
@@ -30,7 +30,7 @@ export class Context {
     return this.strictOr(config, 'off');
   }
 
-  matchModule<C, O>(module: keyof Modules, config: C, fallback: O): C | O {
+  matchModule<C, O>(module: keyof ModuleConfig, config: C, fallback: O): C | O {
     return this.modules[module] ? config : fallback;
   }
 

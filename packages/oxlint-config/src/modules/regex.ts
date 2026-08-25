@@ -1,5 +1,5 @@
 import type { OxlintConfig } from 'oxlint';
-import type { Context } from '../lib/Context.ts';
+import type { Context } from '@fullstacksjs/oxlint-minimal';
 
 export function regex(_ctx: Context): OxlintConfig {
   return {
