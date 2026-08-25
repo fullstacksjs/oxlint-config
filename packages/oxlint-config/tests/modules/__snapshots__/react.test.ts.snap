@@ -1,0 +1,1071 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`react > should lint 'jsx-a11y/alt-text' 1`] = `[]`;
+
+exports[`react > should lint 'jsx-a11y/anchor-ambiguous-text' 1`] = `[]`;
+
+exports[`react > should lint 'jsx-a11y/anchor-has-content' 1`] = `[]`;
+
+exports[`react > should lint 'jsx-a11y/aria-activedescendant-has-ta…' 1`] = `
+[
+  {
+    "column": 14,
+    "line": 3,
+    "message": "Elements with \`aria-activedescendant\` must be tabbable.",
+    "rule": "jsx-a11y(aria-activedescendant-has-tabindex)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`react > should lint 'jsx-a11y/aria-props' 1`] = `
+[
+  {
+    "column": 8,
+    "line": 3,
+    "message": "'aria-labeledby' is not a valid ARIA attribute.",
+    "rule": "jsx-a11y(aria-props)",
+    "severity": "warning",
+  },
+  {
+    "column": 8,
+    "line": 3,
+    "message": "Unknown property found",
+    "rule": "react(no-unknown-property)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`react > should lint 'jsx-a11y/aria-proptypes' 1`] = `[]`;
+
+exports[`react > should lint 'jsx-a11y/aria-role' 1`] = `[]`;
+
+exports[`react > should lint 'jsx-a11y/aria-unsupported-elements' 1`] = `
+[
+  {
+    "column": 23,
+    "line": 3,
+    "message": "This element does not support ARIA roles, states, or properties.",
+    "rule": "jsx-a11y(aria-unsupported-elements)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`react > should lint 'jsx-a11y/autocomplete-valid' 1`] = `
+[
+  {
+    "column": 8,
+    "line": 3,
+    "message": "\`invalid-value\` is not a valid value for \`autocomplete\`.",
+    "rule": "jsx-a11y(autocomplete-valid)",
+    "severity": "warning",
+  },
+  {
+    "column": 8,
+    "line": 3,
+    "message": "Unknown property found",
+    "rule": "react(no-unknown-property)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`react > should lint 'jsx-a11y/click-events-have-key-events' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Enforce a clickable non-interactive element has at least one keyboard event listener.",
+    "rule": "jsx-a11y(click-events-have-key-events)",
+    "severity": "warning",
+  },
+  {
+    "column": 2,
+    "line": 3,
+    "message": "Static HTML elements with event handlers require a role.",
+    "rule": "jsx-a11y(no-static-element-interactions)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`react > should lint 'jsx-a11y/control-has-associated-label' 1`] = `[]`;
+
+exports[`react > should lint 'jsx-a11y/heading-has-content' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Headings must have content and the content must be accessible by a screen reader.",
+    "rule": "jsx-a11y(heading-has-content)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`react > should lint 'jsx-a11y/html-has-lang' 1`] = `
+[
+  {
+    "column": 2,
+    "line": 3,
+    "message": "Missing lang attribute.",
+    "rule": "jsx-a11y(html-has-lang)",
+    "severity": "warning",
+  },
+  {
+    "column": 2,
+    "line": 3,
+    "message": "\`lang\` attribute must have a valid value.",
+    "rule": "jsx-a11y(lang)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`react > should lint 'jsx-a11y/iframe-has-title' 1`] = `[]`;
+
+exports[`react > should lint 'jsx-a11y/img-redundant-alt' 1`] = `[]`;
+
+exports[`react > should lint 'jsx-a11y/interactive-supports-focus' 1`] = `[]`;
+
+exports[`react > should lint 'jsx-a11y/label-has-associated-control' 1`] = `[]`;
+
+exports[`react > should lint 'jsx-a11y/lang' 1`] = `[]`;
+
+exports[`react > should lint 'jsx-a11y/media-has-caption' 1`] = `[]`;
+
+exports[`react > should lint 'jsx-a11y/mouse-events-have-key-events' 1`] = `
+[
+  {
+    "column": 6,
+    "line": 3,
+    "message": "\`onMouseOver\` must be accompanied by \`onFocus\` for accessibility.",
+    "rule": "jsx-a11y(mouse-events-have-key-events)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`react > should lint 'jsx-a11y/no-access-key' 1`] = `
+[
+  {
+    "column": 6,
+    "line": 3,
+    "message": "No access key attribute allowed.",
+    "rule": "jsx-a11y(no-access-key)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`react > should lint 'jsx-a11y/no-aria-hidden-on-focusable' 1`] = `
+[
+  {
+    "column": 6,
+    "line": 3,
+    "message": "\`aria-hidden\` must not be true on focusable elements.",
+    "rule": "jsx-a11y(no-aria-hidden-on-focusable)",
+    "severity": "warning",
+  },
+  {
+    "column": 25,
+    "line": 3,
+    "message": "\`tabIndex\` should only be declared on interactive elements.",
+    "rule": "jsx-a11y(no-noninteractive-tabindex)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`react > should lint 'jsx-a11y/no-autofocus' 1`] = `[]`;
+
+exports[`react > should lint 'jsx-a11y/no-distracting-elements' 1`] = `[]`;
+
+exports[`react > should lint 'jsx-a11y/no-interactive-element-to-no…' 1`] = `
+[
+  {
+    "column": 9,
+    "line": 3,
+    "message": "Interactive elements should not be assigned non-interactive roles.",
+    "rule": "jsx-a11y(no-interactive-element-to-noninteractive-role)",
+    "severity": "warning",
+  },
+  {
+    "column": 9,
+    "line": 3,
+    "message": "Prefer \`img\` over \`role\` attribute \`img\`.",
+    "rule": "jsx-a11y(prefer-tag-over-role)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`react > should lint 'jsx-a11y/no-noninteractive-element-in…' 1`] = `[]`;
+
+exports[`react > should lint 'jsx-a11y/no-noninteractive-element-to…' 1`] = `[]`;
+
+exports[`react > should lint 'jsx-a11y/no-noninteractive-tabindex' 1`] = `[]`;
+
+exports[`react > should lint 'jsx-a11y/no-redundant-roles' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "A control must be associated with a text label.",
+    "rule": "jsx-a11y(control-has-associated-label)",
+    "severity": "warning",
+  },
+  {
+    "column": 9,
+    "line": 3,
+    "message": "The \`button\` element has an implicit role of \`button\`. Defining this explicitly is redundant and should be avoided.",
+    "rule": "jsx-a11y(no-redundant-roles)",
+    "severity": "warning",
+  },
+  {
+    "column": 23,
+    "line": 3,
+    "message": "Unnecessary closing tag",
+    "rule": "react(self-closing-comp)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`react > should lint 'jsx-a11y/no-static-element-interactio…' 1`] = `[]`;
+
+exports[`react > should lint 'jsx-a11y/prefer-tag-over-role' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "A control must be associated with a text label.",
+    "rule": "jsx-a11y(control-has-associated-label)",
+    "severity": "warning",
+  },
+  {
+    "column": 6,
+    "line": 3,
+    "message": "Prefer \`button\` over \`role\` attribute \`button\`.",
+    "rule": "jsx-a11y(prefer-tag-over-role)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`react > should lint 'jsx-a11y/role-has-required-aria-props' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "A control must be associated with a text label.",
+    "rule": "jsx-a11y(control-has-associated-label)",
+    "severity": "warning",
+  },
+  {
+    "column": 6,
+    "line": 3,
+    "message": "Prefer \`input\` over \`role\` attribute \`checkbox\`.",
+    "rule": "jsx-a11y(prefer-tag-over-role)",
+    "severity": "warning",
+  },
+  {
+    "column": 6,
+    "line": 3,
+    "message": "\`checkbox\` role is missing required aria props \`aria-checked\`.",
+    "rule": "jsx-a11y(role-has-required-aria-props)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`react > should lint 'jsx-a11y/role-supports-aria-props' 1`] = `
+[
+  {
+    "column": 9,
+    "line": 4,
+    "message": "The attribute \`aria-required\` is not supported by the role \`radio\`.",
+    "rule": "jsx-a11y(role-supports-aria-props)",
+    "severity": "warning",
+  },
+  {
+    "column": 37,
+    "line": 4,
+    "message": "Non-interactive elements should not be assigned interactive roles.",
+    "rule": "jsx-a11y(no-noninteractive-element-to-interactive-role)",
+    "severity": "warning",
+  },
+  {
+    "column": 37,
+    "line": 4,
+    "message": "Prefer \`input\` over \`role\` attribute \`radio\`.",
+    "rule": "jsx-a11y(prefer-tag-over-role)",
+    "severity": "warning",
+  },
+  {
+    "column": 9,
+    "line": 5,
+    "message": "The attribute \`aria-required\` is not supported by the role \`radio\`.",
+    "rule": "jsx-a11y(role-supports-aria-props)",
+    "severity": "warning",
+  },
+  {
+    "column": 37,
+    "line": 5,
+    "message": "Non-interactive elements should not be assigned interactive roles.",
+    "rule": "jsx-a11y(no-noninteractive-element-to-interactive-role)",
+    "severity": "warning",
+  },
+  {
+    "column": 37,
+    "line": 5,
+    "message": "Prefer \`input\` over \`role\` attribute \`radio\`.",
+    "rule": "jsx-a11y(prefer-tag-over-role)",
+    "severity": "warning",
+  },
+  {
+    "column": 9,
+    "line": 6,
+    "message": "The attribute \`aria-required\` is not supported by the role \`radio\`.",
+    "rule": "jsx-a11y(role-supports-aria-props)",
+    "severity": "warning",
+  },
+  {
+    "column": 36,
+    "line": 6,
+    "message": "Non-interactive elements should not be assigned interactive roles.",
+    "rule": "jsx-a11y(no-noninteractive-element-to-interactive-role)",
+    "severity": "warning",
+  },
+  {
+    "column": 36,
+    "line": 6,
+    "message": "Prefer \`input\` over \`role\` attribute \`radio\`.",
+    "rule": "jsx-a11y(prefer-tag-over-role)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`react > should lint 'jsx-a11y/scope' 1`] = `
+[
+  {
+    "column": 6,
+    "line": 3,
+    "message": "The \`scope\` prop can only be used on \`<th>\` elements",
+    "rule": "jsx-a11y(scope)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`react > should lint 'jsx-a11y/tabindex-no-positive' 1`] = `
+[
+  {
+    "column": 7,
+    "line": 3,
+    "message": "\`tabIndex\` should only be declared on interactive elements.",
+    "rule": "jsx-a11y(no-noninteractive-tabindex)",
+    "severity": "warning",
+  },
+  {
+    "column": 7,
+    "line": 3,
+    "message": "Avoid positive integer values for \`tabIndex\`.",
+    "rule": "jsx-a11y(tabindex-no-positive)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`react > should lint 'react/checked-requires-onchange-or-re…' 1`] = `[]`;
+
+exports[`react > should lint 'react/display-name' 1`] = `
+[
+  {
+    "column": 7,
+    "line": 3,
+    "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
+    "rule": "react(only-export-components)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`react > should lint 'react/exhaustive-deps' 1`] = `[]`;
+
+exports[`react > should lint 'react/forward-ref-uses-ref' 1`] = `
+[
+  {
+    "column": 5,
+    "line": 5,
+    "message": "Component definition is missing display name.",
+    "rule": "react(display-name)",
+    "severity": "warning",
+  },
+  {
+    "column": 34,
+    "line": 5,
+    "message": "Components wrapped with \`forwardRef\` must have a \`ref\` parameter",
+    "rule": "react(forward-ref-uses-ref)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`react > should lint 'react/hook-use-state' 1`] = `[]`;
+
+exports[`react > should lint 'react/iframe-missing-sandbox' 1`] = `
+[
+  {
+    "column": 2,
+    "line": 3,
+    "message": "Missing \`title\` attribute for the \`iframe\` element.",
+    "rule": "jsx-a11y(iframe-has-title)",
+    "severity": "warning",
+  },
+  {
+    "column": 2,
+    "line": 3,
+    "message": "An iframe element is missing a sandbox attribute",
+    "rule": "react(iframe-missing-sandbox)",
+    "severity": "warning",
+  },
+  {
+    "column": 2,
+    "line": 4,
+    "message": "Missing \`title\` attribute for the \`iframe\` element.",
+    "rule": "jsx-a11y(iframe-has-title)",
+    "severity": "warning",
+  },
+  {
+    "column": 17,
+    "line": 4,
+    "message": "An iframe element defines a sandbox attribute with invalid value: invalid-value",
+    "rule": "react(iframe-missing-sandbox)",
+    "severity": "warning",
+  },
+  {
+    "column": 2,
+    "line": 5,
+    "message": "Missing \`title\` attribute for the \`iframe\` element.",
+    "rule": "jsx-a11y(iframe-has-title)",
+    "severity": "warning",
+  },
+  {
+    "column": 17,
+    "line": 5,
+    "message": "An \`iframe\` element defines a sandbox attribute with both allow-scripts and allow-same-origin which is invalid",
+    "rule": "react(iframe-missing-sandbox)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`react > should lint 'react/jsx-boolean-value' 1`] = `[]`;
+
+exports[`react > should lint 'react/jsx-curly-brace-presence' 1`] = `
+[
+  {
+    "column": 26,
+    "line": 4,
+    "message": "Curly braces are unnecessary here.",
+    "rule": "react(jsx-curly-brace-presence)",
+    "severity": "warning",
+  },
+  {
+    "column": 7,
+    "line": 6,
+    "message": "Curly braces are unnecessary here.",
+    "rule": "react(jsx-curly-brace-presence)",
+    "severity": "warning",
+  },
+  {
+    "column": 12,
+    "line": 7,
+    "message": "Curly braces are unnecessary here.",
+    "rule": "react(jsx-curly-brace-presence)",
+    "severity": "warning",
+  },
+  {
+    "column": 28,
+    "line": 7,
+    "message": "Curly braces are unnecessary here.",
+    "rule": "react(jsx-curly-brace-presence)",
+    "severity": "warning",
+  },
+  {
+    "column": 7,
+    "line": 9,
+    "message": "Curly braces are unnecessary here.",
+    "rule": "react(jsx-curly-brace-presence)",
+    "severity": "warning",
+  },
+  {
+    "column": 12,
+    "line": 10,
+    "message": "Curly braces are unnecessary here.",
+    "rule": "react(jsx-curly-brace-presence)",
+    "severity": "warning",
+  },
+  {
+    "column": 33,
+    "line": 10,
+    "message": "Curly braces are unnecessary here.",
+    "rule": "react(jsx-curly-brace-presence)",
+    "severity": "warning",
+  },
+  {
+    "column": 7,
+    "line": 26,
+    "message": "Curly braces are unnecessary here.",
+    "rule": "react(jsx-curly-brace-presence)",
+    "severity": "warning",
+  },
+  {
+    "column": 12,
+    "line": 27,
+    "message": "Curly braces are unnecessary here.",
+    "rule": "react(jsx-curly-brace-presence)",
+    "severity": "warning",
+  },
+  {
+    "column": 33,
+    "line": 27,
+    "message": "Curly braces are unnecessary here.",
+    "rule": "react(jsx-curly-brace-presence)",
+    "severity": "warning",
+  },
+  {
+    "column": 41,
+    "line": 27,
+    "message": "Curly braces are unnecessary here.",
+    "rule": "react(jsx-curly-brace-presence)",
+    "severity": "warning",
+  },
+  {
+    "column": 12,
+    "line": 29,
+    "message": "Curly braces are unnecessary here.",
+    "rule": "react(jsx-curly-brace-presence)",
+    "severity": "warning",
+  },
+  {
+    "column": 25,
+    "line": 29,
+    "message": "Curly braces are unnecessary here.",
+    "rule": "react(jsx-curly-brace-presence)",
+    "severity": "warning",
+  },
+  {
+    "column": 33,
+    "line": 29,
+    "message": "Curly braces are unnecessary here.",
+    "rule": "react(jsx-curly-brace-presence)",
+    "severity": "warning",
+  },
+  {
+    "column": 12,
+    "line": 33,
+    "message": "Curly braces are unnecessary here.",
+    "rule": "react(jsx-curly-brace-presence)",
+    "severity": "warning",
+  },
+  {
+    "column": 28,
+    "line": 33,
+    "message": "Curly braces are unnecessary here.",
+    "rule": "react(jsx-curly-brace-presence)",
+    "severity": "warning",
+  },
+  {
+    "column": 37,
+    "line": 37,
+    "message": "\`'\` can be escaped with &apos; or &lsquo; or &#39; or &rsquo;",
+    "rule": "react(no-unescaped-entities)",
+    "severity": "warning",
+  },
+  {
+    "column": 41,
+    "line": 37,
+    "message": "\`'\` can be escaped with &apos; or &lsquo; or &#39; or &rsquo;",
+    "rule": "react(no-unescaped-entities)",
+    "severity": "warning",
+  },
+  {
+    "column": 43,
+    "line": 37,
+    "message": "\`"\` can be escaped with &quot; or &ldquo; or &#34; or &rdquo;",
+    "rule": "react(no-unescaped-entities)",
+    "severity": "warning",
+  },
+  {
+    "column": 47,
+    "line": 37,
+    "message": "\`"\` can be escaped with &quot; or &ldquo; or &#34; or &rdquo;",
+    "rule": "react(no-unescaped-entities)",
+    "severity": "warning",
+  },
+  {
+    "column": 12,
+    "line": 39,
+    "message": "Curly braces are unnecessary here.",
+    "rule": "react(jsx-curly-brace-presence)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`react > should lint 'react/jsx-handler-names' 1`] = `[]`;
+
+exports[`react > should lint 'react/jsx-key' 1`] = `
+[
+  {
+    "column": 11,
+    "line": 3,
+    "message": "Missing "key" prop for element in iterator.",
+    "rule": "react(jsx-key)",
+    "severity": "error",
+  },
+  {
+    "column": 12,
+    "line": 4,
+    "message": "Missing "key" prop for element in iterator.",
+    "rule": "react(jsx-key)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`react > should lint 'react/jsx-no-comment-textnodes' 1`] = `[]`;
+
+exports[`react > should lint 'react/jsx-no-constructed-context-valu…' 1`] = `
+[
+  {
+    "column": 10,
+    "line": 9,
+    "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
+    "rule": "react(only-export-components)",
+    "severity": "warning",
+  },
+  {
+    "column": 30,
+    "line": 11,
+    "message": "The Context \`value\` prop should not be constructed.",
+    "rule": "react(jsx-no-constructed-context-values)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`react > should lint 'react/jsx-no-duplicate-props' 1`] = `
+[
+  {
+    "column": 6,
+    "line": 3,
+    "message": "No duplicate props allowed. The prop "a" is duplicated.",
+    "rule": "react(jsx-no-duplicate-props)",
+    "severity": "error",
+  },
+  {
+    "column": 6,
+    "line": 4,
+    "message": "No duplicate props allowed. The prop "foo" is duplicated.",
+    "rule": "react(jsx-no-duplicate-props)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`react > should lint 'react/jsx-no-script-url' 1`] = `
+[
+  {
+    "column": 2,
+    "line": 3,
+    "message": "Use of incorrect \`href\` for the 'a' element.",
+    "rule": "jsx-a11y(anchor-is-valid)",
+    "severity": "warning",
+  },
+  {
+    "column": 4,
+    "line": 3,
+    "message": "React 19 disallows \`javascript:\` URLs as a security precaution.",
+    "rule": "react(jsx-no-script-url)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`react > should lint 'react/jsx-no-target-blank' 1`] = `
+[
+  {
+    "column": 13,
+    "line": 3,
+    "message": "Missing accessible content when using \`a\` elements.",
+    "rule": "jsx-a11y(anchor-has-content)",
+    "severity": "warning",
+  },
+  {
+    "column": 13,
+    "line": 3,
+    "message": "A control must be associated with a text label.",
+    "rule": "jsx-a11y(control-has-associated-label)",
+    "severity": "warning",
+  },
+  {
+    "column": 23,
+    "line": 3,
+    "message": "Using target=\`_blank\` without rel=\`noreferrer\` (which implies rel=\`noopener\`) is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations",
+    "rule": "react(jsx-no-target-blank)",
+    "severity": "warning",
+  },
+  {
+    "column": 60,
+    "line": 3,
+    "message": "Unnecessary closing tag",
+    "rule": "react(self-closing-comp)",
+    "severity": "warning",
+  },
+  {
+    "column": 13,
+    "line": 4,
+    "message": "Missing accessible content when using \`a\` elements.",
+    "rule": "jsx-a11y(anchor-has-content)",
+    "severity": "warning",
+  },
+  {
+    "column": 13,
+    "line": 4,
+    "message": "A control must be associated with a text label.",
+    "rule": "jsx-a11y(control-has-associated-label)",
+    "severity": "warning",
+  },
+  {
+    "column": 23,
+    "line": 4,
+    "message": "Using target=\`_blank\` without rel=\`noreferrer\` (which implies rel=\`noopener\`) is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations",
+    "rule": "react(jsx-no-target-blank)",
+    "severity": "warning",
+  },
+  {
+    "column": 51,
+    "line": 4,
+    "message": "Unnecessary closing tag",
+    "rule": "react(self-closing-comp)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`react > should lint 'react/jsx-no-useless-fragment' 1`] = `[]`;
+
+exports[`react > should lint 'react/jsx-pascal-case' 1`] = `[]`;
+
+exports[`react > should lint 'react/jsx-props-no-spread-multi' 1`] = `
+[
+  {
+    "column": 6,
+    "line": 3,
+    "message": "Prop 'props' is spread multiple times.",
+    "rule": "react(jsx-props-no-spread-multi)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`react > should lint 'react/no-array-index-key' 1`] = `
+[
+  {
+    "column": 12,
+    "line": 4,
+    "message": "Usage of Array index in keys is not allowed",
+    "rule": "react(no-array-index-key)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`react > should lint 'react/no-children-prop' 1`] = `[]`;
+
+exports[`react > should lint 'react/no-clone-element' 1`] = `
+[
+  {
+    "column": 10,
+    "line": 5,
+    "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
+    "rule": "react(only-export-components)",
+    "severity": "warning",
+  },
+  {
+    "column": 9,
+    "line": 10,
+    "message": "\`React.cloneElement\` should not be used.",
+    "rule": "react(no-clone-element)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`react > should lint 'react/no-danger-with-children' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Only set one of \`children\` or \`props.dangerouslySetInnerHTML\`",
+    "rule": "react(no-danger-with-children)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Only set one of \`children\` or \`props.dangerouslySetInnerHTML\`",
+    "rule": "react(no-danger-with-children)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`react > should lint 'react/no-namespace' 1`] = `[]`;
+
+exports[`react > should lint 'react/no-object-type-as-default-prop' 1`] = `
+[
+  {
+    "column": 10,
+    "line": 3,
+    "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
+    "rule": "react(only-export-components)",
+    "severity": "warning",
+  },
+  {
+    "column": 24,
+    "line": 3,
+    "message": "Do not use an array literal as default prop value. Use a stable reference instead.",
+    "rule": "react(no-object-type-as-default-prop)",
+    "severity": "warning",
+  },
+  {
+    "column": 7,
+    "line": 7,
+    "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
+    "rule": "react(only-export-components)",
+    "severity": "warning",
+  },
+  {
+    "column": 25,
+    "line": 7,
+    "message": "Do not use an object literal as default prop value. Use a stable reference instead.",
+    "rule": "react(no-object-type-as-default-prop)",
+    "severity": "warning",
+  },
+  {
+    "column": 10,
+    "line": 9,
+    "message": "Fast refresh only works when a file has exports. Move your component(s) to a separate file.",
+    "rule": "react(only-export-components)",
+    "severity": "warning",
+  },
+  {
+    "column": 26,
+    "line": 9,
+    "message": "Do not use a function expression as default prop value. Use a stable reference instead.",
+    "rule": "react(no-object-type-as-default-prop)",
+    "severity": "warning",
+  },
+  {
+    "column": 10,
+    "line": 10,
+    "message": "A control must be associated with a text label.",
+    "rule": "jsx-a11y(control-has-associated-label)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`react > should lint 'react/no-react-children' 1`] = `[]`;
+
+exports[`react > should lint 'react/no-render-return-value' 1`] = `
+[
+  {
+    "column": 12,
+    "line": 3,
+    "message": "Do not depend on the return value from \`ReactDOM.render\`.",
+    "rule": "react(no-render-return-value)",
+    "severity": "error",
+  },
+  {
+    "column": 10,
+    "line": 5,
+    "message": "Do not depend on the return value from \`ReactDOM.render\`.",
+    "rule": "react(no-render-return-value)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`react > should lint 'react/no-this-in-sfc' 1`] = `[]`;
+
+exports[`react > should lint 'react/no-unknown-property' 1`] = `
+[
+  {
+    "column": 20,
+    "line": 4,
+    "message": "Unknown property found",
+    "rule": "react(no-unknown-property)",
+    "severity": "warning",
+  },
+  {
+    "column": 23,
+    "line": 5,
+    "message": "Unknown property found",
+    "rule": "react(no-unknown-property)",
+    "severity": "warning",
+  },
+  {
+    "column": 25,
+    "line": 8,
+    "message": "'aria-foo' is not a valid ARIA attribute.",
+    "rule": "jsx-a11y(aria-props)",
+    "severity": "warning",
+  },
+  {
+    "column": 25,
+    "line": 8,
+    "message": "Unknown property found",
+    "rule": "react(no-unknown-property)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`react > should lint 'react/only-export-components' 1`] = `
+[
+  {
+    "column": 14,
+    "line": 4,
+    "message": "Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.",
+    "rule": "react(only-export-components)",
+    "severity": "warning",
+  },
+  {
+    "column": 26,
+    "line": 5,
+    "message": "Fragments should contain more than one child.",
+    "rule": "react(jsx-no-useless-fragment)",
+    "severity": "warning",
+  },
+  {
+    "column": 16,
+    "line": 8,
+    "message": "Fast refresh can't handle anonymous components. Add a name to your export.",
+    "rule": "react(only-export-components)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 11,
+    "message": "This rule can't verify that \`export *\` only exports components.",
+    "rule": "react(only-export-components)",
+    "severity": "warning",
+  },
+  {
+    "column": 14,
+    "line": 15,
+    "message": "Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.",
+    "rule": "react(only-export-components)",
+    "severity": "warning",
+  },
+  {
+    "column": 23,
+    "line": 15,
+    "message": "Missing "key" prop for element in array.",
+    "rule": "react(jsx-key)",
+    "severity": "error",
+  },
+  {
+    "column": 32,
+    "line": 15,
+    "message": "Missing "key" prop for element in array.",
+    "rule": "react(jsx-key)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`react > should lint 'react/prefer-function-component' 1`] = `
+[
+  {
+    "column": 7,
+    "line": 3,
+    "message": "Class component should be written as a function component.",
+    "rule": "react(prefer-function-component)",
+    "severity": "error",
+  },
+  {
+    "column": 7,
+    "line": 9,
+    "message": "Class component should be written as a function component.",
+    "rule": "react(prefer-function-component)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`react > should lint 'react/rules-of-hooks' 1`] = `
+[
+  {
+    "column": 31,
+    "line": 6,
+    "message": "React Hook "useState" is called conditionally. React Hooks must be called in the exact same order in every component render.",
+    "rule": "react-hooks(rules-of-hooks)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 10,
+    "message": "React Hook "useEffect" may be executed more than once. Possibly because it is called in a loop. React Hooks must be called in the exact same order in every component render.",
+    "rule": "react-hooks(rules-of-hooks)",
+    "severity": "error",
+  },
+  {
+    "column": 29,
+    "line": 16,
+    "message": "React Hook "useState" is called in function "regularFunction" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".",
+    "rule": "react-hooks(rules-of-hooks)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`react > should lint 'react/self-closing-comp' 1`] = `
+[
+  {
+    "column": 41,
+    "line": 3,
+    "message": "Unnecessary closing tag",
+    "rule": "react(self-closing-comp)",
+    "severity": "warning",
+  },
+  {
+    "column": 35,
+    "line": 4,
+    "message": "Unnecessary closing tag",
+    "rule": "react(self-closing-comp)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 7,
+    "message": "Unnecessary closing tag",
+    "rule": "react(self-closing-comp)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`react > should lint 'react/state-in-constructor' 1`] = `[]`;
+
+exports[`react > should lint 'react/style-prop-object' 1`] = `[]`;
+
+exports[`react > should lint 'react/void-dom-elements-no-children' 1`] = `[]`;

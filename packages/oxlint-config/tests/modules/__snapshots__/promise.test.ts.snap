@@ -1,0 +1,186 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`promise > should lint 'promise/no-multiple-resolved' 1`] = `
+[
+  {
+    "column": 5,
+    "line": 9,
+    "message": "Promise should not be resolved multiple times. Promise is potentially resolved on line 6.",
+    "rule": "promise(no-multiple-resolved)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`promise > should lint 'promise/no-new-statics' 1`] = `
+[
+  {
+    "column": 11,
+    "line": 3,
+    "message": "Do not use \`new\` on \`Promise.resolve\`",
+    "rule": "promise(no-new-statics)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`promise > should lint 'promise/no-promise-in-callback' 1`] = `
+[
+  {
+    "column": 8,
+    "line": 5,
+    "message": "Avoid using promises inside of callbacks.",
+    "rule": "promise(no-promise-in-callback)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`promise > should lint 'promise/no-return-in-finally' 1`] = `
+[
+  {
+    "column": 3,
+    "line": 4,
+    "message": "Don't return in a finally callback",
+    "rule": "promise(no-return-in-finally)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`promise > should lint 'promise/no-return-wrap' 1`] = `
+[
+  {
+    "column": 24,
+    "line": 3,
+    "message": "Avoid wrapping return values in Promise.resolve",
+    "rule": "promise(no-return-wrap)",
+    "severity": "error",
+  },
+  {
+    "column": 38,
+    "line": 4,
+    "message": "Avoid wrapping return values in Promise.resolve",
+    "rule": "promise(no-return-wrap)",
+    "severity": "error",
+  },
+  {
+    "column": 24,
+    "line": 6,
+    "message": "Expected throw instead of Promise.reject",
+    "rule": "promise(no-return-wrap)",
+    "severity": "error",
+  },
+  {
+    "column": 38,
+    "line": 7,
+    "message": "Expected throw instead of Promise.reject",
+    "rule": "promise(no-return-wrap)",
+    "severity": "error",
+  },
+  {
+    "column": 12,
+    "line": 11,
+    "message": "Expected throw instead of Promise.reject",
+    "rule": "promise(no-return-wrap)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 16,
+    "message": "Don't return in a finally callback",
+    "rule": "promise(no-return-in-finally)",
+    "severity": "warning",
+  },
+  {
+    "column": 12,
+    "line": 16,
+    "message": "Expected throw instead of Promise.reject",
+    "rule": "promise(no-return-wrap)",
+    "severity": "error",
+  },
+  {
+    "column": 27,
+    "line": 19,
+    "message": "Avoid wrapping return values in Promise.resolve",
+    "rule": "promise(no-return-wrap)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`promise > should lint 'promise/param-names' 1`] = `
+[
+  {
+    "column": 23,
+    "line": 3,
+    "message": "Promise constructor parameters must be named to match \`^_?resolve$\`",
+    "rule": "promise(param-names)",
+    "severity": "warning",
+  },
+  {
+    "column": 31,
+    "line": 3,
+    "message": "Promise constructor parameters must be named to match \`^_?reject$\`",
+    "rule": "promise(param-names)",
+    "severity": "warning",
+  },
+  {
+    "column": 23,
+    "line": 4,
+    "message": "Promise constructor parameters must be named to match \`^_?resolve$\`",
+    "rule": "promise(param-names)",
+    "severity": "warning",
+  },
+  {
+    "column": 27,
+    "line": 4,
+    "message": "Promise constructor parameters must be named to match \`^_?reject$\`",
+    "rule": "promise(param-names)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`promise > should lint 'promise/prefer-catch' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Prefer \`catch\` to \`then(a, b)\` or \`then(null, b)\`",
+    "rule": "promise(prefer-catch)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Prefer \`catch\` to \`then(a, b)\` or \`then(null, b)\`",
+    "rule": "promise(prefer-catch)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`promise > should lint 'promise/spec-only' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Avoid using non-standard \`Promise.done\` method.",
+    "rule": "promise(spec-only)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`promise > should lint 'promise/valid-params' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "\`Promise.resolve()\` requires 0 or 1 arguments, but received 2.",
+    "rule": "promise(valid-params)",
+    "severity": "error",
+  },
+]
+`;

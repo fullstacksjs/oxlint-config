@@ -1,0 +1,60 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`node > should lint 'node/global-require' 1`] = `[]`;
+
+exports[`node > should lint 'node/handle-callback-err' 1`] = `
+[
+  {
+    "column": 20,
+    "line": 3,
+    "message": "Expected error to be handled.",
+    "rule": "node(handle-callback-err)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`node > should lint 'node/no-path-concat' 1`] = `
+[
+  {
+    "column": 19,
+    "line": 3,
+    "message": "Use \`path.join()\` or \`path.resolve()\` instead of string concatenation",
+    "rule": "node(no-path-concat)",
+    "severity": "error",
+  },
+  {
+    "column": 19,
+    "line": 4,
+    "message": "Use \`path.join()\` or \`path.resolve()\` instead of string concatenation",
+    "rule": "node(no-path-concat)",
+    "severity": "error",
+  },
+  {
+    "column": 19,
+    "line": 5,
+    "message": "Use \`path.join()\` or \`path.resolve()\` instead of string concatenation",
+    "rule": "node(no-path-concat)",
+    "severity": "error",
+  },
+  {
+    "column": 19,
+    "line": 6,
+    "message": "Use \`path.join()\` or \`path.resolve()\` instead of string concatenation",
+    "rule": "node(no-path-concat)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`node > should lint 'node/no-process-env' 1`] = `
+[
+  {
+    "column": 4,
+    "line": 3,
+    "message": "Disallowed usage of \`process.env\`.",
+    "rule": "node(no-process-env)",
+    "severity": "error",
+  },
+]
+`;

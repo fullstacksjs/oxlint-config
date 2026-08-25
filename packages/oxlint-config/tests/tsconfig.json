@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "allowUnreachableCode": false,
+    "types": ["node"]
+  },
+  "include": ["./**/*.ts", "./**/*.tsx"]
+}

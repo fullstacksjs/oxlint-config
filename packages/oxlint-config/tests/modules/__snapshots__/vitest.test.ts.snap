@@ -1,0 +1,172 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`vitest > should lint 'vitest/consistent-vitest-vi' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "The vitest function accessor used is not allowed",
+    "rule": "vitest(consistent-vitest-vi)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`vitest > should lint 'vitest/no-alias-methods' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "\`expect\` must be inside of a test block.",
+    "rule": "vitest(no-standalone-expect)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "\`expect\` must be inside of a test block.",
+    "rule": "vitest(no-standalone-expect)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "\`expect\` must be inside of a test block.",
+    "rule": "vitest(no-standalone-expect)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 6,
+    "message": "\`expect\` must be inside of a test block.",
+    "rule": "vitest(no-standalone-expect)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 7,
+    "message": "\`expect\` must be inside of a test block.",
+    "rule": "vitest(no-standalone-expect)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 8,
+    "message": "\`expect\` must be inside of a test block.",
+    "rule": "vitest(no-standalone-expect)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 9,
+    "message": "\`expect\` must be inside of a test block.",
+    "rule": "vitest(no-standalone-expect)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 10,
+    "message": "\`expect\` must be inside of a test block.",
+    "rule": "vitest(no-standalone-expect)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 11,
+    "message": "\`expect\` must be inside of a test block.",
+    "rule": "vitest(no-standalone-expect)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 12,
+    "message": "\`expect\` must be inside of a test block.",
+    "rule": "vitest(no-standalone-expect)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 13,
+    "message": "\`expect\` must be inside of a test block.",
+    "rule": "vitest(no-standalone-expect)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`vitest > should lint 'vitest/no-conditional-tests' 1`] = `[]`;
+
+exports[`vitest > should lint 'vitest/no-import-node-test' 1`] = `
+[
+  {
+    "column": 22,
+    "line": 3,
+    "message": "Do not import from \`node:test\`",
+    "rule": "vitest(no-import-node-test)",
+    "severity": "error",
+  },
+  {
+    "column": 3,
+    "line": 7,
+    "message": "\`expect\` must be inside of a test block.",
+    "rule": "vitest(no-standalone-expect)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`vitest > should lint 'vitest/prefer-called-once' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Enforce \`test\` and \`it\` usage conventions",
+    "rule": "vitest(consistent-test-it)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`vitest > should lint 'vitest/prefer-describe-function-title' 1`] = `[]`;
+
+exports[`vitest > should lint 'vitest/prefer-to-be-object' 1`] = `[]`;
+
+exports[`vitest > should lint 'vitest/require-local-test-context-for…' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Enforce \`test\` and \`it\` usage conventions",
+    "rule": "vitest(consistent-test-it)",
+    "severity": "warning",
+  },
+  {
+    "column": 5,
+    "line": 8,
+    "message": "Enforce \`test\` and \`it\` usage conventions",
+    "rule": "vitest(consistent-test-it)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`vitest > should lint 'vitest/valid-describe-callback' 1`] = `[]`;
+
+exports[`vitest > should lint 'vitest/warn-todo' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Enforce \`test\` and \`it\` usage conventions",
+    "rule": "vitest(consistent-test-it)",
+    "severity": "warning",
+  },
+  {
+    "column": 11,
+    "line": 5,
+    "message": "Test title is used multiple times in the same describe block.",
+    "rule": "vitest(no-identical-title)",
+    "severity": "error",
+  },
+]
+`;
