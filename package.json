@@ -1,7 +1,8 @@
 {
-  "name": "@fullstacksjs/oxlint-config",
+  "name": "@fullstacksjs/oxlint-config-monorepo",
   "version": "0.0.0",
-  "description": "FullstacksJS OXLint Config",
+  "private": true,
+  "description": "FullstacksJS OXLint Config workspace root",
   "homepage": "https://github.com/fullstacksjs/oxlint-config#readme",
   "bugs": {
     "url": "https://github.com/fullstacksjs/oxlint-config/issues"
@@ -13,9 +14,6 @@
     "url": "git+https://github.com/fullstacksjs/oxlint-config.git"
   },
   "type": "module",
-  "publishConfig": {
-    "access": "public"
-  },
   "scripts": {
     "build": "vp run -r build",
     "dev": "vp run -r --parallel dev",
