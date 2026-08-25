@@ -1,5 +1,5 @@
-import type { AllowWarnDeny } from "oxlint";
-import type { Options, ModuleConfig } from "./createPreset.ts";
+import type { AllowWarnDeny } from 'oxlint';
+import type { Options, ModuleConfig } from './createPreset.ts';
 
 export class Context {
   options: Options;
@@ -27,7 +27,7 @@ export class Context {
   }
 
   strict<C>(config: C) {
-    return this.strictOr(config, "off");
+    return this.strictOr(config, 'off');
   }
 
   matchModule<C, O>(module: keyof ModuleConfig, config: C, fallback: O): C | O {
@@ -35,22 +35,22 @@ export class Context {
   }
 
   esm(config: AllowWarnDeny): AllowWarnDeny {
-    return this.isEsm ? config : "off";
+    return this.isEsm ? config : 'off';
   }
 
   cjs(config: AllowWarnDeny): AllowWarnDeny {
-    return this.isEsm ? "off" : config;
+    return this.isEsm ? 'off' : config;
   }
 
   typeAware<C>(config: C) {
-    return this.isTypeAware ? config : "off";
+    return this.isTypeAware ? config : 'off';
   }
 
   ts(): AllowWarnDeny {
-    return "off";
+    return 'off';
   }
 
   regex(): AllowWarnDeny {
-    return "off";
+    return 'off';
   }
 }
