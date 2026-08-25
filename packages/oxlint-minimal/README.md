@@ -7,9 +7,10 @@
 Shared [Oxlint](https://oxc.rs/docs/guide/usage/linter.html) config for FullstacksJS projects, the baseline, using only rules built into
 Oxlint.
 
-This package pulls in no [jsPlugins](https://oxc.rs/docs/guide/usage/linter/plugins), so linting stays entirely on Oxlint's native path. If
-you want the regexp rules too, use [`@fullstacksjs/oxlint-config`](https://www.npmjs.com/package/@fullstacksjs/oxlint-config) instead, which
-is this baseline plus the jsPlugin-backed modules.
+This package has only one runtime dependency and pulls in no npm-based [jsPlugins](https://oxc.rs/docs/guide/usage/linter/plugins). That
+keeps its supply-chain attack surface small and avoids the performance cost of running JavaScript plugins. If you want the regexp rules too,
+use [`@fullstacksjs/oxlint-config`](https://www.npmjs.com/package/@fullstacksjs/oxlint-config) instead, which is this baseline plus the
+jsPlugin-backed modules.
 
 ## Installation
 
