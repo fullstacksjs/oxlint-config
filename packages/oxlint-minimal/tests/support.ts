@@ -6,7 +6,6 @@ import { execFileSync } from 'node:child_process';
 import os from 'node:os';
 
 const { dirname } = import.meta;
-export const IGNORED_MODULES = new Set(['regex']);
 
 export const paths = {
   root: path.resolve(dirname, '..'),
@@ -23,7 +22,7 @@ export interface ModuleInfo {
 export function discoverModules(): ModuleInfo[] {
   return fs
     .readdirSync(paths.modules)
-    .filter((f) => f.endsWith('.ts') && !f.endsWith('.test.ts') && !IGNORED_MODULES.has(f.replace(/\.ts$/, '')))
+    .filter((f) => f.endsWith('.ts') && !f.endsWith('.test.ts') && !f.endsWith('.d.ts'))
     .map((f) => ({
       name: f.replace(/\.ts$/, ''),
       file: path.join(paths.modules, f),
@@ -153,7 +152,7 @@ export function toCase(mod: { name: string }, config: OxlintConfig): ModuleCase 
 
 export async function getModuleCase(name: string): Promise<ModuleCase> {
   const mod = discoverModules().find((m) => m.name === name);
-  if (!mod) throw new Error(`Unknown module "${name}". Is it missing from src/modules or listed in IGNORED_MODULES?`);
+  if (!mod) throw new Error(`Unknown module "${name}". Is it missing from src/modules?`);
   return toCase(mod, await loadModuleConfig(mod));
 }
 

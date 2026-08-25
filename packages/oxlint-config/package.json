@@ -29,14 +29,14 @@
     "test": "vp test",
     "check": "vp check",
     "prepare": "vp config",
-    "prepublishOnly": "vp run build",
-    "generate:fixtures": "node --experimental-transform-types scripts/generate-fixtures.ts"
+    "prepublishOnly": "vp run build"
   },
   "dependencies": {
     "eslint-plugin-regexp": "3.1.1",
     "local-pkg": "1.2.1"
   },
   "devDependencies": {
+    "@fullstacksjs/oxlint-minimal": "workspace:*",
     "@types/node": "catalog:",
     "oxlint": "catalog:",
     "typescript": "catalog:",

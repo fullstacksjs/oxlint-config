@@ -1,23 +1,30 @@
-# vite-plus-starter
+<div align="center">
 
-A starter for creating a Vite Plus project.
+![FullstacksJS Oxlint Config](https://raw.githubusercontent.com/fullstacksjs/oxlint-config/main/assets/banner.png)
 
-## Development
+</div>
 
-- Install dependencies:
+Shared [Oxlint](https://oxc.rs/docs/guide/usage/linter.html) config for FullstacksJS projects, the baseline, using only rules built into
+Oxlint.
 
-```bash
-vp install
+This package pulls in no [jsPlugins](https://oxc.rs/docs/guide/usage/linter/plugins), so linting stays entirely on Oxlint's native path. If
+you want the regexp rules too, use [`@fullstacksjs/oxlint-config`](https://www.npmjs.com/package/@fullstacksjs/oxlint-config) instead, which
+is this baseline plus the jsPlugin-backed modules.
+
+## Installation
+
+```sh
+pnpm install --save-dev @fullstacksjs/oxlint-minimal oxlint
 ```
 
-- Run the unit tests:
+## Usage
 
-```bash
-vp test
+Create an `oxlint.config.ts` file:
+
+```ts
+import { defineConfig } from '@fullstacksjs/oxlint-minimal';
+
+export default defineConfig();
 ```
 
-- Build the library:
-
-```bash
-vp pack
-```
+See the [repository README](https://github.com/fullstacksjs/oxlint-config#readme) for modules, options, and customization.
