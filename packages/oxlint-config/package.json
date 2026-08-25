@@ -1,6 +1,6 @@
 {
   "name": "@fullstacksjs/oxlint-config",
-  "version": "0.0.0",
+  "version": "0.10.0",
   "description": "FullstacksJS OXLint Config",
   "homepage": "https://github.com/fullstacksjs/oxlint-config#readme",
   "bugs": {
