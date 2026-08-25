@@ -1,11 +1,10 @@
-import { createOxlintPreset } from "@fullstacksjs/oxlint-minimal";
-import { regex } from "./modules/regex.ts";
+import { createPreset } from '@fullstacksjs/oxlint-minimal/internal';
+import { regex } from './modules/regex.ts';
 
-export { Context } from "@fullstacksjs/oxlint-minimal";
-export type { Config, ModuleConfig, Options, Preset } from "@fullstacksjs/oxlint-minimal";
+export type { ModuleConfig } from '@fullstacksjs/oxlint-minimal';
 
-export const defineConfig = createOxlintPreset({
-  name: "@fullstacksjs/oxlint-config",
+export const defineConfig = createPreset({
+  name: '@fullstacksjs/oxlint-config',
   modules: (ctx) => [regex(ctx)],
 });
 
