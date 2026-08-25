@@ -10,14 +10,17 @@ Shared [Oxlint](https://oxc.rs/docs/guide/usage/linter.html) config for Fullstac
 
 ## Packages
 
-| Package                                                   | Contents                                                                                                                         |
-| --------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| [`@fullstacksjs/oxlint-config`](packages/oxlint-config)   | The baseline plus the modules that need an Oxlint [jsPlugin](https://oxc.rs/docs/guide/usage/linter/plugins) (currently regexp). |
-| [`@fullstacksjs/oxlint-minimal`](packages/oxlint-minimal) | The baseline on its own — Oxlint's native rules, no jsPlugins.                                                                   |
+| Package                                                   | Contents                                                                                                                 |
+| --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| [`@fullstacksjs/oxlint-minimal`](packages/oxlint-minimal) | The baseline config. Oxlint's native rules, no jsPlugins and dependency.                                                 |
+| [`@fullstacksjs/oxlint-config`](packages/oxlint-config)   | The baseline plus the modules that need a [jsPlugin](https://oxc.rs/docs/guide/usage/linter/plugins) (currently regexp). |
 
 Every shared rule lives in `oxlint-minimal`. `oxlint-config` holds only its own modules and composes them onto the baseline through
 `createPreset`, so a rule change is made in exactly one place. The baseline is bundled into `oxlint-config` at build time and is not a
 dependency of the published package.
+
+`oxlint-minimal` has only one runtime dependency and deliberately excludes npm-based lint plugins. This keeps its supply-chain attack
+surface small and avoids the performance cost of running JavaScript plugins.
 
 ## Installation
 
