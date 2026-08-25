@@ -1,0 +1,4736 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`base > should lint 'accessor-pairs' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 9,
+    "line": 4,
+    "message": "Setter is defined without a getter",
+    "rule": "eslint(accessor-pairs)",
+    "severity": "warning",
+  },
+  {
+    "column": 9,
+    "line": 10,
+    "message": "Setter is defined without a getter",
+    "rule": "eslint(accessor-pairs)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'array-callback-return' 1`] = `
+[
+  {
+    "column": 5,
+    "line": 3,
+    "message": "\`foo\` is never reassigned.",
+    "rule": "eslint(prefer-const)",
+    "severity": "warning",
+  },
+  {
+    "column": 16,
+    "line": 4,
+    "message": "Callback for array method "Array.prototype.map" does not return on all code paths",
+    "rule": "eslint(array-callback-return)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'complexity' 1`] = `[]`;
+
+exports[`base > should lint 'default-case-last' 1`] = `
+[
+  {
+    "column": 3,
+    "line": 6,
+    "message": "Enforce default clauses in switch statements to be last",
+    "rule": "eslint(default-case-last)",
+    "severity": "error",
+  },
+  {
+    "column": 3,
+    "line": 18,
+    "message": "Enforce default clauses in switch statements to be last",
+    "rule": "eslint(default-case-last)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'default-param-last' 1`] = `
+[
+  {
+    "column": 45,
+    "line": 15,
+    "message": "A required parameter cannot follow an optional parameter.",
+    "rule": "TS(1016)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'eqeqeq' 1`] = `
+[
+  {
+    "column": 7,
+    "line": 5,
+    "message": "Expected === and instead saw ==",
+    "rule": "eslint(eqeqeq)",
+    "severity": "error",
+  },
+  {
+    "column": 14,
+    "line": 5,
+    "message": "Unexpected empty block statements",
+    "rule": "eslint(no-empty)",
+    "severity": "warning",
+  },
+  {
+    "column": 5,
+    "line": 6,
+    "message": "Require or disallow "Yoda" conditions",
+    "rule": "eslint(yoda)",
+    "severity": "error",
+  },
+  {
+    "column": 8,
+    "line": 6,
+    "message": "Expected === and instead saw ==",
+    "rule": "eslint(eqeqeq)",
+    "severity": "error",
+  },
+  {
+    "column": 17,
+    "line": 6,
+    "message": "Unexpected empty block statements",
+    "rule": "eslint(no-empty)",
+    "severity": "warning",
+  },
+  {
+    "column": 20,
+    "line": 7,
+    "message": "Expected !== and instead saw !=",
+    "rule": "eslint(eqeqeq)",
+    "severity": "error",
+  },
+  {
+    "column": 34,
+    "line": 7,
+    "message": "Unexpected empty block statements",
+    "rule": "eslint(no-empty)",
+    "severity": "warning",
+  },
+  {
+    "column": 7,
+    "line": 11,
+    "message": "Expected === and instead saw ==",
+    "rule": "eslint(eqeqeq)",
+    "severity": "error",
+  },
+  {
+    "column": 14,
+    "line": 11,
+    "message": "Unexpected empty block statements",
+    "rule": "eslint(no-empty)",
+    "severity": "warning",
+  },
+  {
+    "column": 5,
+    "line": 12,
+    "message": "Require or disallow "Yoda" conditions",
+    "rule": "eslint(yoda)",
+    "severity": "error",
+  },
+  {
+    "column": 8,
+    "line": 12,
+    "message": "Expected === and instead saw ==",
+    "rule": "eslint(eqeqeq)",
+    "severity": "error",
+  },
+  {
+    "column": 17,
+    "line": 12,
+    "message": "Unexpected empty block statements",
+    "rule": "eslint(no-empty)",
+    "severity": "warning",
+  },
+  {
+    "column": 7,
+    "line": 15,
+    "message": "Expected === and instead saw ==",
+    "rule": "eslint(eqeqeq)",
+    "severity": "error",
+  },
+  {
+    "column": 14,
+    "line": 15,
+    "message": "Unexpected empty block statements",
+    "rule": "eslint(no-empty)",
+    "severity": "warning",
+  },
+  {
+    "column": 5,
+    "line": 16,
+    "message": "Require or disallow "Yoda" conditions",
+    "rule": "eslint(yoda)",
+    "severity": "error",
+  },
+  {
+    "column": 8,
+    "line": 16,
+    "message": "Expected === and instead saw ==",
+    "rule": "eslint(eqeqeq)",
+    "severity": "error",
+  },
+  {
+    "column": 17,
+    "line": 16,
+    "message": "Unexpected empty block statements",
+    "rule": "eslint(no-empty)",
+    "severity": "warning",
+  },
+  {
+    "column": 18,
+    "line": 20,
+    "message": "Unexpected empty block statements",
+    "rule": "eslint(no-empty)",
+    "severity": "warning",
+  },
+  {
+    "column": 18,
+    "line": 21,
+    "message": "Unexpected empty block statements",
+    "rule": "eslint(no-empty)",
+    "severity": "warning",
+  },
+  {
+    "column": 7,
+    "line": 25,
+    "message": "Expected === and instead saw ==",
+    "rule": "eslint(eqeqeq)",
+    "severity": "error",
+  },
+  {
+    "column": 14,
+    "line": 25,
+    "message": "Unexpected empty block statements",
+    "rule": "eslint(no-empty)",
+    "severity": "warning",
+  },
+  {
+    "column": 5,
+    "line": 26,
+    "message": "Require or disallow "Yoda" conditions",
+    "rule": "eslint(yoda)",
+    "severity": "error",
+  },
+  {
+    "column": 8,
+    "line": 26,
+    "message": "Expected === and instead saw ==",
+    "rule": "eslint(eqeqeq)",
+    "severity": "error",
+  },
+  {
+    "column": 17,
+    "line": 26,
+    "message": "Unexpected empty block statements",
+    "rule": "eslint(no-empty)",
+    "severity": "warning",
+  },
+  {
+    "column": 19,
+    "line": 27,
+    "message": "Unexpected empty block statements",
+    "rule": "eslint(no-empty)",
+    "severity": "warning",
+  },
+  {
+    "column": 19,
+    "line": 28,
+    "message": "Unexpected empty block statements",
+    "rule": "eslint(no-empty)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'for-direction' 1`] = `
+[
+  {
+    "column": 6,
+    "line": 5,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 6,
+    "line": 5,
+    "message": "All 'var' declarations must be at the top of the function scope.",
+    "rule": "eslint(vars-on-top)",
+    "severity": "error",
+  },
+  {
+    "column": 17,
+    "line": 5,
+    "message": "The update clause in this loop moves the variable in the wrong direction",
+    "rule": "eslint(for-direction)",
+    "severity": "error",
+  },
+  {
+    "column": 30,
+    "line": 5,
+    "message": "Unexpected empty block statements",
+    "rule": "eslint(no-empty)",
+    "severity": "warning",
+  },
+  {
+    "column": 6,
+    "line": 8,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 6,
+    "line": 8,
+    "message": "All 'var' declarations must be at the top of the function scope.",
+    "rule": "eslint(vars-on-top)",
+    "severity": "error",
+  },
+  {
+    "column": 18,
+    "line": 8,
+    "message": "The update clause in this loop moves the variable in the wrong direction",
+    "rule": "eslint(for-direction)",
+    "severity": "error",
+  },
+  {
+    "column": 31,
+    "line": 8,
+    "message": "Unexpected empty block statements",
+    "rule": "eslint(no-empty)",
+    "severity": "warning",
+  },
+  {
+    "column": 6,
+    "line": 11,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 6,
+    "line": 11,
+    "message": "All 'var' declarations must be at the top of the function scope.",
+    "rule": "eslint(vars-on-top)",
+    "severity": "error",
+  },
+  {
+    "column": 17,
+    "line": 11,
+    "message": "The update clause in this loop moves the variable in the wrong direction",
+    "rule": "eslint(for-direction)",
+    "severity": "error",
+  },
+  {
+    "column": 30,
+    "line": 11,
+    "message": "Unexpected empty block statements",
+    "rule": "eslint(no-empty)",
+    "severity": "warning",
+  },
+  {
+    "column": 6,
+    "line": 14,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 6,
+    "line": 14,
+    "message": "All 'var' declarations must be at the top of the function scope.",
+    "rule": "eslint(vars-on-top)",
+    "severity": "error",
+  },
+  {
+    "column": 17,
+    "line": 14,
+    "message": "The update clause in this loop moves the variable in the wrong direction",
+    "rule": "eslint(for-direction)",
+    "severity": "error",
+  },
+  {
+    "column": 17,
+    "line": 14,
+    "message": "Require or disallow "Yoda" conditions",
+    "rule": "eslint(yoda)",
+    "severity": "error",
+  },
+  {
+    "column": 30,
+    "line": 14,
+    "message": "Unexpected empty block statements",
+    "rule": "eslint(no-empty)",
+    "severity": "warning",
+  },
+  {
+    "column": 10,
+    "line": 18,
+    "message": "'i' is already declared in the upper scope.",
+    "rule": "eslint(no-shadow)",
+    "severity": "error",
+  },
+  {
+    "column": 33,
+    "line": 18,
+    "message": "Unexpected empty block statements",
+    "rule": "eslint(no-empty)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'func-name-matching' 1`] = `[]`;
+
+exports[`base > should lint 'func-names' 1`] = `[]`;
+
+exports[`base > should lint 'getter-return' 1`] = `[]`;
+
+exports[`base > should lint 'grouped-accessor-pairs' 1`] = `[]`;
+
+exports[`base > should lint 'guard-for-in' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Require \`for-in\` loops to include an \`if\` statement",
+    "rule": "eslint(guard-for-in)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'max-depth' 1`] = `[]`;
+
+exports[`base > should lint 'max-lines-per-function' 1`] = `[]`;
+
+exports[`base > should lint 'max-nested-callbacks' 1`] = `
+[
+  {
+    "column": 6,
+    "line": 3,
+    "message": "Unexpected unnamed function.",
+    "rule": "eslint(func-names)",
+    "severity": "error",
+  },
+  {
+    "column": 6,
+    "line": 3,
+    "message": "Unexpected function expression.",
+    "rule": "eslint(prefer-arrow-callback)",
+    "severity": "warning",
+  },
+  {
+    "column": 10,
+    "line": 4,
+    "message": "Unexpected unnamed function.",
+    "rule": "eslint(func-names)",
+    "severity": "error",
+  },
+  {
+    "column": 10,
+    "line": 4,
+    "message": "Unexpected function expression.",
+    "rule": "eslint(prefer-arrow-callback)",
+    "severity": "warning",
+  },
+  {
+    "column": 14,
+    "line": 5,
+    "message": "Unexpected unnamed function.",
+    "rule": "eslint(func-names)",
+    "severity": "error",
+  },
+  {
+    "column": 14,
+    "line": 5,
+    "message": "Unexpected function expression.",
+    "rule": "eslint(prefer-arrow-callback)",
+    "severity": "warning",
+  },
+  {
+    "column": 18,
+    "line": 6,
+    "message": "Unexpected unnamed function.",
+    "rule": "eslint(func-names)",
+    "severity": "error",
+  },
+  {
+    "column": 18,
+    "line": 6,
+    "message": "Too many nested callbacks (4). Maximum allowed is 3.",
+    "rule": "eslint(max-nested-callbacks)",
+    "severity": "error",
+  },
+  {
+    "column": 18,
+    "line": 6,
+    "message": "Unexpected function expression.",
+    "rule": "eslint(prefer-arrow-callback)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'max-params' 1`] = `[]`;
+
+exports[`base > should lint 'no-alert' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "\`alert\`, \`confirm\` and \`prompt\` functions are not allowed",
+    "rule": "eslint(no-alert)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "\`alert\`, \`confirm\` and \`prompt\` functions are not allowed",
+    "rule": "eslint(no-alert)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 7,
+    "message": "\`alert\`, \`confirm\` and \`prompt\` functions are not allowed",
+    "rule": "eslint(no-alert)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-array-constructor' 1`] = `
+[
+  {
+    "column": 5,
+    "line": 3,
+    "message": "\`arr\` is never reassigned.",
+    "rule": "eslint(prefer-const)",
+    "severity": "warning",
+  },
+  {
+    "column": 11,
+    "line": 3,
+    "message": "Avoid calls to the \`Array\` constructor",
+    "rule": "eslint(no-array-constructor)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-async-promise-executor' 1`] = `
+[
+  {
+    "column": 25,
+    "line": 3,
+    "message": "Promise executor functions should not be \`async\`.",
+    "rule": "eslint(no-async-promise-executor)",
+    "severity": "error",
+  },
+  {
+    "column": 25,
+    "line": 3,
+    "message": "Async function has no \`await\` expression.",
+    "rule": "eslint(require-await)",
+    "severity": "error",
+  },
+  {
+    "column": 23,
+    "line": 4,
+    "message": "Unexpected unnamed function.",
+    "rule": "eslint(func-names)",
+    "severity": "error",
+  },
+  {
+    "column": 23,
+    "line": 4,
+    "message": "Unexpected function expression.",
+    "rule": "eslint(prefer-arrow-callback)",
+    "severity": "warning",
+  },
+  {
+    "column": 28,
+    "line": 13,
+    "message": "Promise executor functions should not be \`async\`.",
+    "rule": "eslint(no-async-promise-executor)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-await-in-loop' 1`] = `
+[
+  {
+    "column": 26,
+    "line": 5,
+    "message": "Unexpected \`await\` inside a loop.",
+    "rule": "eslint(no-await-in-loop)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-caller' 1`] = `
+[
+  {
+    "column": 13,
+    "line": 8,
+    "message": "Do not use \`arguments.callee\`.",
+    "rule": "eslint(no-caller)",
+    "severity": "error",
+  },
+  {
+    "column": 17,
+    "line": 11,
+    "message": "Unexpected unnamed function.",
+    "rule": "eslint(func-names)",
+    "severity": "error",
+  },
+  {
+    "column": 35,
+    "line": 12,
+    "message": "Do not use \`arguments.callee\`.",
+    "rule": "eslint(no-caller)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-case-declarations' 1`] = `
+[
+  {
+    "column": 7,
+    "line": 5,
+    "message": "Unexpected lexical declaration in case block.",
+    "rule": "eslint(no-case-declarations)",
+    "severity": "warning",
+  },
+  {
+    "column": 11,
+    "line": 5,
+    "message": "\`x\` is never reassigned.",
+    "rule": "eslint(prefer-const)",
+    "severity": "warning",
+  },
+  {
+    "column": 7,
+    "line": 8,
+    "message": "Unexpected lexical declaration in case block.",
+    "rule": "eslint(no-case-declarations)",
+    "severity": "warning",
+  },
+  {
+    "column": 7,
+    "line": 11,
+    "message": "Unexpected lexical declaration in case block.",
+    "rule": "eslint(no-case-declarations)",
+    "severity": "warning",
+  },
+  {
+    "column": 7,
+    "line": 11,
+    "message": "Variable or \`function\` declarations are not allowed in nested blocks",
+    "rule": "eslint(no-inner-declarations)",
+    "severity": "error",
+  },
+  {
+    "column": 7,
+    "line": 14,
+    "message": "Unexpected lexical declaration in case block.",
+    "rule": "eslint(no-case-declarations)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'no-class-assign' 1`] = `[]`;
+
+exports[`base > should lint 'no-compare-neg-zero' 1`] = `
+[
+  {
+    "column": 5,
+    "line": 3,
+    "message": "Do not use the === operator to compare against -0.",
+    "rule": "eslint(no-compare-neg-zero)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 7,
+    "message": "Do not use the > operator to compare against -0.",
+    "rule": "eslint(no-compare-neg-zero)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 7,
+    "message": "Require or disallow "Yoda" conditions",
+    "rule": "eslint(yoda)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-cond-assign' 1`] = `
+[
+  {
+    "column": 5,
+    "line": 4,
+    "message": "Unexpected constant condition",
+    "rule": "eslint(no-constant-condition)",
+    "severity": "error",
+  },
+  {
+    "column": 19,
+    "line": 4,
+    "message": "Expected a conditional expression and instead saw an assignment",
+    "rule": "eslint(no-cond-assign)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-constant-binary-expression' 1`] = `
+[
+  {
+    "column": 11,
+    "line": 4,
+    "message": "Unexpected constant nullishness on the left-hand side of a "??" expression",
+    "rule": "eslint(no-constant-binary-expression)",
+    "severity": "warning",
+  },
+  {
+    "column": 17,
+    "line": 10,
+    "message": "Unexpected comparison to newly constructed object",
+    "rule": "eslint(no-constant-binary-expression)",
+    "severity": "warning",
+  },
+  {
+    "column": 17,
+    "line": 10,
+    "message": "Unexpected array literal comparison.",
+    "rule": "oxc(bad-object-literal-comparison)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-constant-condition' 1`] = `
+[
+  {
+    "column": 5,
+    "line": 3,
+    "message": "Unexpected constant condition",
+    "rule": "eslint(no-constant-condition)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 7,
+    "message": "Unexpected constant condition",
+    "rule": "eslint(no-constant-condition)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 7,
+    "message": "Do not use \`Boolean\` as a constructor",
+    "rule": "eslint(no-new-wrappers)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 10,
+    "message": "Unexpected constant condition",
+    "rule": "eslint(no-constant-condition)",
+    "severity": "error",
+  },
+  {
+    "column": 7,
+    "line": 10,
+    "message": "Expected a conditional expression and instead saw an assignment",
+    "rule": "eslint(no-cond-assign)",
+    "severity": "error",
+  },
+  {
+    "column": 10,
+    "line": 16,
+    "message": "Unexpected constant condition",
+    "rule": "eslint(no-constant-condition)",
+    "severity": "error",
+  },
+  {
+    "column": 12,
+    "line": 16,
+    "message": "Expected a conditional expression and instead saw an assignment",
+    "rule": "eslint(no-cond-assign)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-constructor-return' 1`] = `
+[
+  {
+    "column": 19,
+    "line": 4,
+    "message": "Unexpected return statement in constructor.",
+    "rule": "eslint(no-constructor-return)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-control-regex' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 17,
+    "line": 3,
+    "message": "Unexpected control character",
+    "rule": "eslint(no-control-regex)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 17,
+    "line": 4,
+    "message": "Unexpected control character",
+    "rule": "eslint(no-control-regex)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 17,
+    "line": 5,
+    "message": "Unexpected control character",
+    "rule": "eslint(no-control-regex)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 6,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 17,
+    "line": 6,
+    "message": "Unexpected control character",
+    "rule": "eslint(no-control-regex)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 7,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 17,
+    "line": 7,
+    "message": "Unexpected control character",
+    "rule": "eslint(no-control-regex)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 8,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 16,
+    "line": 8,
+    "message": "Use a regular expression literal instead of the \`RegExp\` constructor.",
+    "rule": "eslint(prefer-regex-literals)",
+    "severity": "warning",
+  },
+  {
+    "column": 28,
+    "line": 8,
+    "message": "Unexpected control character",
+    "rule": "eslint(no-control-regex)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 9,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 16,
+    "line": 9,
+    "message": "Use a regular expression literal instead of the \`RegExp\` constructor.",
+    "rule": "eslint(prefer-regex-literals)",
+    "severity": "warning",
+  },
+  {
+    "column": 28,
+    "line": 9,
+    "message": "Unexpected control character",
+    "rule": "eslint(no-control-regex)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'no-debugger' 1`] = `
+[
+  {
+    "column": 3,
+    "line": 6,
+    "message": "\`debugger\` statement is not allowed",
+    "rule": "eslint(no-debugger)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-div-regex' 1`] = `
+[
+  {
+    "column": 25,
+    "line": 3,
+    "message": "A regular expression literal can be confused with '/='.",
+    "rule": "eslint(no-div-regex)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-dupe-else-if' 1`] = `
+[
+  {
+    "column": 12,
+    "line": 5,
+    "message": "Duplicate conditions in if-else-if chain",
+    "rule": "eslint(no-dupe-else-if)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 11,
+    "message": "Duplicate conditions in if-else-if chain",
+    "rule": "eslint(no-dupe-else-if)",
+    "severity": "error",
+  },
+  {
+    "column": 12,
+    "line": 19,
+    "message": "Duplicate conditions in if-else-if chain",
+    "rule": "eslint(no-dupe-else-if)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-dupe-keys' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 4,
+    "message": "Duplicate key 'bar'",
+    "rule": "eslint(no-dupe-keys)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 8,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 9,
+    "message": "Duplicate key 'bar'",
+    "rule": "eslint(no-dupe-keys)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 13,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 14,
+    "message": "Duplicate key '1'",
+    "rule": "eslint(no-dupe-keys)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-duplicate-imports' 1`] = `
+[
+  {
+    "column": 22,
+    "line": 5,
+    "message": "'module' import is duplicated",
+    "rule": "eslint(no-duplicate-imports)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'no-empty' 1`] = `
+[
+  {
+    "column": 16,
+    "line": 3,
+    "message": "Unexpected empty block statements",
+    "rule": "eslint(no-empty)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'no-empty-pattern' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 3,
+    "message": "Empty object binding pattern",
+    "rule": "eslint(no-empty-pattern)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 4,
+    "message": "Empty array binding pattern",
+    "rule": "eslint(no-empty-pattern)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 9,
+    "line": 5,
+    "message": "Empty object binding pattern",
+    "rule": "eslint(no-empty-pattern)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 6,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 9,
+    "line": 6,
+    "message": "Empty array binding pattern",
+    "rule": "eslint(no-empty-pattern)",
+    "severity": "error",
+  },
+  {
+    "column": 14,
+    "line": 7,
+    "message": "Empty object binding pattern",
+    "rule": "eslint(no-empty-pattern)",
+    "severity": "error",
+  },
+  {
+    "column": 14,
+    "line": 8,
+    "message": "Empty array binding pattern",
+    "rule": "eslint(no-empty-pattern)",
+    "severity": "error",
+  },
+  {
+    "column": 18,
+    "line": 9,
+    "message": "Empty object binding pattern",
+    "rule": "eslint(no-empty-pattern)",
+    "severity": "error",
+  },
+  {
+    "column": 18,
+    "line": 10,
+    "message": "Empty array binding pattern",
+    "rule": "eslint(no-empty-pattern)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-empty-static-block' 1`] = `
+[
+  {
+    "column": 5,
+    "line": 4,
+    "message": "Unexpected empty static blocks",
+    "rule": "eslint(no-empty-static-block)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'no-eval' 1`] = `
+[
+  {
+    "column": 11,
+    "line": 5,
+    "message": "eval can be harmful.",
+    "rule": "eslint(no-eval)",
+    "severity": "error",
+  },
+  {
+    "column": 16,
+    "line": 5,
+    "message": "Unexpected string concatenation.",
+    "rule": "eslint(prefer-template)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 7,
+    "message": "eval can be harmful.",
+    "rule": "eslint(no-eval)",
+    "severity": "error",
+  },
+  {
+    "column": 13,
+    "line": 9,
+    "message": "eval can be harmful.",
+    "rule": "eslint(no-eval)",
+    "severity": "error",
+  },
+  {
+    "column": 6,
+    "line": 12,
+    "message": "eval can be harmful.",
+    "rule": "eslint(no-eval)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-ex-assign' 1`] = `
+[
+  {
+    "column": 5,
+    "line": 6,
+    "message": "Do not assign to the exception parameter.",
+    "rule": "eslint(no-ex-assign)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-extend-native' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Object prototype is read-only, properties should not be added.",
+    "rule": "eslint(no-extend-native)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Array prototype is read-only, properties should not be added.",
+    "rule": "eslint(no-extend-native)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-extra-bind' 1`] = `
+[
+  {
+    "column": 11,
+    "line": 3,
+    "message": "Unexpected unnamed function.",
+    "rule": "eslint(func-names)",
+    "severity": "error",
+  },
+  {
+    "column": 3,
+    "line": 5,
+    "message": "The function binding is unnecessary.",
+    "rule": "eslint(no-extra-bind)",
+    "severity": "error",
+  },
+  {
+    "column": 4,
+    "line": 9,
+    "message": "The function binding is unnecessary.",
+    "rule": "eslint(no-extra-bind)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-extra-boolean-cast' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 12,
+    "line": 3,
+    "message": "Redundant double negation",
+    "rule": "eslint(no-extra-boolean-cast)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 19,
+    "line": 4,
+    "message": "Redundant double negation",
+    "rule": "eslint(no-extra-boolean-cast)",
+    "severity": "warning",
+  },
+  {
+    "column": 5,
+    "line": 6,
+    "message": "Redundant double negation",
+    "rule": "eslint(no-extra-boolean-cast)",
+    "severity": "warning",
+  },
+  {
+    "column": 12,
+    "line": 6,
+    "message": "Unexpected empty block statements",
+    "rule": "eslint(no-empty)",
+    "severity": "warning",
+  },
+  {
+    "column": 5,
+    "line": 7,
+    "message": "Redundant Boolean call",
+    "rule": "eslint(no-extra-boolean-cast)",
+    "severity": "warning",
+  },
+  {
+    "column": 19,
+    "line": 7,
+    "message": "Unexpected empty block statements",
+    "rule": "eslint(no-empty)",
+    "severity": "warning",
+  },
+  {
+    "column": 19,
+    "line": 10,
+    "message": "Unexpected empty block statements",
+    "rule": "eslint(no-empty)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'no-fallthrough' 1`] = `
+[
+  {
+    "column": 3,
+    "line": 7,
+    "message": "Expected a \`break\` statement before \`case\`.",
+    "rule": "eslint(no-fallthrough)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-global-assign' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Read-only global 'Object' should not be modified.",
+    "rule": "eslint(no-global-assign)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-implied-eval' 1`] = `[]`;
+
+exports[`base > should lint 'no-inner-declarations' 1`] = `
+[
+  {
+    "column": 3,
+    "line": 4,
+    "message": "Variable or \`function\` declarations are not allowed in nested blocks",
+    "rule": "eslint(no-inner-declarations)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-irregular-whitespace' 1`] = `
+[
+  {
+    "column": 3,
+    "line": 5,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-iterator' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Reserved name \`__iterator__\`",
+    "rule": "eslint(no-iterator)",
+    "severity": "error",
+  },
+  {
+    "column": 30,
+    "line": 3,
+    "message": "Unexpected unnamed function.",
+    "rule": "eslint(func-names)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 7,
+    "message": "Reserved name \`__iterator__\`",
+    "rule": "eslint(no-iterator)",
+    "severity": "error",
+  },
+  {
+    "column": 20,
+    "line": 7,
+    "message": "Unexpected unnamed function.",
+    "rule": "eslint(func-names)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 9,
+    "message": "Reserved name \`__iterator__\`",
+    "rule": "eslint(no-iterator)",
+    "severity": "error",
+  },
+  {
+    "column": 23,
+    "line": 9,
+    "message": "Unexpected unnamed function.",
+    "rule": "eslint(func-names)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-labels' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Labeled statement is not allowed",
+    "rule": "eslint(no-labels)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 8,
+    "message": "Labeled statement is not allowed",
+    "rule": "eslint(no-labels)",
+    "severity": "error",
+  },
+  {
+    "column": 15,
+    "line": 10,
+    "message": "Label in break statement is not allowed",
+    "rule": "eslint(no-labels)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 13,
+    "message": "Labeled statement is not allowed",
+    "rule": "eslint(no-labels)",
+    "severity": "error",
+  },
+  {
+    "column": 18,
+    "line": 15,
+    "message": "Label in continue statement is not allowed",
+    "rule": "eslint(no-labels)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 18,
+    "message": "Labeled statement is not allowed",
+    "rule": "eslint(no-labels)",
+    "severity": "error",
+  },
+  {
+    "column": 15,
+    "line": 21,
+    "message": "Label in break statement is not allowed",
+    "rule": "eslint(no-labels)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 24,
+    "message": "Labeled statement is not allowed",
+    "rule": "eslint(no-labels)",
+    "severity": "error",
+  },
+  {
+    "column": 15,
+    "line": 26,
+    "message": "Label in break statement is not allowed",
+    "rule": "eslint(no-labels)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 29,
+    "message": "Labeled statement is not allowed",
+    "rule": "eslint(no-labels)",
+    "severity": "error",
+  },
+  {
+    "column": 15,
+    "line": 31,
+    "message": "Label in break statement is not allowed",
+    "rule": "eslint(no-labels)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-lonely-if' 1`] = `
+[
+  {
+    "column": 3,
+    "line": 6,
+    "message": "Unexpected \`if\` as the only statement in an \`else\` block",
+    "rule": "eslint(no-lonely-if)",
+    "severity": "warning",
+  },
+  {
+    "column": 3,
+    "line": 14,
+    "message": "Unexpected \`if\` as the only statement in an \`else\` block",
+    "rule": "eslint(no-lonely-if)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'no-loop-func' 1`] = `
+[
+  {
+    "column": 6,
+    "line": 3,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 6,
+    "line": 3,
+    "message": "All 'var' declarations must be at the top of the function scope.",
+    "rule": "eslint(vars-on-top)",
+    "severity": "error",
+  },
+  {
+    "column": 16,
+    "line": 4,
+    "message": "Unexpected unnamed function.",
+    "rule": "eslint(func-names)",
+    "severity": "error",
+  },
+  {
+    "column": 16,
+    "line": 4,
+    "message": "Function declared in a loop contains unsafe references to variable(s)",
+    "rule": "eslint(no-loop-func)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-loss-of-precision' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 9,
+    "line": 3,
+    "message": "This number literal will lose precision at runtime.",
+    "rule": "eslint(no-loss-of-precision)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 9,
+    "line": 5,
+    "message": "This number literal will lose precision at runtime.",
+    "rule": "eslint(no-loss-of-precision)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 7,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 9,
+    "line": 7,
+    "message": "This number literal will lose precision at runtime.",
+    "rule": "eslint(no-loss-of-precision)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 9,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 9,
+    "line": 9,
+    "message": "This number literal will lose precision at runtime.",
+    "rule": "eslint(no-loss-of-precision)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 11,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 9,
+    "line": 11,
+    "message": "This number literal will lose precision at runtime.",
+    "rule": "eslint(no-loss-of-precision)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-misleading-character-class' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 4,
+    "line": 3,
+    "message": "Unexpected combining class in character class.",
+    "rule": "eslint(no-misleading-character-class)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 4,
+    "line": 4,
+    "message": "Unexpected combining class in character class.",
+    "rule": "eslint(no-misleading-character-class)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 4,
+    "line": 5,
+    "message": "Unexpected emoji modifier in character class.",
+    "rule": "eslint(no-misleading-character-class)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 6,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 4,
+    "line": 6,
+    "message": "Unexpected regional indicator in character class.",
+    "rule": "eslint(no-misleading-character-class)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 7,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 4,
+    "line": 7,
+    "message": "Unexpected joined character sequence in character class.",
+    "rule": "eslint(no-misleading-character-class)",
+    "severity": "error",
+  },
+  {
+    "column": 11,
+    "line": 7,
+    "message": "Unexpected joined character sequence in character class.",
+    "rule": "eslint(no-misleading-character-class)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 8,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 4,
+    "line": 8,
+    "message": "Unexpected surrogate pair in character class.",
+    "rule": "eslint(no-misleading-character-class)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 9,
+    "message": "Do not use 'new' for side effects.",
+    "rule": "eslint(no-new)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 9,
+    "message": "Use a regular expression literal instead of the \`RegExp\` constructor.",
+    "rule": "eslint(prefer-regex-literals)",
+    "severity": "warning",
+  },
+  {
+    "column": 14,
+    "line": 9,
+    "message": "Unexpected surrogate pair in character class.",
+    "rule": "eslint(no-misleading-character-class)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-multi-assign' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 9,
+    "line": 3,
+    "message": "Do not use chained assignment",
+    "rule": "eslint(no-multi-assign)",
+    "severity": "error",
+  },
+  {
+    "column": 13,
+    "line": 3,
+    "message": "Do not use chained assignment",
+    "rule": "eslint(no-multi-assign)",
+    "severity": "error",
+  },
+  {
+    "column": 13,
+    "line": 5,
+    "message": "Do not use chained assignment",
+    "rule": "eslint(no-multi-assign)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 7,
+    "message": "\`d\` is never reassigned.",
+    "rule": "eslint(prefer-const)",
+    "severity": "warning",
+  },
+  {
+    "column": 5,
+    "line": 8,
+    "message": "Do not use chained assignment",
+    "rule": "eslint(no-multi-assign)",
+    "severity": "error",
+  },
+  {
+    "column": 9,
+    "line": 12,
+    "message": "Do not use chained assignment",
+    "rule": "eslint(no-multi-assign)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 15,
+    "message": "Do not use chained assignment",
+    "rule": "eslint(no-multi-assign)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-multi-str' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 17,
+    "line": 3,
+    "message": "Unexpected multi string.",
+    "rule": "eslint(no-multi-str)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'no-new' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Do not use 'new' for side effects.",
+    "rule": "eslint(no-new)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 10,
+    "line": 5,
+    "message": "Do not use 'new' for side effects.",
+    "rule": "eslint(no-new)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-new-func' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 13,
+    "line": 3,
+    "message": "Using \`new Function\` or \`Function\` is not allowed.",
+    "rule": "eslint(no-new-func)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 9,
+    "line": 4,
+    "message": "Using \`new Function\` or \`Function\` is not allowed.",
+    "rule": "eslint(no-new-func)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 9,
+    "line": 5,
+    "message": "Using \`new Function\` or \`Function\` is not allowed.",
+    "rule": "eslint(no-new-func)",
+    "severity": "error",
+  },
+  {
+    "column": 9,
+    "line": 5,
+    "message": "Avoid unnecessary use of .call()",
+    "rule": "eslint(no-useless-call)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 6,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 9,
+    "line": 6,
+    "message": "Using \`new Function\` or \`Function\` is not allowed.",
+    "rule": "eslint(no-new-func)",
+    "severity": "error",
+  },
+  {
+    "column": 9,
+    "line": 6,
+    "message": "Avoid unnecessary use of .apply()",
+    "rule": "eslint(no-useless-call)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 7,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 9,
+    "line": 7,
+    "message": "Using \`new Function\` or \`Function\` is not allowed.",
+    "rule": "eslint(no-new-func)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 8,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 9,
+    "line": 8,
+    "message": "Using \`new Function\` or \`Function\` is not allowed.",
+    "rule": "eslint(no-new-func)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-new-native-nonconstructor' 1`] = `
+[
+  {
+    "column": 5,
+    "line": 4,
+    "message": "\`foo\` is never reassigned.",
+    "rule": "eslint(prefer-const)",
+    "severity": "warning",
+  },
+  {
+    "column": 11,
+    "line": 4,
+    "message": "\`Symbol\` cannot be called as a constructor.",
+    "rule": "eslint(no-new-native-nonconstructor)",
+    "severity": "error",
+  },
+  {
+    "column": 11,
+    "line": 4,
+    "message": "\`Symbol\` is not a constructor",
+    "rule": "eslint(no-new-wrappers)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 7,
+    "message": "\`result\` is never reassigned.",
+    "rule": "eslint(prefer-const)",
+    "severity": "warning",
+  },
+  {
+    "column": 14,
+    "line": 7,
+    "message": "\`BigInt\` cannot be called as a constructor.",
+    "rule": "eslint(no-new-native-nonconstructor)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-new-wrappers' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 20,
+    "line": 3,
+    "message": "Do not use \`String\` as a constructor",
+    "rule": "eslint(no-new-wrappers)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 20,
+    "line": 4,
+    "message": "Do not use \`Number\` as a constructor",
+    "rule": "eslint(no-new-wrappers)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 21,
+    "line": 5,
+    "message": "Do not use \`Boolean\` as a constructor",
+    "rule": "eslint(no-new-wrappers)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 6,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 20,
+    "line": 6,
+    "message": "\`Symbol\` cannot be called as a constructor.",
+    "rule": "eslint(no-new-native-nonconstructor)",
+    "severity": "error",
+  },
+  {
+    "column": 20,
+    "line": 6,
+    "message": "\`Symbol\` is not a constructor",
+    "rule": "eslint(no-new-wrappers)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-nonoctal-decimal-escape' 1`] = `
+[
+  {
+    "column": 5,
+    "line": 3,
+    "message": "\`x\` is never reassigned.",
+    "rule": "eslint(prefer-const)",
+    "severity": "warning",
+  },
+  {
+    "column": 10,
+    "line": 3,
+    "message": "Don't use '\\8' escape sequence.",
+    "rule": "eslint(no-nonoctal-decimal-escape)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 4,
+    "message": "\`y\` is never reassigned.",
+    "rule": "eslint(prefer-const)",
+    "severity": "warning",
+  },
+  {
+    "column": 10,
+    "line": 4,
+    "message": "Don't use '\\9' escape sequence.",
+    "rule": "eslint(no-nonoctal-decimal-escape)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-obj-calls' 1`] = `
+[
+  {
+    "column": 5,
+    "line": 3,
+    "message": "\`math\` is never reassigned.",
+    "rule": "eslint(prefer-const)",
+    "severity": "warning",
+  },
+  {
+    "column": 12,
+    "line": 3,
+    "message": "\`Math\` is not a function and cannot be called",
+    "rule": "eslint(no-obj-calls)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 4,
+    "message": "\`newMath\` is never reassigned.",
+    "rule": "eslint(prefer-const)",
+    "severity": "warning",
+  },
+  {
+    "column": 15,
+    "line": 4,
+    "message": "\`Math\` is not a function and cannot be called",
+    "rule": "eslint(no-obj-calls)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 6,
+    "message": "\`json\` is never reassigned.",
+    "rule": "eslint(prefer-const)",
+    "severity": "warning",
+  },
+  {
+    "column": 12,
+    "line": 6,
+    "message": "\`JSON\` is not a function and cannot be called",
+    "rule": "eslint(no-obj-calls)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 7,
+    "message": "\`newJson\` is never reassigned.",
+    "rule": "eslint(prefer-const)",
+    "severity": "warning",
+  },
+  {
+    "column": 15,
+    "line": 7,
+    "message": "\`JSON\` is not a function and cannot be called",
+    "rule": "eslint(no-obj-calls)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 9,
+    "message": "\`atomics\` is never reassigned.",
+    "rule": "eslint(prefer-const)",
+    "severity": "warning",
+  },
+  {
+    "column": 15,
+    "line": 9,
+    "message": "\`Atomics\` is not a function and cannot be called",
+    "rule": "eslint(no-obj-calls)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 10,
+    "message": "\`newAtomics\` is never reassigned.",
+    "rule": "eslint(prefer-const)",
+    "severity": "warning",
+  },
+  {
+    "column": 18,
+    "line": 10,
+    "message": "\`Atomics\` is not a function and cannot be called",
+    "rule": "eslint(no-obj-calls)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 12,
+    "message": "\`intl\` is never reassigned.",
+    "rule": "eslint(prefer-const)",
+    "severity": "warning",
+  },
+  {
+    "column": 12,
+    "line": 12,
+    "message": "\`Intl\` is not a function and cannot be called",
+    "rule": "eslint(no-obj-calls)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 13,
+    "message": "\`newIntl\` is never reassigned.",
+    "rule": "eslint(prefer-const)",
+    "severity": "warning",
+  },
+  {
+    "column": 15,
+    "line": 13,
+    "message": "\`Intl\` is not a function and cannot be called",
+    "rule": "eslint(no-obj-calls)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 15,
+    "message": "\`reflect\` is never reassigned.",
+    "rule": "eslint(prefer-const)",
+    "severity": "warning",
+  },
+  {
+    "column": 15,
+    "line": 15,
+    "message": "\`Reflect\` is not a function and cannot be called",
+    "rule": "eslint(no-obj-calls)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 16,
+    "message": "\`newReflect\` is never reassigned.",
+    "rule": "eslint(prefer-const)",
+    "severity": "warning",
+  },
+  {
+    "column": 18,
+    "line": 16,
+    "message": "\`Reflect\` is not a function and cannot be called",
+    "rule": "eslint(no-obj-calls)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-object-constructor' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Disallow calls to the \`Object\` constructor without an argument",
+    "rule": "eslint(no-object-constructor)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Do not use 'new' for side effects.",
+    "rule": "eslint(no-new)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Disallow calls to the \`Object\` constructor without an argument",
+    "rule": "eslint(no-object-constructor)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-plusplus' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 12,
+    "line": 3,
+    "message": "Unary operator '++' used.",
+    "rule": "eslint(no-plusplus)",
+    "severity": "warning",
+  },
+  {
+    "column": 12,
+    "line": 3,
+    "message": "This assigned value is not used in subsequent statements.",
+    "rule": "eslint(no-useless-assignment)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "All 'var' declarations must be at the top of the function scope.",
+    "rule": "eslint(vars-on-top)",
+    "severity": "error",
+  },
+  {
+    "column": 12,
+    "line": 4,
+    "message": "Unary operator '--' used.",
+    "rule": "eslint(no-plusplus)",
+    "severity": "warning",
+  },
+  {
+    "column": 12,
+    "line": 4,
+    "message": "This assigned value is not used in subsequent statements.",
+    "rule": "eslint(no-useless-assignment)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-proto' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 9,
+    "line": 3,
+    "message": "The '__proto__' property is deprecated",
+    "rule": "eslint(no-proto)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 9,
+    "line": 5,
+    "message": "The '__proto__' property is deprecated",
+    "rule": "eslint(no-proto)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 7,
+    "message": "The '__proto__' property is deprecated",
+    "rule": "eslint(no-proto)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 9,
+    "message": "The '__proto__' property is deprecated",
+    "rule": "eslint(no-proto)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-regex-spaces' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 14,
+    "line": 3,
+    "message": "Multiple consecutive spaces are hard to count.",
+    "rule": "eslint(no-regex-spaces)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-return-assign' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Returned expression contains an assignment.",
+    "rule": "eslint(no-return-assign)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 16,
+    "line": 4,
+    "message": "Returned expression contains an assignment.",
+    "rule": "eslint(no-return-assign)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-script-url' 1`] = `
+[
+  {
+    "column": 17,
+    "line": 3,
+    "message": "Unexpected \`javascript:\` url",
+    "rule": "eslint(no-script-url)",
+    "severity": "error",
+  },
+  {
+    "column": 17,
+    "line": 5,
+    "message": "Unexpected \`javascript:\` url",
+    "rule": "eslint(no-script-url)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-self-assign' 1`] = `
+[
+  {
+    "column": 7,
+    "line": 3,
+    "message": "this expression is assigned to itself",
+    "rule": "eslint(no-self-assign)",
+    "severity": "error",
+  },
+  {
+    "column": 11,
+    "line": 5,
+    "message": "this expression is assigned to itself",
+    "rule": "eslint(no-self-assign)",
+    "severity": "error",
+  },
+  {
+    "column": 14,
+    "line": 5,
+    "message": "this expression is assigned to itself",
+    "rule": "eslint(no-self-assign)",
+    "severity": "error",
+  },
+  {
+    "column": 12,
+    "line": 8,
+    "message": "this expression is assigned to itself",
+    "rule": "eslint(no-self-assign)",
+    "severity": "error",
+  },
+  {
+    "column": 9,
+    "line": 10,
+    "message": "this expression is assigned to itself",
+    "rule": "eslint(no-self-assign)",
+    "severity": "error",
+  },
+  {
+    "column": 9,
+    "line": 11,
+    "message": "this expression is assigned to itself",
+    "rule": "eslint(no-self-assign)",
+    "severity": "error",
+  },
+  {
+    "column": 9,
+    "line": 12,
+    "message": "this expression is assigned to itself",
+    "rule": "eslint(no-self-assign)",
+    "severity": "error",
+  },
+  {
+    "column": 9,
+    "line": 14,
+    "message": "this expression is assigned to itself",
+    "rule": "eslint(no-self-assign)",
+    "severity": "error",
+  },
+  {
+    "column": 11,
+    "line": 15,
+    "message": "this expression is assigned to itself",
+    "rule": "eslint(no-self-assign)",
+    "severity": "error",
+  },
+  {
+    "column": 12,
+    "line": 16,
+    "message": "this expression is assigned to itself",
+    "rule": "eslint(no-self-assign)",
+    "severity": "error",
+  },
+  {
+    "column": 10,
+    "line": 17,
+    "message": "this expression is assigned to itself",
+    "rule": "eslint(no-self-assign)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-self-compare' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 4,
+    "message": "Both sides of this comparison are exactly the same",
+    "rule": "eslint(no-self-compare)",
+    "severity": "error",
+  },
+  {
+    "column": 3,
+    "line": 5,
+    "message": "This assigned value is not used in subsequent statements.",
+    "rule": "eslint(no-useless-assignment)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-sequences' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 20,
+    "line": 3,
+    "message": "Unexpected use of comma operator",
+    "rule": "eslint(no-sequences)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 2,
+    "line": 5,
+    "message": "Unexpected use of comma operator",
+    "rule": "eslint(no-sequences)",
+    "severity": "error",
+  },
+  {
+    "column": 4,
+    "line": 5,
+    "message": "eval can be harmful.",
+    "rule": "eslint(no-eval)",
+    "severity": "error",
+  },
+  {
+    "column": 32,
+    "line": 8,
+    "message": "Unexpected use of comma operator",
+    "rule": "eslint(no-sequences)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-setter-return' 1`] = `
+[
+  {
+    "column": 13,
+    "line": 4,
+    "message": "A 'set' accessor must have exactly one parameter.",
+    "rule": "TS(1049)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-shadow' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 5,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 9,
+    "line": 5,
+    "message": "'x' is already declared in the upper scope.",
+    "rule": "eslint(no-shadow)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-shadow-restricted-names' 1`] = `[]`;
+
+exports[`base > should lint 'no-sparse-arrays' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 14,
+    "line": 3,
+    "message": "Unexpected comma in middle of array",
+    "rule": "eslint(no-sparse-arrays)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 22,
+    "line": 5,
+    "message": "Unexpected comma in middle of array",
+    "rule": "eslint(no-sparse-arrays)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-throw-literal' 1`] = `
+[
+  {
+    "column": 7,
+    "line": 3,
+    "message": "Expected an error object to be thrown",
+    "rule": "eslint(no-throw-literal)",
+    "severity": "warning",
+  },
+  {
+    "column": 7,
+    "line": 5,
+    "message": "Expected an error object to be thrown",
+    "rule": "eslint(no-throw-literal)",
+    "severity": "warning",
+  },
+  {
+    "column": 7,
+    "line": 7,
+    "message": "Do not throw undefined",
+    "rule": "eslint(no-throw-literal)",
+    "severity": "warning",
+  },
+  {
+    "column": 7,
+    "line": 9,
+    "message": "Expected an error object to be thrown",
+    "rule": "eslint(no-throw-literal)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 11,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 11,
+    "message": "All 'var' declarations must be at the top of the function scope.",
+    "rule": "eslint(vars-on-top)",
+    "severity": "error",
+  },
+  {
+    "column": 7,
+    "line": 12,
+    "message": "Expected an error object to be thrown",
+    "rule": "eslint(no-throw-literal)",
+    "severity": "warning",
+  },
+  {
+    "column": 7,
+    "line": 12,
+    "message": "Unexpected string concatenation.",
+    "rule": "eslint(prefer-template)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 15,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 15,
+    "message": "All 'var' declarations must be at the top of the function scope.",
+    "rule": "eslint(vars-on-top)",
+    "severity": "error",
+  },
+  {
+    "column": 7,
+    "line": 16,
+    "message": "Expected an error object to be thrown",
+    "rule": "eslint(no-throw-literal)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'no-unexpected-multiline' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Unexpected newline between function name and open parenthesis of function call",
+    "rule": "eslint(no-unexpected-multiline)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 6,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 7,
+    "message": "Unexpected newline between object and open bracket of property access",
+    "rule": "eslint(no-unexpected-multiline)",
+    "severity": "error",
+  },
+  {
+    "column": 3,
+    "line": 7,
+    "message": "Unexpected use of comma operator",
+    "rule": "eslint(no-sequences)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 9,
+    "message": "This assigned value is not used in subsequent statements.",
+    "rule": "eslint(no-useless-assignment)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 9,
+    "message": "\`x\` is never reassigned.",
+    "rule": "eslint(prefer-const)",
+    "severity": "warning",
+  },
+  {
+    "column": 9,
+    "line": 9,
+    "message": "Unexpected unnamed function.",
+    "rule": "eslint(func-names)",
+    "severity": "error",
+  },
+  {
+    "column": 2,
+    "line": 10,
+    "message": "Unexpected newline between template tag and template literal",
+    "rule": "eslint(no-unexpected-multiline)",
+    "severity": "error",
+  },
+  {
+    "column": 2,
+    "line": 12,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 2,
+    "line": 13,
+    "message": "Unexpected newline between numerator and division operator",
+    "rule": "eslint(no-unexpected-multiline)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-unmodified-loop-condition' 1`] = `
+[
+  {
+    "column": 5,
+    "line": 3,
+    "message": "\`done\` is never reassigned.",
+    "rule": "eslint(prefer-const)",
+    "severity": "warning",
+  },
+  {
+    "column": 9,
+    "line": 4,
+    "message": "'done' is not modified in this loop.",
+    "rule": "eslint(no-unmodified-loop-condition)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-unneeded-ternary' 1`] = `
+[
+  {
+    "column": 15,
+    "line": 3,
+    "message": "Unnecessary use of boolean literals in conditional expression",
+    "rule": "eslint(no-unneeded-ternary)",
+    "severity": "warning",
+  },
+  {
+    "column": 14,
+    "line": 4,
+    "message": "Unnecessary use of boolean literals in conditional expression",
+    "rule": "eslint(no-unneeded-ternary)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'no-unsafe-finally' 1`] = `
+[
+  {
+    "column": 9,
+    "line": 10,
+    "message": "Unsafe \`finally\` block.",
+    "rule": "eslint(no-unsafe-finally)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-unsafe-negation' 1`] = `
+[
+  {
+    "column": 5,
+    "line": 3,
+    "message": "Unexpected negation of the left operand of 'in' operator.",
+    "rule": "eslint(no-unsafe-negation)",
+    "severity": "error",
+  },
+  {
+    "column": 21,
+    "line": 3,
+    "message": "Unexpected empty block statements",
+    "rule": "eslint(no-empty)",
+    "severity": "warning",
+  },
+  {
+    "column": 5,
+    "line": 5,
+    "message": "Unexpected negation of the left operand of 'instanceof' operator.",
+    "rule": "eslint(no-unsafe-negation)",
+    "severity": "error",
+  },
+  {
+    "column": 27,
+    "line": 5,
+    "message": "Unexpected empty block statements",
+    "rule": "eslint(no-empty)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'no-unused-expressions' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-useless-assignment' 1`] = `
+[
+  {
+    "column": 3,
+    "line": 6,
+    "message": "This assigned value is not used in subsequent statements.",
+    "rule": "eslint(no-useless-assignment)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 12,
+    "message": "This assigned value is not used in subsequent statements.",
+    "rule": "eslint(no-useless-assignment)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 23,
+    "message": "This assigned value is not used in subsequent statements.",
+    "rule": "eslint(no-useless-assignment)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-useless-call' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Avoid unnecessary use of .call()",
+    "rule": "eslint(no-useless-call)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Avoid unnecessary use of .apply()",
+    "rule": "eslint(no-useless-call)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 6,
+    "message": "Avoid unnecessary use of .call()",
+    "rule": "eslint(no-useless-call)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 7,
+    "message": "Avoid unnecessary use of .apply()",
+    "rule": "eslint(no-useless-call)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 10,
+    "message": "Avoid unnecessary use of .call()",
+    "rule": "eslint(no-useless-call)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 11,
+    "message": "Avoid unnecessary use of .apply()",
+    "rule": "eslint(no-useless-call)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'no-useless-catch' 1`] = `
+[
+  {
+    "column": 10,
+    "line": 5,
+    "message": "Unnecessary try/catch wrapper",
+    "rule": "eslint(no-useless-catch)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-useless-computed-key' 1`] = `
+[
+  {
+    "column": 14,
+    "line": 3,
+    "message": "Unnecessarily computed property \`'0'\` found.",
+    "rule": "eslint(no-useless-computed-key)",
+    "severity": "warning",
+  },
+  {
+    "column": 14,
+    "line": 4,
+    "message": "Unnecessarily computed property \`'0+1,234'\` found.",
+    "rule": "eslint(no-useless-computed-key)",
+    "severity": "warning",
+  },
+  {
+    "column": 14,
+    "line": 5,
+    "message": "Unnecessarily computed property \`0\` found.",
+    "rule": "eslint(no-useless-computed-key)",
+    "severity": "warning",
+  },
+  {
+    "column": 14,
+    "line": 6,
+    "message": "Unnecessarily computed property \`'x'\` found.",
+    "rule": "eslint(no-useless-computed-key)",
+    "severity": "warning",
+  },
+  {
+    "column": 6,
+    "line": 9,
+    "message": "Unnecessarily computed property \`"foo"\` found.",
+    "rule": "eslint(no-useless-computed-key)",
+    "severity": "warning",
+  },
+  {
+    "column": 5,
+    "line": 10,
+    "message": "Unnecessarily computed property \`0\` found.",
+    "rule": "eslint(no-useless-computed-key)",
+    "severity": "warning",
+  },
+  {
+    "column": 13,
+    "line": 11,
+    "message": "Unnecessarily computed property \`"foo"\` found.",
+    "rule": "eslint(no-useless-computed-key)",
+    "severity": "warning",
+  },
+  {
+    "column": 5,
+    "line": 12,
+    "message": "Unnecessarily computed property \`'b'\` found.",
+    "rule": "eslint(no-useless-computed-key)",
+    "severity": "warning",
+  },
+  {
+    "column": 5,
+    "line": 13,
+    "message": "Unnecessarily computed property \`'c'\` found.",
+    "rule": "eslint(no-useless-computed-key)",
+    "severity": "warning",
+  },
+  {
+    "column": 10,
+    "line": 13,
+    "message": "Setter is defined without a getter",
+    "rule": "eslint(accessor-pairs)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'no-useless-concat' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 11,
+    "line": 3,
+    "message": "Unexpected string concatenation of literals.",
+    "rule": "eslint(no-useless-concat)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 11,
+    "line": 5,
+    "message": "Unexpected string concatenation of literals.",
+    "rule": "eslint(no-useless-concat)",
+    "severity": "warning",
+  },
+  {
+    "column": 17,
+    "line": 5,
+    "message": "Unexpected string concatenation of literals.",
+    "rule": "eslint(no-useless-concat)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'no-useless-constructor' 1`] = `
+[
+  {
+    "column": 3,
+    "line": 4,
+    "message": "Empty constructors are unnecessary",
+    "rule": "eslint(no-useless-constructor)",
+    "severity": "warning",
+  },
+  {
+    "column": 3,
+    "line": 8,
+    "message": "Redundant super call in constructor",
+    "rule": "eslint(no-useless-constructor)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'no-useless-escape' 1`] = `
+[
+  {
+    "column": 2,
+    "line": 3,
+    "message": "Unnecessary escape character '\\''",
+    "rule": "eslint(no-useless-escape)",
+    "severity": "error",
+  },
+  {
+    "column": 2,
+    "line": 4,
+    "message": "Unnecessary escape character '"'",
+    "rule": "eslint(no-useless-escape)",
+    "severity": "error",
+  },
+  {
+    "column": 2,
+    "line": 5,
+    "message": "Unnecessary escape character '#'",
+    "rule": "eslint(no-useless-escape)",
+    "severity": "error",
+  },
+  {
+    "column": 2,
+    "line": 6,
+    "message": "Unnecessary escape character 'e'",
+    "rule": "eslint(no-useless-escape)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 7,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 2,
+    "line": 7,
+    "message": "Unnecessary escape character '"'",
+    "rule": "eslint(no-useless-escape)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 8,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 2,
+    "line": 8,
+    "message": "Unnecessary escape character '"'",
+    "rule": "eslint(no-useless-escape)",
+    "severity": "error",
+  },
+  {
+    "column": 10,
+    "line": 8,
+    "message": "Unnecessary escape character '"'",
+    "rule": "eslint(no-useless-escape)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 9,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 2,
+    "line": 9,
+    "message": "Unnecessary escape character '#'",
+    "rule": "eslint(no-useless-escape)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 10,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 2,
+    "line": 10,
+    "message": "Unnecessary escape character '!'",
+    "rule": "eslint(no-useless-escape)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 11,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 2,
+    "line": 11,
+    "message": "Unnecessary escape character '@'",
+    "rule": "eslint(no-useless-escape)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 12,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 3,
+    "line": 12,
+    "message": "Unnecessary escape character '['",
+    "rule": "eslint(no-useless-escape)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 13,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 6,
+    "line": 13,
+    "message": "Unnecessary escape character '-'",
+    "rule": "eslint(no-useless-escape)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-useless-rename' 1`] = `
+[
+  {
+    "column": 17,
+    "line": 3,
+    "message": "Do not rename import, export, or destructured assignments to the same name",
+    "rule": "eslint(no-useless-rename)",
+    "severity": "warning",
+  },
+  {
+    "column": 9,
+    "line": 4,
+    "message": "Do not rename import, export, or destructured assignments to the same name",
+    "rule": "eslint(no-useless-rename)",
+    "severity": "warning",
+  },
+  {
+    "column": 10,
+    "line": 5,
+    "message": "Do not rename import, export, or destructured assignments to the same name",
+    "rule": "eslint(no-useless-rename)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'no-useless-return' 1`] = `
+[
+  {
+    "column": 18,
+    "line": 3,
+    "message": "Unnecessary return statement.",
+    "rule": "eslint(no-useless-return)",
+    "severity": "warning",
+  },
+  {
+    "column": 5,
+    "line": 7,
+    "message": "Unnecessary return statement.",
+    "rule": "eslint(no-useless-return)",
+    "severity": "warning",
+  },
+  {
+    "column": 9,
+    "line": 13,
+    "message": "Unnecessary return statement.",
+    "rule": "eslint(no-useless-return)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'no-var' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'no-warning-comments' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 6,
+    "message": "Unexpected 'fixme' comment: FIXME: this is broken",
+    "rule": "eslint(no-warning-comments)",
+    "severity": "warning",
+  },
+  {
+    "column": 5,
+    "line": 10,
+    "message": "\`y\` is never reassigned.",
+    "rule": "eslint(prefer-const)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/approx-constant' 1`] = `
+[
+  {
+    "column": 5,
+    "line": 3,
+    "message": "\`log10e\` is never reassigned.",
+    "rule": "eslint(prefer-const)",
+    "severity": "warning",
+  },
+  {
+    "column": 14,
+    "line": 3,
+    "message": "Approximate value of \`LOG10E\` found.",
+    "rule": "oxc(approx-constant)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/bad-array-method-on-arguments' 1`] = `
+[
+  {
+    "column": 10,
+    "line": 7,
+    "message": "Bad array method on \`arguments\`.",
+    "rule": "oxc(bad-array-method-on-arguments)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/bad-bitwise-operator' 1`] = `
+[
+  {
+    "column": 5,
+    "line": 3,
+    "message": "Bad bitwise operator",
+    "rule": "oxc(bad-bitwise-operator)",
+    "severity": "warning",
+  },
+  {
+    "column": 11,
+    "line": 6,
+    "message": "Bad bitwise operator",
+    "rule": "oxc(bad-bitwise-operator)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 7,
+    "message": "Bad bitwise operator",
+    "rule": "oxc(bad-bitwise-operator)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/bad-char-at-comparison' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Invalid character comparison",
+    "rule": "oxc(bad-char-at-comparison)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Invalid character comparison",
+    "rule": "oxc(bad-char-at-comparison)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Invalid character comparison",
+    "rule": "oxc(bad-char-at-comparison)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 6,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 6,
+    "message": "Invalid character comparison",
+    "rule": "oxc(bad-char-at-comparison)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/bad-comparison-sequence' 1`] = `
+[
+  {
+    "column": 5,
+    "line": 3,
+    "message": "Bad comparison sequence",
+    "rule": "oxc(bad-comparison-sequence)",
+    "severity": "error",
+  },
+  {
+    "column": 7,
+    "line": 3,
+    "message": "Expected === and instead saw ==",
+    "rule": "eslint(eqeqeq)",
+    "severity": "error",
+  },
+  {
+    "column": 12,
+    "line": 3,
+    "message": "Expected === and instead saw ==",
+    "rule": "eslint(eqeqeq)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/bad-min-max-func' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Math.min and Math.max combination leads to constant result",
+    "rule": "oxc(bad-min-max-func)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Math.min and Math.max combination leads to constant result",
+    "rule": "oxc(bad-min-max-func)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/bad-object-literal-comparison' 1`] = `
+[
+  {
+    "column": 5,
+    "line": 3,
+    "message": "Unexpected comparison to newly constructed object",
+    "rule": "eslint(no-constant-binary-expression)",
+    "severity": "warning",
+  },
+  {
+    "column": 5,
+    "line": 3,
+    "message": "Unexpected object literal comparison.",
+    "rule": "oxc(bad-object-literal-comparison)",
+    "severity": "error",
+  },
+  {
+    "column": 15,
+    "line": 3,
+    "message": "Unexpected empty block statements",
+    "rule": "eslint(no-empty)",
+    "severity": "warning",
+  },
+  {
+    "column": 5,
+    "line": 4,
+    "message": "Unexpected comparison to newly constructed object",
+    "rule": "eslint(no-constant-binary-expression)",
+    "severity": "warning",
+  },
+  {
+    "column": 5,
+    "line": 4,
+    "message": "Unexpected array literal comparison.",
+    "rule": "oxc(bad-object-literal-comparison)",
+    "severity": "error",
+  },
+  {
+    "column": 17,
+    "line": 4,
+    "message": "Unexpected empty block statements",
+    "rule": "eslint(no-empty)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/bad-replace-all-arg' 1`] = `
+[
+  {
+    "column": 12,
+    "line": 3,
+    "message": "Global flag (g) is missing in the regular expression supplied to the \`replaceAll\` method.",
+    "rule": "oxc(bad-replace-all-arg)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/branches-sharing-code' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "All \`if\` blocks contain the same code at the start",
+    "rule": "oxc(branches-sharing-code)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 11,
+    "message": "All \`if\` blocks contain the same code at the end",
+    "rule": "oxc(branches-sharing-code)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/const-comparisons' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Unexpected constant comparison",
+    "rule": "oxc(const-comparisons)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Right-hand side of \`&&\` operator has no effect.",
+    "rule": "oxc(const-comparisons)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Right-hand side of \`&&\` operator has no effect.",
+    "rule": "oxc(const-comparisons)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 6,
+    "message": "Both sides of this comparison are exactly the same",
+    "rule": "eslint(no-self-compare)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 6,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 6,
+    "message": "This comparison will always evaluate to false",
+    "rule": "oxc(const-comparisons)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 7,
+    "message": "Both sides of this comparison are exactly the same",
+    "rule": "eslint(no-self-compare)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 7,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 7,
+    "message": "This comparison will always evaluate to true",
+    "rule": "oxc(const-comparisons)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/double-comparisons' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Unexpected double comparisons.",
+    "rule": "oxc(double-comparisons)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Unexpected double comparisons.",
+    "rule": "oxc(double-comparisons)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/erasing-op' 1`] = `
+[
+  {
+    "column": 5,
+    "line": 3,
+    "message": "\`x\` is never reassigned.",
+    "rule": "eslint(prefer-const)",
+    "severity": "warning",
+  },
+  {
+    "column": 5,
+    "line": 4,
+    "message": "\`y\` is never reassigned.",
+    "rule": "eslint(prefer-const)",
+    "severity": "warning",
+  },
+  {
+    "column": 9,
+    "line": 4,
+    "message": "Unexpected erasing operation. This expression will always evaluate to zero.",
+    "rule": "oxc(erasing-op)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/misrefactored-assign-op' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Misrefactored assign op. Variable appears on both sides of an assignment operation",
+    "rule": "oxc(misrefactored-assign-op)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Misrefactored assign op. Variable appears on both sides of an assignment operation",
+    "rule": "oxc(misrefactored-assign-op)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/missing-throw' 1`] = `[]`;
+
+exports[`base > should lint 'oxc/no-accumulating-spread' 1`] = `
+[
+  {
+    "column": 27,
+    "line": 3,
+    "message": "Do not spread accumulators in Array.prototype.reduce()",
+    "rule": "oxc(no-accumulating-spread)",
+    "severity": "warning",
+  },
+  {
+    "column": 41,
+    "line": 4,
+    "message": "Do not spread accumulators in Array.prototype.reduce()",
+    "rule": "oxc(no-accumulating-spread)",
+    "severity": "warning",
+  },
+  {
+    "column": 5,
+    "line": 6,
+    "message": "Do not spread accumulators in loops",
+    "rule": "oxc(no-accumulating-spread)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/no-async-endpoint-handlers' 1`] = `
+[
+  {
+    "column": 14,
+    "line": 4,
+    "message": "Express endpoint handler for \`/\` should not be \`async\`.",
+    "rule": "oxc(no-async-endpoint-handlers)",
+    "severity": "warning",
+  },
+  {
+    "column": 12,
+    "line": 10,
+    "message": "Express endpoint handler should not be \`async\`.",
+    "rule": "oxc(no-async-endpoint-handlers)",
+    "severity": "warning",
+  },
+  {
+    "column": 20,
+    "line": 16,
+    "message": "Express endpoint handler for \`/user\` should not be \`async\`.",
+    "rule": "oxc(no-async-endpoint-handlers)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/no-this-in-exported-function' 1`] = `
+[
+  {
+    "column": 15,
+    "line": 4,
+    "message": "\`this\` should not be used in exported functions",
+    "rule": "oxc(no-this-in-exported-function)",
+    "severity": "warning",
+  },
+  {
+    "column": 3,
+    "line": 8,
+    "message": "\`this\` should not be used in exported functions",
+    "rule": "oxc(no-this-in-exported-function)",
+    "severity": "warning",
+  },
+  {
+    "column": 16,
+    "line": 12,
+    "message": "\`this\` should not be used in exported functions",
+    "rule": "oxc(no-this-in-exported-function)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/number-arg-out-of-range' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 18,
+    "line": 4,
+    "message": "Radix or precision arguments of number-related functions should not exceed the limit",
+    "rule": "oxc(number-arg-out-of-range)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 9,
+    "line": 5,
+    "message": "Radix or precision arguments of number-related functions should not exceed the limit",
+    "rule": "oxc(number-arg-out-of-range)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/only-used-in-recursion' 1`] = `
+[
+  {
+    "column": 15,
+    "line": 3,
+    "message": "Parameter \`onlyUsedInRecursion\` is only used in recursive calls",
+    "rule": "oxc(only-used-in-recursion)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'oxc/uninvoked-array-callback' 1`] = `
+[
+  {
+    "column": 27,
+    "line": 3,
+    "message": "Uninvoked array callback",
+    "rule": "oxc(uninvoked-array-callback)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'prefer-arrow-callback' 1`] = `
+[
+  {
+    "column": 5,
+    "line": 3,
+    "message": "Unexpected unnamed function.",
+    "rule": "eslint(func-names)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 3,
+    "message": "Unexpected function expression.",
+    "rule": "eslint(prefer-arrow-callback)",
+    "severity": "warning",
+  },
+  {
+    "column": 5,
+    "line": 4,
+    "message": "Unexpected unnamed function.",
+    "rule": "eslint(func-names)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 4,
+    "message": "Unexpected function expression.",
+    "rule": "eslint(prefer-arrow-callback)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'prefer-const' 1`] = `
+[
+  {
+    "column": 5,
+    "line": 3,
+    "message": "\`a\` is never reassigned.",
+    "rule": "eslint(prefer-const)",
+    "severity": "warning",
+  },
+  {
+    "column": 5,
+    "line": 6,
+    "message": "\`b\` is never reassigned.",
+    "rule": "eslint(prefer-const)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 10,
+    "message": "Require \`for-in\` loops to include an \`if\` statement",
+    "rule": "eslint(guard-for-in)",
+    "severity": "error",
+  },
+  {
+    "column": 10,
+    "line": 10,
+    "message": "\`i\` is never reassigned.",
+    "rule": "eslint(prefer-const)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'prefer-destructuring' 1`] = `
+[
+  {
+    "column": 13,
+    "line": 7,
+    "message": "Use Object destructuring.",
+    "rule": "eslint(prefer-destructuring)",
+    "severity": "warning",
+  },
+  {
+    "column": 14,
+    "line": 8,
+    "message": "Use Object destructuring.",
+    "rule": "eslint(prefer-destructuring)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'prefer-exponentiation-operator' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Prefer \`**\` over \`Math.pow\`.",
+    "rule": "eslint(prefer-exponentiation-operator)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'prefer-numeric-literals' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Use binary literals instead of parseInt().",
+    "rule": "eslint(prefer-numeric-literals)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Use binary literals instead of parseInt().",
+    "rule": "eslint(prefer-numeric-literals)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Use octal literals instead of parseInt().",
+    "rule": "eslint(prefer-numeric-literals)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 6,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 6,
+    "message": "Use hexadecimal literals instead of parseInt().",
+    "rule": "eslint(prefer-numeric-literals)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 7,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 7,
+    "message": "Use binary literals instead of parseInt().",
+    "rule": "eslint(prefer-numeric-literals)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 8,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 8,
+    "message": "Use octal literals instead of parseInt().",
+    "rule": "eslint(prefer-numeric-literals)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 9,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 9,
+    "message": "Use hexadecimal literals instead of parseInt().",
+    "rule": "eslint(prefer-numeric-literals)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'prefer-object-has-own' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Disallow use of \`Object.prototype.hasOwnProperty.call()\` and prefer use of \`Object.hasOwn()\`.",
+    "rule": "eslint(prefer-object-has-own)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Disallow use of \`Object.prototype.hasOwnProperty.call()\` and prefer use of \`Object.hasOwn()\`.",
+    "rule": "eslint(prefer-object-has-own)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Disallow use of \`Object.prototype.hasOwnProperty.call()\` and prefer use of \`Object.hasOwn()\`.",
+    "rule": "eslint(prefer-object-has-own)",
+    "severity": "error",
+  },
+  {
+    "column": 21,
+    "line": 6,
+    "message": "Disallow use of \`Object.prototype.hasOwnProperty.call()\` and prefer use of \`Object.hasOwn()\`.",
+    "rule": "eslint(prefer-object-has-own)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'prefer-promise-reject-errors' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Expected the Promise rejection reason to be an Error",
+    "rule": "eslint(prefer-promise-reject-errors)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Expected the Promise rejection reason to be an Error",
+    "rule": "eslint(prefer-promise-reject-errors)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 7,
+    "message": "Expected the Promise rejection reason to be an Error",
+    "rule": "eslint(prefer-promise-reject-errors)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 9,
+    "message": "Do not use 'new' for side effects.",
+    "rule": "eslint(no-new)",
+    "severity": "error",
+  },
+  {
+    "column": 13,
+    "line": 9,
+    "message": "Unexpected unnamed function.",
+    "rule": "eslint(func-names)",
+    "severity": "error",
+  },
+  {
+    "column": 13,
+    "line": 9,
+    "message": "Unexpected function expression.",
+    "rule": "eslint(prefer-arrow-callback)",
+    "severity": "warning",
+  },
+  {
+    "column": 5,
+    "line": 10,
+    "message": "Expected the Promise rejection reason to be an Error",
+    "rule": "eslint(prefer-promise-reject-errors)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 13,
+    "message": "Do not use 'new' for side effects.",
+    "rule": "eslint(no-new)",
+    "severity": "error",
+  },
+  {
+    "column": 13,
+    "line": 13,
+    "message": "Unexpected unnamed function.",
+    "rule": "eslint(func-names)",
+    "severity": "error",
+  },
+  {
+    "column": 13,
+    "line": 13,
+    "message": "Unexpected function expression.",
+    "rule": "eslint(prefer-arrow-callback)",
+    "severity": "warning",
+  },
+  {
+    "column": 5,
+    "line": 14,
+    "message": "Expected the Promise rejection reason to be an Error",
+    "rule": "eslint(prefer-promise-reject-errors)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'prefer-regex-literals' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Do not use 'new' for side effects.",
+    "rule": "eslint(no-new)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Use a regular expression literal instead of the \`RegExp\` constructor.",
+    "rule": "eslint(prefer-regex-literals)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Do not use 'new' for side effects.",
+    "rule": "eslint(no-new)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Use a regular expression literal instead of the \`RegExp\` constructor.",
+    "rule": "eslint(prefer-regex-literals)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Use a regular expression literal instead of the \`RegExp\` constructor.",
+    "rule": "eslint(prefer-regex-literals)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 6,
+    "message": "Use a regular expression literal instead of the \`RegExp\` constructor.",
+    "rule": "eslint(prefer-regex-literals)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 7,
+    "message": "Do not use 'new' for side effects.",
+    "rule": "eslint(no-new)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 7,
+    "message": "Use a regular expression literal instead of the \`RegExp\` constructor.",
+    "rule": "eslint(prefer-regex-literals)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 8,
+    "message": "Use a regular expression literal instead of the \`RegExp\` constructor.",
+    "rule": "eslint(prefer-regex-literals)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 9,
+    "message": "Do not use 'new' for side effects.",
+    "rule": "eslint(no-new)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 9,
+    "message": "Use a regular expression literal instead of the \`RegExp\` constructor.",
+    "rule": "eslint(prefer-regex-literals)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'prefer-rest-params' 1`] = `
+[
+  {
+    "column": 17,
+    "line": 4,
+    "message": "Use the rest parameters instead of \`arguments\`.",
+    "rule": "eslint(prefer-rest-params)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 8,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 43,
+    "line": 8,
+    "message": "Use the rest parameters instead of \`arguments\`.",
+    "rule": "eslint(prefer-rest-params)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 9,
+    "message": "Use spread operators instead of \`.apply()\`.",
+    "rule": "eslint(prefer-spread)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 13,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 30,
+    "line": 13,
+    "message": "Use the rest parameters instead of \`arguments\`.",
+    "rule": "eslint(prefer-rest-params)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 14,
+    "message": "Use spread operators instead of \`.apply()\`.",
+    "rule": "eslint(prefer-spread)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'prefer-spread' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Use spread operators instead of \`.apply()\`.",
+    "rule": "eslint(prefer-spread)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Use spread operators instead of \`.apply()\`.",
+    "rule": "eslint(prefer-spread)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Use spread operators instead of \`.apply()\`.",
+    "rule": "eslint(prefer-spread)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'prefer-template' 1`] = `
+[
+  {
+    "column": 13,
+    "line": 3,
+    "message": "Unexpected string concatenation.",
+    "rule": "eslint(prefer-template)",
+    "severity": "error",
+  },
+  {
+    "column": 14,
+    "line": 4,
+    "message": "Unexpected string concatenation.",
+    "rule": "eslint(prefer-template)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'preserve-caught-error' 1`] = `
+[
+  {
+    "column": 5,
+    "line": 6,
+    "message": "There is no cause error attached to this new thrown error.",
+    "rule": "eslint(preserve-caught-error)",
+    "severity": "warning",
+  },
+]
+`;
+
+exports[`base > should lint 'radix' 1`] = `
+[
+  {
+    "column": 5,
+    "line": 3,
+    "message": "\`num\` is never reassigned.",
+    "rule": "eslint(prefer-const)",
+    "severity": "warning",
+  },
+  {
+    "column": 11,
+    "line": 3,
+    "message": "Missing radix parameter.",
+    "rule": "eslint(radix)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'require-await' 1`] = `
+[
+  {
+    "column": 16,
+    "line": 3,
+    "message": "Async function has no \`await\` expression.",
+    "rule": "eslint(require-await)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'require-yield' 1`] = `
+[
+  {
+    "column": 11,
+    "line": 3,
+    "message": "This generator function does not have \`yield\`",
+    "rule": "eslint(require-yield)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'symbol-description' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 11,
+    "line": 3,
+    "message": "Expected Symbol to have a description.",
+    "rule": "eslint(symbol-description)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'use-isnan' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 3,
+    "message": "Expected === and instead saw ==",
+    "rule": "eslint(eqeqeq)",
+    "severity": "error",
+  },
+  {
+    "column": 8,
+    "line": 3,
+    "message": "Checking equality with NaN will always return false",
+    "rule": "eslint(use-isnan)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 9,
+    "line": 4,
+    "message": "Checking equality with NaN will always return false",
+    "rule": "eslint(use-isnan)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 8,
+    "line": 5,
+    "message": "Comparison with NaN will always return false",
+    "rule": "eslint(use-isnan)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 6,
+    "message": "Expected expression to be used",
+    "rule": "eslint(no-unused-expressions)",
+    "severity": "error",
+  },
+  {
+    "column": 7,
+    "line": 6,
+    "message": "Comparison with NaN will always return false",
+    "rule": "eslint(use-isnan)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'vars-on-top' 1`] = `
+[
+  {
+    "column": 9,
+    "line": 4,
+    "message": "Unexpected constant condition",
+    "rule": "eslint(no-constant-condition)",
+    "severity": "error",
+  },
+  {
+    "column": 9,
+    "line": 5,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 9,
+    "line": 5,
+    "message": "All 'var' declarations must be at the top of the function scope.",
+    "rule": "eslint(vars-on-top)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 7,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 7,
+    "message": "All 'var' declarations must be at the top of the function scope.",
+    "rule": "eslint(vars-on-top)",
+    "severity": "error",
+  },
+  {
+    "column": 10,
+    "line": 11,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 10,
+    "line": 11,
+    "message": "All 'var' declarations must be at the top of the function scope.",
+    "rule": "eslint(vars-on-top)",
+    "severity": "error",
+  },
+  {
+    "column": 34,
+    "line": 11,
+    "message": "Unexpected empty block statements",
+    "rule": "eslint(no-empty)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 15,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 1,
+    "line": 15,
+    "message": "All 'var' declarations must be at the top of the function scope.",
+    "rule": "eslint(vars-on-top)",
+    "severity": "error",
+  },
+  {
+    "column": 13,
+    "line": 20,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 13,
+    "line": 20,
+    "message": "All 'var' declarations must be at the top of the function scope.",
+    "rule": "eslint(vars-on-top)",
+    "severity": "error",
+  },
+  {
+    "column": 17,
+    "line": 20,
+    "message": "'a' is already declared in the upper scope.",
+    "rule": "eslint(no-shadow)",
+    "severity": "error",
+  },
+  {
+    "column": 9,
+    "line": 25,
+    "message": "Unexpected var, use let or const instead.",
+    "rule": "eslint(no-var)",
+    "severity": "error",
+  },
+  {
+    "column": 9,
+    "line": 25,
+    "message": "All 'var' declarations must be at the top of the function scope.",
+    "rule": "eslint(vars-on-top)",
+    "severity": "error",
+  },
+  {
+    "column": 13,
+    "line": 25,
+    "message": "'a' is already declared in the upper scope.",
+    "rule": "eslint(no-shadow)",
+    "severity": "error",
+  },
+]
+`;
+
+exports[`base > should lint 'yoda' 1`] = `
+[
+  {
+    "column": 5,
+    "line": 3,
+    "message": "Require or disallow "Yoda" conditions",
+    "rule": "eslint(yoda)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 6,
+    "message": "Require or disallow "Yoda" conditions",
+    "rule": "eslint(yoda)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 9,
+    "message": "Require or disallow "Yoda" conditions",
+    "rule": "eslint(yoda)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 13,
+    "message": "Require or disallow "Yoda" conditions",
+    "rule": "eslint(yoda)",
+    "severity": "error",
+  },
+  {
+    "column": 10,
+    "line": 13,
+    "message": "Expected === and instead saw ==",
+    "rule": "eslint(eqeqeq)",
+    "severity": "error",
+  },
+  {
+    "column": 5,
+    "line": 19,
+    "message": "Require or disallow "Yoda" conditions",
+    "rule": "eslint(yoda)",
+    "severity": "error",
+  },
+  {
+    "column": 11,
+    "line": 23,
+    "message": "Expected === and instead saw ==",
+    "rule": "eslint(eqeqeq)",
+    "severity": "error",
+  },
+  {
+    "column": 11,
+    "line": 27,
+    "message": "Expected === and instead saw ==",
+    "rule": "eslint(eqeqeq)",
+    "severity": "error",
+  },
+]
+`;

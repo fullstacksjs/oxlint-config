@@ -3,7 +3,6 @@ import { isPackageExists } from 'local-pkg';
 import { base } from './modules/base.ts';
 import { Context } from './lib/Context.ts';
 import { typescript } from './modules/typescript.ts';
-import { regex } from './modules/regex.ts';
 import { node } from './modules/node.ts';
 import { imports } from './modules/imports.ts';
 import { react } from './modules/react.ts';
@@ -59,7 +58,6 @@ export function defineConfig(config: Config = {}): OxlintConfig {
     extends: [
       base(context),
       imports(context),
-      regex(context),
       promise(context),
       typescript(context),
       nodejsEnabled ? node(context) : undefined,
