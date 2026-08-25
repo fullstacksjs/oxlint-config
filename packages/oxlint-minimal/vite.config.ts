@@ -7,6 +7,10 @@ export default defineConfig({
     exclude: ['**/node_modules/**', '.tmp/**'],
   },
   pack: {
+    entry: {
+      index: 'src/index.ts',
+      internal: 'src/lib/index.ts',
+    },
     dts: {
       tsgo: true,
     },
