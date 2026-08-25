@@ -18,6 +18,7 @@
   "type": "module",
   "exports": {
     ".": "./src/index.ts",
+    "./internal": "./src/lib/index.ts",
     "./package.json": "./package.json"
   },
   "publishConfig": {
