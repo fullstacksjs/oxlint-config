@@ -1,8 +1,9 @@
 import type { OxlintConfig } from 'oxlint';
 import { describe, expect, it } from 'vite-plus/test';
-import { Context, defineConfig, defineOxlintConfig } from '../src/index.ts';
+import { defineConfig, defineOxlintConfig } from '../src/index.ts';
 import { defineConfig as defineMinimalConfig } from '@fullstacksjs/oxlint-minimal';
 import { regex } from '../src/modules/regex.ts';
+import { Context } from '@fullstacksjs/oxlint-minimal/internal';
 
 /** The module list a config layers in, identified by the modules it contributes. */
 function extendsOf(config: OxlintConfig): OxlintConfig[] {
