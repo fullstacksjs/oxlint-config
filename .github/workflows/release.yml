@@ -37,6 +37,6 @@ jobs:
         run: vp run -r build
 
       - name: Release
-        run: pnpm release
+        run: vp run release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
