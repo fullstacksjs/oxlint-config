@@ -28,7 +28,6 @@
     "dev": "vp pack --watch",
     "test": "vp test",
     "check": "vp check",
-    "prepare": "vp config",
     "prepublishOnly": "vp run build"
   },
   "dependencies": {
