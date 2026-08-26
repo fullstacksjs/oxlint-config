@@ -19,13 +19,15 @@
     "dev": "vp run -r --parallel dev",
     "test": "vp run -r test",
     "check": "vp check",
-    "prepare": "vp config"
+    "prepare": "vp config",
+    "release": "pnpm -r --filter './packages/*' --workspace-concurrency=1 exec npx --no-install semantic-release"
   },
   "devDependencies": {
     "@fullstacksjs/oxlint-minimal": "workspace:*",
     "@types/node": "catalog:",
-    "bumpp": "12.1.1",
     "oxlint": "catalog:",
+    "semantic-release": "25.0.9",
+    "semantic-release-monorepo": "8.0.2",
     "typescript": "catalog:",
     "vite-plus": "catalog:"
   },
