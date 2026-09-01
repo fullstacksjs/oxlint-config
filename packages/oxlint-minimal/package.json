@@ -17,8 +17,14 @@
   ],
   "type": "module",
   "exports": {
-    ".": "./src/index.ts",
-    "./internal": "./src/lib/index.ts",
+    ".": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    },
+    "./internal": {
+      "types": "./dist/internal.d.mts",
+      "default": "./dist/internal.mjs"
+    },
     "./package.json": "./package.json"
   },
   "publishConfig": {
