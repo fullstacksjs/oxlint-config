@@ -14,9 +14,7 @@ export default defineConfig({
     dts: {
       tsgo: true,
     },
-    // Root `exports` point at source so workspace consumers (@fullstacksjs/oxlint-config)
-    // resolve this package without a prior build; `publishConfig.exports` point at dist.
-    exports: { devExports: true },
+    exports: true,
     workspace: true,
   },
   lint: {

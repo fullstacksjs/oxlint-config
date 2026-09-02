@@ -17,16 +17,11 @@
   ],
   "type": "module",
   "exports": {
-    ".": "./src/index.ts",
-    "./internal": "./src/lib/index.ts",
+    ".": "./dist/index.mjs",
+    "./internal": "./dist/internal.mjs",
     "./package.json": "./package.json"
   },
   "publishConfig": {
-    "exports": {
-      ".": "./dist/index.mjs",
-      "./internal": "./dist/internal.mjs",
-      "./package.json": "./package.json"
-    },
     "access": "public"
   },
   "scripts": {
