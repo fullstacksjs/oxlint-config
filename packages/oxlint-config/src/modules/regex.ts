@@ -1,9 +1,12 @@
 import type { OxlintConfig } from 'oxlint';
 import type { Context } from '@fullstacksjs/oxlint-minimal/internal';
+import { fileURLToPath } from 'node:url';
+
+const regexpPluginPath = fileURLToPath(import.meta.resolve('eslint-plugin-regexp'));
 
 export function regex(_ctx: Context): OxlintConfig {
   return {
-    jsPlugins: ['eslint-plugin-regexp'],
+    jsPlugins: [{ name: 'regexp', specifier: regexpPluginPath }],
     settings: {
       regexp: {
         allowedCharacterRanges: ['all'],

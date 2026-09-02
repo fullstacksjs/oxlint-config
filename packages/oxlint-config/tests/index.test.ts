@@ -30,7 +30,7 @@ describe('defineConfig', () => {
 
   it('enables the regexp jsPlugin', () => {
     const layers = extendsOf(defineConfig());
-    const withPlugin = layers.filter((layer) => layer.jsPlugins?.includes('eslint-plugin-regexp'));
+    const withPlugin = layers.filter((layer) => layer.jsPlugins?.find((p) => typeof p === 'object' && p.name === 'regexp'));
 
     expect(withPlugin).toHaveLength(1);
     expect(withPlugin[0]?.settings).toEqual({ regexp: { allowedCharacterRanges: ['all'] } });
@@ -41,7 +41,7 @@ describe('defineConfig', () => {
     const layers = extendsOf(defineConfig({ extends: [userLayer] }));
 
     expect(layers.at(-1)).toBe(userLayer);
-    expect(layers.at(-2)?.jsPlugins).toEqual(['eslint-plugin-regexp']);
+    expect(layers.at(-2)?.jsPlugins).toContainEqual(expect.objectContaining({ name: 'regexp' }));
   });
 
   it('exposes defineOxlintConfig as an alias', () => {
