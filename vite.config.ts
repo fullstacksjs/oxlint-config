@@ -11,7 +11,7 @@ export default defineConfig({
     },
   },
   fmt: {
-    ignorePatterns: ['.tmp/**', '**/tests/fixtures/**', 'AGENTS.md'],
+    ignorePatterns: ['.tmp/**', '**/tests/fixtures/**', 'AGENTS.md', 'README.md'],
     arrowParens: 'always',
     bracketSpacing: true,
     endOfLine: 'lf',
