@@ -13,7 +13,7 @@ const fixture = path.resolve(import.meta.dirname, 'fixtures/regex.ts');
 /** The single `extends` layer contributed by the regexp jsPlugin module. */
 function regexLayer(): OxlintConfig {
   const layers = (defineConfig().extends ?? []) as OxlintConfig[];
-  const layer = layers.find((l) => l.jsPlugins?.includes('eslint-plugin-regexp'));
+  const layer = layers.find((l) => l.jsPlugins?.find((p) => typeof p === 'object' && p.name === 'regexp'));
   if (!layer) throw new Error('No layer enabling eslint-plugin-regexp.');
   return layer;
 }
