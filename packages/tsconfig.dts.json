@@ -1,4 +1,10 @@
 {
   "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "paths": {
+      "@fullstacksjs/oxlint-minimal": ["./oxlint-minimal/src/index.ts"],
+      "@fullstacksjs/oxlint-minimal/internal": ["./oxlint-minimal/src/lib/index.ts"]
+    }
+  },
   "include": ["./oxlint-config/src", "./oxlint-minimal/src"]
 }
