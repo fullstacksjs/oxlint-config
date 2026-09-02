@@ -1,6 +1,13 @@
+import path from 'node:path';
 import { defineConfig } from 'vite-plus';
 
 export default defineConfig({
+  resolve: {
+    alias: {
+      '@fullstacksjs/oxlint-minimal/internal': path.resolve(import.meta.dirname, 'packages/oxlint-minimal/src/lib/index.ts'),
+      '@fullstacksjs/oxlint-minimal': path.resolve(import.meta.dirname, 'packages/oxlint-minimal/src/index.ts'),
+    },
+  },
   staged: {
     '*': 'vp check --fix',
   },
