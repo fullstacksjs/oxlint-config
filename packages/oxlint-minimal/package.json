@@ -42,6 +42,6 @@
     "vite-plus": "catalog:"
   },
   "inlinedDependencies": {
-    "oxlint": "^1.79.0"
+    "oxlint": "1.79.0"
   }
 }
