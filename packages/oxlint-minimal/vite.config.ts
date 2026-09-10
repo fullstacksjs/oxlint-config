@@ -12,7 +12,7 @@ export default defineConfig({
       internal: 'src/lib/index.ts',
     },
     dts: {
-      tsgo: true,
+      generator: 'tsgo',
     },
     exports: true,
     workspace: true,
