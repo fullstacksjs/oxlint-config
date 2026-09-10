@@ -30,7 +30,8 @@
     "test": "vp test",
     "check": "vp check",
     "prepublishOnly": "vp run build",
-    "generate:fixtures": "node --experimental-transform-types scripts/generate-fixtures.ts"
+    "generate:fixtures": "node --experimental-transform-types scripts/generate-fixtures.ts",
+    "rules:missing": "node --experimental-transform-types scripts/list-missing-rules.ts"
   },
   "dependencies": {
     "local-pkg": "1.2.1"

@@ -9,9 +9,9 @@ Shared [Oxlint](https://oxc.rs/docs/guide/usage/linter.html) config for Fullstac
 
 ## Packages
 
-| Package                                                   | Contents                                                                                                                 |
-| --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| [`@fullstacksjs/oxlint-minimal`](packages/oxlint-minimal) | The baseline config. Oxlint's native rules, no jsPlugins and dependency.                                                 |
+| Package                                                   | Contents                                                                                              |
+| --------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| [`@fullstacksjs/oxlint-minimal`](packages/oxlint-minimal) | The baseline config. Oxlint's native rules, no jsPlugins and dependency.                              |
 | [`@fullstacksjs/oxlint-config`](packages/oxlint-config)   | The baseline plus the modules that need a [jsPlugin](https://oxc.rs/docs/guide/usage/linter/plugins). |
 
 Every shared rule lives in `oxlint-minimal`. `oxlint-config` holds only its own modules and composes them onto the baseline through
@@ -92,6 +92,15 @@ Set `DEBUG_OXLINT_CONFIG` to print the resolved modules, options, and remaining 
 
 ```sh
 DEBUG_OXLINT_CONFIG=1 oxlint
+```
+
+## Finding missing Oxlint rules
+
+List native rules supported by the installed Oxlint version but not mentioned
+in this preset:
+
+```sh
+vp run rules:missing
 ```
 
 [download-badge]: https://img.shields.io/npm/dm/@fullstacksjs/oxlint-config?color=6464E2&label=DOWNLOADS&style=flat-square

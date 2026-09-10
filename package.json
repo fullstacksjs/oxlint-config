@@ -19,6 +19,7 @@
     "dev": "vp run -r --parallel dev",
     "test": "vp run -r test",
     "check": "vp check",
+    "rules:missing": "vp run --filter @fullstacksjs/oxlint-minimal rules:missing",
     "prepare": "vp config",
     "release": "pnpm -r --filter './packages/*' --workspace-concurrency=1 exec npx --no-install semantic-release"
   },
