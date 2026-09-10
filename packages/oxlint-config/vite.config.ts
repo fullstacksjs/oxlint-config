@@ -17,7 +17,7 @@ export default defineConfig({
   },
   pack: {
     dts: {
-      tsgo: true,
+      generator: 'tsgo',
     },
     // The minimal baseline is bundled from source, so declaration emit has to span both packages.
     tsconfig: '../tsconfig.dts.json',
