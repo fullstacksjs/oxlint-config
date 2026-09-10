@@ -280,6 +280,13 @@ exports[`typescript > should lint 'typescript/no-misused-new' 1`] = `
   {
     "column": 3,
     "line": 12,
+    "message": "Use a property signature instead of a method signature.",
+    "rule": "typescript(method-signature-style)",
+    "severity": "warning",
+  },
+  {
+    "column": 3,
+    "line": 12,
     "message": "Interfaces cannot be constructed, only classes.",
     "rule": "typescript(no-misused-new)",
     "severity": "error",

@@ -38,7 +38,7 @@ export class Context {
     return this.isEsm ? config : 'off';
   }
 
-  cjs(config: AllowWarnDeny): AllowWarnDeny {
+  cjs<const T>(config: T): T | 'off' {
     return this.isEsm ? 'off' : config;
   }
 

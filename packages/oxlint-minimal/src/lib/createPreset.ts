@@ -76,13 +76,14 @@ export function createPreset(preset: Preset): (config?: Config) => OxlintConfig 
       ].filter(Boolean) as OxlintConfig['extends'],
       overrides: [
         {
-          files: ['**/*.spec.ts'],
+          files: ['**/*.spec.ts', '**/*.spec.tsx', '**/*.stories.tsx'],
           rules: {
             'no-sparse-arrays': 'off',
             'no-plusplus': 'off',
             'prefer-promise-reject-errors': 'off',
             'no-throw-literal': 'off',
             'no-thenable': 'off',
+            'react/rules-of-hooks': 'off',
           },
         },
         ...overrides,

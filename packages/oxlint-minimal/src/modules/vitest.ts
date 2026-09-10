@@ -5,10 +5,12 @@ export function vitest(_ctx: Context): OxlintConfig {
   return {
     plugins: ['vitest'],
     rules: {
+      'vitest/consistent-each-for': 'warn',
       'vitest/consistent-test-filename': ['warn', { allTestPattern: '__tests__', pattern: '.*\\.spec\\.tsx?$' }],
       'vitest/consistent-test-it': ['warn', { fn: 'it', withinDescribe: 'it' }],
       'vitest/consistent-vitest-vi': 'warn',
       'vitest/expect-expect': 'warn',
+      'vitest/hoisted-apis-on-top': 'error',
       'vitest/max-expects': 'off',
       'vitest/max-nested-describe': ['error', { max: 3 }],
       'vitest/no-alias-methods': 'warn',
@@ -32,6 +34,9 @@ export function vitest(_ctx: Context): OxlintConfig {
       'vitest/no-test-prefixes': 'error',
       'vitest/no-test-return-statement': 'error',
       'vitest/no-unneeded-async-expect-function': 'warn',
+      'vitest/padding-around-after-all-blocks': 'off',
+      'vitest/padding-around-test-blocks': 'off',
+      'vitest/prefer-called-exactly-once-with': 'off',
       'vitest/prefer-called-once': 'warn',
       'vitest/prefer-called-times': 'off',
       'vitest/prefer-called-with': 'warn',
@@ -41,8 +46,10 @@ export function vitest(_ctx: Context): OxlintConfig {
       'vitest/prefer-equality-matcher': 'warn',
       'vitest/prefer-expect-assertions': 'off',
       'vitest/prefer-expect-resolves': 'warn',
+      'vitest/prefer-expect-type-of': 'warn',
       'vitest/prefer-hooks-in-order': 'warn',
       'vitest/prefer-hooks-on-top': 'warn',
+      'vitest/prefer-import-in-mock': 'warn',
       'vitest/prefer-importing-vitest-globals': 'off',
       'vitest/prefer-lowercase-title': 'off',
       'vitest/prefer-mock-promise-shorthand': 'warn',
@@ -56,11 +63,14 @@ export function vitest(_ctx: Context): OxlintConfig {
       'vitest/prefer-to-be-object': 'warn',
       'vitest/prefer-to-be-truthy': 'off',
       'vitest/prefer-to-contain': 'warn',
+      'vitest/prefer-to-have-been-called-times': 'off',
       'vitest/prefer-to-have-length': 'warn',
       'vitest/prefer-todo': 'warn',
+      'vitest/require-awaited-expect-poll': 'error',
       'vitest/require-hook': 'off',
       'vitest/require-local-test-context-for-concurrent-snapshots': 'error',
       'vitest/require-mock-type-parameters': 'off',
+      'vitest/require-test-timeout': 'off',
       'vitest/require-to-throw-message': 'warn',
       'vitest/require-top-level-describe': 'off',
       'vitest/valid-describe-callback': 'warn',
@@ -68,9 +78,6 @@ export function vitest(_ctx: Context): OxlintConfig {
       'vitest/valid-expect-in-promise': 'warn',
       'vitest/valid-title': 'off',
       'vitest/warn-todo': 'warn',
-
-      // Unsupported
-      // 'vitest/prefer-vi-mocked': 'warn',
     },
   };
 }

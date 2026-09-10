@@ -1148,6 +1148,13 @@ exports[`base > should lint 'no-empty-static-block' 1`] = `
 exports[`base > should lint 'no-eval' 1`] = `
 [
   {
+    "column": 1,
+    "line": 3,
+    "message": "Split 'const' declarations into multiple statements.",
+    "rule": "eslint(one-var)",
+    "severity": "error",
+  },
+  {
     "column": 11,
     "line": 5,
     "message": "eval can be harmful.",
@@ -1252,10 +1259,24 @@ exports[`base > should lint 'no-extra-boolean-cast' 1`] = `
     "severity": "error",
   },
   {
+    "column": 11,
+    "line": 3,
+    "message": "Unexpected implicit coercion to boolean",
+    "rule": "eslint(no-implicit-coercion)",
+    "severity": "warning",
+  },
+  {
     "column": 12,
     "line": 3,
     "message": "Redundant double negation",
     "rule": "eslint(no-extra-boolean-cast)",
+    "severity": "warning",
+  },
+  {
+    "column": 12,
+    "line": 3,
+    "message": "Unexpected implicit coercion to boolean",
+    "rule": "eslint(no-implicit-coercion)",
     "severity": "warning",
   },
   {
@@ -1273,10 +1294,24 @@ exports[`base > should lint 'no-extra-boolean-cast' 1`] = `
     "severity": "warning",
   },
   {
+    "column": 19,
+    "line": 4,
+    "message": "Unexpected implicit coercion to boolean",
+    "rule": "eslint(no-implicit-coercion)",
+    "severity": "warning",
+  },
+  {
     "column": 5,
     "line": 6,
     "message": "Redundant double negation",
     "rule": "eslint(no-extra-boolean-cast)",
+    "severity": "warning",
+  },
+  {
+    "column": 5,
+    "line": 6,
+    "message": "Unexpected implicit coercion to boolean",
+    "rule": "eslint(no-implicit-coercion)",
     "severity": "warning",
   },
   {
@@ -1298,6 +1333,13 @@ exports[`base > should lint 'no-extra-boolean-cast' 1`] = `
     "line": 7,
     "message": "Unexpected empty block statements",
     "rule": "eslint(no-empty)",
+    "severity": "warning",
+  },
+  {
+    "column": 5,
+    "line": 10,
+    "message": "Unexpected implicit coercion to boolean",
+    "rule": "eslint(no-implicit-coercion)",
     "severity": "warning",
   },
   {
