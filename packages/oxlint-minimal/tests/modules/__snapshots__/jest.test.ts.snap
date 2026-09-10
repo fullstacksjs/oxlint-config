@@ -1,6 +1,86 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`jest > should lint 'jest/no-alias-methods' 1`] = `[]`;
+exports[`jest > should lint 'jest/no-alias-methods' 1`] = `
+[
+  {
+    "column": 1,
+    "line": 3,
+    "message": "\`expect\` must be inside of a test block.",
+    "rule": "jest(no-standalone-expect)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 4,
+    "message": "\`expect\` must be inside of a test block.",
+    "rule": "jest(no-standalone-expect)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 5,
+    "message": "\`expect\` must be inside of a test block.",
+    "rule": "jest(no-standalone-expect)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 6,
+    "message": "\`expect\` must be inside of a test block.",
+    "rule": "jest(no-standalone-expect)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 7,
+    "message": "\`expect\` must be inside of a test block.",
+    "rule": "jest(no-standalone-expect)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 8,
+    "message": "\`expect\` must be inside of a test block.",
+    "rule": "jest(no-standalone-expect)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 9,
+    "message": "\`expect\` must be inside of a test block.",
+    "rule": "jest(no-standalone-expect)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 10,
+    "message": "\`expect\` must be inside of a test block.",
+    "rule": "jest(no-standalone-expect)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 11,
+    "message": "\`expect\` must be inside of a test block.",
+    "rule": "jest(no-standalone-expect)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 12,
+    "message": "\`expect\` must be inside of a test block.",
+    "rule": "jest(no-standalone-expect)",
+    "severity": "warning",
+  },
+  {
+    "column": 1,
+    "line": 13,
+    "message": "\`expect\` must be inside of a test block.",
+    "rule": "jest(no-standalone-expect)",
+    "severity": "warning",
+  },
+]
+`;
 
 exports[`jest > should lint 'jest/no-done-callback' 1`] = `
 [
@@ -18,7 +98,24 @@ exports[`jest > should lint 'jest/no-done-callback' 1`] = `
     "rule": "jest(consistent-test-it)",
     "severity": "warning",
   },
+  {
+    "column": 6,
+    "line": 11,
+    "message": "Test title is used multiple times in the same describe block.",
+    "rule": "jest(no-identical-title)",
+    "severity": "error",
+  },
 ]
 `;
 
-exports[`jest > should lint 'jest/no-export' 1`] = `[]`;
+exports[`jest > should lint 'jest/no-export' 1`] = `
+[
+  {
+    "column": 3,
+    "line": 5,
+    "message": "\`expect\` must be inside of a test block.",
+    "rule": "jest(no-standalone-expect)",
+    "severity": "warning",
+  },
+]
+`;
