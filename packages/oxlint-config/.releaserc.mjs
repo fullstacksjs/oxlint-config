@@ -1,3 +1,5 @@
-import baseConfig from '../../.releaserc.base.mjs';
+import { defineReleaseConfig } from '../../.releaserc.base.mjs';
 
-export default baseConfig;
+// `dist` bundles oxlint-minimal straight from source, so a change there changes
+// what this package publishes and has to cut a release here too.
+export default defineReleaseConfig({ dependsOn: ['packages/oxlint-minimal'] });
