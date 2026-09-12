@@ -1,3 +1,3 @@
-import baseConfig from '../../.releaserc.base.mjs';
+import { defineReleaseConfig } from '../../.releaserc.base.mjs';
 
-export default baseConfig;
+export default defineReleaseConfig();

@@ -28,7 +28,7 @@
     "@types/node": "catalog:",
     "oxlint": "catalog:",
     "semantic-release": "25.0.9",
-    "semantic-release-monorepo": "8.0.2",
+    "semantic-release-plugin-decorators": "4.0.0",
     "typescript": "catalog:",
     "vite-plus": "catalog:"
   },
