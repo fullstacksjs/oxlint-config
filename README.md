@@ -43,13 +43,18 @@ Then run Oxlint:
 oxlint
 ```
 
-Base, TypeScript, import, promise, and regexp rules are enabled by default. Enable project-specific modules as needed:
+Every module is a boolean in `modules`. Set it to `true` to turn the module on and `false` to turn it off:
 
 ```ts
 import { defineConfig } from '@fullstacksjs/oxlint-config';
 
 export default defineConfig({
   modules: {
+    base: true,
+    imports: true,
+    promise: true,
+    typescript: true,
+    regex: true,
     nodejs: true,
     react: true,
     nextjs: true,
@@ -64,7 +69,26 @@ export default defineConfig({
 });
 ```
 
-`esm` defaults to `true`. `strict` and `typeAware` default to `false`.
+`@fullstacksjs/oxlint-config` has every `@fullstacksjs/oxlint-minimal` module, plus `regex`.
+
+| Module       | Default                         |
+| ------------ | ------------------------------- |
+| `base`       | `true`                          |
+| `imports`    | `true`                          |
+| `promise`    | `true`                          |
+| `typescript` | `true`                          |
+| `nodejs`     | `false`                         |
+| `react`      | `true` if `react` is installed  |
+| `nextjs`     | `true` if `next` is installed   |
+| `vitest`     | `true` if `vitest` is installed |
+| `jest`       | `true` if `jest` is installed   |
+| `regex`      | `true` (`oxlint-config` only)   |
+
+| Option      | Default                               |
+| ----------- | ------------------------------------- |
+| `esm`       | `true` (`false` when `nextjs` is on)  |
+| `strict`    | `false`                               |
+| `typeAware` | `false`                               |
 
 ## Customization
 

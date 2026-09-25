@@ -19,35 +19,42 @@ export interface Options extends OxlintOptions {
 }
 
 export interface ModuleConfig {
+  base?: boolean;
+  imports?: boolean;
   jest?: boolean;
   nextjs?: boolean;
   nodejs?: boolean;
+  promise?: boolean;
   react?: boolean;
+  typescript?: boolean;
   vitest?: boolean;
 }
 
 const defaultModules: ModuleConfig = {
+  base: true,
+  imports: true,
+  promise: true,
+  typescript: true,
   jest: isPackageExists('jest'),
   vitest: isPackageExists('vitest'),
   nextjs: isPackageExists('next'),
   react: isPackageExists('react'),
 };
 
-export interface Preset {
+export interface Preset<M extends ModuleConfig = ModuleConfig> {
   name?: string;
-  modules?: (ctx: Context) => OxlintConfig[];
+  modules?: (ctx: Context<M>) => OxlintConfig[];
 }
 
-export interface Config extends OxlintConfig {
-  modules?: ModuleConfig;
+export interface Config<M extends ModuleConfig = ModuleConfig> extends OxlintConfig {
+  modules?: M;
   options?: Options;
 }
 
-export function createPreset(preset: Preset): (config?: Config) => OxlintConfig {
-  return function defineConfig(config: Config = {}): OxlintConfig {
+export function createPreset<M extends ModuleConfig = ModuleConfig>(preset: Preset<M>): (config?: Config<M>) => OxlintConfig {
+  return function defineConfig(config: Config<M> = {}): OxlintConfig {
     const { extends: extendsConfig = [], modules: configModules, overrides = [], options: configOptions, ...rest } = config;
-    const modules = { ...defaultModules, ...configModules };
-    const { jest: jestEnabled, nextjs: nextjsEnabled, nodejs: nodejsEnabled, react: reactEnabled, vitest: vitestEnabled } = modules;
+    const modules = { ...defaultModules, ...configModules } as M;
 
     const defaultOptions: Options = {
       esm: !modules.nextjs,
@@ -58,19 +65,19 @@ export function createPreset(preset: Preset): (config?: Config) => OxlintConfig 
       console.log(`[${preset.name}] Configuration:\n${JSON.stringify({ modules, options, rest }, null, 2)}`);
     }
 
-    const context = new Context(options, modules);
+    const context = new Context<M>(options, modules);
 
     return {
       extends: [
-        base(context),
-        imports(context),
-        promise(context),
-        typescript(context),
-        nodejsEnabled ? node(context) : undefined,
-        reactEnabled ? react(context) : undefined,
-        vitestEnabled ? vitest(context) : undefined,
-        jestEnabled ? jest(context) : undefined,
-        nextjsEnabled ? next(context) : undefined,
+        modules.base ? base(context) : undefined,
+        modules.imports ? imports(context) : undefined,
+        modules.promise ? promise(context) : undefined,
+        modules.typescript ? typescript(context) : undefined,
+        modules.nodejs ? node(context) : undefined,
+        modules.react ? react(context) : undefined,
+        modules.vitest ? vitest(context) : undefined,
+        modules.jest ? jest(context) : undefined,
+        modules.nextjs ? next(context) : undefined,
         ...(preset.modules?.(context) ?? []),
         ...extendsConfig,
       ].filter(Boolean) as OxlintConfig['extends'],

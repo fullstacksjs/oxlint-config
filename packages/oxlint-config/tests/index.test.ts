@@ -44,6 +44,12 @@ describe('defineConfig', () => {
     expect(layers.at(-2)?.jsPlugins).toContainEqual(expect.objectContaining({ name: 'regexp' }));
   });
 
+  it('turns the regexp jsPlugin off with the regex module', () => {
+    const layers = extendsOf(defineConfig({ modules: { regex: false } }));
+
+    expect(layers.filter((layer) => layer.jsPlugins?.find((p) => typeof p === 'object' && p.name === 'regexp'))).toHaveLength(0);
+  });
+
   it('exposes defineOxlintConfig as an alias', () => {
     expect(defineOxlintConfig).toBe(defineConfig);
   });

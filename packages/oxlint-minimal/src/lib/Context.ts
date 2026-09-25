@@ -1,13 +1,13 @@
 import type { AllowWarnDeny } from 'oxlint';
 import type { Options, ModuleConfig } from './createPreset.ts';
 
-export class Context {
+export class Context<M extends ModuleConfig = ModuleConfig> {
   options: Options;
-  modules: ModuleConfig;
+  modules: M;
 
-  constructor(options?: Options, modules?: ModuleConfig) {
+  constructor(options?: Options, modules?: M) {
     this.options = options ?? {};
-    this.modules = modules ?? {};
+    this.modules = modules ?? ({} as M);
   }
 
   get isEsm() {
@@ -30,7 +30,7 @@ export class Context {
     return this.strictOr(config, 'off');
   }
 
-  matchModule<C, O>(module: keyof ModuleConfig, config: C, fallback: O): C | O {
+  matchModule<C, O>(module: keyof M, config: C, fallback: O): C | O {
     return this.modules[module] ? config : fallback;
   }
 
