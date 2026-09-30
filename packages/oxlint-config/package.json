@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "eslint-plugin-regexp": "3.3.0",
+    "eslint-plugin-storybook": "10.6.1",
     "local-pkg": "1.2.1"
   },
   "devDependencies": {

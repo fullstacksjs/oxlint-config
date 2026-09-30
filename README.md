@@ -55,6 +55,7 @@ export default defineConfig({
     nextjs: true,
     vitest: true,
     jest: false,
+    storybook: true,
   },
   options: {
     strict: true,
@@ -65,6 +66,8 @@ export default defineConfig({
 ```
 
 `esm` defaults to `true`. `strict` and `typeAware` default to `false`.
+
+Storybook is enabled automatically when the `storybook` package is installed. Enable or disable it explicitly with `modules.storybook`:
 
 ## Customization
 
