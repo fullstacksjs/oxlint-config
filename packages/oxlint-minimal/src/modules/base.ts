@@ -63,7 +63,7 @@ export function base(ctx: Context): OxlintConfig {
       'no-dupe-else-if': 'error',
       'no-dupe-keys': 'error',
       'no-duplicate-case': ctx.ts(),
-      'no-duplicate-imports': 'warn',
+      'no-duplicate-imports': 'off', // covered by import/no-duplicates.
       'no-else-return': 'off',
       'no-empty-function': 'off', // useless
       'no-empty-pattern': 'error',
@@ -77,7 +77,7 @@ export function base(ctx: Context): OxlintConfig {
       'no-fallthrough': 'error',
       'no-func-assign': ctx.ts(),
       'no-global-assign': 'error',
-      'no-implied-eval': 'error',
+      'no-implied-eval': ctx.untyped('error'), // replaced by typescript/no-implied-eval.
       'no-implicit-coercion': 'warn',
       'no-import-assign': ctx.ts(),
       'no-inline-comments': 'off',
@@ -117,7 +117,7 @@ export function base(ctx: Context): OxlintConfig {
       'no-template-curly-in-string': 'warn',
       'no-ternary': 'off',
       'no-this-before-super': ctx.ts(),
-      'no-throw-literal': 'warn',
+      'no-throw-literal': ctx.untyped('warn'), // replaced by typescript/only-throw-error.
       'no-unassigned-vars': ctx.strict('error'),
       'no-undef': ctx.ts(),
       'no-undefined': 'off',
@@ -156,9 +156,9 @@ export function base(ctx: Context): OxlintConfig {
       'prefer-rest-params': 'error',
       'prefer-spread': 'error',
       'prefer-template': 'error',
-      'prefer-promise-reject-errors': 'warn',
+      'prefer-promise-reject-errors': ctx.untyped('warn'), // replaced by typescript/prefer-promise-reject-errors.
       'radix': 'error',
-      'require-await': 'error',
+      'require-await': ctx.untyped('error'), // replaced by typescript/require-await.
       'require-unicode-regexp': ctx.strict('warn'),
       'require-yield': 'error',
       'sort-imports': 'off',

@@ -46,6 +46,10 @@ export class Context {
     return this.isTypeAware ? config : 'off';
   }
 
+  untyped<C>(config: C) {
+    return this.isTypeAware ? 'off' : config;
+  }
+
   ts(): AllowWarnDeny {
     return 'off';
   }

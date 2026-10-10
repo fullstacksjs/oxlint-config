@@ -1020,17 +1020,7 @@ exports[`base > should lint 'no-dupe-keys' 1`] = `
 ]
 `;
 
-exports[`base > should lint 'no-duplicate-imports' 1`] = `
-[
-  {
-    "column": 22,
-    "line": 5,
-    "message": "'module' import is duplicated",
-    "rule": "eslint(no-duplicate-imports)",
-    "severity": "warning",
-  },
-]
-`;
+exports[`base > should lint 'no-duplicate-imports' 1`] = `[]`;
 
 exports[`base > should lint 'no-empty' 1`] = `
 [
