@@ -1,3 +1,4 @@
+// oxlint-disable max-lines-per-function
 import type { OxlintConfig } from 'oxlint';
 import type { Context } from '../lib/Context.ts';
 
