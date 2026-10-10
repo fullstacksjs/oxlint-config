@@ -59,8 +59,10 @@ export function createPreset(preset: Preset): (config?: Config) => OxlintConfig 
     }
 
     const context = new Context(options, modules);
+    const { strict: _strict, esm: _esm, ...oxlintOptions } = options;
 
     return {
+      options: oxlintOptions,
       extends: [
         base(context),
         imports(context),

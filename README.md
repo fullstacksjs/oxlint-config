@@ -67,6 +67,14 @@ export default defineConfig({
 
 `esm` defaults to `true`. `strict` and `typeAware` default to `false`.
 
+`typeAware: true` enables the type-aware rules and turns on Oxlint's type-aware linting, so you do not need to pass `--type-aware`. It requires the `oxlint-tsgolint` package:
+
+```sh
+npm install -D oxlint-tsgolint
+```
+
+Other Oxlint `options` (for example `typeCheck` or `maxWarnings`) are passed through to Oxlint.
+
 Storybook is enabled automatically when the `storybook` package is installed. Enable or disable it explicitly with `modules.storybook`:
 
 ## Customization
