@@ -31,6 +31,7 @@
     "prepublishOnly": "vp run build"
   },
   "dependencies": {
+    "eslint-plugin-better-tailwindcss": "4.9.0",
     "eslint-plugin-regexp": "3.3.0",
     "eslint-plugin-storybook": "10.6.1",
     "local-pkg": "1.2.1"
@@ -39,6 +40,7 @@
     "@fullstacksjs/oxlint-minimal": "workspace:*",
     "@types/node": "catalog:",
     "oxlint": "catalog:",
+    "tailwindcss": "4.3.3",
     "typescript": "catalog:",
     "vite-plus": "catalog:"
   },
