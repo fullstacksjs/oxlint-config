@@ -56,6 +56,7 @@ export default defineConfig({
     vitest: true,
     jest: false,
     storybook: true,
+    tailwind: { entryPoint: './src/global.css' },
   },
   options: {
     strict: true,
@@ -75,7 +76,30 @@ npm install -D oxlint-tsgolint
 
 Other Oxlint `options` (for example `typeCheck` or `maxWarnings`) are passed through to Oxlint.
 
-Storybook is enabled automatically when the `storybook` package is installed. Enable or disable it explicitly with `modules.storybook`:
+Storybook is enabled automatically when the `storybook` package is installed. Enable or disable it explicitly with `modules.storybook`.
+
+Tailwind CSS ([`eslint-plugin-better-tailwindcss`](https://github.com/schoero/eslint-plugin-better-tailwindcss)) is disabled by
+default. To enable it, specify the path to your Tailwind config in the module configuration:
+
+Tailwind 4:
+
+```ts
+export default defineConfig({
+  modules: {
+    tailwind: { entryPoint: './src/global.css' },
+  },
+});
+```
+
+Tailwind 3:
+
+```ts
+export default defineConfig({
+  modules: {
+    tailwind: { tailwindConfig: './tailwind.config.js' },
+  },
+});
+```
 
 ## Customization
 
