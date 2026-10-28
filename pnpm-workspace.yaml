@@ -4,12 +4,12 @@ packages:
 injectWorkspacePackages: true
 saveExact: true
 catalog:
-  '@types/node': 26.6.2
-  vite: npm:@voidzero-dev/vite-plus-core@1.0.0-rc.0
-  vitest: 4.1.11
-  typescript: 7.0.2
-  vite-plus: 1.0.0-rc.0
-  oxlint: 1.85.0
+  '@types/node': 26.6.6
+  vite: npm:@voidzero-dev/vite-plus-core@1.4.0
+  vitest: 5.0.5
+  typescript: 6.0.3
+  vite-plus: 1.4.0
+  oxlint: 1.90.0
 overrides:
   vite: 'catalog:'
   vitest: 'catalog:'
@@ -34,5 +34,5 @@ minimumReleaseAgeExclude:
   - '@voidzero-dev/vite-plus-win32-arm64-msvc@0.3.1'
   - '@voidzero-dev/vite-plus-win32-x64-msvc@0.3.1'
   - vite-plus@0.3.1
-  - '@types/node@26.5.1'
+  - '@types/node@26.5.1 || 26.6.6'
   - eslint-plugin-storybook@10.6.1
