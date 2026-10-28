@@ -27,6 +27,7 @@
     "@fullstacksjs/oxlint-minimal": "workspace:*",
     "@types/node": "catalog:",
     "oxlint": "catalog:",
+    "oxlint-tsgolint": "7.0.2005",
     "semantic-release": "25.0.9",
     "semantic-release-plugin-decorators": "4.0.0",
     "typescript": "catalog:",
@@ -35,12 +36,12 @@
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
-      "version": "11.23.0",
+      "version": "12.16.1",
       "onFail": "download"
     },
     "runtime": {
       "name": "node",
-      "version": "24.18.0",
+      "version": "24.22.2",
       "onFail": "error"
     }
   },

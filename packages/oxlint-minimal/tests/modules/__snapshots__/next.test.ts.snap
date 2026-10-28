@@ -29,7 +29,7 @@ exports[`next > should lint 'nextjs/no-assign-module-variable' 1`] = `[]`;
 
 exports[`next > should lint 'nextjs/no-async-client-component' 1`] = `[]`;
 
-exports[`next > should lint 'nextjs/no-before-interactive-script-o…' 1`] = `
+exports[`next > should lint 'nextjs/no-before-interactive-script-out…' 1`] = `
 [
   {
     "column": 9,

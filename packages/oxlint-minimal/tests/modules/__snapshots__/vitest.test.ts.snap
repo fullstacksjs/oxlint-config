@@ -131,7 +131,7 @@ exports[`vitest > should lint 'vitest/prefer-describe-function-title' 1`] = `[]`
 
 exports[`vitest > should lint 'vitest/prefer-to-be-object' 1`] = `[]`;
 
-exports[`vitest > should lint 'vitest/require-local-test-context-for…' 1`] = `
+exports[`vitest > should lint 'vitest/require-local-test-context-for-c…' 1`] = `
 [
   {
     "column": 1,

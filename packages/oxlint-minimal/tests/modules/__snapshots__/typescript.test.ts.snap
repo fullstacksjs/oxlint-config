@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`typescript > should lint 'typescript/adjacent-overload-signatur…' 1`] = `
+exports[`typescript > should lint 'typescript/adjacent-overload-signatures' 1`] = `
 [
   {
     "column": 3,
@@ -31,9 +31,9 @@ exports[`typescript > should lint 'typescript/array-type' 1`] = `
 ]
 `;
 
-exports[`typescript > should lint 'typescript/class-literal-property-sty…' 1`] = `[]`;
+exports[`typescript > should lint 'typescript/class-literal-property-style' 1`] = `[]`;
 
-exports[`typescript > should lint 'typescript/consistent-generic-constru…' 1`] = `[]`;
+exports[`typescript > should lint 'typescript/consistent-generic-construct…' 1`] = `[]`;
 
 exports[`typescript > should lint 'typescript/consistent-type-assertions' 1`] = `
 [
@@ -68,7 +68,7 @@ exports[`typescript > should lint 'typescript/consistent-type-definitions' 1`] =
 
 exports[`typescript > should lint 'typescript/consistent-type-imports' 1`] = `[]`;
 
-exports[`typescript > should lint 'typescript/no-confusing-non-null-asse…' 1`] = `
+exports[`typescript > should lint 'typescript/no-confusing-non-null-assert…' 1`] = `
 [
   {
     "column": 1,
@@ -327,9 +327,9 @@ exports[`typescript > should lint 'typescript/no-namespace' 1`] = `
 ]
 `;
 
-exports[`typescript > should lint 'typescript/no-non-null-asserted-nulli…' 1`] = `[]`;
+exports[`typescript > should lint 'typescript/no-non-null-asserted-nullish…' 1`] = `[]`;
 
-exports[`typescript > should lint 'typescript/no-non-null-asserted-optio…' 1`] = `
+exports[`typescript > should lint 'typescript/no-non-null-asserted-optiona…' 1`] = `
 [
   {
     "column": 9,
@@ -386,7 +386,7 @@ exports[`typescript > should lint 'typescript/no-this-alias' 1`] = `
 ]
 `;
 
-exports[`typescript > should lint 'typescript/no-unnecessary-type-constr…' 1`] = `
+exports[`typescript > should lint 'typescript/no-unnecessary-type-constrai…' 1`] = `
 [
   {
     "column": 18,
@@ -489,7 +489,7 @@ exports[`typescript > should lint 'typescript/no-unnecessary-type-constr…' 1`]
 ]
 `;
 
-exports[`typescript > should lint 'typescript/no-unsafe-declaration-merg…' 1`] = `
+exports[`typescript > should lint 'typescript/no-unsafe-declaration-merging' 1`] = `
 [
   {
     "column": 11,

@@ -6,7 +6,7 @@ exports[`react > should lint 'jsx-a11y/anchor-ambiguous-text' 1`] = `[]`;
 
 exports[`react > should lint 'jsx-a11y/anchor-has-content' 1`] = `[]`;
 
-exports[`react > should lint 'jsx-a11y/aria-activedescendant-has-ta…' 1`] = `
+exports[`react > should lint 'jsx-a11y/aria-activedescendant-has-tabi…' 1`] = `
 [
   {
     "column": 14,
@@ -183,7 +183,7 @@ exports[`react > should lint 'jsx-a11y/no-autofocus' 1`] = `[]`;
 
 exports[`react > should lint 'jsx-a11y/no-distracting-elements' 1`] = `[]`;
 
-exports[`react > should lint 'jsx-a11y/no-interactive-element-to-no…' 1`] = `
+exports[`react > should lint 'jsx-a11y/no-interactive-element-to-noni…' 1`] = `
 [
   {
     "column": 9,
@@ -202,9 +202,9 @@ exports[`react > should lint 'jsx-a11y/no-interactive-element-to-no…' 1`] = `
 ]
 `;
 
-exports[`react > should lint 'jsx-a11y/no-noninteractive-element-in…' 1`] = `[]`;
+exports[`react > should lint 'jsx-a11y/no-noninteractive-element-inte…' 1`] = `[]`;
 
-exports[`react > should lint 'jsx-a11y/no-noninteractive-element-to…' 1`] = `[]`;
+exports[`react > should lint 'jsx-a11y/no-noninteractive-element-to-i…' 1`] = `[]`;
 
 exports[`react > should lint 'jsx-a11y/no-noninteractive-tabindex' 1`] = `[]`;
 
@@ -234,7 +234,7 @@ exports[`react > should lint 'jsx-a11y/no-redundant-roles' 1`] = `
 ]
 `;
 
-exports[`react > should lint 'jsx-a11y/no-static-element-interactio…' 1`] = `[]`;
+exports[`react > should lint 'jsx-a11y/no-static-element-interactions' 1`] = `[]`;
 
 exports[`react > should lint 'jsx-a11y/prefer-tag-over-role' 1`] = `
 [
@@ -380,7 +380,7 @@ exports[`react > should lint 'jsx-a11y/tabindex-no-positive' 1`] = `
 ]
 `;
 
-exports[`react > should lint 'react/checked-requires-onchange-or-re…' 1`] = `[]`;
+exports[`react > should lint 'react/checked-requires-onchange-or-read…' 1`] = `[]`;
 
 exports[`react > should lint 'react/display-name' 1`] = `
 [
@@ -641,7 +641,7 @@ exports[`react > should lint 'react/jsx-key' 1`] = `
 
 exports[`react > should lint 'react/jsx-no-comment-textnodes' 1`] = `[]`;
 
-exports[`react > should lint 'react/jsx-no-constructed-context-valu…' 1`] = `
+exports[`react > should lint 'react/jsx-no-constructed-context-values' 1`] = `
 [
   {
     "column": 10,
