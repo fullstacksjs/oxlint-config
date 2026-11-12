@@ -11,6 +11,21 @@ describe('defineConfig options', () => {
   });
 
   it('strips preset-only options that oxlint does not know', () => {
-    expect(defineConfig({ options: { strict: true, esm: false } }).options).toEqual({});
+    expect(defineConfig({ options: { strict: true, esm: false, extensions: false } }).options).toEqual({});
+  });
+
+  it('keeps esm on and drops import extensions for Next.js', () => {
+    const imports = (defineConfig({ modules: { nextjs: true } }).extends as { rules?: Record<string, unknown> }[]).find(
+      (l) => l.rules && 'import/extensions' in l.rules,
+    );
+    expect(imports?.rules?.['import/extensions']).toEqual(['off', 'always', { ignorePackages: true }]);
+    expect(imports?.rules?.['import/no-commonjs']).toBe('error');
+  });
+
+  it('requires import extensions by default', () => {
+    const imports = (defineConfig().extends as { rules?: Record<string, unknown> }[]).find(
+      (l) => l.rules && 'import/extensions' in l.rules,
+    );
+    expect(imports?.rules?.['import/extensions']).toEqual(['error', 'always', { ignorePackages: true }]);
   });
 });

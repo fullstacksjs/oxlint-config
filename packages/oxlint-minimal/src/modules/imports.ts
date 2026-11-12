@@ -6,7 +6,7 @@ export function imports(ctx: Context): OxlintConfig {
     plugins: ['import'],
     rules: {
       'import/consistent-type-specifier-style': ['warn', 'prefer-top-level-if-only-type-imports'],
-      'import/extensions': [ctx.esm('error'), 'always', { ignorePackages: true }],
+      'import/extensions': [ctx.extensions('error'), 'always', { ignorePackages: true }],
       'import/first': 'warn',
       'import/newline-after-import': 'warn',
       'import/no-absolute-path': 'error',

@@ -62,11 +62,12 @@ export default defineConfig({
     strict: true,
     typeAware: true,
     esm: true,
+    extensions: true,
   },
 });
 ```
 
-`esm` defaults to `true`. `strict` and `typeAware` default to `false`.
+`esm` defaults to `true` and controls module syntax (CommonJS rules off). `extensions` controls `import/extensions` and defaults to `esm`, or to `false` when the `nextjs` module is on. `strict` and `typeAware` default to `false`.
 
 `typeAware: true` enables the type-aware rules and turns on Oxlint's type-aware linting, so you do not need to pass `--type-aware`. It requires the `oxlint-tsgolint` package:
 
