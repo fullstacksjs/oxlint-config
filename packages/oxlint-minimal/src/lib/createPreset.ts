@@ -16,6 +16,8 @@ type OxlintOptions = NonNullable<OxlintConfig['options']>;
 export interface Options extends OxlintOptions {
   strict?: boolean;
   esm?: boolean;
+  /** Require file extensions in import paths. Defaults to `esm`, or `false` with the `nextjs` module. */
+  extensions?: boolean;
 }
 
 export interface ModuleConfig {
@@ -49,9 +51,7 @@ export function createPreset(preset: Preset): (config?: Config) => OxlintConfig 
     const modules = { ...defaultModules, ...configModules };
     const { jest: jestEnabled, nextjs: nextjsEnabled, nodejs: nodejsEnabled, react: reactEnabled, vitest: vitestEnabled } = modules;
 
-    const defaultOptions: Options = {
-      esm: !modules.nextjs,
-    };
+    const defaultOptions: Options = modules.nextjs ? { extensions: false } : {};
     const options = { ...defaultOptions, ...configOptions };
 
     if (process.env.DEBUG_OXLINT_CONFIG) {
@@ -59,7 +59,7 @@ export function createPreset(preset: Preset): (config?: Config) => OxlintConfig 
     }
 
     const context = new Context(options, modules);
-    const { strict: _strict, esm: _esm, ...oxlintOptions } = options;
+    const { strict: _strict, esm: _esm, extensions: _extensions, ...oxlintOptions } = options;
 
     return {
       options: oxlintOptions,

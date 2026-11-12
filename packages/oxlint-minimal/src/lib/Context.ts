@@ -14,6 +14,10 @@ export class Context {
     return this.options.esm ?? true;
   }
 
+  get requiresExtensions() {
+    return this.options.extensions ?? this.isEsm;
+  }
+
   get isStrict() {
     return this.options.strict ?? false;
   }
@@ -32,6 +36,10 @@ export class Context {
 
   matchModule<C, O>(module: keyof ModuleConfig, config: C, fallback: O): C | O {
     return this.modules[module] ? config : fallback;
+  }
+
+  extensions(config: AllowWarnDeny): AllowWarnDeny {
+    return this.requiresExtensions ? config : 'off';
   }
 
   esm(config: AllowWarnDeny): AllowWarnDeny {
