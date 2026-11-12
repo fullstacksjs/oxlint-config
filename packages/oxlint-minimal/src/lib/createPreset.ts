@@ -1,5 +1,5 @@
 import type { OxlintConfig } from 'oxlint';
-import { isPackageExists } from 'local-pkg';
+import { isPackageListedSync } from 'local-pkg';
 import { base } from '../modules/base.ts';
 import { Context } from './Context.ts';
 import { typescript } from '../modules/typescript.ts';
@@ -26,12 +26,14 @@ export interface ModuleConfig {
   vitest?: boolean;
 }
 
-const defaultModules: ModuleConfig = {
-  jest: isPackageExists('jest'),
-  vitest: isPackageExists('vitest'),
-  nextjs: isPackageExists('next'),
-  react: isPackageExists('react'),
-};
+function detectModules(): ModuleConfig {
+  return {
+    jest: isPackageListedSync('jest'),
+    vitest: isPackageListedSync('vitest'),
+    nextjs: isPackageListedSync('next'),
+    react: isPackageListedSync('react'),
+  };
+}
 
 const extensions = '{ts,tsx,js,jsx,mts,cts,mjs,cjs}';
 
@@ -51,7 +53,7 @@ export interface Config extends OxlintConfig {
 export function createPreset(preset: Preset): (config?: Config) => OxlintConfig {
   return function defineConfig(config: Config = {}): OxlintConfig {
     const { extends: extendsConfig = [], modules: configModules, overrides = [], options: configOptions, ...rest } = config;
-    const modules = { ...defaultModules, ...configModules };
+    const modules = { ...detectModules(), ...configModules };
     const { jest: jestEnabled, nextjs: nextjsEnabled, nodejs: nodejsEnabled, react: reactEnabled, vitest: vitestEnabled } = modules;
 
     const defaultOptions: Options = {
