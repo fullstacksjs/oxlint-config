@@ -33,6 +33,11 @@ const defaultModules: ModuleConfig = {
   react: isPackageExists('react'),
 };
 
+const extensions = '{ts,tsx,js,jsx,mts,cts,mjs,cjs}';
+
+/** Files where relaxed rules apply: tests and stories. */
+const testFileGlobs = [`**/*.{test,spec,stories,story}.${extensions}`, `**/__tests__/**/*.${extensions}`];
+
 export interface Preset {
   name?: string;
   modules?: (ctx: Context) => OxlintConfig[];
@@ -78,7 +83,7 @@ export function createPreset(preset: Preset): (config?: Config) => OxlintConfig 
       ].filter(Boolean) as OxlintConfig['extends'],
       overrides: [
         {
-          files: ['**/*.spec.ts', '**/*.spec.tsx', '**/*.stories.tsx'],
+          files: testFileGlobs,
           rules: {
             'no-sparse-arrays': 'off',
             'no-plusplus': 'off',
@@ -86,7 +91,7 @@ export function createPreset(preset: Preset): (config?: Config) => OxlintConfig 
             'no-throw-literal': 'off',
             'no-thenable': 'off',
             'max-lines-per-function': 'off',
-            'react-hooks/rules-of-hooks': 'off',
+            ...(reactEnabled ? { 'react/rules-of-hooks': 'off' } : {}),
           },
         },
         ...overrides,
