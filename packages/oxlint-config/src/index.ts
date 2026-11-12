@@ -1,5 +1,5 @@
 import type { OxlintConfig } from 'oxlint';
-import { isPackageExists } from 'local-pkg';
+import { isPackageListedSync } from 'local-pkg';
 import {
   createPreset,
   type Config as MinimalConfig,
@@ -29,7 +29,7 @@ export const defineConfig: (config?: Config) => OxlintConfig = createPreset({
   name: '@fullstacksjs/oxlint-config',
   modules: (ctx) => {
     const modules = ctx.modules as ModuleConfig;
-    const storybookEnabled = modules.storybook ?? isPackageExists('storybook');
+    const storybookEnabled = modules.storybook ?? isPackageListedSync('storybook');
     return [regex(ctx), ...(storybookEnabled ? [storybook(ctx)] : []), ...(modules.tailwind ? [tailwind(ctx)] : [])];
   },
 });
